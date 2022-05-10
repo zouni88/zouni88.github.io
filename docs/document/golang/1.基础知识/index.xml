@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>#安装环境，配置环境变量GOROOT:go安装路径GOPATH: 项目目录PATH ：%GOROOT%\bin;%GOPATH%\bin #GOland 配置环境https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct
+# 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）go env -w GOPRIVATE=*.corp.example.com# 设置不走 proxy 的私有组织（可选）go env -w GOPRIVATE=example.com/org_name #go moudle 初始化go mod project_namego build </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/10.%E6%B3%9B%E5%9E%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/10.%E6%B3%9B%E5%9E%8B/</guid>
+      <description>golang 1.18 正式版本，支持泛型
+ func TestGeneric(t *testing.T) { 	x := map[string]int{&amp;#34;tom&amp;#34;: 12, &amp;#34;jelly&amp;#34;: 7} 	res := Sums[string, int](x) 	log.Println(res)   stuC := StuCross[string]{ 	score: &amp;#34;成绩&amp;#34;, 	} 	log.Println(stuC) }  //指定函数参数类型约束 func Sums[K string, V int | float32](m map[K]V) V { 	var x V 	for _, v := range m { 	x += v 	} 	return x }  type StuCross[K string] struct { 	score K } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/11.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/11.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+      <description>#mapmap中元素为结构体，不能直接修改，因为map元素无法取地址；
+type Student struct { 	name string } 修改map中struct元素的值，错误示例：
+func TestMap(t *testing.T) { 	m := map[string]Student11{&amp;#34;people&amp;#34;: {&amp;#34;zhoujielun&amp;#34;}}  //编译错误 Cannot assign to m[&amp;#34;people&amp;#34;].name 	m[&amp;#34;people&amp;#34;].name = &amp;#34;wuyanzu&amp;#34; } 解决办法：
+func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Student{&amp;#34;people&amp;#34;: {&amp;#34;zhoujielun&amp;#34;}}  //编译错误 Cannot assign to m[&amp;#34;people&amp;#34;].name 	m[&amp;#34;people&amp;#34;].name = &amp;#34;wuyanzu&amp;#34; } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</guid>
+      <description>#闭包func TestCloser(t *testing.T) { 	x := func() func() { 	var i = 1 	return func() { 	i++ 	log.Println(&amp;#34;i = &amp;#34;, i) 	} 	}() 	x() 	x() } 输出结果：
+=== RUN TestCloser2022/04/10 21:42:09 22022/04/10 21:42:09 3--- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>#1. int#2. string#3. float#4. map#5.array,slice</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/3.%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/3.%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</guid>
+      <description>进制转换：
+//十进制转二进制 八进制 十六进制 func TestBase2(t *testing.T) { 	a := strconv.FormatInt(15, 2) 	b := strconv.FormatInt(15, 8) 	c := strconv.FormatInt(15, 10) 	d := strconv.FormatInt(15, 16) 	log.Printf(&amp;#34;base2 = %s,base8 = %s,base10 = %s,base16 = %s&amp;#34;, a, b, c, d) } output:
+2022/03/23 15:05:26 base2 = 1111,base8 = 17,base10 = 15,base16 = f --- PASS: TestBase2 (0.01s) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</guid>
+      <description>go 关键字 就定义了一个协程</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</guid>
+      <description>#fmt.printf#常规格式化 %v : 打印变量值 %T : 类型  #整型 %+d 带符号的整型，fmt.Printf(&amp;quot;%+d&amp;quot;, 255)输出+255 %q 打印单引号 %o 不带零的八进制 %#o 带零的八进制 %x 小写的十六进制 %X 大写的十六进制 %#x 带0x的十六进制 %U 打印Unicode字符 %#U 打印带字符的Unicode %b 打印整型的二进制  #float 浮点型#string 字符串</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</guid>
+      <description>dlv debug main.go </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>#go中的异常处理机制为了保证程序不会因为一个异常而导致停摆，同时又不像其它语言那么啰嗦，对go语言的异常机制的简单理解实践一下吧
+package main  import &amp;#34;fmt&amp;#34;  func divide(a int,b int,isPanic bool) int { 	//,类似于 java try catch ，，通过panic抛出异常 recover 捕获， 	if isPanic{ 	defer func() { 	if err := recover(); err != nil{ 	fmt.Println(err) 	} 	}() 	}  //可以自行捕获异常,自定义异常信息 	/*if b==0{ panic(&amp;#34;除数不能等于0&amp;#34;) }*/ 	c := a/b 	return c }  func main() { 	divide(3,0,true) 	fmt.Println(&amp;#34;我的天，一切运转正常&amp;#34;) } Out1:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/8.json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/8.json/</guid>
+      <description>#json编码type Person struct { 	Name string `json:&amp;#34;name&amp;#34;` 	Age int `json:&amp;#34;age,omitempty&amp;#34;` }  type Toys struct { 	Person 	Toys []string `json:&amp;#34;toys&amp;#34;` }  func main(){  p := Person{Name:&amp;#34;cao&amp;#34;,Age:12}  toys := []string{&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;}  toy := Toys{Person:p,Toys: toys}  resbyte,err := json.Marshal(toy)  if err != nil{  log.Fatal(err)  }  // 返回byte切片，转成string类型  resstring := string(resbyte)  fmt.Println(resstring) } Out:
+{&amp;#34;name&amp;#34;:&amp;#34;cao&amp;#34;,&amp;#34;toys&amp;#34;:[&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;]} json:&amp;quot;age&amp;quot; : 可以理解成别名，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/9.unsafe.pointer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/9.unsafe.pointer/</guid>
+      <description>#unsafe.pointer 可支持操作内存； 可以转换到任意类型指针 非安全的，不建议使用 unsafe.Pointer() 任意转换指针类型，并可进行指针运算 其他类型的指针只能转化为unsafe.Pointer，也只有unsafe.Pointer才能转化成任意类型的指针 只有uintptr才支持加减操作，而uintptr是一个非负整数，表示地址值，没有类型信息，以字节为单位  实际操作：获取一个字符串第二个字符的地址和值
+ var s = &amp;#34;abc&amp;#34; 	var strHeader = (*reflect.StringHeader)(unsafe.Pointer(&amp;amp;s)) 	var res = (*byte)(unsafe.Pointer(strHeader.Data)) //获取字符串第一个字符的地址 	log.Printf(&amp;#34;strHeader.Data = %c&amp;#34;, *res) 	var ress = (*byte)(unsafe.Pointer(strHeader.Data + uintptr(1))) //获取字符串第一个字符的地址 	log.Printf(&amp;#34;strHeader.Data = %c&amp;#34;, *ress) 	//var ssss uintptr = 0xc000088fc0 	//log.Println(*(*byte)(unsafe.Pointer(ssss))) </description>
+    </item>
+    
+  </channel>
+</rss>

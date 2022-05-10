@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/docker/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/1.docker%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/1.docker%E5%AE%89%E8%A3%85/</guid>
+      <description>#1. Windows 安装步骤  安装： 官网下载 https://hub.docker.com/对应版本
+  设置：
+ 修改 registry-mirrors 镜像地址  https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com      {&amp;#34;registry-mirrors&amp;#34;:[&amp;#34;https://reg-mirror.qiniu.com&amp;#34;,&amp;#34;http://hub-mirror.c.163.com/&amp;#34;,&amp;#34;https://registry.docker-cn.com&amp;#34;],&amp;#34;builder&amp;#34;: {&amp;#34;gc&amp;#34;: {&amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;,&amp;#34;enabled&amp;#34;: true}},&amp;#34;experimental&amp;#34;: false,&amp;#34;features&amp;#34;: {&amp;#34;buildkit&amp;#34;: true}} #2. CentOS 安装步骤#官网https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本
+sudo yum remove docker \docker-client \docker-client-latest \docker-common \docker-latest \docker-latest-logrotate \docker-logrotate \docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/2.docker%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/2.docker%E6%93%8D%E4%BD%9C/</guid>
+      <description>#镜像操作： 从仓库搜索镜像：docker search image-name
+搜索结果过滤:  	#是否是官方提供：  	docker search --filter &amp;#34;is-official=true&amp;#34; image_name 	# 是否是自动化构建：  	docker search --filter &amp;#34;is-automated=true&amp;#34; image_name 	# 大于多少个`star`  	docker search --filter stars=3 image_name 下载镜像： docker pull image_name 本地镜像的查看：  docker images 删除：  docker rmi image_name 修改镜像名字：  docker tag images_id 要推送的主机地址/镜像名：版本号 push到docker仓库  # 前提是已经在docker服务注册并创建了仓库 docker push 刚刚修改的镜像名字（要推送的主机地址/镜像名：版本号）这一长串 #容器基本操作： 查看容器：  docker ps 创建容器:  docker run -itd --name=container_name images_name  -i: 以交互模式运行容器;	-d: 后台运行;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</guid>
+      <description>创建容器：
+docker run -itd --name=container_name images_name 常用参数说明：
+-p 88:80 端口映射：
+88:宿主机端口 80:容器端口docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)
+-itd
+ -i: 以交互模式运行容器;	-d: 后台运行;
+-t: 为容器重新分配一个伪输入终端;
+ --name
+ &amp;ndash;name: 容器名字;
+ ``</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>#启动失败查看日志
+docker logs -f -t --tail 20 nginx </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</guid>
+      <description>#文件挂载 docker run -itd &amp;ndash;name=small_nginx -p 8888:80 -v d:/index.html:/usr/share/nginx/html/index.html small/nginx
+  -v 表示： 宿主机文件路径：容器文件路径 -p 表示: 宿主机ip:容器ip  这里修改了nginx默认启动页面关联到本地
+#文件目录挂载 docker run -itd &amp;ndash;name=small_mysql -p 33066:3306 -v d:/docker/mysql/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql
+  -e 表示：向容器内传参，ex:设定数据库密码：MYSQL_ROOT_PASSWORD=123456  docker run -itd &amp;ndash;name=flask_mysql -p 33066:3306 -v /var/lib/mysql:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</guid>
+      <description>docker打开设置
+Expose daemon on tcp://localhost:2375 without TLS
+设置连接docker 显示Connection successfull 表示连接成功了
+接下来配置python 解释器 如果已经创建了容器，就会自动加载</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</guid>
+      <description>#下载镜像# 官方提供的mysql镜像docker pull mysql #创建容器docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql  -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码  #进入容器docker exec -it mysql_wxc bash </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</guid>
+      <description>#容器互联docker run -itd --name=small_nginx --link container_name:alias -v path:local_path image_name  &amp;ndash;link 表示：被挂载容器名：别名  docker run -itd --name=flask_t -p 81:80 --link flask_mysql:flask_mysql -v /root/small/mysql/:/var/lib/mysql flask:1.2 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</guid>
+      <description>#搭建本地仓库#搜索 官方仓库docker search registry #下载仓库docker pull registry #创建容器docker run -d -p 5000:5000 --restart=always --privileged=true --name=registry-small -v d:/docker/registry:/var/lib/registry registry #修改镜像，准备推送 到仓库容器docker tag image_id registry_name:port/images_name #修改hosts 增加 域名127.0.0.1 registry_name #推送镜像到私有仓库docker push registry_name:port/images_name #查看镜像是否推送成功windows 浏览器 可以直接打开
+ http://127.0.0.1:5000/v2/_catalog
+ 查看版本号
+ http://127.0.0.1:5000/v2/alpine/tags/list
+ linux 查看同样的方法 用命令查看
+curl -X GET http://127.0.0.1:5000/v2/_catalog </description>
+    </item>
+    
+  </channel>
+</rss>

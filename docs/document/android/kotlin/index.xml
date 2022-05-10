@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/android/kotlin/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/android/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/android/kotlin/jetpack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/kotlin/jetpack/</guid>
+      <description>android jetpack框架组件
+databinding; 数据绑定库
+livedata: 数据观察类，
+Room: 数据库
+Viewmodel: 绑定activity或者fragment生命周期，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/android/kotlin/%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/kotlin/%E6%B3%A8%E8%A7%A3/</guid>
+      <description>#注解注解就是一种特殊的注释/解释，分两种情况:
+1.在代码编写阶段，编译器会看到的，并且明白是什么意思；
+2. 在运行阶段，反射机制，动态代理等应用。
+#元注解给注解加一个注释/ 注解上的注解；比如某个注解的作用域通过元注解告诉编译器，还有注解的生命周期等。
+@Target
+ElementType.TYPE：允许被修饰的注解作用在类、接口和枚举上
+ElementType.FIELD：允许作用在属性字段上
+ElementType.METHOD：允许作用在方法上
+ElementType.PARAMETER：允许作用在方法参数上
+ElementType.CONSTRUCTOR：允许作用在构造器上
+ElementType.LOCAL_VARIABLE：允许作用在本地局部变量上
+ElementType.ANNOTATION_TYPE：允许作用在注解上
+ElementType.PACKAGE：允许作用在包上</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80TextView%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80TextView%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</guid>
+      <description>1.修改textview的约束条件
+app:layout_constraintStart_toEndOf=&amp;#34;@+id/textView3&amp;#34;改为app:layout_constraintLeft_toRightOf=&amp;#34;@+id/textView3&amp;#34; 注意 其他的start end也都改为left right 2.其他属性搭配：
+android:layout_height=&amp;#34;wrap_content&amp;#34;搭配：app:layout_constrainedWidth=&amp;#34;true&amp;#34;android:layout_height=&amp;#34;wrap_content&amp;#34;搭配：app:layout_constrainedHeight=&amp;#34;false&amp;#34;（不写默认即false） </description>
+    </item>
+    
+  </channel>
+</rss>

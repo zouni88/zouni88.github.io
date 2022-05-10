@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/embedded/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/embedded/stm32/clion%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/embedded/stm32/clion%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>#clion+ stm32 开发环境搭建参考jetbrains官方指导
+#准备#1. clion#2. gcc-arm-none-eabi下载 gcc-arm-none-eabi-10.3-2021.10-win32.exe 一键安装：最后一步勾选（path添加到环境变量，否则编译程序找不到编译器）
+#3. mingw-get-setup.exe安装之后，配置clion Toolchains 环境就可以了
+#4. stm32cubemx-win.zip这一步没什么特殊 一键安装
+#5. OpenOCD#5.1 openOCD 配置配置ST-link烧写器配置文件 stm32f103_stlink.cfg
+source [find interface/stlink.cfg]transport select hla_swdsource [find target/stm32f1x.cfg]adapter speed 2000 // adapter_khz 2000 保存到openOCD脚本目录下： D:\WorkRoom\embedded\stm32\OpenOCD-20210729-0.11.0\share\openocd\scripts\board</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/embedded/%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/embedded/%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</guid>
+      <description>#串口引脚定义 DTR : 数据终端准备好 RTS: 请求发送 RXD: 接收 TXD: 发送 CTS: 清除发送  </description>
+    </item>
+    
+  </channel>
+</rss>

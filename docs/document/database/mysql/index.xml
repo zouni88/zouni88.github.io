@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/database/mysql/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/database/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/mysql/mysqlconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/mysql/mysqlconfig/</guid>
+      <description>#mysql 配置#首先查看centos是否已经安装了mysql源yum list installed mysql*如果有就删除yum remove mysql-community-* #安装mysql源https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm #安装mysqlyum -y install mysql57-community-release-el7-10.noarch.rpm #查看是否已经安装了数据库源yum repolist all | grep mysql #查看数据库源/etc/yum.repos.d/mysql-community.repo修改源可用 mysql80 enable = 1 #安装数据库服务yum install mysql-server #启动mysqlsystemctl start mysqld.service #查看状态systemctl status mysqld.service #查看初始密码grep &amp;#34;password&amp;#34; /var/log/mysqld.log #修改密码mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;123456&amp;#39; 注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/mysql/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/mysql/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81/</guid>
+      <description>修改配置文件，无密码登录 编辑文件：
+/etc/mysql/mysq.conf.d/mysqld.cnf 加入skip-grant-tables 跳过密码登录；
+重启mysql服务
+systemctl restart mysql.service 进入mysql
+# mysql;# use mysql;# 更新密码为空# UPDATE user SET authentication_string=&amp;#39;&amp;#39; WHERE User=&amp;#39;root&amp;#39; AND Host =&amp;#39;localhost&amp;#39;;# flush privileges;退出 注释掉skip-grant-tables
+#重启mysql，无密码登录</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/mysql/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E5%90%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/mysql/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E5%90%AF/</guid>
+      <description>#开启mysql的远程访问 两种方式 方式1  grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.168.1.145&amp;#39; identified by &amp;#39;123456&amp;#39; with grant option; flush privileges;  方式2  use mysql;update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;; 更细权限之后，一定要刷新一下，否则不会生效
+flush privileges;  方式3   此处为设置root用户远程mysql -uroot -p #输入密码use mysql;update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;;select host, user from user;flush privileges; #去掉配置文件中bind-addressbind-address = 127.0.0.1 # bind-address = 127.</description>
+    </item>
+    
+  </channel>
+</rss>

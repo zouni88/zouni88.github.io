@@ -1,0 +1,34 @@
+# 基础镜像
+FROM alpine
+
+# 作者
+MAINTAINER small
+
+# 修改源
+RUN ["sed","-i","s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g","/etc/apk/repositories"]
+RUN apk update
+
+# 安装nginx
+RUN apk add nginx && mkdir /run/nginx/
+
+# 安装python3 and uwsgi
+RUN apk add python3 && pip3 install --upgrade pip \
+    &&  apk add \
+        libuuid \
+        pcre \
+        mailcap \
+        gcc \
+        libc-dev \
+        linux-headers \
+        pcre-dev \
+    && pip3 install uwsgi
+
+# 安装python2
+RUN apk add python2
+
+EXPOSE 80 443 22
+
+CMD ["nginx"]
+
+# 容器启动后，执行命令
+ENTRYPOINT ["nginx","-g","daemon off;"]

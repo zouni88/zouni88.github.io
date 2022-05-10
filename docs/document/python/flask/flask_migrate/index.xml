@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/python/flask/flask_migrate/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/python/flask/flask_migrate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/flask/flask_migrate/%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/flask/flask_migrate/%E5%9D%91/</guid>
+      <description>#flask-migrate 坑 字段长度更新会提示 No changes in schema detected.  解决办法：初始化Migrate的时候增加属性compare_type为True
+Migrate(app=app, db=db,render_as_batch = True,compare_type = True) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</guid>
+      <description>#初始化初始化迁移文件
+python manage.py db init 将模型映射 添加到文件中
+python manage.py db migrate 最后 映射到数据库中：
+python manage.py db upgrade #manage.py 添加数据命令行 添加数据
+python manage.py create_user -u yunhai -e cao_cgq@163.com -p 1234 </description>
+    </item>
+    
+  </channel>
+</rss>

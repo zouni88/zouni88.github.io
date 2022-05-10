@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/linux/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/ldconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/ldconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/ubuntu/</guid>
+      <description>#键盘失灵1.安装软件后键盘鼠标失灵，需要安装xserver包 xserver-xorg-input-all 保证电脑能联网，或者通过ssh远程连接
+sudo apt install xserver-xorg-input-all </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
+      <description>修改官方源，改成阿里源
+# 先备份原sources.list 文件 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak # sed 命令替换域名 sudo sed -i &amp;#39;s/security.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/archive.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo apt update sudo apt-get upgrade //更新已安装的包到最新，这个是可选的 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <description>#定时任务 查看定时任务  crontab -l 编辑定时任务  crontab -e 每周五23点定时关机
+0 23 * * 5 /usr/sbin/shutdown now 命令必须是完整路径：/usr/sbin/shutdown
+查看命令路径：which</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>命令 描述 注解     ls -h 比如:20M 文件大小以给人看的格式显示    crontab 定时任务    cat filename 查看文件    tail filename -n linenum 查看文件指定多少行    reboot 普通重启    shutdown -r now 立即重启(root)    shutdown -r 10 10分钟后重启    shutdown -r 20:00 8点重启    halt 立刻关机    poweroff 立刻关机    shutdown -h now 立刻关机(root)    shutdown -h 10 10分钟后关机    ps 查找进程    sudo apt-get remove 删除软件 不会删除配置文件   sudo apt-get purge mysql 彻底删除     #文件   命令 描述 注解     scp 上传下载文件    scp root@host:/root/log.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</guid>
+      <description>#进程相关# 查找进程ps auxf |grep uwsgi# 查看当前进程pstree -ap|grep gunicorn# 杀死 进程kill -9 544 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</guid>
+      <description>内核版本
+uname -a 所有版本信息
+lsb_release -a centos 查看版本
+cat /etc/redhat-release 结果
+CentOS Linux release 8.1.1911 (Core) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/</guid>
+      <description>#查看硬盘使用情况df -h #查看大文件du -h -x --max-depth=1 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
+      <description>netstat -apn|grep 8888</description>
+    </item>
+    
+  </channel>
+</rss>

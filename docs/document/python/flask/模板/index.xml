@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/python/flask/%E6%A8%A1%E6%9D%BF/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/python/flask/%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</guid>
+      <description>蓝图自定义模板文件夹template_folder注意点：
+如果app/templates中有index.html
+并且app/cms/templates也有index.html文件
+渲染模板会优先查找app/templates目录下。
+蓝图如果要正常使用，创建规则必须是app/cms/templates/cms/index.html，渲染render_template(&#39;cms/index.html&#39;) 完整例子：
+bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, url_prefix=&amp;#39;/cms&amp;#39;, template_folder=&amp;#39;templates&amp;#39;)  @bp.route(&amp;#39;/cms/index&amp;#39;) def index():  return render_template(&amp;#39;cms/index.html&amp;#39;） flask模板查找规则是优先项目根目录``</description>
+    </item>
+    
+  </channel>
+</rss>

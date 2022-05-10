@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/mac/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/mac/brew%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/mac/brew%E9%94%99%E8%AF%AF/</guid>
+      <description>brew异常
+yunhai@bogon Downloads % brew Traceback (most recent call last):  11: from /usr/local/Homebrew/Library/Homebrew/brew.rb:13:in `&amp;lt;main&amp;gt;&amp;#39; 10: from /usr/local/Homebrew/Library/Homebrew/brew.rb:13:in `require_relative&amp;#39;  9: from /usr/local/Homebrew/Library/Homebrew/global.rb:26:in `&amp;lt;top (required)&amp;gt;&amp;#39; 8: from /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require&amp;#39;  7: from /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require&amp;#39; 6: from /usr/local/Homebrew/Library/Homebrew/os.rb:1:in `&amp;lt;top (required)&amp;gt;&amp;#39;  5: from /usr/local/Homebrew/Library/Homebrew/os.rb:19:in `&amp;lt;module:OS&amp;gt;&amp;#39; 4: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:52:in `prerelease?&amp;#39;  3: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:18:in `version&amp;#39; 2: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:18:in `new&amp;#39;  1: from /usr/local/Homebrew/Library/Homebrew/os/mac/version.rb:29:in `initialize&amp;#39; /usr/local/Homebrew/Library/Homebrew/version.rb:369:in `initialize&amp;#39;: Version value must be a string; got a NilClass () (TypeError) 重置试试：</description>
+    </item>
+    
+  </channel>
+</rss>

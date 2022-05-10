@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/database/postgresql/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/database/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>容器运行 postgres
+docker run -itd --name=pg -p 5432:5432 -v postgres-volume:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 postgres </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>#表字段使用geography报错因为要使用地理坐标来表示附近用户，需要空间坐标转换
+ type &amp;ldquo;geography&amp;rdquo; does not exist 解决方法： CREATE EXTENSION Postgis;
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/postgresql/%E6%97%B6%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/postgresql/%E6%97%B6%E5%8C%BA/</guid>
+      <description>#时区设置  第一种方法   如果不好使，再换第二种方法：
+  serverTimezone Asia/Shanghai </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/database/postgresql/%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/database/postgresql/%E8%A6%81%E7%82%B9/</guid>
+      <description>相当与mysql的show databases;  select datname from pg_database; 相当于mysql的show tables;  SELECT table_name FROM information_schema.tables WHERE table_schema = &amp;#39;public&amp;#39;; public 是默认的schema的名字
+相当与mysql的describe table_name;  SELECT column_name FROM information_schema.columns WHERE table_name =&amp;#39;table_name&amp;#39;; &amp;rsquo;table_name&amp;rsquo;是要查询的表的名字</description>
+    </item>
+    
+  </channel>
+</rss>
