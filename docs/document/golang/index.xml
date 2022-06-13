@@ -74,7 +74,10 @@ proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/golang/vscode%E9%85%8D%E7%BD%AE/</guid>
-      <description>#go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置
+      <description>#安装#1. 配置好环境变量：GOPATH GOROOTGOROOT: GO安装目录
+GOPATH: 项目目录 src pkg bin目录
+#2. 安装go 开发工具集ctrl + shift + P 打开命令面板，选择 GO:Install/Update Tools
+#调试#go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置
  {  &amp;#34;go.inferGopath&amp;#34;: false,  &amp;#34;go.testFlags&amp;#34;: [&amp;#34;-v&amp;#34;], //增加这一行 } 再运行就正常了。</description>
     </item>
     

@@ -79,11 +79,13 @@ android studio : 安装flutter插件
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/flutter/1.setup/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>#Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip;卡在 Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; 不动
+      <description>#1. Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip;===============================================
+卡在 Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; 不动
 解决方案：
  检查 ./gradle 是否下载成功 检查 gradle 默认代理是否正常
-gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #flutter doctor 异常android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
-#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现</description>
+gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #2. flutter doctor 异常==================================== android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
+#3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+#4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies flutter run &amp;ndash;no-sound-null-safety</description>
     </item>
     
   </channel>

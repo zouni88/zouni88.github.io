@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="#Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;卡在 Running Gradle task &lsquo;assembleDebug&rsquo;&hellip; 不动
+<meta name="description" content="#1. Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;===============================================
+卡在 Running Gradle task &lsquo;assembleDebug&rsquo;&hellip; 不动
 解决方案：
  检查 ./gradle 是否下载成功 检查 gradle 默认代理是否正常
-gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #flutter doctor 异常android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
-#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现">
+gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #2. flutter doctor 异常==================================== android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
+#3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+#4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies flutter run &ndash;no-sound-null-safety">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
-<meta property="og:description" content="#Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;卡在 Running Gradle task &lsquo;assembleDebug&rsquo;&hellip; 不动
+<meta property="og:description" content="#1. Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;===============================================
+卡在 Running Gradle task &lsquo;assembleDebug&rsquo;&hellip; 不动
 解决方案：
  检查 ./gradle 是否下载成功 检查 gradle 默认代理是否正常
-gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #flutter doctor 异常android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
-#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现" />
+gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #2. flutter doctor 异常==================================== android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
+#3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+#4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies flutter run &ndash;no-sound-null-safety" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zouni.vip/docs/document/flutter/1.setup/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="docs" />
 
@@ -24,7 +28,7 @@ gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行�
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.30862739fba3effd8be1c48ca04ee4fcaf5db5b55e0749540edd0ff37ee85296.css" integrity="sha256-MIYnOfuj7/2L4cSMoE7k/K9dtbVeB0lUDt0P837oUpY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.95c5988aa49f69e03e35faf9825598c02b5d9179c07df52936cdef846094aa83.js" integrity="sha256-lcWYiqSfaeA&#43;Nfr5glWYwCtdkXnAffUpNs3vhGCUqoM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d97eea7450854f1e20e222d1e45d1567e1fc3372f3714a4fb5eadba976448cdf.js" integrity="sha256-2X7qdFCFTx4g4iLR5F0VZ&#43;H8M3LzcUpPterbqXZEjN8=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -2071,6 +2075,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/linux/ubuntu/" class="">Ubuntu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/" class="">修改固定 IP</a>
   
 
         </li>
@@ -4270,6 +4287,32 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/document/blockchain/1.remix/" class="">1.Remix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/blockchain/solidity/" class="">Solidity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/README/" class="">Readme</a>
   
 
@@ -4351,9 +4394,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#running-gradle-task-assembledebug">Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</a></li>
-    <li><a href="#flutter-doctor-异常">flutter doctor 异常</a></li>
-    <li><a href="#caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</a></li>
+    <li>
+      <ul>
+        <li><a href="#1-running-gradle-task-assembledebug">1. Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</a></li>
+        <li><a href="#2-flutter-doctor-异常">2. flutter doctor 异常</a></li>
+        <li><a href="#3-caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</a></li>
+        <li><a href="#4-非空检查相关异常error-cannot-run-with-sound-null-safety-because-the-following-dependencies">4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -4366,7 +4414,8 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="running-gradle-task-assembledebug"><a class="anchor" href="#running-gradle-task-assembledebug">#</a>Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</h1>
+  <article class="markdown"><h2 id="1-running-gradle-task-assembledebug"><a class="anchor" href="#1-running-gradle-task-assembledebug">#</a>1. Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</h2>
+<p>===============================================</p>
 <p>卡在 Running Gradle task &lsquo;assembleDebug&rsquo;&hellip; 不动</p>
 <p>解决方案：</p>
 <ol>
@@ -4380,12 +4429,17 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># systemProp.http.proxyPort=50030</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># systemProp.https.proxyHost=127.0.0.1</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># systemProp.https.proxyPort=50030</span>
-</span></span></code></pre></div><h1 id="flutter-doctor-异常"><a class="anchor" href="#flutter-doctor-%e5%bc%82%e5%b8%b8">#</a>flutter doctor 异常</h1>
-<p>android sdk platforms 下载失败
+</span></span></code></pre></div><h2 id="2-flutter-doctor-异常"><a class="anchor" href="#2-flutter-doctor-%e5%bc%82%e5%b8%b8">#</a>2. flutter doctor 异常</h2>
+<p>====================================
+android sdk platforms 下载失败
 检查网络代理，是否能正常访问 
   <a href="https://dl.google.com">https://dl.google.com</a></p>
-<h1 id="caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin"><a class="anchor" href="#caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">#</a>Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</h1>
+<h2 id="3-caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin"><a class="anchor" href="#3-caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">#</a>3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</h2>
 <p>这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现</p>
+<h2 id="4-非空检查相关异常error-cannot-run-with-sound-null-safety-because-the-following-dependencies"><a class="anchor" href="#4-%e9%9d%9e%e7%a9%ba%e6%a3%80%e6%9f%a5%e7%9b%b8%e5%85%b3%e5%bc%82%e5%b8%b8error-cannot-run-with-sound-null-safety-because-the-following-dependencies">#</a>4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies</h2>
+<blockquote>
+<p>flutter run &ndash;no-sound-null-safety</p>
+</blockquote>
 </article>
  
       
@@ -4454,9 +4508,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#running-gradle-task-assembledebug">Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</a></li>
-    <li><a href="#flutter-doctor-异常">flutter doctor 异常</a></li>
-    <li><a href="#caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</a></li>
+    <li>
+      <ul>
+        <li><a href="#1-running-gradle-task-assembledebug">1. Running Gradle task &lsquo;assembleDebug&rsquo;&hellip;</a></li>
+        <li><a href="#2-flutter-doctor-异常">2. flutter doctor 异常</a></li>
+        <li><a href="#3-caused-by-orggradleapiinternalpluginspluginapplicationexception-failed-to-apply-plugin-class-flutterplugin">3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.</a></li>
+        <li><a href="#4-非空检查相关异常error-cannot-run-with-sound-null-safety-because-the-following-dependencies">4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

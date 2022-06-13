@@ -117,7 +117,7 @@ android:layout_height=&amp;#34;wrap_content&amp;#34;搭配：app:layout_constra
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/android/style%E6%A0%B7%E5%BC%8F/</guid>
-      <description> colorPrimary 应用的主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色 colorPrimaryDark 应用的主要暗色调，statusBarColor默认使用该颜色 statusBarColor 状态栏颜色，默认使用colorPrimaryDark windowBackground 窗口背景颜色 navigationBarColor 底部栏颜色 colorForeground 应用的前景色，ListView的分割线，switch滑动区默认使用该颜色 colorBackground 应用的背景色，popMenu的背景默认使用该颜色 colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 colorControlNormal CheckBox，RadioButton，SwitchCompat等默认状态的颜色。 colorControlHighlight 控件按压时的色调 colorControlActivated 控件选中时的颜色，默认使用colorAccent colorButtonNormal 默认按钮的背景颜色 editTextColor：默认EditView输入框字体的颜色。 textColor Button，textView的文字颜色 textColorPrimaryDisableOnly RadioButton checkbox等控件的文字 textColorPrimary 应用的主要文字颜色，actionBar的标题文字默认使用该颜色 colorSwitchThumbNormal: switch thumbs 默认状态的颜色. (switch off)  </description>
+      <description> colorPrimary 应用的主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色 colorPrimaryDark 应用的主要暗色调，statusBarColor默认使用该颜色 statusBarColor 状态栏颜色，默认使用colorPrimaryDark windowBackground 窗口背景颜色 navigationBarColor 底部栏颜色 colorForeground 应用的前景色，ListView的分割线，switch滑动区默认使用该颜色 colorBackground 应用的背景色，popMenu的背景默认使用该颜色 colorAccent CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 colorControlNormal CheckBox，RadioButton，SwitchCompat等默认状态的颜色。 colorControlHighlight 控件按压时的色调 colorControlActivated 控件选中时的颜色，默认使用colorAccent colorButtonNormal 默认按钮的背景颜色 editTextColor：默认EditView输入框字体的颜色。 textColor Button，textView的文字颜色 textColorPrimaryDisableOnly RadioButton checkbox等控件的文字 textColorPrimary 应用的主要文字颜色，actionBar的标题文字默认使用该颜色 colorSwitchThumbNormal: switch thumbs 默认状态的颜色. (switch off)  #全局标题栏 fitsSystemWindows 生效前提：当前页面没有标题栏，并且状态栏或者底部导航栏透明 fitsSystemWindows = true，表示内容区不延伸到状态栏或底部导航栏 fitsSystemWindows = false，表示内容区延伸到状态栏或底部导航栏  </description>
     </item>
     
     <item>
@@ -188,6 +188,25 @@ gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行�
       <guid>https://zouni.vip/docs/document/atom/%E5%BC%82%E5%B8%B8/</guid>
       <description>The package spell-check cannot load the system dictionary for zh-CN. See the settings for ways of changing the languages used, resolving missing dictionaries, or hiding this warning.
  Use Locales 前面的勾选去掉 下面添加 en-US  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/1.remix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/1.remix/</guid>
+      <description>#智能合约 编辑器 remix-ide 在线编辑器，对网络有要求，在线地址   https://remix.ethereum.org/
+ 本地运行,docker down镜像  docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/solidity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/solidity/</guid>
+      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;    function setTT(uint8 i) public {   tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  }  } </description>
     </item>
     
     <item>
@@ -672,11 +691,13 @@ android studio : 安装flutter插件
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/flutter/1.setup/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>#Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip;卡在 Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; 不动
+      <description>#1. Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip;===============================================
+卡在 Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; 不动
 解决方案：
  检查 ./gradle 是否下载成功 检查 gradle 默认代理是否正常
-gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #flutter doctor 异常android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
-#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现</description>
+gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可：  # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030 #2. flutter doctor 异常==================================== android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com
+#3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+#4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies flutter run &amp;ndash;no-sound-null-safety</description>
     </item>
     
     <item>
@@ -1163,7 +1184,10 @@ proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/golang/vscode%E9%85%8D%E7%BD%AE/</guid>
-      <description>#go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置
+      <description>#安装#1. 配置好环境变量：GOPATH GOROOTGOROOT: GO安装目录
+GOPATH: 项目目录 src pkg bin目录
+#2. 安装go 开发工具集ctrl + shift + P 打开命令面板，选择 GO:Install/Update Tools
+#调试#go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置
  {  &amp;#34;go.inferGopath&amp;#34;: false,  &amp;#34;go.testFlags&amp;#34;: [&amp;#34;-v&amp;#34;], //增加这一行 } 再运行就正常了。</description>
     </item>
     
@@ -1249,6 +1273,17 @@ service vsftpd restart
       <guid>https://zouni.vip/docs/document/linux/ubuntu/</guid>
       <description>#键盘失灵1.安装软件后键盘鼠标失灵，需要安装xserver包 xserver-xorg-input-all 保证电脑能联网，或者通过ssh远程连接
 sudo apt install xserver-xorg-input-all </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</guid>
+      <description>#给系统设置固定IP定位到目录：
+cd /etc/sysconfig/network-scripts  ifcfg-em1 ifdown-eth ifdown-ppp ifup ifup-ipv6 ifup-routes init.ipv6-global ifcfg-em1.bak ifdown-ib ifdown-routes ifup-aliases ifup-isdn ifup-sit network-functions ifcfg-em2 ifdown-ippp ifdown-sit ifup-bnep ifup-plip ifup-Team network-functions-ipv6 ifcfg-lo ifdown-ipv6 ifdown-Team ifup-eth ifup-plusb ifup-TeamPort ifdown ifdown-isdn ifdown-TeamPort ifup-ib ifup-post ifup-tunnel ifdown-bnep ifdown-post ifdown-tunnel ifup-ippp ifup-ppp ifup-wireless vi 编辑 ifcfg-em1文件， 这个文件是对应网卡的脚本内容，直接修改：增加如下几项，包括IP地址，网关等等
+IPADDR=&amp;#34;192.168.2.6&amp;#34; NETMASK=&amp;#34;255.255.255.0&amp;#34; GATEWAY=&amp;#34;192.168.1.1&amp;#34; NETWORK=&amp;#34;192.168.1.0&amp;#34; DNS1=&amp;#34;192.168.1.1&amp;#34; #修改完成后，重启networkservice network restart ending&amp;hellip;</description>
     </item>
     
     <item>
