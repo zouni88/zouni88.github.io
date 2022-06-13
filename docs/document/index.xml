@@ -7,25 +7,6 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/1.remix/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/1.remix/</guid>
-      <description>#智能合约 编辑器 remix-ide 在线编辑器，对网络有要求，在线地址   https://remix.ethereum.org/
- 本地运行,docker down镜像  docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/2.solidity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/2.solidity/</guid>
-      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;    function setTT(uint8 i) public {   tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  }  } </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://zouni.vip/docs/document/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
