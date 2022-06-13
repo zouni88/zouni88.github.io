@@ -202,10 +202,10 @@ gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行�
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/solidity/</link>
+      <link>https://zouni.vip/docs/document/blockchain/2.solidity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zouni.vip/docs/document/blockchain/solidity/</guid>
+      <guid>https://zouni.vip/docs/document/blockchain/2.solidity/</guid>
       <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;    function setTT(uint8 i) public {   tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  }  } </description>
     </item>
     
