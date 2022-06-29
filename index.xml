@@ -143,6 +143,15 @@ dx --dex --output=object.jar temp.jar  </description>
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/android/%E7%AD%BE%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/%E7%AD%BE%E5%90%8D/</guid>
+      <description>#获取APP签名信息public static String getSingInfo(Context context) {  try {  PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES);  Signature[] signs = packageInfo.signatures;  Signature sign = signs[0];  byte[] signByteArray = sign.toByteArray();   return md5(signByteArray);  } catch (Exception e) {  e.printStackTrace();  }  return null; }  public static String md5(byte[] data){  if(data == null || data.length == 0){  return null;  }  StringBuffer hexString = new StringBuffer();  try {  MessageDigest md = MessageDigest.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/android/%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%BA%94%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -192,21 +201,187 @@ gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行�
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/1.remix/</link>
+      <link>https://zouni.vip/docs/document/blockchain/1.solidity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zouni.vip/docs/document/blockchain/1.remix/</guid>
-      <description>#智能合约 编辑器 remix-ide 在线编辑器，对网络有要求，在线地址   https://remix.ethereum.org/
- 本地运行,docker down镜像  docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了</description>
+      <guid>https://zouni.vip/docs/document/blockchain/1.solidity/</guid>
+      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;   function setTT(uint8 i) public {  tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  } } #关键字 contract constructor public private external internal view pure payable  #数据类型 uint256: 地址长度  #修饰符 变量修饰符: public or private 函数修饰符  view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西    合约调用者地址 address owner = msg.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/2.solidity/</link>
+      <link>https://zouni.vip/docs/document/blockchain/2.remix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zouni.vip/docs/document/blockchain/2.solidity/</guid>
-      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;    function setTT(uint8 i) public {   tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  }  } </description>
+      <guid>https://zouni.vip/docs/document/blockchain/2.remix/</guid>
+      <description>#智能合约 编辑器 remix-ide  在线编辑，对网络有要求，在线地址
+ https://remix.ethereum.org/
+   离线编辑,docker down镜像
+docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest  or docker pull remixproject/remix-ide:remix_live docker run -p 8080:80 remixproject/remix-ide:remix_live 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了
+  remix-project 连接本地文件夹：
+   安装remixd  npm install -g @remix-project/remixd
+  连接  remixd -s d:/workspace -u http://localhost:8080
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>#智能合约 编辑器 remix-ide  在线编辑，对网络有要求，在线地址
+ https://remix.ethereum.org/
+   离线编辑,docker down镜像
+docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了
+  remix-project 连接本地文件夹：
+    安装remixd
+ npm install -g @remix-project/remixd
+   连接
+ remixd -s d:/workspace -u http://localhost:8080 address public owner;
+ function getOwner() public { owner = msg.sender; }
+  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/3.geth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/3.geth/</guid>
+      <description>#启动参数说明示例：
+ geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
+ #常用命令   命令 说明     removedb asdf   account Manage accounts   console 控制台命令行    #启动参数说明   参数 说明     &amp;ndash;identity 节点身份标识   –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</guid>
+      <description>#clef 以太坊账户管理#创建账户 clef newaccount &amp;ndash;keystore geth-tutorial/keystore
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</guid>
+      <description>启动rpc接口
+ geth &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;rpc &amp;ndash;rpcport 7545 &amp;ndash;rpcapi &amp;ldquo;db,eth,net,web3&amp;rdquo;
+ --rpc 已弃用
+geth --ropsten --syncmode snap --identity &amp;#34;smallc&amp;#34; --http --http.port 7545 --http.api &amp;#34;db,eth,net,web3,personal&amp;#34; --datadir &amp;#34;ropsten&amp;#34; #fullgeth &amp;ndash;syncmode &amp;ldquo;full&amp;rdquo;
+#fastgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
+#lightgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
+#snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)geth &amp;ndash;syncmode &amp;ldquo;snap&amp;rdquo;
+#查看账户 geth account list
+ #创建账户 geth account new
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</guid>
+      <description>#启动参数说明示例：
+ geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
+    参数 说明     –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.addr 把这个值写成“0.0.0.0”表示允许远程访问，否则只能本地访问。这个参数以前是rpcaddr。   –port 表示网络监听端口，默认值是30303。   –http.corsdomain 允许跨域请求的域列表，这里指定为“*”。这个参数以前是rpccorsdomain   –http.api 允许远程调用的API，用逗号间隔，凡是列出来的，在远程调用时均可以使用。   –unlock 表示被解锁账户的编号，0表示node数据文件中第一个被创建的账户，这个账户被解锁才能使用该账户进行交易。   –password 表示解锁账户时的账户密码，就是在创建账户时输入的密码。   –allow-insecure-unlock 允许使用不安全的账户解锁   console 表示打开Geth JavaScript console   &amp;ndash;syncmode 同步模式 full,fast,light,snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)    #API调用说明#查看账户 geth account list</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</guid>
+      <description>#创建私链 创建账户   geth
+  初始化   geth &amp;ndash;datadir smallc init genesis.json
+ 启动   geth &amp;ndash;identity smallchain &amp;ndash;http &amp;ndash;http.api net,web3,eth,personal &amp;ndash;datadir smallchain &amp;ndash;mine &amp;ndash;miner.threads 0 &amp;ndash;http.corsdomain &amp;ldquo;*&amp;rdquo; &amp;ndash;http.addr 0.0.0.0 console &amp;ndash;networkid 666
+  miner.threads 线程数量,默认是0  参数说明
+ identity //唯一标识，在众多节点中快速找到当前节点 networkid // 当前节点网络id
+ #genesis.json{  //64位随机数，用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求  //直接用这个也可以  &amp;#34;nonce&amp;#34;:&amp;#34;0x0000000000000042&amp;#34;,  //与nonce 共同用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求  &amp;#34;mixhash&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  //挖矿难度，你可以随意控制，这里设置的难度比较小  &amp;#34;difficulty&amp;#34;: &amp;#34;0x4000&amp;#34;,  //用来提前设置帐号的以太币数量，例：  //&amp;#34;alloc&amp;#34;: {  //“0x0000000000000000000000000000000000000001”:{&amp;#34;balance&amp;#34;:&amp;#34;10000000&amp;#34;},  //&amp;#34;0x0000000000000000000000000000000000000002&amp;#34;:{&amp;#34;balance&amp;#34;:&amp;#34;20000000&amp;#34;}  //},  &amp;#34;alloc&amp;#34;: {},  //挖矿的账户，默认钱包地址，这里因为没有地址，所有全是0  //后面运行geth 后创建新账户时，如果geth 发现没有地址，会默认将第一个账户地址设置为矿工帐号  &amp;#34;coinbase&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000&amp;#34;,  //创世块的时间戳  &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34;,  //上一个区块的Hash值，因为是创世块，前面没有，所以是0  &amp;#34;parentHash&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  //附加信息，随便填文本或不填也行  &amp;#34;extraData&amp;#34;: &amp;#34;0x00000000&amp;#34;,  //gas 最高限制，以太坊运行交易，合约等消耗的gas最高限制，这里设置为最高  &amp;#34;gaslimit&amp;#34;:&amp;#34;0xffffffff&amp;#34;,  &amp;#34;config&amp;#34;: {  &amp;#34;chainId&amp;#34;: 666, //链ID 随便起 和主链、测试连不同就OK，公链ID为1  &amp;#34;homesteadBlock&amp;#34;: 0,  &amp;#34;eip150Block&amp;#34;: 0,  &amp;#34;eip155Block&amp;#34;: 0,  &amp;#34;eip158Block&amp;#34;: 0,  &amp;#34;byzantiumBlock&amp;#34;: 0,  &amp;#34;constantinopleBlock&amp;#34;: 0,  &amp;#34;petersburgBlock&amp;#34;: 0,  &amp;#34;istanbulBlock&amp;#34;: 0  }, } #完整例子{  &amp;#34;config&amp;#34;: {  &amp;#34;chainId&amp;#34;: 666,  &amp;#34;homesteadBlock&amp;#34;: 0,  &amp;#34;eip150Block&amp;#34;: 0,  &amp;#34;eip155Block&amp;#34;: 0,  &amp;#34;eip158Block&amp;#34;: 0,  &amp;#34;byzantiumBlock&amp;#34;: 0,  &amp;#34;constantinopleBlock&amp;#34;: 0,  &amp;#34;petersburgBlock&amp;#34;: 0,  &amp;#34;istanbulBlock&amp;#34;: 0  },  &amp;#34;alloc&amp;#34;: {  &amp;#34;aee29ddd94a36f6d3415310046863929a59e30be&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;100&amp;#34; }  },  &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;,  &amp;#34;difficulty&amp;#34;: &amp;#34;0x2000&amp;#34;,  &amp;#34;extraData&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;gasLimit&amp;#34;: &amp;#34;0x2fefd8&amp;#34;,  &amp;#34;nonce&amp;#34;: &amp;#34;0x0000000000000042&amp;#34;,  &amp;#34;mixhash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34; } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</guid>
+      <description>#创建私链 定位到数据目录   cd D:\workproject\blockchain\geth_data
+ 初始化   geth &amp;ndash;datadir smallchain init genesis.json
+   //genesis.json {  &amp;#34;config&amp;#34;: {  &amp;#34;chainId&amp;#34;: 77 //链ID 随便起 和主链、测试连不同就OK  },  &amp;#34;alloc&amp;#34;: {  &amp;#34;0xc7c4f9a0Cd0a3e45348c5ed8c3909C69aA9FA8fC&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;10000000000000000000000&amp;#34; } //创世块分配的账户及余额  },  &amp;#34;difficulty&amp;#34;: &amp;#34;9000&amp;#34;, //挖矿难度  &amp;#34;gasLimit&amp;#34;: &amp;#34;2100000&amp;#34; //汽油费 }   {  &amp;#34;config&amp;#34;: {  &amp;#34;chainId&amp;#34;: 123,  &amp;#34;homesteadBlock&amp;#34;: 0,  &amp;#34;eip150Block&amp;#34;: 0,  &amp;#34;eip155Block&amp;#34;: 0,  &amp;#34;eip158Block&amp;#34;: 0,  &amp;#34;byzantiumBlock&amp;#34;: 0,  &amp;#34;constantinopleBlock&amp;#34;: 0,  &amp;#34;petersburgBlock&amp;#34;: 0,  &amp;#34;istanbulBlock&amp;#34;: 0  },  &amp;#34;alloc&amp;#34;: {},  &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;,  &amp;#34;difficulty&amp;#34;: &amp;#34;0x2000&amp;#34;,  &amp;#34;extraData&amp;#34;: &amp;#34;&amp;#34;,  &amp;#34;gasLimit&amp;#34;: &amp;#34;0x2fefd8&amp;#34;,  &amp;#34;nonce&amp;#34;: &amp;#34;0x0000000000000042&amp;#34;,  &amp;#34;mixhash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;,  &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34; } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</guid>
+      <description>#以太坊转账， 账户 &amp;ndash;&amp;gt; 账户 x 账户 &amp;ndash;&amp;gt; 合约 √ 合约 &amp;ndash;&amp;gt; 账户 √
+ 1、打开控制台
+F:\Geth&amp;gt;geth &amp;ndash;datadir &amp;ldquo;data&amp;rdquo; console
+2、查看目前所拥有的账户列表
+ eth.accounts
+ [&amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;]
+3、新建账户
+ personal.newAccount(&amp;lsquo;123456&amp;rsquo;)
+ &amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8efed9a8240&amp;rdquo;
+4、查看目前所拥有的账户列表
+ eth.accounts
+ [&amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;, &amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8
+efed9a8240&amp;rdquo;]
+5、查看账户余额
+ eth.getBalance(eth.accounts[0])
+ 665000000000000000000
+ eth.getBalance(eth.accounts[1])
+ 0
+6、定义变量
+ var acc1=eth.accounts[0]
+ undefined
+ acc1
+ &amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;
+ var acc2=eth.accounts[1]
+ undefined
+ acc2
+ &amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8efed9a8240&amp;rdquo;
+7、转账
+ eth.sendTransaction({from: acc1 , to: acc2, value: web3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/6.abigen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/6.abigen/</guid>
+      <description>#智能合约转go代码abigen &amp;ndash;abi xx.abi &amp;ndash;pkg packageName &amp;ndash;type structName &amp;ndash;out xx.go
+ .abi 文件在remix 部署后就能拿到 .pkg 指定文件输出包名 type 指定合约结构体名称 out 指定输出go文件名称  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</guid>
+      <description>#智能合约的运行流程 编写智能合约代码，并编译成字节码。 部署智能合约。过程是向“0”地址发送一笔带有智能合约字节码数据的交易，这个交易会生成该智能合约的地址，并将字节码存储在该地址下的状态树中。 执行智能合约（调用智能合约函数）。向智能合约地址发送一个交易，该交易携带被调用的智能合约函数信息及调用参数，携带的信息遵循ABI编码协议。 智能合约地址收到这样的调用合约函数的交易，首先会解码数据，根据结果查找到对应函数的入口，再传入参数执行该函数。 执行函数的过程是状态转换的过程，执行完成后会扣除调用者相应的Gas花费。 状态转换的过程会全网同步并被再次执行验证，确保执行结果一致，这样通过验证后的交易会记录到区块中，同时更新状态数据。  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>#官网下载geth 客户端geth 是由以太坊官方提供的 go 语言版本的客户端程序
+#安装gcc windows下安装 mingw-w64#安装golang开发环境</description>
     </item>
     
     <item>
@@ -784,8 +959,8 @@ dst: 这里相当于画布，用来绘制src
       
       <guid>https://zouni.vip/docs/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
       <description>#将本地项目提交到远程仓库需要以下操作：#1. 本地提交git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; #2. 添加目标仓库地址git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git #3. 同步到远程仓库，先 pull 后 push//允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 #修改远程仓库地址3种方式#1. 直接修改git remote set-url origin [url] #2. 先删除后修改 删除
- git remote rm origin  重新添加远程地址
- git remote add origin [url] #3. 直接修改项目目录下.git 文件夹下config配置文件[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[remote &amp;#34;origin&amp;#34;]url = git@gitee.</description>
+ git remote rm origin #查看 remote url git remote -v
+ #3. 直接修改项目目录下.git 文件夹下config配置文件[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[remote &amp;#34;origin&amp;#34;]url = git@gitee.</description>
     </item>
     
     <item>
@@ -911,6 +1086,15 @@ func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Stu
       <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</guid>
       <description>#闭包func TestCloser(t *testing.T) { 	x := func() func() { 	var i = 1 	return func() { 	i++ 	log.Println(&amp;#34;i = &amp;#34;, i) 	} 	}() 	x() 	x() } 输出结果：
 === RUN TestCloser2022/04/10 21:42:09 22022/04/10 21:42:09 3--- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</guid>
+      <description>//GenerateKey函数使用随机数据生成器random生成一对具有指定字位数的RSA密钥 	//Reader是一个全局、共享的密码用强随机数生成器 	var bits = 2048 	priKey, err := rsa.GenerateKey(rand.Reader, bits) 	if err != nil { 	panic(err) 	} 	x509Key := x509.MarshalPKCS1PrivateKey(priKey) 	priKeyFile, err := os.Create(&amp;#34;pk.pem&amp;#34;) 	if err != nil { 	panic(err) 	} 	defer priKeyFile.Close() 	priKeyBlock := pem.Block{Type: &amp;#34;RSA Private Key&amp;#34;, Bytes: x509Key}  	pem.Encode(priKeyFile, &amp;amp;priKeyBlock)  	x509PubKey := x509.MarshalPKCS1PublicKey(&amp;amp;priKey.PublicKey)  	pubKeyFile, err := os.Create(&amp;#34;pubKey.pem&amp;#34;) 	if err !</description>
     </item>
     
     <item>
@@ -1193,19 +1377,10 @@ GOPATH: 项目目录 src pkg bin目录
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</link>
+      <link>https://zouni.vip/docs/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</guid>
-      <description>https://github.com/idealvin/hugo-book</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/hugo/init/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/hugo/init/</guid>
+      <guid>https://zouni.vip/docs/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>#初始化  下载hugo已发布版本
   配置环境变量：
 2.1. 创建 bin 文件夹，将hugo.exe 放在bin文件夹下；
@@ -1219,6 +1394,27 @@ GOPATH: 项目目录 src pkg bin目录
  hugo //hugo 命令构建站点 build完后的站点文件夹下 public 目录
    #设置主题 cd themes git clone git@github.com:setsevireon/photophobia.git git submodule add https://github.com/alex-shpak/hugo-book themes/book
  #启动本地调试 hugo server &amp;ndash;theme=photophobia &amp;ndash;buildDrafts &amp;ndash;watch</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>#搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式#1. github pages 静态网页托管服务这里有官方说明 分分钟搭建起来
+ 首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：zouni88.github.io 内容提交  # 仓库 down 到本地git clone git@github.com:Yourname/Yourname.github.io.git# 切换分支到master，默认应该是maingit checkout -b master# 查看分支git branchmain* master# 添加 index.html文件,并编辑touch index.html# 提交git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io  #2. gitee pages 静态网页托管服务使用方法和github pages 类似, 官方帮助文档
+#3. gitbook,买个域名先这个就是要根据自己的网络情况了，不是每次都能顺利打开。
+#4. 如果有能力就自己搭建服务或购买云服务</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</guid>
+      <description>https://github.com/idealvin/hugo-book</description>
     </item>
     
     <item>
@@ -2416,6 +2612,23 @@ Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protoc
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/web/nodejs/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/web/nodejs/npm/</guid>
+      <description>#查看版本 npm -v
+ #更新 npm install -g npm
+ #指定版本更新 npm -g install npm@6.8.0
+ #清理 npm cache clean &amp;ndash;force
+ #查看当前使用的源 npm config get registry
+ #重置为官方源 npm config set registry https://registry.npmjs.org/q
+ #修改国内源# 阿里源升级http://npm.taobao.org =&amp;gt; http://npmmirror.comhttp://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com #1. 临时修改源 npm &amp;ndash;registry http://registry.npmmirror.com install express
+ #2. 永久修改 npm config set registry http://registry.npmmirror.com
+ #使用国内镜像，可以使用 cnpm 命令行,npm的定制版 npm install -g cnpm &amp;ndash;registry=https://registry.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2442,6 +2655,27 @@ gitbook -V</description>
       <guid>https://zouni.vip/docs/document/web/vue.js/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</guid>
       <description>vue 和jinjia2模板冲突：
  修改vue模板：  delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;] 修改jinjia2模板：  app.jinja_env.variable_start_string = &amp;#39;[[&amp;#39;app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/windows/mingw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/windows/mingw/</guid>
+      <description>#安装mingw-w64 官网
+https://www.mingw-w64.org/downloads/#sources 下载
+https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</guid>
+      <description>#vscode 不能直接复制粘贴文件，可以拖拽vscode 分为两个版本：user版本和System版本，user版本应该是不能拖拽的，system版本可以拖拽，官网下载system版本
+选择 Other downloads 选择System Installer 版本下载 </description>
     </item>
     
     <item>

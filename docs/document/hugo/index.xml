@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</link>
+      <link>https://zouni.vip/docs/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</guid>
-      <description>https://github.com/idealvin/hugo-book</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/hugo/init/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/hugo/init/</guid>
+      <guid>https://zouni.vip/docs/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>#初始化  下载hugo已发布版本
   配置环境变量：
 2.1. 创建 bin 文件夹，将hugo.exe 放在bin文件夹下；
@@ -33,6 +24,27 @@
  hugo //hugo 命令构建站点 build完后的站点文件夹下 public 目录
    #设置主题 cd themes git clone git@github.com:setsevireon/photophobia.git git submodule add https://github.com/alex-shpak/hugo-book themes/book
  #启动本地调试 hugo server &amp;ndash;theme=photophobia &amp;ndash;buildDrafts &amp;ndash;watch</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>#搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式#1. github pages 静态网页托管服务这里有官方说明 分分钟搭建起来
+ 首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：zouni88.github.io 内容提交  # 仓库 down 到本地git clone git@github.com:Yourname/Yourname.github.io.git# 切换分支到master，默认应该是maingit checkout -b master# 查看分支git branchmain* master# 添加 index.html文件,并编辑touch index.html# 提交git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io  #2. gitee pages 静态网页托管服务使用方法和github pages 类似, 官方帮助文档
+#3. gitbook,买个域名先这个就是要根据自己的网络情况了，不是每次都能顺利打开。
+#4. 如果有能力就自己搭建服务或购买云服务</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/hugo/book%E7%9A%AE%E8%82%A4/</guid>
+      <description>https://github.com/idealvin/hugo-book</description>
     </item>
     
   </channel>
