@@ -36,6 +36,15 @@
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/</guid>
+      <description>#打开第三方站点需要保留登录状态，webview需要接受cookie，按照官方提供的API CookieManager可以实现// 1. 在loadurl之前调用接受cookie方法 android.webkit.CookieManager cookieManager = android.webkit.CookieManager.getInstance(); cookieManager.setAcceptThi~rdPartyCookies(this,true); // 2. onPageFinished CookieManager.getInstance().flush(); </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/android/%E6%8F%92%E4%BB%B6%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

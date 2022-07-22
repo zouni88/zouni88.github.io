@@ -58,6 +58,15 @@ func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Stu
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/</guid>
+      <description>#context 基本使用func TestTimeout(t *testing.T) { 	ctx, cancel := context.WithCancel(context.Background()) 	//1. 传递上下文 	go RequestA(ctx)  	time.Sleep(time.Second * 4) 	//#cancel 1.取消 	cancel() 	time.Sleep(time.Second * 10) }  func RequestA(ctx context.Context) { 	// Do Something ... 	ctx = context.WithValue(ctx, &amp;#34;A&amp;#34;, &amp;#34;RequestA&amp;#34;) 	tic := time.NewTicker(time.Second * 2) 	// 2. 传递上下文 	go RequestB(ctx) 	for { 	select { 	case &amp;lt;-tic.C: 	//3.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -78,29 +87,11 @@ func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Stu
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</guid>
-      <description>go 关键字 就定义了一个协程</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</guid>
       <description>#fmt.printf#常规格式化 %v : 打印变量值 %T : 类型  #整型 %+d 带符号的整型，fmt.Printf(&amp;quot;%+d&amp;quot;, 255)输出+255 %q 打印单引号 %o 不带零的八进制 %#o 带零的八进制 %x 小写的十六进制 %X 大写的十六进制 %#x 带0x的十六进制 %U 打印Unicode字符 %#U 打印带字符的Unicode %b 打印整型的二进制  #float 浮点型#string 字符串</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</guid>
-      <description>dlv debug main.go </description>
     </item>
     
     <item>

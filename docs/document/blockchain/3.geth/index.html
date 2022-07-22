@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="#启动参数说明示例：
+<meta name="description" content="#启动geth客户端，geth 创建账户，转账示例：
  geth &ndash;ropsten &ndash;syncmode snap &ndash;identity &ldquo;smallc&rdquo; &ndash;http &ndash;http.port 7545 &ndash;http.api &ldquo;db,eth,net,web3,personal&rdquo; &ndash;datadir &ldquo;ropsten&rdquo;
  #常用命令   命令 说明     removedb asdf   account Manage accounts   console 控制台命令行    #启动参数说明   参数 说明     &ndash;identity 节点身份标识   –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
-<meta property="og:description" content="#启动参数说明示例：
+<meta property="og:description" content="#启动geth客户端，geth 创建账户，转账示例：
  geth &ndash;ropsten &ndash;syncmode snap &ndash;identity &ldquo;smallc&rdquo; &ndash;http &ndash;http.port 7545 &ndash;http.api &ldquo;db,eth,net,web3,personal&rdquo; &ndash;datadir &ldquo;ropsten&rdquo;
  #常用命令   命令 说明     removedb asdf   account Manage accounts   console 控制台命令行    #启动参数说明   参数 说明     &ndash;identity 节点身份标识   –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http." />
 <meta property="og:type" content="article" />
@@ -20,7 +20,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.30862739fba3effd8be1c48ca04ee4fcaf5db5b55e0749540edd0ff37ee85296.css" integrity="sha256-MIYnOfuj7/2L4cSMoE7k/K9dtbVeB0lUDt0P837oUpY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c438eae4cf416504ee55e23f914ec9f716627d4944c998af9849d3060ea1d0a9.js" integrity="sha256-xDjq5M9BZQTuVeI/kU7J9xZifUlEyZivmEnTBg6h0Kk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.05346a47e6df90931867566bd872a989fd1b562341c406638168003fb5628900.js" integrity="sha256-BTRqR&#43;bfkJMYZ1Zr2HKpif0bViNBxAZjgWgAP7ViiQA=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -28,6 +28,9 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
+
+
+
 </head>
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
@@ -295,6 +298,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/" class="">Webview接受cookie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/android/%E6%8F%92%E4%BB%B6%E5%8C%96/" class="">插件化</a>
   
 
@@ -495,32 +511,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/" class="">3.Geth命令</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/" class="">3.Geth命令解释</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/docs/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/" class="">4.Geth配置</a>
   
 
@@ -574,6 +564,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="">智能合约运行流程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/" class="">本地环境启动</a>
   
 
         </li>
@@ -1173,6 +1176,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/embedded/%E5%90%84%E7%A7%8D%E7%94%B5%E5%B9%B3%E6%A0%87%E5%87%86/" class="">各种电平标准</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1603,6 +1619,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/" class="">主要目录</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1712,6 +1741,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/" class="">14.Context</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="">2.数据类型</a>
   
 
@@ -1738,33 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/" class="">4.多线程编程</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/" class="">5.格式化详解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/" class="">6.调试dlv</a>
   
 
         </li>
@@ -1804,6 +1820,40 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/9.unsafe.pointer/" class="">9.Unsafe.Pointer</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-94ff068ab534125167d9c28ca77f4ba8" class="toggle"  />
+    <label for="section-94ff068ab534125167d9c28ca77f4ba8" class="flex justify-between">
+      <a role="button" class="">10.调试测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/" class="">6.调试dlv</a>
   
 
         </li>
@@ -2071,6 +2121,40 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-30a8a2a351d5fd2819fe0ad76b585703" class="toggle"  />
+    <label for="section-30a8a2a351d5fd2819fe0ad76b585703" class="flex justify-between">
+      <a role="button" class="">9.并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/golang/9.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/" class="">4.多线程编程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" class="">代码自动生成工具</a>
   
 
@@ -2284,6 +2368,53 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98d1ce4ff14d26ea8933f454ab301b2f" class="toggle"  />
+    <label for="section-98d1ce4ff14d26ea8933f454ab301b2f" class="flex justify-between">
+      <a role="button" class="">用户</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E7%94%A8%E6%88%B7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="">常见问题</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/" class="">Grub2设置分辨率</a>
+  
+
+        </li>
+      
+    
+      
     
       
         <li>
@@ -2319,6 +2450,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/" class="">修改源</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/" class="">卸载删除软件</a>
   
 
         </li>
@@ -2397,6 +2541,32 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/" class="">端口占用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/" class="">设置静态 IP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/" class="">防火墙</a>
   
 
         </li>
@@ -2971,6 +3141,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/" class="">一个端口多个服务</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/" class="">容器构建</a>
   
 
         </li>
@@ -4627,10 +4810,11 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#启动参数说明">启动参数说明</a>
+        <li>
           <ul>
+            <li><a href="#启动geth客户端geth-创建账户转账">启动geth客户端，geth 创建账户，转账</a></li>
             <li><a href="#常用命令">常用命令</a></li>
-            <li><a href="#启动参数说明-1">启动参数说明</a></li>
+            <li><a href="#启动参数说明">启动参数说明</a></li>
           </ul>
         </li>
         <li><a href="#api调用说明">API调用说明</a>
@@ -4639,6 +4823,10 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#创建账户">创建账户</a></li>
             <li><a href="#运行测试网络-ropsten">运行测试网络 ropsten</a></li>
             <li><a href="#heading"></a></li>
+            <li><a href="#启动rpc接口">启动rpc接口</a></li>
+            <li><a href="#导入账户">导入账户</a></li>
+            <li><a href="#查看账户-1">查看账户</a></li>
+            <li><a href="#创建账户-1">创建账户</a></li>
           </ul>
         </li>
       </ul>
@@ -4655,7 +4843,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h2 id="启动参数说明"><a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%8f%82%e6%95%b0%e8%af%b4%e6%98%8e">#</a>启动参数说明</h2>
+  <article class="markdown"><h3 id="启动geth客户端geth-创建账户转账"><a class="anchor" href="#%e5%90%af%e5%8a%a8geth%e5%ae%a2%e6%88%b7%e7%ab%afgeth-%e5%88%9b%e5%bb%ba%e8%b4%a6%e6%88%b7%e8%bd%ac%e8%b4%a6">#</a>启动geth客户端，geth 创建账户，转账</h3>
 <p>示例：</p>
 <blockquote>
 <p>geth &ndash;ropsten &ndash;syncmode snap &ndash;identity &ldquo;smallc&rdquo; &ndash;http &ndash;http.port 7545 &ndash;http.api &ldquo;db,eth,net,web3,personal&rdquo; &ndash;datadir &ldquo;ropsten&rdquo;</p>
@@ -4683,7 +4871,7 @@ https://github.com/alex-shpak/hugo-book
 </tr>
 </tbody>
 </table>
-<h3 id="启动参数说明-1"><a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%8f%82%e6%95%b0%e8%af%b4%e6%98%8e-1">#</a>启动参数说明</h3>
+<h3 id="启动参数说明"><a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%8f%82%e6%95%b0%e8%af%b4%e6%98%8e">#</a>启动参数说明</h3>
 <table>
 <thead>
 <tr>
@@ -4746,7 +4934,7 @@ https://github.com/alex-shpak/hugo-book
 </tr>
 <tr>
 <td>&ndash;syncmode</td>
-<td>同步模式 <code>full</code>,<code>fast</code>,<code>light</code>,<code>snap</code>(新开发的功能，21年刚上线，快照同步模式，同步速度极快)</td>
+<td>同步模式 <code>full</code>,<code>fast</code>,<code>light</code>,<code>snap</code>(新开发的功能，21年刚上线，快照同步模式，同步速度极快) <!-- raw HTML omitted --> # full geth &ndash;syncmode &ldquo;full&rdquo; <!-- raw HTML omitted --> # fast geth &ndash;syncmode &ldquo;fast&rdquo; <!-- raw HTML omitted --># light geth &ndash;syncmode &ldquo;fast&rdquo; <!-- raw HTML omitted --> snap  geth &ndash;syncmode &ldquo;snap&rdquo; (新开发的功能，21年刚上线，快照同步模式，同步速度极快)</td>
 </tr>
 </tbody>
 </table>
@@ -4764,6 +4952,28 @@ https://github.com/alex-shpak/hugo-book
 <p>geth &ndash;ropsten  &ndash;http &ndash;http.api net,web3,eth,personal &ndash;datadir ropsten_path</p>
 </blockquote>
 <h3 id="heading"><a class="anchor" href="#heading">#</a></h3>
+<h3 id="启动rpc接口"><a class="anchor" href="#%e5%90%af%e5%8a%a8rpc%e6%8e%a5%e5%8f%a3">#</a>启动rpc接口</h3>
+<blockquote>
+<p>geth &ndash;identity &ldquo;smallc&rdquo; &ndash;rpc &ndash;rpcport 7545 &ndash;rpcapi &ldquo;db,eth,net,web3&rdquo;</p>
+</blockquote>
+<p><code>--rpc</code> 已弃用</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>geth --ropsten --syncmode snap --identity <span style="color:#e6db74">&#34;smallc&#34;</span> --http --http.port <span style="color:#ae81ff">7545</span> --http.api <span style="color:#e6db74">&#34;db,eth,net,web3,personal&#34;</span> --datadir <span style="color:#e6db74">&#34;ropsten&#34;</span>
+</span></span></code></pre></div><h3 id="导入账户"><a class="anchor" href="#%e5%af%bc%e5%85%a5%e8%b4%a6%e6%88%b7">#</a>导入账户</h3>
+<blockquote>
+<p>geth &ndash;datadir .\ropsten\ account import .\ropsten\key.txt &ndash;password .\ropsten\password.txt</p>
+</blockquote>
+<ul>
+<li><code>.\ropsten\key.txt</code>   其他钱包导出的私钥存放的文件</li>
+<li><code>.\ropsten\password.txt</code> 密码存放文件</li>
+</ul>
+<h3 id="查看账户-1"><a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e8%b4%a6%e6%88%b7-1">#</a>查看账户</h3>
+<blockquote>
+<p>geth account list</p>
+</blockquote>
+<h3 id="创建账户-1"><a class="anchor" href="#%e5%88%9b%e5%bb%ba%e8%b4%a6%e6%88%b7-1">#</a>创建账户</h3>
+<blockquote>
+<p>geth account new</p>
+</blockquote>
 </article>
  
       
@@ -4784,6 +4994,12 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+<script src="//cdn.bootcss.com/highlight.js/11.1.0/highlight.min.js"></script>
+
+
+
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
 
 
 
@@ -4828,10 +5044,11 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#启动参数说明">启动参数说明</a>
+        <li>
           <ul>
+            <li><a href="#启动geth客户端geth-创建账户转账">启动geth客户端，geth 创建账户，转账</a></li>
             <li><a href="#常用命令">常用命令</a></li>
-            <li><a href="#启动参数说明-1">启动参数说明</a></li>
+            <li><a href="#启动参数说明">启动参数说明</a></li>
           </ul>
         </li>
         <li><a href="#api调用说明">API调用说明</a>
@@ -4840,6 +5057,10 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#创建账户">创建账户</a></li>
             <li><a href="#运行测试网络-ropsten">运行测试网络 ropsten</a></li>
             <li><a href="#heading"></a></li>
+            <li><a href="#启动rpc接口">启动rpc接口</a></li>
+            <li><a href="#导入账户">导入账户</a></li>
+            <li><a href="#查看账户-1">查看账户</a></li>
+            <li><a href="#创建账户-1">创建账户</a></li>
           </ul>
         </li>
       </ul>

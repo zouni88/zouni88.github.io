@@ -122,6 +122,15 @@ android:layout_height=&amp;#34;wrap_content&amp;#34;搭配：app:layout_constra
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/</guid>
+      <description>#打开第三方站点需要保留登录状态，webview需要接受cookie，按照官方提供的API CookieManager可以实现// 1. 在loadurl之前调用接受cookie方法 android.webkit.CookieManager cookieManager = android.webkit.CookieManager.getInstance(); cookieManager.setAcceptThi~rdPartyCookies(this,true); // 2. onPageFinished CookieManager.getInstance().flush(); </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/android/%E6%8F%92%E4%BB%B6%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -205,7 +214,7 @@ gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/blockchain/1.solidity/</guid>
-      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;   function setTT(uint8 i) public {  tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  } } #关键字 contract constructor public private external internal view pure payable  #数据类型 uint256: 地址长度  #修饰符 变量修饰符: public or private 函数修饰符  view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西    合约调用者地址 address owner = msg.</description>
+      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;   function setTT(uint8 i) public {  tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  } } #关键字 contract constructor public private external internal view pure payable  #数据类型 uint8 -&amp;gt; uint256: 地址长度 8位递增 string -&amp;gt; 字符串，不可变，可强转 mapping(uint =&amp;gt; uint) scoreList; 字典  #数据存储位置 memory 内存变量，调用结束就消失 storage 状态变量，随着合约进入分布式账本 calldata 永久存储  #修饰符 变量修饰符: public or private 函数修饰符  view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西    合约调用者地址 address owner = msg.</description>
     </item>
     
     <item>
@@ -221,7 +230,7 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
   remix-project 连接本地文件夹：
    安装remixd  npm install -g @remix-project/remixd
   连接  remixd -s d:/workspace -u http://localhost:8080
-   </description>
+   #没有编译插件,点击下图中 打叉的地方</description>
     </item>
     
     <item>
@@ -249,7 +258,7 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/blockchain/3.geth/</guid>
-      <description>#启动参数说明示例：
+      <description>#启动geth客户端，geth 创建账户，转账示例：
  geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
  #常用命令   命令 说明     removedb asdf   account Manage accounts   console 控制台命令行    #启动参数说明   参数 说明     &amp;ndash;identity 节点身份标识   –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.</description>
     </item>
@@ -262,35 +271,6 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
       <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</guid>
       <description>#clef 以太坊账户管理#创建账户 clef newaccount &amp;ndash;keystore geth-tutorial/keystore
  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</guid>
-      <description>启动rpc接口
- geth &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;rpc &amp;ndash;rpcport 7545 &amp;ndash;rpcapi &amp;ldquo;db,eth,net,web3&amp;rdquo;
- --rpc 已弃用
-geth --ropsten --syncmode snap --identity &amp;#34;smallc&amp;#34; --http --http.port 7545 --http.api &amp;#34;db,eth,net,web3,personal&amp;#34; --datadir &amp;#34;ropsten&amp;#34; #fullgeth &amp;ndash;syncmode &amp;ldquo;full&amp;rdquo;
-#fastgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
-#lightgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
-#snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)geth &amp;ndash;syncmode &amp;ldquo;snap&amp;rdquo;
-#查看账户 geth account list
- #创建账户 geth account new
- </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</guid>
-      <description>#启动参数说明示例：
- geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
-    参数 说明     –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.addr 把这个值写成“0.0.0.0”表示允许远程访问，否则只能本地访问。这个参数以前是rpcaddr。   –port 表示网络监听端口，默认值是30303。   –http.corsdomain 允许跨域请求的域列表，这里指定为“*”。这个参数以前是rpccorsdomain   –http.api 允许远程调用的API，用逗号间隔，凡是列出来的，在远程调用时均可以使用。   –unlock 表示被解锁账户的编号，0表示node数据文件中第一个被创建的账户，这个账户被解锁才能使用该账户进行交易。   –password 表示解锁账户时的账户密码，就是在创建账户时输入的密码。   –allow-insecure-unlock 允许使用不安全的账户解锁   console 表示打开Geth JavaScript console   &amp;ndash;syncmode 同步模式 full,fast,light,snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)    #API调用说明#查看账户 geth account list</description>
     </item>
     
     <item>
@@ -372,6 +352,15 @@ efed9a8240&amp;rdquo;]
       
       <guid>https://zouni.vip/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</guid>
       <description>#智能合约的运行流程 编写智能合约代码，并编译成字节码。 部署智能合约。过程是向“0”地址发送一笔带有智能合约字节码数据的交易，这个交易会生成该智能合约的地址，并将字节码存储在该地址下的状态树中。 执行智能合约（调用智能合约函数）。向智能合约地址发送一个交易，该交易携带被调用的智能合约函数信息及调用参数，携带的信息遵循ABI编码协议。 智能合约地址收到这样的调用合约函数的交易，首先会解码数据，根据结果查找到对应函数的入口，再传入参数执行该函数。 执行函数的过程是状态转换的过程，执行完成后会扣除调用者相应的Gas花费。 状态转换的过程会全网同步并被再次执行验证，确保执行结果一致，这样通过验证后的交易会记录到区块中，同时更新状态数据。  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</guid>
+      <description> 运行geth 容器 运行remix容器 运行remixd，npm install remixd 连接本地solidity workspace  </description>
     </item>
     
     <item>
@@ -492,7 +481,7 @@ flush privileges;  方式3   此处为设置root用户远程mysql -uroot -p #�
       
       <guid>https://zouni.vip/docs/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
       <description>容器运行 postgres
-docker run -itd --name=pg -p 5432:5432 -v postgres-volume:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 postgres </description>
+docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres  docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres  docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;mytest&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;123456&amp;rsquo; -e POSTGRES_DB=&amp;lsquo;mytest&amp;rsquo; -e ALLOW_IP_RANGE=0.</description>
     </item>
     
     <item>
@@ -586,7 +575,10 @@ docker run -itd --name=container_name images_name 常用参数说明：
       
       <guid>https://zouni.vip/docs/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>#启动失败查看日志
-docker logs -f -t --tail 20 nginx </description>
+docker logs -f -t --tail 20 nginx #操作无权限 aa-remove-unknown
+ #修改容器端口映射 编辑容器配置文件 /var/lib/docker/containers/{containersid}/hostconfig.json  root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls 572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log hostconfig.json mounts checkpoints hostname resolv.conf config.v2.json hosts resolv.conf.hash ！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了
+ ,&amp;ldquo;PortBindings&amp;rdquo;:{&amp;ldquo;5432/tcp&amp;rdquo;:[{&amp;ldquo;HostIp&amp;rdquo;:&amp;quot;&amp;quot;,&amp;ldquo;HostPort&amp;rdquo;:&amp;ldquo;8099&amp;rdquo;}]}
+ #端口映射，本地可以访问，远程不能访问！！！ 检查防火墙  #查看防火墙状态，运行中 root@zouni:/# firewall-cmd --state running #查看放开的端口，开放这几个端口，8088为放开 root@zouni:/# firewall-cmd --list-all You&amp;#39;re performing an operation over default zone (&amp;#39;public&amp;#39;), but your connections/interfaces are in zone &amp;#39;docker&amp;#39; (see --get-active-zones) You most likely need to use --zone=docker option.</description>
     </item>
     
     <item>
@@ -653,7 +645,7 @@ docker build -f dockerfile-path . </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/docker/nginx/%E6%9E%84%E5%BB%BAnginx%E5%AE%B9%E5%99%A8/</guid>
-      <description>docker run -itd --name=nginx -p 80:80 -p 443:443 -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/facepark/static:/root/web/facepark/static nginx:2.0 </description>
+      <description>docker run -itd --name=nginx -p 80:80 -p 443:443 -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/facepark/static:/root/web/facepark/static nginx:2.0 docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/root/web/static nginx:2.0 </description>
     </item>
     
     <item>
@@ -739,6 +731,28 @@ source [find interface/stlink.cfg]transport select hla_swdsource [find target/
       
       <guid>https://zouni.vip/docs/document/embedded/%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1/</guid>
       <description>#串口引脚定义 DTR : 数据终端准备好 RTS: 请求发送 RXD: 接收 TXD: 发送 CTS: 清除发送  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/embedded/%E5%90%84%E7%A7%8D%E7%94%B5%E5%B9%B3%E6%A0%87%E5%87%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/embedded/%E5%90%84%E7%A7%8D%E7%94%B5%E5%B9%B3%E6%A0%87%E5%87%86/</guid>
+      <description>#TTL  输出 1 :=&amp;gt; 电压大于等于 2.4v 0 :=&amp;gt; 电压小于等于 0.4v
+  输入 1 :=&amp;gt; 电压大于等于2.0v 0 :=&amp;gt; 电压小于等于0.8v
+  TTL器件输出低电平要小于0.8V，高电平要大于2.4V。输入，低于1.2V就认为是0，高于2.0就认为是1。于是TTL电平的输入低电平的噪声容限（噪声容限是指在前一极输出为最坏的情况下，为保证后一极正常工作，所允许的最大噪声幅度 。噪声容限越大说明容许的噪声越大，电路的抗干扰性越好 。）就只有（0.8-0）/2=0.4V，高电平的噪声容限为（5-2.4）/2=1.3V。
+#CMOS  输出 L：0 &amp;lt;0.1Vcc ； 1 H：&amp;gt;0.9Vcc。
+  输入 L：0 &amp;lt;0.3Vcc ； 1 H：&amp;gt;0.7Vcc.
+  由于CMOS电源采用12V，则输入低于3.6V为低电平，噪声容限为1.8V，高于3.5V为高电平，噪声容限高为1.8V。比TTL有更高的噪声容限。
+CMOS电平能够驱动TTL电平；
+TTL电平不能驱动CMOS电平，需要加上拉电阻
+#RS232 逻辑1的电平为-3～-15V，逻辑0的电平为+3～+15V，注意电平的定义反相了一次。  RS232的电平标准为+12V为逻辑负，-12为逻辑正，TTL电平为5V为逻辑正，0为逻辑负
+#RS485 RS485采用差分信号负逻辑，逻辑&amp;quot;1”以两线间的电压差为-(2~6)V表示;逻辑&amp;quot;0&amp;quot;以两线间的电压差为+(2~6)V表示。  TTL接口电平常见的有3.3V和5V的。通过在0和TTL电平之间摆动，来传输数据。需要通讯双方“约定”好速率。也就是说，通过TTL电平传输的UART接口是一种不传输时钟的&amp;quot;异步通讯&amp;quot;方式。
+而RS485接口，简单说就是把TTL的“0-3.3V/5V之间摆动”的信号，转换为“5V压差颠倒反转的AB线信号”，并且扩流驱动电缆电容。简单说就是这样。
+所以可以理解为，RS485是以TTL数据源的总线驱动芯片。
+RS485采用差分信号逻辑，更适合长距离、高速传输。
+接口信号电平比RS-232-C降低了，就不易损坏接口电路的芯片， 且该电平与TTL电平兼容，可方便与TTL电路连接。</description>
     </item>
     
     <item>
@@ -958,7 +972,7 @@ dst: 这里相当于画布，用来绘制src
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
-      <description>#将本地项目提交到远程仓库需要以下操作：#1. 本地提交git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; #2. 添加目标仓库地址git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git #3. 同步到远程仓库，先 pull 后 push//允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 #修改远程仓库地址3种方式#1. 直接修改git remote set-url origin [url] #2. 先删除后修改 删除
+      <description>#将本地项目提交到远程仓库需要以下操作：#1. 本地提交git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; #2. 添加目标仓库地址git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git #3. 同步到远程仓库，先 pull 后 push//允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 #修改远程仓库地址3种方式#1. 直接修改git remote set-url origin [url] git remote set-url --add origin [url] #2. 先删除后修改 删除
  git remote rm origin #查看 remote url git remote -v
  #3. 直接修改项目目录下.git 文件夹下config配置文件[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[remote &amp;#34;origin&amp;#34;]url = git@gitee.</description>
     </item>
@@ -1048,6 +1062,15 @@ git clone git@github.com:smallcgq/xbook.git --recurse-submodules #添加其他�
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/</guid>
+      <description>#主要目录介绍 / ：根目录，所有的目录、文件、设备都在/之下，/就是Linux文件系统的组织者，也是最上级的领导者。 /bin ：bin 就是二进制（binary）英文缩写。在一般的系统当中，都可以在这个目录下找到linux常用的命令。系统所需要的那些命令位于此目录。 /boot ：Linux的内核及引导系统程序所需要的文件目录，比如 vmlinuz initrd.img 文件都位于这个目录中。在一般情况下，GRUB或LILO系统引导管理器也位于这个目录。 /cdrom ：这个目录在刚刚安装系统的时候是空的。可以将光驱文件系统挂在这个目录下。例如：mount /dev/cdrom /cdrom /dev ：dev 是设备（device)的英文缩写。这个目录对所有的用户都十分重要。因为在这个目录中包含了所有linux系统中使用的外部设备。但是这里并不是放的外部设备的驱动程序。这一点和常用的windows,dos操作系统不一样。它实际上是一个访问这些外部设备的端口。可以非常方便地去访问这些外部设备，和访问一个文件，一个目录没有任何区别。 /etc ：etc这个目录是linux系统中最重要的目录之一。在这个目录下存放了系统管理时要用到的各种配置文件和子目录。要用到的网络配置文件，文件系统，x系统配置文件，设备配置信息，设置用户信息等都在这个目录下。 /home：如果建立一个用户，用户名是&amp;quot;xx&amp;quot;,那么在/home目录下就有一个对应的/home/xx路径，用来存放用户的主目录。 /lib：lib是库（library）英文缩写。这个目录是用来存放系统动态连接共享库的。几乎所有的应用程序都会用到这个目录下的共享库。因此，千万不要轻易对这个目录进行什么操作，一旦发生问题，系统就不能工作了。 /lost+found ：在ext2或ext3文件系统中，当系统意外崩溃或机器意外关机，而产生一些文件碎片放在这里。当系统启动的过程中fsck工具会检查这里，并修复已经损坏的文件系统。正在上传、重新上传、取消Linux系统有时系统发生问题，有很多的文件被移到这个目录中，可能会用手工的方式来修复，或移到文件到原来的位置上。 /mnt ：这个目录一般是用于存放挂载储存设备的挂载目录的，比如有cdrom等目录。可以参看/etc/fstab的定义。 /media ：有些linux的发行版使用这个目录来挂载那些usb接口的移动硬盘（包括U盘）、CD/DVD驱动器等等。 /opt ：这里主要存放那些可选的程序。 /proc ：可以在这个目录下获取系统信息。这些信息是在内存中，由系统自己产生的。 /root ：Linux超级权限用户root的家目录。 /sbin ：这个目录是用来存放系统管理员的系统管理程序。大多是涉及系统管理的命令的存放，是超级权限用户root的可执行命令存放地，普通用户无权限执行这个目录下的命令，这个目录和/usr/sbin ：/usr/X11R6/sbin或/usr/local/sbin目录是相似的，凡是目录sbin中包含的都是root权限才能执行的。 /selinux ：对SElinux的一些配置文件目录，SElinux可以让linux更加安全。 /srv ： 服务启动后，所需访问的数据目录，举个例子来说，www服务启动读取的网页数据就可以放在/srv/www中 /sys ：Linux 内核中设计较新的一种虚拟的基于内存的文件系统，它的作用与 proc 有些类似，但除了与 proc 相同的具有查看和设定内核参数功能之外，还有为 Linux 统一设备模型作为管理之用。 /tmp ：临时文件目录，用来存放不同程序执行时产生的临时文件。有时用户运行程序的时候，会产生临时文件。/tmp就用来存放临时文件的。/var/tmp目录和这个目录相似。 /usr：这是linux系统中占用硬盘空间最大的目录。用户的很多应用程序和文件都存放在这个目录下。在这个目录下，可以找到那些不适合放在/bin或/etc目录下的额外的工具 /usr/local ：这里主要存放那些手动安装的软件，即不是通过“新立得”或apt-get安装的软件。它和/usr目录具有相类似的目录结构。让软件包管理器来管理/usr目录，而把自定义的脚本（scripts)放到/usr/local目录下面。 /usr/share ：系统共用的东西存放地，比如 /usr/share/fonts 是字体目录，/usr/share/doc和/usr/share/man帮助文件。 /var ：这个目录的内容是经常变动的，看名字就知道，可以理解为vary的缩写，/var下有/var/log 这是用来存放系统日志的目录。/var/ www目录是定义Apache服务器站点存放目录；/var/lib 用来存放一些库文件，比如MySQL的，以及MySQL数据库的的存放地。  </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1099,6 +1122,15 @@ func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Stu
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/</guid>
+      <description>#context 基本使用func TestTimeout(t *testing.T) { 	ctx, cancel := context.WithCancel(context.Background()) 	//1. 传递上下文 	go RequestA(ctx)  	time.Sleep(time.Second * 4) 	//#cancel 1.取消 	cancel() 	time.Sleep(time.Second * 10) }  func RequestA(ctx context.Context) { 	// Do Something ... 	ctx = context.WithValue(ctx, &amp;#34;A&amp;#34;, &amp;#34;RequestA&amp;#34;) 	tic := time.NewTicker(time.Second * 2) 	// 2. 传递上下文 	go RequestB(ctx) 	for { 	select { 	case &amp;lt;-tic.C: 	//3.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1119,29 +1151,11 @@ func TestMap(t *testing.T) {  //Student =&amp;gt; *Student 	m := map[string]*Stu
     
     <item>
       <title></title>
-      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</guid>
-      <description>go 关键字 就定义了一个协程</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/</guid>
       <description>#fmt.printf#常规格式化 %v : 打印变量值 %T : 类型  #整型 %+d 带符号的整型，fmt.Printf(&amp;quot;%+d&amp;quot;, 255)输出+255 %q 打印单引号 %o 不带零的八进制 %#o 带零的八进制 %x 小写的十六进制 %X 大写的十六进制 %#x 带0x的十六进制 %U 打印Unicode字符 %#U 打印带字符的Unicode %b 打印整型的二进制  #float 浮点型#string 字符串</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/</guid>
-      <description>dlv debug main.go </description>
     </item>
     
     <item>
@@ -1172,6 +1186,15 @@ package main  import &amp;#34;fmt&amp;#34;  func divide(a int,b int,isPanic bool
       <guid>https://zouni.vip/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/9.unsafe.pointer/</guid>
       <description>#unsafe.pointer 可支持操作内存； 可以转换到任意类型指针 非安全的，不建议使用 unsafe.Pointer() 任意转换指针类型，并可进行指针运算 其他类型的指针只能转化为unsafe.Pointer，也只有unsafe.Pointer才能转化成任意类型的指针 只有uintptr才支持加减操作，而uintptr是一个非负整数，表示地址值，没有类型信息，以字节为单位  实际操作：获取一个字符串第二个字符的地址和值
  var s = &amp;#34;abc&amp;#34; 	var strHeader = (*reflect.StringHeader)(unsafe.Pointer(&amp;amp;s)) 	var res = (*byte)(unsafe.Pointer(strHeader.Data)) //获取字符串第一个字符的地址 	log.Printf(&amp;#34;strHeader.Data = %c&amp;#34;, *res) 	var ress = (*byte)(unsafe.Pointer(strHeader.Data + uintptr(1))) //获取字符串第一个字符的地址 	log.Printf(&amp;#34;strHeader.Data = %c&amp;#34;, *ress) 	//var ssss uintptr = 0xc000088fc0 	//log.Println(*(*byte)(unsafe.Pointer(ssss))) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/</guid>
+      <description>dlv debug main.go </description>
     </item>
     
     <item>
@@ -1320,6 +1343,15 @@ docker run -itd --name=consul -p 8500:8500 consul agent -server -bootstrap -ui -
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/golang/9.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/9.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</guid>
+      <description>go 关键字 就定义了一个协程</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1454,6 +1486,19 @@ service vsftpd restart
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
+      <description>#设置grub2 分辨率 进入grub 命令行
+在grub 启动界面，按下c 键进入命令行界面 查询支持的分辨率
+输入 videoinfo 得到支持的分辨率列表 命令行设置选择的分辨率
+输入terminal_output console 进入终端模式，输入 set gfxmode=1024x768 (x 不是*) 退出
+terminal_output gfxterm 退出到图形模式  #进入系统设置/boot/grub/grub.cfg</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/linux/ldconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1490,6 +1535,15 @@ IPADDR=&amp;#34;192.168.2.6&amp;#34; NETMASK=&amp;#34;255.255.255.0&amp;#34; GAT
       <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
       <description>修改官方源，改成阿里源
 # 先备份原sources.list 文件 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak # sed 命令替换域名 sudo sed -i &amp;#39;s/security.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/archive.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo apt update sudo apt-get upgrade //更新已安装的包到最新，这个是可选的 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</guid>
+      <description>#卸载软件 apt-get autoremove 删除相关联的所有包  sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有  dpkg -l | grep docker 卸载一切有关联的软件  sudo apt-get autoremove docker-ce-* 删除配置和相关目录  sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/lib/docker 卸载完毕  docker --version </description>
     </item>
     
     <item>
@@ -1536,6 +1590,18 @@ CentOS Linux release 8.1.1911 (Core) </description>
     
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E7%94%A8%E6%88%B7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E7%94%A8%E6%88%B7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>#ssh root@ip ssh登录时提示「permission denied please try again」 sudo vi /etc/ssh/sshd_config
+ 编辑
+ PermitRootLogin yes
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/linux/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1549,7 +1615,27 @@ CentOS Linux release 8.1.1911 (Core) </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
-      <description>netstat -apn|grep 8888</description>
+      <description>#查看指定端口占用情况 netstat -apn|grep 8888
+  lsof -i:8080
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</guid>
+      <description>#linux 设置静态IP 查看网卡  root@zouni:~# ifconfig  eno1: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500  inet 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255  inet6 fe80::2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt;  inet6 240e:305:7880:36d2:2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x0&amp;lt;global&amp;gt;  ether 20:47:47:98:9e:30 txqueuelen 1000 (Ethernet)  RX packets 15733 bytes 3827041 (3.8 MB)  RX errors 0 dropped 8440 overruns 0 frame 0  TX packets 3586 bytes 376173 (376.1 KB)  TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0  device interrupt 16   enp3s0: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt; mtu 1500  ether 00:e0:51:46:0b:01 txqueuelen 1000 (Ethernet)  RX packets 0 bytes 0 (0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>#Linux 防火墙 ufw firewalld iptables 默认：iptables  #2. ubuntu : ufw ufw 查询防火墙状态  查看开放端口：  sudo ufw status 允许80端口开放：  sudo ufw allow 80 允许22端口开放：  sudo ufw allow 22 启动防火墙：  sudo ufw enable 重启防火墙使端口配置生效：  sudo ufw reload  ufw status # 关闭 ufw disable #3. 红帽系列 firewallsystemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld  防火墙开放指定端口  # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker  firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload  其它防火墙命令  启动： systemctl start firewalld查看状态： systemctl status firewalld停止： systemctl disable firewalld禁用： systemctl stop firewalld启动服务：systemctl start firewalld.</description>
     </item>
     
     <item>
@@ -1876,6 +1962,15 @@ H(p,q) = 0 + KL(p,q) = KL(p,q)
       <guid>https://zouni.vip/docs/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</guid>
       <description>#一个端口配置多个服务实验阶段&amp;mdash;&amp;mdash;-
 server { listen 80; server_name apitest.aa.com; location / {proxy_pass http://10.26.31.176:8081; #微服务地址测试环境root html; index index.html index.htm; } }server { listen 80; server_name api.aa.com; location / { proxy_pass http://10.26.31.176:8080; #微服务地址线上环境root html; index index.html index.htm; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</guid>
+      <description>#构建nginx容器docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static –restart=always –user=root nginx  --privileged=true docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static -user=root nginx:latest docker run -itd &amp;ndash;name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static &amp;ndash;restart=always -user=root -privileged=true nginx:latest</description>
     </item>
     
     <item>

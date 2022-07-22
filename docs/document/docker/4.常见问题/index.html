@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="#启动失败查看日志
-docker logs -f -t --tail 20 nginx ">
+docker logs -f -t --tail 20 nginx #操作无权限 aa-remove-unknown
+ #修改容器端口映射 编辑容器配置文件 /var/lib/docker/containers/{containersid}/hostconfig.json  root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls 572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log hostconfig.json mounts checkpoints hostname resolv.conf config.v2.json hosts resolv.conf.hash ！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了
+ ,&ldquo;PortBindings&rdquo;:{&ldquo;5432/tcp&rdquo;:[{&ldquo;HostIp&rdquo;:&quot;&quot;,&ldquo;HostPort&rdquo;:&ldquo;8099&rdquo;}]}
+ #端口映射，本地可以访问，远程不能访问！！！ 检查防火墙  #查看防火墙状态，运行中 root@zouni:/# firewall-cmd --state running #查看放开的端口，开放这几个端口，8088为放开 root@zouni:/# firewall-cmd --list-all You&#39;re performing an operation over default zone (&#39;public&#39;), but your connections/interfaces are in zone &#39;docker&#39; (see --get-active-zones) You most likely need to use --zone=docker option.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
 <meta property="og:description" content="#启动失败查看日志
-docker logs -f -t --tail 20 nginx " />
+docker logs -f -t --tail 20 nginx #操作无权限 aa-remove-unknown
+ #修改容器端口映射 编辑容器配置文件 /var/lib/docker/containers/{containersid}/hostconfig.json  root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls 572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log hostconfig.json mounts checkpoints hostname resolv.conf config.v2.json hosts resolv.conf.hash ！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了
+ ,&ldquo;PortBindings&rdquo;:{&ldquo;5432/tcp&rdquo;:[{&ldquo;HostIp&rdquo;:&quot;&quot;,&ldquo;HostPort&rdquo;:&ldquo;8099&rdquo;}]}
+ #端口映射，本地可以访问，远程不能访问！！！ 检查防火墙  #查看防火墙状态，运行中 root@zouni:/# firewall-cmd --state running #查看放开的端口，开放这几个端口，8088为放开 root@zouni:/# firewall-cmd --list-all You&#39;re performing an operation over default zone (&#39;public&#39;), but your connections/interfaces are in zone &#39;docker&#39; (see --get-active-zones) You most likely need to use --zone=docker option." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zouni.vip/docs/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="docs" />
 
@@ -18,7 +24,7 @@ docker logs -f -t --tail 20 nginx " />
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.30862739fba3effd8be1c48ca04ee4fcaf5db5b55e0749540edd0ff37ee85296.css" integrity="sha256-MIYnOfuj7/2L4cSMoE7k/K9dtbVeB0lUDt0P837oUpY=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c438eae4cf416504ee55e23f914ec9f716627d4944c998af9849d3060ea1d0a9.js" integrity="sha256-xDjq5M9BZQTuVeI/kU7J9xZifUlEyZivmEnTBg6h0Kk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.05346a47e6df90931867566bd872a989fd1b562341c406638168003fb5628900.js" integrity="sha256-BTRqR&#43;bfkJMYZ1Zr2HKpif0bViNBxAZjgWgAP7ViiQA=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -296,6 +302,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/document/android/webview%E6%8E%A5%E5%8F%97cookie/" class="">Webview接受cookie</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/android/%E6%8F%92%E4%BB%B6%E5%8C%96/" class="">插件化</a>
   
 
@@ -496,32 +515,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/" class="">3.Geth命令</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/" class="">3.Geth命令解释</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/docs/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/" class="">4.Geth配置</a>
   
 
@@ -575,6 +568,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="">智能合约运行流程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/" class="">本地环境启动</a>
   
 
         </li>
@@ -1174,6 +1180,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/embedded/%E5%90%84%E7%A7%8D%E7%94%B5%E5%B9%B3%E6%A0%87%E5%87%86/" class="">各种电平标准</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1604,6 +1623,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/" class="">主要目录</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1713,6 +1745,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/" class="">14.Context</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/2.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" class="">2.数据类型</a>
   
 
@@ -1739,33 +1784,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/" class="">4.多线程编程</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/5.%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%AF%A6%E8%A7%A3/" class="">5.格式化详解</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/6.%E8%B0%83%E8%AF%95dlv/" class="">6.调试dlv</a>
   
 
         </li>
@@ -1805,6 +1824,40 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/9.unsafe.pointer/" class="">9.Unsafe.Pointer</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-94ff068ab534125167d9c28ca77f4ba8" class="toggle"  />
+    <label for="section-94ff068ab534125167d9c28ca77f4ba8" class="flex justify-between">
+      <a role="button" class="">10.调试测试</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/" class="">6.调试dlv</a>
   
 
         </li>
@@ -2072,6 +2125,40 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-30a8a2a351d5fd2819fe0ad76b585703" class="toggle"  />
+    <label for="section-30a8a2a351d5fd2819fe0ad76b585703" class="flex justify-between">
+      <a role="button" class="">9.并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/golang/9.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/4.%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/" class="">4.多线程编程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/document/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" class="">代码自动生成工具</a>
   
 
@@ -2285,6 +2372,53 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-98d1ce4ff14d26ea8933f454ab301b2f" class="toggle"  />
+    <label for="section-98d1ce4ff14d26ea8933f454ab301b2f" class="flex justify-between">
+      <a role="button" class="">用户</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E7%94%A8%E6%88%B7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="">常见问题</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/" class="">Grub2设置分辨率</a>
+  
+
+        </li>
+      
+    
+      
     
       
         <li>
@@ -2320,6 +2454,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/" class="">修改源</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/" class="">卸载删除软件</a>
   
 
         </li>
@@ -2398,6 +2545,32 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/" class="">端口占用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/" class="">设置静态 IP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/" class="">防火墙</a>
   
 
         </li>
@@ -2972,6 +3145,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/" class="">一个端口多个服务</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/" class="">容器构建</a>
   
 
         </li>
@@ -4628,11 +4814,10 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#启动失败">启动失败</a></li>
-          </ul>
-        </li>
+        <li><a href="#启动失败">启动失败</a></li>
+        <li><a href="#操作无权限">操作无权限</a></li>
+        <li><a href="#修改容器端口映射">修改容器端口映射</a></li>
+        <li><a href="#端口映射本地可以访问远程不能访问">端口映射，本地可以访问，远程不能访问！！！</a></li>
       </ul>
     </li>
   </ul>
@@ -4647,9 +4832,78 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h3 id="启动失败"><a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%a4%b1%e8%b4%a5">#</a>启动失败</h3>
+  <article class="markdown"><h2 id="启动失败"><a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%a4%b1%e8%b4%a5">#</a>启动失败</h2>
 <p>查看日志</p>
 <pre tabindex="0"><code>docker logs -f -t --tail 20 nginx
+</code></pre><h2 id="操作无权限"><a class="anchor" href="#%e6%93%8d%e4%bd%9c%e6%97%a0%e6%9d%83%e9%99%90">#</a>操作无权限</h2>
+<blockquote>
+<p>aa-remove-unknown</p>
+</blockquote>
+<h2 id="修改容器端口映射"><a class="anchor" href="#%e4%bf%ae%e6%94%b9%e5%ae%b9%e5%99%a8%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84">#</a>修改容器端口映射</h2>
+<ol>
+<li>编辑容器配置文件 <code>/var/lib/docker/containers/{containersid}/hostconfig.json</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls
+</span></span><span style="display:flex;"><span>572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log  hostconfig.json  mounts
+</span></span><span style="display:flex;"><span>checkpoints                                                                hostname         resolv.conf
+</span></span><span style="display:flex;"><span>config.v2.json                                                             hosts            resolv.conf.hash
+</span></span></code></pre></div><p>！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了</p>
+<blockquote>
+<p>,&ldquo;PortBindings&rdquo;:{&ldquo;5432/tcp&rdquo;:[{&ldquo;HostIp&rdquo;:&quot;&quot;,&ldquo;HostPort&rdquo;:&ldquo;8099&rdquo;}]}</p>
+</blockquote>
+<h2 id="端口映射本地可以访问远程不能访问"><a class="anchor" href="#%e7%ab%af%e5%8f%a3%e6%98%a0%e5%b0%84%e6%9c%ac%e5%9c%b0%e5%8f%af%e4%bb%a5%e8%ae%bf%e9%97%ae%e8%bf%9c%e7%a8%8b%e4%b8%8d%e8%83%bd%e8%ae%bf%e9%97%ae">#</a>端口映射，本地可以访问，远程不能访问！！！</h2>
+<ol>
+<li>检查防火墙</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#查看防火墙状态，运行中</span>
+</span></span><span style="display:flex;"><span>root@zouni:/# firewall-cmd --state
+</span></span><span style="display:flex;"><span>running
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#查看放开的端口，开放这几个端口，8088为放开</span>
+</span></span><span style="display:flex;"><span>root@zouni:/# firewall-cmd --list-all
+</span></span><span style="display:flex;"><span>You<span style="color:#e6db74">&#39;re performing an operation over default zone (&#39;</span>public<span style="color:#e6db74">&#39;),
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">but your connections/interfaces are in zone &#39;</span>docker<span style="color:#960050;background-color:#1e0010">&#39;</span> <span style="color:#f92672">(</span>see --get-active-zones<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>You most likely need to use --zone<span style="color:#f92672">=</span>docker option.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>public
+</span></span><span style="display:flex;"><span>  target: default
+</span></span><span style="display:flex;"><span>  icmp-block-inversion: no
+</span></span><span style="display:flex;"><span>  interfaces:
+</span></span><span style="display:flex;"><span>  sources:
+</span></span><span style="display:flex;"><span>  services: dhcpv6-client ssh
+</span></span><span style="display:flex;"><span>  ports: 8088/tcp 8099/tcp 5432/tcp 443/tcp  <span style="color:#75715e"># 开放的端口列表</span>
+</span></span><span style="display:flex;"><span>  protocols:
+</span></span><span style="display:flex;"><span>  forward: yes
+</span></span><span style="display:flex;"><span>  masquerade: no
+</span></span><span style="display:flex;"><span>  forward-ports:
+</span></span><span style="display:flex;"><span>  source-ports:
+</span></span><span style="display:flex;"><span>  icmp-blocks:
+</span></span><span style="display:flex;"><span>  rich rules:
+</span></span></code></pre></div><ol start="2">
+<li>检查ip转发</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:/# sysctl net.ipv4.ip_forward
+</span></span><span style="display:flex;"><span>net.ipv4.ip_forward <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>   <span style="color:#75715e"># 正常 = 1</span>
+</span></span></code></pre></div><ol start="3">
+<li>检查docker 网卡设置</li>
+</ol>
+<pre tabindex="0"><code>docker容器启动后外部无法连接
+		1第一种
+			sudo service docker stop
+			sudo ip link set dev docker0 down            %关闭docker虚拟网卡
+			sudo brctl delbr docker0
+			sudo iptables -t nat -F POSTROUTING
+			sudo brctl addbr docker0
+			sudo ip addr add 172.16.10.1/24 dev docker0
+			sudo ip link set dev docker0 up 				%开启docker虚拟网卡
+			systemctl  restart  docker
+			brctl命令需要安装： yum install -y bridge-utils
+			
+		2.第二种
+			systemctl stop docker
+			ifconfig docker0 down
+			brctl delbr docker0
+			systemctl start docker
+# 原文链接：https://blog.csdn.net/CSDN877425287/article/details/106909673
 </code></pre></article>
  
       
@@ -4720,11 +4974,10 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#启动失败">启动失败</a></li>
-          </ul>
-        </li>
+        <li><a href="#启动失败">启动失败</a></li>
+        <li><a href="#操作无权限">操作无权限</a></li>
+        <li><a href="#修改容器端口映射">修改容器端口映射</a></li>
+        <li><a href="#端口映射本地可以访问远程不能访问">端口映射，本地可以访问，远程不能访问！！！</a></li>
       </ul>
     </li>
   </ul>

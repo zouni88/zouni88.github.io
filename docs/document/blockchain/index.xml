@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/blockchain/1.solidity/</guid>
-      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;   function setTT(uint8 i) public {  tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  } } #关键字 contract constructor public private external internal view pure payable  #数据类型 uint256: 地址长度  #修饰符 变量修饰符: public or private 函数修饰符  view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西    合约调用者地址 address owner = msg.</description>
+      <description>#语法学习//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0  //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0;  //声明合约 contract trans{  uint8 tt;   function setTT(uint8 i) public {  tt = i;  }   //view : 当前函数不会修改账本数据  //int uint : 默认是uint256  function getTT() public view returns (uint8){  return tt;  } } #关键字 contract constructor public private external internal view pure payable  #数据类型 uint8 -&amp;gt; uint256: 地址长度 8位递增 string -&amp;gt; 字符串，不可变，可强转 mapping(uint =&amp;gt; uint) scoreList; 字典  #数据存储位置 memory 内存变量，调用结束就消失 storage 状态变量，随着合约进入分布式账本 calldata 永久存储  #修饰符 变量修饰符: public or private 函数修饰符  view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西    合约调用者地址 address owner = msg.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
   remix-project 连接本地文件夹：
    安装remixd  npm install -g @remix-project/remixd
   连接  remixd -s d:/workspace -u http://localhost:8080
-   </description>
+   #没有编译插件,点击下图中 打叉的地方</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/blockchain/3.geth/</guid>
-      <description>#启动参数说明示例：
+      <description>#启动geth客户端，geth 创建账户，转账示例：
  geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
  #常用命令   命令 说明     removedb asdf   account Manage accounts   console 控制台命令行    #启动参数说明   参数 说明     &amp;ndash;identity 节点身份标识   –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.</description>
     </item>
@@ -68,35 +68,6 @@ docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/rem
       <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</guid>
       <description>#clef 以太坊账户管理#创建账户 clef newaccount &amp;ndash;keystore geth-tutorial/keystore
  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4/</guid>
-      <description>启动rpc接口
- geth &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;rpc &amp;ndash;rpcport 7545 &amp;ndash;rpcapi &amp;ldquo;db,eth,net,web3&amp;rdquo;
- --rpc 已弃用
-geth --ropsten --syncmode snap --identity &amp;#34;smallc&amp;#34; --http --http.port 7545 --http.api &amp;#34;db,eth,net,web3,personal&amp;#34; --datadir &amp;#34;ropsten&amp;#34; #fullgeth &amp;ndash;syncmode &amp;ldquo;full&amp;rdquo;
-#fastgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
-#lightgeth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo;
-#snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)geth &amp;ndash;syncmode &amp;ldquo;snap&amp;rdquo;
-#查看账户 geth account list
- #创建账户 geth account new
- </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/blockchain/3.geth%E5%91%BD%E4%BB%A4%E8%A7%A3%E9%87%8A/</guid>
-      <description>#启动参数说明示例：
- geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;
-    参数 说明     –networkid 我们创建的私有链的网络id   –datadir 节点的数据文件夹   –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。   –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。   –http.addr 把这个值写成“0.0.0.0”表示允许远程访问，否则只能本地访问。这个参数以前是rpcaddr。   –port 表示网络监听端口，默认值是30303。   –http.corsdomain 允许跨域请求的域列表，这里指定为“*”。这个参数以前是rpccorsdomain   –http.api 允许远程调用的API，用逗号间隔，凡是列出来的，在远程调用时均可以使用。   –unlock 表示被解锁账户的编号，0表示node数据文件中第一个被创建的账户，这个账户被解锁才能使用该账户进行交易。   –password 表示解锁账户时的账户密码，就是在创建账户时输入的密码。   –allow-insecure-unlock 允许使用不安全的账户解锁   console 表示打开Geth JavaScript console   &amp;ndash;syncmode 同步模式 full,fast,light,snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快)    #API调用说明#查看账户 geth account list</description>
     </item>
     
     <item>
@@ -178,6 +149,15 @@ efed9a8240&amp;rdquo;]
       
       <guid>https://zouni.vip/docs/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</guid>
       <description>#智能合约的运行流程 编写智能合约代码，并编译成字节码。 部署智能合约。过程是向“0”地址发送一笔带有智能合约字节码数据的交易，这个交易会生成该智能合约的地址，并将字节码存储在该地址下的状态树中。 执行智能合约（调用智能合约函数）。向智能合约地址发送一个交易，该交易携带被调用的智能合约函数信息及调用参数，携带的信息遵循ABI编码协议。 智能合约地址收到这样的调用合约函数的交易，首先会解码数据，根据结果查找到对应函数的入口，再传入参数执行该函数。 执行函数的过程是状态转换的过程，执行完成后会扣除调用者相应的Gas花费。 状态转换的过程会全网同步并被再次执行验证，确保执行结果一致，这样通过验证后的交易会记录到区块中，同时更新状态数据。  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</guid>
+      <description> 运行geth 容器 运行remix容器 运行remixd，npm install remixd 连接本地solidity workspace  </description>
     </item>
     
     <item>

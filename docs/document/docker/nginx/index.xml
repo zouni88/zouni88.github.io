@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/docker/nginx/%E6%9E%84%E5%BB%BAnginx%E5%AE%B9%E5%99%A8/</guid>
-      <description>docker run -itd --name=nginx -p 80:80 -p 443:443 -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/facepark/static:/root/web/facepark/static nginx:2.0 </description>
+      <description>docker run -itd --name=nginx -p 80:80 -p 443:443 -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/facepark/static:/root/web/facepark/static nginx:2.0 docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/root/web/static nginx:2.0 </description>
     </item>
     
   </channel>

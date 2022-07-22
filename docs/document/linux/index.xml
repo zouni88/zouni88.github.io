@@ -7,6 +7,19 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
+      <description>#设置grub2 分辨率 进入grub 命令行
+在grub 启动界面，按下c 键进入命令行界面 查询支持的分辨率
+输入 videoinfo 得到支持的分辨率列表 命令行设置选择的分辨率
+输入terminal_output console 进入终端模式，输入 set gfxmode=1024x768 (x 不是*) 退出
+terminal_output gfxterm 退出到图形模式  #进入系统设置/boot/grub/grub.cfg</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://zouni.vip/docs/document/linux/ldconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -43,6 +56,15 @@ IPADDR=&amp;#34;192.168.2.6&amp;#34; NETMASK=&amp;#34;255.255.255.0&amp;#34; GAT
       <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
       <description>修改官方源，改成阿里源
 # 先备份原sources.list 文件 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak # sed 命令替换域名 sudo sed -i &amp;#39;s/security.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/archive.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo apt update sudo apt-get upgrade //更新已安装的包到最新，这个是可选的 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</guid>
+      <description>#卸载软件 apt-get autoremove 删除相关联的所有包  sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有  dpkg -l | grep docker 卸载一切有关联的软件  sudo apt-get autoremove docker-ce-* 删除配置和相关目录  sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/lib/docker 卸载完毕  docker --version </description>
     </item>
     
     <item>
@@ -102,7 +124,27 @@ CentOS Linux release 8.1.1911 (Core) </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
-      <description>netstat -apn|grep 8888</description>
+      <description>#查看指定端口占用情况 netstat -apn|grep 8888
+  lsof -i:8080
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</guid>
+      <description>#linux 设置静态IP 查看网卡  root@zouni:~# ifconfig  eno1: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500  inet 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255  inet6 fe80::2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt;  inet6 240e:305:7880:36d2:2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x0&amp;lt;global&amp;gt;  ether 20:47:47:98:9e:30 txqueuelen 1000 (Ethernet)  RX packets 15733 bytes 3827041 (3.8 MB)  RX errors 0 dropped 8440 overruns 0 frame 0  TX packets 3586 bytes 376173 (376.1 KB)  TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0  device interrupt 16   enp3s0: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt; mtu 1500  ether 00:e0:51:46:0b:01 txqueuelen 1000 (Ethernet)  RX packets 0 bytes 0 (0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>#Linux 防火墙 ufw firewalld iptables 默认：iptables  #2. ubuntu : ufw ufw 查询防火墙状态  查看开放端口：  sudo ufw status 允许80端口开放：  sudo ufw allow 80 允许22端口开放：  sudo ufw allow 22 启动防火墙：  sudo ufw enable 重启防火墙使端口配置生效：  sudo ufw reload  ufw status # 关闭 ufw disable #3. 红帽系列 firewallsystemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld  防火墙开放指定端口  # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker  firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload  其它防火墙命令  启动： systemctl start firewalld查看状态： systemctl status firewalld停止： systemctl disable firewalld禁用： systemctl stop firewalld启动服务：systemctl start firewalld.</description>
     </item>
     
   </channel>
