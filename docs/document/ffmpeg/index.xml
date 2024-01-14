@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/ffmpeg/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ffmpeg/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ffmpeg/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
+      <description>#1. 交叉编译 ffmpeg -&amp;gt; aarch64#1.1参数说明：--cross-prefix 指定交叉编译工具链路径--arch 指定cpu指令集架构--target-os 目标系统 linux--cc c 编译器 默认：cc 这里指定clang google官方已经在ndk去掉了gcc--enable-cross-compile 开启交叉编译--disable-static 关闭静态编译--enable-shared 开启shared表示编译动态链接库--disable-ffmpeg 不开启ffmpeg 模块--disable-ffplay 不开启ffplay 播放器模块--disable-ffprobe 不开启ffprobe 音视频分析模块 #1.2设置环境变量NDK版本：android-ndk-r22b
+export NDK_ROOT=/mnt/e/WorkRoom/ubuntu/android-ndk-r22b/toolchains/llvm/prebuilt/linux-x86_64 export SYSROOT=$NDK_ROOT/sysroot #1.3 执行 ./configure需要注意：新版本ndk工具链取消了gcc编译器，默认编译器是clang,配置项目里面需要指定c/c++ 编译器
+ &amp;ndash;cc=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang &amp;ndash;cxx=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang++
+ 完整的编译参数如下：
+small@small:~$ ./configure \ --prefix=/mnt/e/WorkRoom/ffmpeg/ffarm \ --arch=aarch64 \ --cpu=armv8 \ --target-os=android \ --sysroot=$SYSROOT \ --cross-prefix=$NDK_ROOT/bin/aarch64-linux-android- \ --extra-cflags=&amp;#34;-I$SYSROOT/usr/include -fPIC -DANDROID -mfpu=neon -mfloat-abi=softfp &amp;#34; \ --extra-ldflags=&amp;#34;-L$SYSROOT/usr/lib&amp;#34; \ --cc=$NDK_ROOT/bin/aarch64-linux-android21-clang \ --nm=$NDK_ROOT/bin/aarch64-linux-android-nm \ --cxx=$NDK_ROOT/bin/aarch64-linux-android21-clang++ \ --enable-runtime-cpudetect \ --enable-neon \ --enable-shared \ --enable-asm \ --disable-static \ --enable-cross-compile \ --enable-small \ --enable-jni \ --enable-mediacodec \ --enable-gpl \ --enable-decoder=h264_mediacodec \ --disable-doc \ --disable-debug \ --disable-ffmpeg \ --disable-ffplay \ --disable-ffprobe \ --disable-postproc \ --disable-avdevice \ --disable-symver \ --disable-stripping # --enable-hwaccel=h264_mediacodec \# --enable-asm \ armv7-a</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ffmpeg/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ffmpeg/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>输入视频，输出转码后的视频
+ ffmpeg -i intput.mp4 output.mp4
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ffmpeg/%E6%8E%A8%E6%B5%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ffmpeg/%E6%8E%A8%E6%B5%81/</guid>
+      <description>参考文章：https://zhuanlan.zhihu.com/p/73984438</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ffmpeg/%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ffmpeg/%E7%BC%96%E8%AF%91/</guid>
+      <description>#linux 编译 ffmpeg  下载源码
+下载ffmpeg源码 或者通过git clone源码：
+git clone git@github.com:FFmpeg/FFmpeg.git   进入源码根目录，执行./configure 出现如下错误：
+nasm/yasm not found 需要下载yasm汇编器
+  下载yasm汇编器
+wget https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz 解压安装 :
+tar -zxvf yasm-1.3.0.tar.gz 进入解压后目录
+cd yasm-1.3.0./configure# 接着 make sudo make install 接着返回 ffmpeg目录，执行命令
+small@small:~/FFmpeg$./configure --prefix=&amp;#34;/usr/local/ffmpeg/&amp;#34; --enable-libx264 --enable-gpl --enable-nonfree --enable-libfdk-aac 出现如下显示就代表成功了：
+small@small:~/FFmpeg$ ./configure install prefix /usr/local source path . C compiler gcc C library glibc ARCH x86 (generic) big-endian no runtime cpu detection yes standalone assembly yes x86 assembler yasm MMX enabled yes MMXEXT enabled yes 3DNow!</description>
+    </item>
+    
+  </channel>
+</rss>

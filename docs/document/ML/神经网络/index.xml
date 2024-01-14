@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</guid>
+      <description>#关于反向传播前向传播</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</guid>
+      <description>#sigmoidimport tensorflow as tf from matplotlib import pyplot as plt x = tf.linspace(-5.,5,20) x = tf.nn.sigmoid(x)  plt.figure(facecolor=&amp;#39;white&amp;#39;) plt.plot(x) plt.show() numpy实现的sigmoid函数
+from matplotlib import pyplot as plt import numpy as np  x = np.linspace(-5,5,20) x = list(map(lambda x: 1/(1+np.exp(-x)),x)) plt.figure(facecolor=&amp;#39;white&amp;#39;) plt.plot(x) plt.show() #relu&amp;lt; 0 就化为0
+from tensorflow.keras import activations activations.relu([1,2,3,-1,0])  out: &amp;lt;tf.Tensor: shape=(5,), dtype=int32, numpy=array([1, 2, 3, 0, 0])&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</guid>
+      <description>#over fitting过拟合：当模型在训练集上表现好，在验证集上表现变差的时候出现过拟合
+#解决过拟合 问题的方向 降低模型复杂度，减少参数量， 正则化 早停法  #early stopping早停法： 当模型在验证集上的表现开始下降的时候，停止训练</description>
+    </item>
+    
+  </channel>
+</rss>

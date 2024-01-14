@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/web/nodejs/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/web/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</guid>
+      <description>数据库连接失败
+Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL clientat Handshake.Sequence._packetToError (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)at Handshake.ErrorPacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18)at Protocol._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:291:23)at Parser._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:433:10)at Parser.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:43:10)at Protocol.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:38:16)at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:88:28)at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:526:10)at Socket.emit (events.js:315:20)at addChunk (_stream_readable.js:302:12)--------------------at Protocol._enqueue (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:144:48)at Protocol.handshake (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:51:23)at Connection.connect (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:116:18)at Object.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\catch\game\test.js:10:12)at Module._compile (internal/modules/cjs/loader.js:1200:30)at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)at Module.load (internal/modules/cjs/loader.js:1049:32)at Function.Module._load (internal/modules/cjs/loader.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/web/nodejs/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/web/nodejs/npm/</guid>
+      <description>#查看版本 npm -v
+ #更新 npm install -g npm
+ #指定版本更新 npm -g install npm@6.8.0
+ #清理 npm cache clean &amp;ndash;force
+ #查看当前使用的源 npm config get registry
+ #重置为官方源 npm config set registry https://registry.npmjs.org/q
+ #修改国内源# 阿里源升级http://npm.taobao.org =&amp;gt; http://npmmirror.comhttp://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com #1. 临时修改源 npm &amp;ndash;registry http://registry.npmmirror.com install express
+ #2. 永久修改 npm config set registry http://registry.npmmirror.com
+ #使用国内镜像，可以使用 cnpm 命令行,npm的定制版 npm install -g cnpm &amp;ndash;registry=https://registry.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</guid>
+      <description>node -V
+npm install gitbook-cli -g
+gitbook -V</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</guid>
+      <description>#官网https://nodejs.org/en/download/</description>
+    </item>
+    
+  </channel>
+</rss>

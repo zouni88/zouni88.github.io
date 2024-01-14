@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/golang/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</guid>
+      <description>go-kit 代码生成工具 https://github.com/metaverse/truss</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/4.go-kit/%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/4.go-kit/%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description> transport : 协议传输层 service : 业务层 endpoint : 中间结点
+newServer 调用流程：transport dec &amp;ndash;&amp;gt; endpoint &amp;ndash;&amp;gt; service &amp;ndash;&amp;gt; transport enc  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>mkdir /lib64ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>CGO需要安装gcc
+windows安装mingw-w64
+下载
+https://sourceforge.net/projects/mingw-w64/files/mingw-w64/
+两种方式：
+ 下载exe可执行文件，交给程序下载安装，网络不好很大概率会一直失败 直接下载压缩包解压，然后配置环境变量即可。(推荐)  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/goland%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/goland%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
+      <description>Help-&amp;gt;Edit Custom VM Options&amp;hellip;在开打文件中添加参数-Dfile.encoding=UTF-8
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/socket.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/socket.io/</guid>
+      <description>socket.io 配置到外网 服务器后，就会出现如下问题
+Error during WebSocket handshake: Unexpected response code: 400 ，根据github的讨论，得到如下答案
+proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header Connection &amp;#34;upgrade&amp;#34;;proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/golang/vscode%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/golang/vscode%E9%85%8D%E7%BD%AE/</guid>
+      <description>#安装#1. 配置好环境变量：GOPATH GOROOTGOROOT: GO安装目录
+GOPATH: 项目目录 src pkg bin目录
+#2. 安装go 开发工具集ctrl + shift + P 打开命令面板，选择 GO:Install/Update Tools
+#调试#go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置
+ {  &amp;#34;go.inferGopath&amp;#34;: false,  &amp;#34;go.testFlags&amp;#34;: [&amp;#34;-v&amp;#34;], //增加这一行 } 再运行就正常了。</description>
+    </item>
+    
+  </channel>
+</rss>

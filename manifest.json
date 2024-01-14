@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "📓 Amethystsasss",
   "short_name": "📓 Amethystsasss",
+=======
+  "name": "云海阁",
+  "short_name": "云海阁",
+>>>>>>> 52e5c3ef6088a99a9c01ee93e780017fac05f4bd
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -8,8 +13,13 @@
   "theme_color": "#000000",
   "icons": [
     {
+<<<<<<< HEAD
       "src": "/favicon.png",
       "sizes": "1024x1024"
+=======
+      "src": "/favicon.svg",
+      "sizes": "512x512"
+>>>>>>> 52e5c3ef6088a99a9c01ee93e780017fac05f4bd
     }
   ]
 }

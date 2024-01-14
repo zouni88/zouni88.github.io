@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/python/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/Ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/Ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
+      <description>#IPython是一个增强的shell工具,%cd —更改当前工作目录
+%edit —打开编辑器并在关闭编辑器后执行键入的代码
+%env —显示当前环境变量
+%pip install [pkgs] —在不离开交互式shell的情况下安装软件包
+%time和%timeit—定时执行Python代码</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>#windows-b 绑定ip地址python -m http.server -b 192.168.1.145 8888 #Mac 系统python -m SimpleHTTPServer 8888 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</guid>
+      <description>#python 小图片合成大图片这段代码是前两年搞的，有很长时间没动了，正好是在学习python的时候拿来练手的。
+ 先说一下前因后果为什么要做这个，起初的想法是一个朋友给的，他手机存了很多女儿的照片，有一天他告诉我：他希望有个工具能把这些照片合成一个图片墙，在手机看毕竟不方便，希望能有一些小创意，为以后孩子大了留个回忆；可巧不巧正好快赶上七夕了，就想着给媳妇一个惊喜，所以就赶紧把相册里的给媳妇以前拍的照片收集了一下，切图工具把一些照片简单处理了一下；
+ 基于以上种种，哈哈，就搞了这么个玩意儿！ 但是代码写的比较烂，懒得贴代码了，链接放在这里：有兴趣的可以看看 主要代码放在ConcatImg/concat_img/concat.py这个文件 https://github.com/SmallCao/ConcatImg
+最终效果 </description>
+    </item>
+    
+  </channel>
+</rss>

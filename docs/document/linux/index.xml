@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/linux/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
+      <description>#设置grub2 分辨率 进入grub 命令行
+在grub 启动界面，按下c 键进入命令行界面 查询支持的分辨率
+输入 videoinfo 得到支持的分辨率列表 命令行设置选择的分辨率
+输入terminal_output console 进入终端模式，输入 set gfxmode=1024x768 (x 不是*) 退出
+terminal_output gfxterm 退出到图形模式  #进入系统设置/boot/grub/grub.cfg</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/ldconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/ldconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/ubuntu/</guid>
+      <description>#键盘失灵1.安装软件后键盘鼠标失灵，需要安装xserver包 xserver-xorg-input-all 保证电脑能联网，或者通过ssh远程连接
+sudo apt install xserver-xorg-input-all </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</guid>
+      <description>#给系统设置固定IP定位到目录：
+cd /etc/sysconfig/network-scripts  ifcfg-em1 ifdown-eth ifdown-ppp ifup ifup-ipv6 ifup-routes init.ipv6-global ifcfg-em1.bak ifdown-ib ifdown-routes ifup-aliases ifup-isdn ifup-sit network-functions ifcfg-em2 ifdown-ippp ifdown-sit ifup-bnep ifup-plip ifup-Team network-functions-ipv6 ifcfg-lo ifdown-ipv6 ifdown-Team ifup-eth ifup-plusb ifup-TeamPort ifdown ifdown-isdn ifdown-TeamPort ifup-ib ifup-post ifup-tunnel ifdown-bnep ifdown-post ifdown-tunnel ifup-ippp ifup-ppp ifup-wireless vi 编辑 ifcfg-em1文件， 这个文件是对应网卡的脚本内容，直接修改：增加如下几项，包括IP地址，网关等等
+IPADDR=&amp;#34;192.168.2.6&amp;#34; NETMASK=&amp;#34;255.255.255.0&amp;#34; GATEWAY=&amp;#34;192.168.1.1&amp;#34; NETWORK=&amp;#34;192.168.1.0&amp;#34; DNS1=&amp;#34;192.168.1.1&amp;#34; #修改完成后，重启networkservice network restart ending&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
+      <description>修改官方源，改成阿里源
+# 先备份原sources.list 文件 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak # sed 命令替换域名 sudo sed -i &amp;#39;s/security.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/archive.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo apt update sudo apt-get upgrade //更新已安装的包到最新，这个是可选的 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</guid>
+      <description>#卸载软件 apt-get autoremove 删除相关联的所有包  sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有  dpkg -l | grep docker 卸载一切有关联的软件  sudo apt-get autoremove docker-ce-* 删除配置和相关目录  sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/lib/docker 卸载完毕  docker --version </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <description>#定时任务 查看定时任务  crontab -l 编辑定时任务  crontab -e 每周五23点定时关机
+0 23 * * 5 /usr/sbin/shutdown now 命令必须是完整路径：/usr/sbin/shutdown
+查看命令路径：which</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>命令 描述 注解     ls -h 比如:20M 文件大小以给人看的格式显示    crontab 定时任务    cat filename 查看文件    tail filename -n linenum 查看文件指定多少行    reboot 普通重启    shutdown -r now 立即重启(root)    shutdown -r 10 10分钟后重启    shutdown -r 20:00 8点重启    halt 立刻关机    poweroff 立刻关机    shutdown -h now 立刻关机(root)    shutdown -h 10 10分钟后关机    ps 查找进程    sudo apt-get remove 删除软件 不会删除配置文件   sudo apt-get purge mysql 彻底删除     #文件   命令 描述 注解     scp 上传下载文件    scp root@host:/root/log.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</guid>
+      <description>#进程相关# 查找进程ps auxf |grep uwsgi# 查看当前进程pstree -ap|grep gunicorn# 杀死 进程kill -9 544 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</guid>
+      <description>内核版本
+uname -a 所有版本信息
+lsb_release -a centos 查看版本
+cat /etc/redhat-release 结果
+CentOS Linux release 8.1.1911 (Core) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/</guid>
+      <description>#查看硬盘使用情况df -h #查看大文件du -h -x --max-depth=1 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
+      <description>#查看指定端口占用情况 netstat -apn|grep 8888
+  lsof -i:8080
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</guid>
+      <description>#linux 设置静态IP 查看网卡  root@zouni:~# ifconfig  eno1: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500  inet 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255  inet6 fe80::2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt;  inet6 240e:305:7880:36d2:2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x0&amp;lt;global&amp;gt;  ether 20:47:47:98:9e:30 txqueuelen 1000 (Ethernet)  RX packets 15733 bytes 3827041 (3.8 MB)  RX errors 0 dropped 8440 overruns 0 frame 0  TX packets 3586 bytes 376173 (376.1 KB)  TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0  device interrupt 16   enp3s0: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt; mtu 1500  ether 00:e0:51:46:0b:01 txqueuelen 1000 (Ethernet)  RX packets 0 bytes 0 (0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>#Linux 防火墙 ufw firewalld iptables 默认：iptables  #2. ubuntu : ufw ufw 查询防火墙状态  查看开放端口：  sudo ufw status 允许80端口开放：  sudo ufw allow 80 允许22端口开放：  sudo ufw allow 22 启动防火墙：  sudo ufw enable 重启防火墙使端口配置生效：  sudo ufw reload  ufw status # 关闭 ufw disable #3. 红帽系列 firewallsystemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld  防火墙开放指定端口  # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker  firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload  其它防火墙命令  启动： systemctl start firewalld查看状态： systemctl status firewalld停止： systemctl disable firewalld禁用： systemctl stop firewalld启动服务：systemctl start firewalld.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云海阁</title>
+    <link>https://zouni.vip/docs/document/C_CXX/</link>
+    <description>Recent content on 云海阁</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/C_CXX/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
+      <description>#配置环境第一次打开Clion,首先配置Toolchains,这里使用了Mingw
+配置Cmake options,增加以下参数：
+-DCMAKE_SYSTEM_NAME=Android-DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34;-DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5-DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34;-DANDROID_PLATFORM=&amp;#34;android-21&amp;#34;-DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34;-DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;-DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;-DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</guid>
+      <description>#extern &amp;ldquo;C&amp;rdquo; 学习记录// A.cpp //告诉编译器这里修饰的是C语言的代码， extern &amp;#34;C&amp;#34; {  //在编译阶段，不会被编译成C++这样的fun_int_int符号，即使找不到函数也不会报错  void fun(int a,int b){   } } //B.cpp #include &amp;#34;A.h&amp;#34;int main(){  //对于C++来说，因为有函数重载的机制，编译后的函数会以 函数名 + 形参 来命名，  //对于C来说，没有函数重载，不会被转成fun_int_int这样的符号  fun(1,2); } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/C_CXX/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/C_CXX/main/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt;int main(int argc, char const *argv[]){printf(&#39;123&#39;);return 0;} </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/C_CXX/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/C_CXX/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</guid>
+      <description>#原码反码补码的概念和理解#1. 原码原码就是符号位加上真值的绝对值, 即用第一位表示符号, 其余位表示值. 比如如果是8位二进制:
+ [+1]原 = 0000 0001
+[-1]原 = 1000 0001
+ 第一位是符号位. 因为第一位是符号位, 所以8位二进制数的取值范围就是:
+ [1111 1111 , 0111 1111]
+即
+[-127 , 127]
+ 原码是人脑最容易理解和计算的表示方式.
+#2. 反码反码的表示方法是:
+正数的反码是其本身
+负数的反码是在其原码的基础上, 符号位不变，其余各个位取反.
+ [+1] = [00000001]原 = [00000001]反
+[-1] = [10000001]原 = [11111110]反
+ 可见如果一个反码表示的是负数, 人脑无法直观的看出来它的数值. 通常要将其转换成原码再计算.
+#3. 补码补码的表示方法是:
+正数的补码就是其本身
+负数的补码是在其原码的基础上, 符号位不变, 其余各位取反, 最后+1. (即在反码的基础上+1)
+ [+1] = [00000001]原 = [00000001]反 = [00000001]补</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zouni.vip/docs/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zouni.vip/docs/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</guid>
+      <description>#编译过程描述//生成预处理文件 g++ -o HelloWorld.ii -E HelloWorld.cpp //生成汇编文件
+g++ -o HelloWorld.s -S HelloWorld.ii
+//生成二进制也就是目标文件
+g++ -o HelloWorld.o -c HelloWorld.s
+//生成可执行文件 g++ -o HelloWorld.exe HelloWorld.o</description>
+    </item>
+    
+  </channel>
+</rss>
