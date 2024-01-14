@@ -1,69 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>云海阁</title>
-    <link>https://zouni.vip/docs/document/python/enviroment/anaconda/</link>
-    <description>Recent content on 云海阁</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/python/enviroment/anaconda/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/anaconda/jupyter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/anaconda/jupyter/</guid>
-      <description>#生成配置文件jupyter notebook --generate-config #生成密钥jupyter notebook password # 设置密码：123456 #如下地址/root/.jupyter/jupyter_notebook_config.json # 生成密钥如下： sha1:23524a335a85:461a1f37e8e32af1ab8899329b3e41c41ea6e546 #修改配置文件vi /root/.jupyter/jupyter_notebook_config.py 修改如下内容：
-# 允许 作为root访问 c.NotebookApp.allow_root = True # 允许访问的主机ip * 随意访问 c.NotebookApp.ip=&amp;#39;*&amp;#39; # 密钥：/root/.jupyter/jupyter_notebook_config.json 文件的内容 c.NotebookApp.password = u&amp;#39;sha1:03... &amp;#39; # 修改工作目录 c.NotebookApp.notebook_dir=&amp;#39;filepath&amp;#39; 修改完之后，重新启动jupyter notebook，浏览器打开127.0.0.1:8888输入刚开始设置的密码就正常登录了</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/anaconda/tensorflow-gpu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/anaconda/tensorflow-gpu%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>修改镜像源为国内源，方便快速下载
-直接创建环境，并下载tensorflow-gpu
-conda create -n tf2 tensorflow-gpu 激活环境
-source activate  conda activate tf2 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/anaconda/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/anaconda/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
-      <description>生成配置文件：conda config命令
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --set show_channel_urls yes 会在用户根目录下生成.condarc文件
-conda info  查看是否生效
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>创建虚拟环境，并指定安装的model
-conda create -n env_name script_nameF:conda create -n tensorflow tensorflow-gpu==2.1 指定要安装的model版本，conda会自动安装所有关联的包</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>查看所有创建的虚拟环境
-conda info -eorconda env list 创建虚拟环境
-conda create -n envname 激活虚拟环境
-# centos 需要执行 source activate
-conda activate envname 关闭虚拟环境
-conda deactivate envname  删除虚拟环境
-conda remove -n envname --all 重命名环境 =&amp;gt; 先clone 再重建 == 克隆or移植环境
-conda create -n python_basic --clone matplotlib_basic </description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,47 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>云海阁</title>
-    <link>https://zouni.vip/docs/document/RaspberryPi/</link>
-    <description>Recent content on 云海阁</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/RaspberryPi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/RaspberryPi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/RaspberryPi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
-      <description>用户名：pi 密码：raspberry</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</guid>
-      <description>#docker 脚本安装sudo curl https://get.docker.com/ &amp;gt; ./docker_install.shsudo sh docker_install.sh –mirror Aliyun </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/RaspberryPi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/RaspberryPi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>#打开配置sudo raspi-config </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
-      <description>#下载镜像将镜像写入sd卡 ，下载写入程序
-https://www.raspberrypi.org/downloads/ #修改配置写入sd卡后，不要拔出，直接在sdcard中修改配置：
- 开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件  hdmi_safe=1config_hdmi_boost=4hdmi_ignore_edid=0xa5000080hdmi_group=2hdmi_mode=82    参数 说明     hdmi_safe=1 安全启动HDMI   config_hdmi_boost=4 开启热插拔   hdmi_group=1 CEA电视显示器   hdmi_group=2 DMT电脑显示器   hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率   hdmi_mode=4 640x480 60Hz   hdmi_mode=9 800x600 60Hz   hdmi_mode=16 1024x768 60Hz   hdmi_mode=82 1080p 60Hz    #连接树莓派树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3.</description>
-    </item>
-    
-  </channel>
-</rss>

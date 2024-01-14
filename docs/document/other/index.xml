@@ -1,29 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>云海阁</title>
-    <link>https://zouni.vip/docs/document/other/</link>
-    <description>Recent content on 云海阁</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/other/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
-      <description>#性能测试工具使用1.安装
-git clone https://github.com/wg/wrkcd wrkmake # 编译cp wrk /usr/local/sbin # 二进制文件 放入非管理员目录，可直接运行命令  wrk http://163.com
-  Thread Stats Avg Stdev Max +/- StdevLatency 32.49ms 56.14ms 230.86ms 84.38%Req/Sec 637.05 222.35 1.09k 63.00%12710 requests in 10.03s, 6.71MB readRequests/sec: 1267.57Transfer/sec: 685.72KB </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</guid>
-      <description>   英文 中文     trigger 触发   necessary 必要的   depending 依赖   logic 逻辑   acquire 获取   heavy 重；大；沉重   separate 单独的，分离的    </description>
-    </item>
-    
-  </channel>
-</rss>

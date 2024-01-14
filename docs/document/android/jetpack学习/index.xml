@@ -1,29 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>云海阁</title>
-    <link>https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/</link>
-    <description>Recent content on 云海阁</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/hilt-dagger/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/hilt-dagger/</guid>
-      <description>#注解说明#@Module ：告知hilt如何提供被注解类的实例#@InstallIn(Component::class) : 告知hilt模块用在哪个类中#@Binds : 注入函数（接口无法通过构造函数实例化）,接口添加这个注解告知hilt 根据函数返回类型提供哪个接口实例， 根据函数参数提供对应实例  #@Provides: 注入函数，类不能被构造函数实例化（来自第三方库或必须通过构造函数创建实例），只能通过提供函数的方 式来获取一个实例化结果hilt会从带注解的函数得到信息：
- 根据函数返回类型提供对应实例 根据函数参数提供对应实例 函数主体得到需要的依赖项实例  #@EntryPoint：注入接口,为hilt不支持的类型注解</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/workmanager/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/android/jetpack%E5%AD%A6%E4%B9%A0/workmanager/</guid>
-      <description>#workmanager 轻量级后台任务管理
-#worker 任务体class DatabaseWork(context: Context, workerParams: WorkerParameters) : Worker(context,workerParams) {  companion object{   }   override fun doWork(): Result {  Log.e(&amp;#34;cgq&amp;#34;,&amp;#34;start&amp;#34;)  val data = Data.Builder().putString(&amp;#34;cgq&amp;#34;,&amp;#34;woker-data&amp;#34;).build()  setProgressAsync(data)  return Result.success()  }  } #workerRequest 执行任务#WorkerManager enqueue 添加任务 val workRequest: WorkRequest = OneTimeWorkRequestBuilder&amp;lt;DatabaseWork&amp;gt;().build()  //状态回调，添加一个任务观察者  WorkManager.getInstance(requireActivity()).getWorkInfoByIdLiveData(workRequest.id).observe(requireActivity()){  when (it.state) {  WorkInfo.State.RUNNING -&amp;gt; Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;running======&amp;#34;)  WorkInfo.State.CANCELLED -&amp;gt; Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;cancelled======&amp;#34;)  WorkInfo.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>云海阁</title>
-    <link>https://zouni.vip/docs/document/python/enviroment/</link>
-    <description>Recent content on 云海阁</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://zouni.vip/docs/document/python/enviroment/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/pip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/pip/</guid>
-      <description>#pip 安装软件-U : 升级到最新版本
--i : 指定下载库源
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat #pip 更新失败pip install --upgrade pip 更新失败 解决办法： 重新下载安装
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 强制安装：
-python get-pip.py --force-reinstall </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://zouni.vip/docs/document/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zouni.vip/docs/document/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
-      <description>#修改源的两种方式 临时修改 -i 指定源 安装指定的 model
--U : 升级到最新版本
--i : 指定下载库源  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改  pip install pip -Upip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ #源   name source     清华 https://pypi.tuna.tsinghua.edu.cn/simple   阿里 https://mirrors.aliyun.com/pypi/simple/    </description>
-    </item>
-    
-  </channel>
-</rss>
