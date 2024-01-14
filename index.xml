@@ -2030,12 +2030,5 @@
       <guid>https://xboox.cn/document/windows/%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
       <description>无法生成D:config.msi下的常规子目录的列表，拒绝访问。怎么解决&#xD;#&#xD;无法生成D:config.msi下常规子文件夹的列表拒绝访问错误。&#xA;修改 打开注册表 ：win+R + regedit&#xA;HKEY_CURRENT_USER/Software/Microsoft/Windows/CurrentVersion/Explorer/User Shell Folders/下Personal&#xA;shell中输入python等 关键字会跳转到应用商店&#xD;#&#xD;去掉WindowsApps 在环境变量中</description>
     </item>
-    <item>
-      <title></title>
-      <link>https://xboox.cn/asdf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/asdf/</guid>
-      <description>asdfasdzzzzzzzzzzzzzz&#xA;zzzzzzzzzzzz</description>
-    </item>
   </channel>
 </rss>
