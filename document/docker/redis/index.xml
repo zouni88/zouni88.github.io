@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记</title>
+    <link>https://xboox.cn/document/docker/redis/</link>
+    <description>Recent content on 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://xboox.cn/document/docker/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/docker/redis/redis%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/docker/redis/redis%E9%85%8D%E7%BD%AE/</guid>
+      <description>docker run -p 6379:6379 &amp;ndash;name redis -v /root/redis/redis.conf:/etc/redis/redis.conf -v /root/redis/data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes&#xA;docker run -itd &amp;ndash;name redis -p 6379:6379 -v /root/redis/redis.conf:/etc/redis/redis.conf -v /root/redis/data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes&#xA;docker run -itd &amp;ndash;name redis -p 6379:6379 -v /etc/redis/redis.conf:/etc/redis/redis.conf -v /data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes &amp;ndash;requirepass qaz521&#xA;查看配置文件挂载&#xD;#&#xD;docker inspect redis| grep Mounts -A 20 创建完成设置密码&#xD;#&#xD;docker exec -it redis bash&#xA;redis-cli&#xA;config set requirepass 密码</description>
+    </item>
+  </channel>
+</rss>

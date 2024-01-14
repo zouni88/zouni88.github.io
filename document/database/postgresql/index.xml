@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记</title>
+    <link>https://xboox.cn/document/database/postgresql/</link>
+    <description>Recent content on 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://xboox.cn/document/database/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>容器运行 postgres&#xA;docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;facepark&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;qaz521!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>表字段使用geography报错&#xD;#&#xD;因为要使用地理坐标来表示附近用户，需要空间坐标转换&#xA;type &amp;ldquo;geography&amp;rdquo; does not exist 解决方法： CREATE EXTENSION Postgis;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/database/postgresql/%E6%97%B6%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/database/postgresql/%E6%97%B6%E5%8C%BA/</guid>
+      <description>&#xD;时区设置&#xD;#&#xD;第一种方法 如果不好使，再换第二种方法：&#xA;serverTimezone Asia/Shanghai </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/database/postgresql/%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/database/postgresql/%E8%A6%81%E7%82%B9/</guid>
+      <description>相当与mysql的show databases; select datname from pg_database; 相当于mysql的show tables; SELECT table_name FROM information_schema.tables WHERE table_schema = &amp;#39;public&amp;#39;; public 是默认的schema的名字&#xA;相当与mysql的describe table_name; SELECT column_name FROM information_schema.columns WHERE table_name =&amp;#39;table_name&amp;#39;; &amp;rsquo;table_name&amp;rsquo;是要查询的表的名字</description>
+    </item>
+  </channel>
+</rss>

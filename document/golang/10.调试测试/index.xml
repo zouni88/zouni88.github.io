@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记</title>
+    <link>https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content on 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/6.%E8%B0%83%E8%AF%95dlv/</guid>
+      <description>dlv debug main.go </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
+      <description>&#xD;单元测试&#xD;#&#xD;1. 测试指定文件名 name_test.go&#xD;#&#xD;package nsqm import ( &amp;#34;testing&amp;#34; ) func TestNsq(t *testing.T){ } 2. 运行&#xD;#&#xD;# -test.run funName 指定执行测试方法名 go test -v nsqm -test.run TestNsq </description>
+    </item>
+  </channel>
+</rss>
