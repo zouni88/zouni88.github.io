@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记</title>
+    <link>https://xboox.cn/document/ml/tensorflow/</link>
+    <description>Recent content on 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://xboox.cn/document/ml/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/kl%E6%95%A3%E5%BA%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/kl%E6%95%A3%E5%BA%A6/</guid>
+      <description>KL散度 -&amp;gt; 相对熵</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/tensorboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/tensorboard/</guid>
+      <description> import tensorflow as tf # 这一步在网络初始化后 mode.summary() tf.summary.create_file_writer(&amp;#39;logs&amp;#39;) 指定要监听的工作日志目录&#xD;#&#xD;tensorboard --logdir logs </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/%E5%AE%B9%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/%E5%AE%B9%E5%99%A8/</guid>
+      <description>docker run -itd &amp;ndash;name=tensorflow -p 8888:8888 -v D:\docker\tf:/tmp -w /tmp 90338865fe9&#xA;Cannot connect:Cannot connect to the Docker daemon at tcp://localhost:2375,Is the docker daemon running?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/%E5%AF%B9%E6%95%B0log2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/%E5%AF%B9%E6%95%B0log2/</guid>
+      <description>tensorlfow math.log() 是以自然常数e为底 转化为以2为底：&#xA;根据对数换底公式：&#xA;∵&#xA;∴ loge(4)/loge(2) = log2(4) = 2&#xD;代码实例：&#xA;import tensorflow as tf x = tf.math.log(4.)/tf.math.log(2.) Out:&#xA;&amp;lt;tf.Tensor: shape=(), dtype=float32, numpy=2.0&amp;gt;&#xD;效果等同于 numpy log2(4)&#xA;import numpy as np np.log2(4) Out:&#xA;2.0 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
+      <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8])&#xD;&amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/ml/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/ml/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</guid>
+      <description>张量是一维 二维是矩阵 张量</description>
+    </item>
+  </channel>
+</rss>

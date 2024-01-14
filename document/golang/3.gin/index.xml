@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记</title>
+    <link>https://xboox.cn/document/golang/3.gin/</link>
+    <description>Recent content on 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://xboox.cn/document/golang/3.gin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/golang/3.gin/gorm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/golang/3.gin/gorm/</guid>
+      <description>&#xD;gorm使用&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/golang/3.gin/%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/golang/3.gin/%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</guid>
+      <description>跨域请求在网上找了很多文章都是下面这种做法：&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { method := c.Request.Method fmt.Println(&amp;#34;啥玩意儿的&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Origin&amp;#34;, &amp;#34;*&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type,AccessToken,X-CSRF-Token, Authorization, Token&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Methods&amp;#34;, &amp;#34;POST, GET, OPTIONS&amp;#34;) c.Header(&amp;#34;Access-Control-Expose-Headers&amp;#34;, &amp;#34;Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) if method == &amp;#34;OPTIONS&amp;#34; { c.AbortWithStatus(http.StatusNoContent) } c.Next() } } 但是并不好使用，所以又找到下面这种方法，总算是搞明白了啥意思了！&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { origin := c.Request.Header.Get(&amp;#34;origin&amp;#34;) if len(origin) == 0 { origin = c.Request.Header.Get(&amp;#34;Origin&amp;#34;) } c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Origin&amp;#34;, origin) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With&amp;#34;) c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xboox.cn/document/golang/3.gin/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xboox.cn/document/golang/3.gin/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>&#xD;main&#xD;#&#xD;程序入口&#xA;routers&#xD;#&#xD;路由配置&#xA;controllers&#xD;#&#xD;控制器&#xA;dao&#xD;#&#xD;数据库操作&#xA;static&#xD;#&#xD;静态文件&#xA;models&#xD;#&#xD;数据模型&#xA;services&#xD;#&#xD;逻辑业务操作&#xA;config&#xD;#&#xD;</description>
+    </item>
+  </channel>
+</rss>
