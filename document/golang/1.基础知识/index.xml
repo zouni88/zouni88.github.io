@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>&#xD;安装环境，配置环境变量&#xD;#&#xD;GOROOT:go安装路径&#xD;GOPATH: 项目目录&#xD;PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境&#xD;#&#xD;https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct&#xA;# 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）&#xD;go env -w GOPRIVATE=*.corp.example.com&#xD;# 设置不走 proxy 的私有组织（可选）&#xD;go env -w GOPRIVATE=example.com/org_name&#xD;go moudle 初始化&#xD;#&#xD;go mod project_name&#xD;go build&#xD;go mod 引用本地项目&#xD;#&#xD;go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt </description>
+      <description>&#xD;安装环境，配置环境变量&#xD;#&#xD;GOROOT:go安装路径 GOPATH: 项目目录 PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境&#xD;#&#xD;https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct&#xA;# 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）&#xD;go env -w GOPRIVATE=*.corp.example.com&#xD;# 设置不走 proxy 的私有组织（可选）&#xD;go env -w GOPRIVATE=example.com/org_name&#xD;go moudle 初始化&#xD;#&#xD;go mod project_name&#xD;go build&#xD;go mod 引用本地项目&#xD;#&#xD;go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt </description>
     </item>
     <item>
       <title></title>
@@ -33,7 +33,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</guid>
-      <description>闭包&#xD;#&#xD;func TestCloser(t *testing.T) { x := func() func() { var i = 1 return func() { i++ log.Println(&amp;#34;i = &amp;#34;, i) } }() x() x() } 输出结果：&#xA;=== RUN TestCloser&#xD;2022/04/10 21:42:09 2&#xD;2022/04/10 21:42:09 3&#xD;--- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
+      <description>闭包&#xD;#&#xD;func TestCloser(t *testing.T) { x := func() func() { var i = 1 return func() { i++ log.Println(&amp;#34;i = &amp;#34;, i) } }() x() x() } 输出结果：&#xA;=== RUN TestCloser 2022/04/10 21:42:09 2 2022/04/10 21:42:09 3 --- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
     </item>
     <item>
       <title></title>
@@ -75,7 +75,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
-      <description>go中的异常处理机制&#xD;#&#xD;为了保证程序不会因为一个异常而导致停摆，同时又不像其它语言那么啰嗦，对go语言的异常机制的简单理解实践一下吧&#xA;package main import &amp;#34;fmt&amp;#34; func divide(a int,b int,isPanic bool) int { //,类似于 java try catch ，，通过panic抛出异常 recover 捕获， if isPanic{ defer func() { if err := recover(); err != nil{ fmt.Println(err) } }() } //可以自行捕获异常,自定义异常信息 /*if b==0{ panic(&amp;#34;除数不能等于0&amp;#34;) }*/ c := a/b return c } func main() { divide(3,0,true) fmt.Println(&amp;#34;我的天，一切运转正常&amp;#34;) } Out1:&#xA;runtime error: integer divide by zero&#xD;我的天，一切运转正常 Out2:&#xA;自定义异常信息&#xD;除数不能等于0&#xD;我的天，一切运转正常 如果没有recover,程序不能正常往下执行，就此打住了；</description>
+      <description>go中的异常处理机制&#xD;#&#xD;为了保证程序不会因为一个异常而导致停摆，同时又不像其它语言那么啰嗦，对go语言的异常机制的简单理解实践一下吧&#xA;package main import &amp;#34;fmt&amp;#34; func divide(a int,b int,isPanic bool) int { //,类似于 java try catch ，，通过panic抛出异常 recover 捕获， if isPanic{ defer func() { if err := recover(); err != nil{ fmt.Println(err) } }() } //可以自行捕获异常,自定义异常信息 /*if b==0{ panic(&amp;#34;除数不能等于0&amp;#34;) }*/ c := a/b return c } func main() { divide(3,0,true) fmt.Println(&amp;#34;我的天，一切运转正常&amp;#34;) } Out1:&#xA;runtime error: integer divide by zero 我的天，一切运转正常 Out2:&#xA;自定义异常信息 除数不能等于0 我的天，一切运转正常 如果没有recover,程序不能正常往下执行，就此打住了；</description>
     </item>
     <item>
       <title></title>

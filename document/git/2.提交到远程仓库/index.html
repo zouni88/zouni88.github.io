@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="将本地项目提交到远程仓库需要以下操作：#1. 本地提交#git init 初始化本地仓库 git add . git commit -m &#34;###&#34; 2. 添加目标仓库地址#git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push## 允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支# 强制进行pushgit push origin master -f 修改远程仓库地址3种方式#1. 直接修改#git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库git remote set-url --add origin [url] 2. 先删除后修改#删除" />
+<meta property="og:description" content="将本地项目提交到远程仓库需要以下操作：#1. 本地提交#git init 初始化本地仓库 git add . git commit -m &#34;###&#34; 2. 添加目标仓库地址#git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push## 允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 # 强制进行push git push origin master -f 修改远程仓库地址3种方式#1. 直接修改#git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库 git remote set-url --add origin [url] 2. 先删除后修改#删除" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" /><meta property="article:section" content="document" />
 
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="将本地项目提交到远程仓库需要以下操作：#1. 本地提交#git init 初始化本地仓库 git add . git commit -m &#34;###&#34; 2. 添加目标仓库地址#git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push## 允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支# 强制进行pushgit push origin master -f 修改远程仓库地址3种方式#1. 直接修改#git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库git remote set-url --add origin [url] 2. 先删除后修改#删除"
+  content="将本地项目提交到远程仓库需要以下操作：#1. 本地提交#git init 初始化本地仓库 git add . git commit -m &#34;###&#34; 2. 添加目标仓库地址#git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push## 允许一些无关联的历史	git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 # 强制进行push git push origin master -f 修改远程仓库地址3种方式#1. 直接修改#git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库 git remote set-url --add origin [url] 2. 先删除后修改#删除"
 />
 <title>
   📓 zouni88
@@ -5612,19 +5612,19 @@ https://github.com/alex-shpak/hugo-book
   2. 添加目标仓库地址
   <a class="anchor" href="#2-%e6%b7%bb%e5%8a%a0%e7%9b%ae%e6%a0%87%e4%bb%93%e5%ba%93%e5%9c%b0%e5%9d%80">#</a>
 </h3>
-<pre tabindex="0"><code>git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git
-</code></pre><h3 id="3-同步到远程仓库先-pull-后-push">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git
+</span></span></code></pre></div><h3 id="3-同步到远程仓库先-pull-后-push">
   3. 同步到远程仓库，先 <code>pull</code> 后 <code>push</code>
   <a class="anchor" href="#3-%e5%90%8c%e6%ad%a5%e5%88%b0%e8%bf%9c%e7%a8%8b%e4%bb%93%e5%ba%93%e5%85%88-pull-%e5%90%8e-push">#</a>
 </h3>
-<pre tabindex="0"><code># 允许一些无关联的历史	
-git pull origin master --allow-unrelated-histories      
-
-git push origin 本地分支:远程分支
-
-# 强制进行push
-git push origin master -f  
-</code></pre><h2 id="修改远程仓库地址3种方式">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 允许一些无关联的历史	</span>
+</span></span><span style="display:flex;"><span>git pull origin master --allow-unrelated-histories      
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git push origin 本地分支:远程分支
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 强制进行push</span>
+</span></span><span style="display:flex;"><span>git push origin master -f  
+</span></span></code></pre></div><h2 id="修改远程仓库地址3种方式">
   修改远程仓库地址3种方式
   <a class="anchor" href="#%e4%bf%ae%e6%94%b9%e8%bf%9c%e7%a8%8b%e4%bb%93%e5%ba%93%e5%9c%b0%e5%9d%803%e7%a7%8d%e6%96%b9%e5%bc%8f">#</a>
 </h2>
@@ -5632,19 +5632,19 @@ git push origin master -f
   1. 直接修改
   <a class="anchor" href="#1-%e7%9b%b4%e6%8e%a5%e4%bf%ae%e6%94%b9">#</a>
 </h3>
-<pre tabindex="0"><code>git remote set-url origin  [url]  
-
-# 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库
-git remote set-url --add origin [url]
-</code></pre><h3 id="2-先删除后修改">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote set-url origin  <span style="color:#f92672">[</span>url<span style="color:#f92672">]</span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库</span>
+</span></span><span style="display:flex;"><span>git remote set-url --add origin <span style="color:#f92672">[</span>url<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h3 id="2-先删除后修改">
   2. 先删除后修改
   <a class="anchor" href="#2-%e5%85%88%e5%88%a0%e9%99%a4%e5%90%8e%e4%bf%ae%e6%94%b9">#</a>
 </h3>
 <blockquote>
 <p>删除</p>
 </blockquote>
-<pre tabindex="0"><code>git remote rm origin  
-</code></pre><h3 id="查看-remote-url">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote rm origin  
+</span></span></code></pre></div><h3 id="查看-remote-url">
   查看 remote url
   <a class="anchor" href="#%e6%9f%a5%e7%9c%8b-remote-url">#</a>
 </h3>

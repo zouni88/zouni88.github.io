@@ -4,7 +4,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="修改源的两种方式#临时修改 -i 指定源 安装指定的 model
 -U : 升级到最新版本
--i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -Upip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源#name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ " />
+-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -U pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源#name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/" /><meta property="article:section" content="document" />
 
@@ -29,7 +29,7 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="修改源的两种方式#临时修改 -i 指定源 安装指定的 model
 -U : 升级到最新版本
--i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -Upip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源#name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ "
+-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -U pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源#name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ "
 />
 <title>
   📓 zouni88
@@ -5596,13 +5596,13 @@ https://github.com/alex-shpak/hugo-book
 <code>-U</code> : 升级到最新版本<br>
 <code>-i</code> : 指定下载库源</li>
 </ol>
-<pre tabindex="0"><code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat
-</code></pre><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat
+</span></span></code></pre></div><ol start="2">
 <li>永久修改</li>
 </ol>
-<pre tabindex="0"><code>pip install pip -U
-pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
-</code></pre><h3 id="源">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install pip -U
+</span></span><span style="display:flex;"><span>pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+</span></span></code></pre></div><h3 id="源">
   源
   <a class="anchor" href="#%e6%ba%90">#</a>
 </h3>

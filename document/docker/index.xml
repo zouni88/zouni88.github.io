@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</guid>
-      <description>1. Windows 安装步骤&#xD;#&#xD;安装： 官网下载 https://hub.docker.com/对应版本&#xA;设置：&#xA;修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com {&#xD;&amp;#34;registry-mirrors&amp;#34;:[&#xD;&amp;#34;https://reg-mirror.qiniu.com&amp;#34;,&#xD;&amp;#34;http://hub-mirror.c.163.com/&amp;#34;,&#xD;&amp;#34;https://registry.docker-cn.com&amp;#34;&#xD;],&#xD;&amp;#34;builder&amp;#34;: {&#xD;&amp;#34;gc&amp;#34;: {&#xD;&amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;,&#xD;&amp;#34;enabled&amp;#34;: true&#xD;}&#xD;},&#xD;&amp;#34;experimental&amp;#34;: false,&#xD;&amp;#34;features&amp;#34;: {&#xD;&amp;#34;buildkit&amp;#34;: true&#xD;}&#xD;} 2. CentOS 安装步骤&#xD;#&#xD;官网&#xD;#&#xD;https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本&#xA;sudo yum remove docker \&#xD;docker-client \&#xD;docker-client-latest \&#xD;docker-common \&#xD;docker-latest \&#xD;docker-latest-logrotate \&#xD;docker-logrotate \&#xD;docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。&#xA;sudo yum install -y yum-utils&#xD;sudo yum-config-manager \&#xD;--add-repo \&#xD;https://download.</description>
+      <description>1. Windows 安装步骤&#xD;#&#xD;安装： 官网下载 https://hub.docker.com/对应版本&#xA;设置：&#xA;修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com { &amp;#34;registry-mirrors&amp;#34;:[ &amp;#34;https://reg-mirror.qiniu.com&amp;#34;, &amp;#34;http://hub-mirror.c.163.com/&amp;#34;, &amp;#34;https://registry.docker-cn.com&amp;#34; ], &amp;#34;builder&amp;#34;: { &amp;#34;gc&amp;#34;: { &amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;, &amp;#34;enabled&amp;#34;: true } }, &amp;#34;experimental&amp;#34;: false, &amp;#34;features&amp;#34;: { &amp;#34;buildkit&amp;#34;: true } } 2. CentOS 安装步骤&#xD;#&#xD;官网&#xD;#&#xD;https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本&#xA;sudo yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。&#xA;sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.</description>
     </item>
     <item>
       <title></title>
@@ -26,7 +26,7 @@
       <link>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</guid>
-      <description>创建容器：&#xA;docker run -itd --name=container_name images_name 常用参数说明：&#xA;-p 88:80 端口映射：&#xA;88:宿主机端口 80:容器端口&#xD;docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)&#xA;-itd&#xA;-i: 以交互模式运行容器;&#xA;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;--name&#xA;&amp;ndash;name: 容器名字;</description>
+      <description>创建容器：&#xA;docker run -itd --name=container_name images_name 常用参数说明：&#xA;-p 88:80 端口映射：&#xA;88:宿主机端口 80:容器端口 docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)&#xA;-itd&#xA;-i: 以交互模式运行容器;&#xA;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;--name&#xA;&amp;ndash;name: 容器名字;</description>
     </item>
     <item>
       <title></title>
@@ -54,7 +54,7 @@
       <link>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</guid>
-      <description>&#xD;下载镜像&#xD;#&#xD;# 官方提供的mysql镜像&#xD;docker pull mysql 创建容器&#xD;#&#xD;docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器&#xD;#&#xD;docker exec -it mysql_wxc bash </description>
+      <description>&#xD;下载镜像&#xD;#&#xD;# 官方提供的mysql镜像 docker pull mysql 创建容器&#xD;#&#xD;docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器&#xD;#&#xD;docker exec -it mysql_wxc bash </description>
     </item>
     <item>
       <title></title>

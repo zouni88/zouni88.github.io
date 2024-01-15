@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="卸载软件#apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/lib/docker 卸载完毕 docker --version " />
+<meta property="og:description" content="卸载软件#apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.d sudo rm -rf /var/lib/docker 卸载完毕 docker --version " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/" /><meta property="article:section" content="document" />
 
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="卸载软件#apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.dsudo rm -rf /var/lib/docker 卸载完毕 docker --version "
+  content="卸载软件#apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.d sudo rm -rf /var/lib/docker 卸载完毕 docker --version "
 />
 <title>
   📓 zouni88
@@ -5590,25 +5590,25 @@ https://github.com/alex-shpak/hugo-book
 <ol>
 <li>apt-get autoremove 删除相关联的所有包</li>
 </ol>
-<pre tabindex="0"><code>sudo apt-get autoremove docker docker-ce docker-engine  docker.io  containerd runc
-</code></pre><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get autoremove docker docker-ce docker-engine  docker.io  containerd runc
+</span></span></code></pre></div><ol start="2">
 <li>看看还有没有</li>
 </ol>
-<pre tabindex="0"><code>dpkg -l | grep docker
-</code></pre><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dpkg -l | grep docker
+</span></span></code></pre></div><ol start="3">
 <li>卸载一切有关联的软件</li>
 </ol>
-<pre tabindex="0"><code>sudo apt-get autoremove docker-ce-*
-</code></pre><ol start="4">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get autoremove docker-ce-*
+</span></span></code></pre></div><ol start="4">
 <li>删除配置和相关目录</li>
 </ol>
-<pre tabindex="0"><code>sudo rm -rf /etc/systemd/system/docker.service.d
-sudo rm -rf /var/lib/docker
-</code></pre><ol start="5">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo rm -rf /etc/systemd/system/docker.service.d
+</span></span><span style="display:flex;"><span>sudo rm -rf /var/lib/docker
+</span></span></code></pre></div><ol start="5">
 <li>卸载完毕</li>
 </ol>
-<pre tabindex="0"><code>docker --version
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker --version
+</span></span></code></pre></div>
 
     
 

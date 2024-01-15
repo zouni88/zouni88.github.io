@@ -68,7 +68,7 @@
       <link>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</guid>
-      <description>1.修改textview的约束条件&#xA;app:layout_constraintStart_toEndOf=&amp;#34;@+id/textView3&amp;#34;&#xD;改为&#xD;app:layout_constraintLeft_toRightOf=&amp;#34;@+id/textView3&amp;#34; 注意 其他的start end也都改为left right 2.其他属性搭配：&#xA;android:layout_height=&amp;#34;wrap_content&amp;#34;&#xD;搭配：app:layout_constrainedWidth=&amp;#34;true&amp;#34;&#xD;android:layout_height=&amp;#34;wrap_content&amp;#34;&#xD;搭配：app:layout_constrainedHeight=&amp;#34;false&amp;#34;（不写默认即false） </description>
+      <description>1.修改textview的约束条件&#xA;app:layout_constraintStart_toEndOf=&amp;#34;@+id/textView3&amp;#34; 改为 app:layout_constraintLeft_toRightOf=&amp;#34;@+id/textView3&amp;#34; 注意 其他的start end也都改为left right 2.其他属性搭配：&#xA;android:layout_height=&amp;#34;wrap_content&amp;#34; 搭配：app:layout_constrainedWidth=&amp;#34;true&amp;#34; android:layout_height=&amp;#34;wrap_content&amp;#34; 搭配：app:layout_constrainedHeight=&amp;#34;false&amp;#34;（不写默认即false） </description>
     </item>
     <item>
       <title></title>
@@ -229,7 +229,7 @@
       <link>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
-      <description>&#xD;配置环境&#xD;#&#xD;第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android&#xD;-DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34;&#xD;-DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5&#xD;-DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34;&#xD;-DANDROID_PLATFORM=&amp;#34;android-21&amp;#34;&#xD;-DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34;&#xD;-DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;&#xD;-DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;&#xD;-DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
+      <description>&#xD;配置环境&#xD;#&#xD;第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34; -DANDROID_PLATFORM=&amp;#34;android-21&amp;#34; -DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34; -DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
     </item>
     <item>
       <title></title>
@@ -292,21 +292,21 @@
       <link>https://r.xboox.cn/document/database/mysql/mysqlconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/database/mysql/mysqlconfig/</guid>
-      <description>mysql 配置&#xD;#&#xD;首先查看centos是否已经安装了mysql源&#xD;#&#xD;yum list installed mysql*&#xD;如果有就删除&#xD;yum remove mysql-community-* 安装mysql源&#xD;#&#xD;https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql&#xD;#&#xD;yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源&#xD;#&#xD;yum repolist all | grep mysql 查看数据库源&#xD;#&#xD;/etc/yum.repos.d/mysql-community.repo&#xD;修改源可用 mysql80 enable = 1 安装数据库服务&#xD;#&#xD;yum install mysql-server 启动mysql&#xD;#&#xD;systemctl start mysqld.service 查看状态&#xD;#&#xD;systemctl status mysqld.service 查看初始密码&#xD;#&#xD;grep &amp;#34;password&amp;#34; /var/log/mysqld.log 修改密码&#xD;#&#xD;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;;&#xD;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;123456&amp;#39; 注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功</description>
+      <description>mysql 配置&#xD;#&#xD;首先查看centos是否已经安装了mysql源&#xD;#&#xD;yum list installed mysql* 如果有就删除 yum remove mysql-community-* 安装mysql源&#xD;#&#xD;数据库官网地址&#xA;https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql&#xD;#&#xD;yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源&#xD;#&#xD;yum repolist all | grep mysql 查看数据库源&#xD;#&#xD;/etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1 安装数据库服务&#xD;#&#xD;yum install mysql-server 启动mysql&#xD;#&#xD;systemctl start mysqld.service 查看状态&#xD;#&#xD;systemctl status mysqld.service 查看初始密码&#xD;#&#xD;grep &amp;#34;password&amp;#34; /var/log/mysqld.log 修改密码&#xD;#&#xD;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;; mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;123456&amp;#39; 注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/database/mysql/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/database/mysql/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81/</guid>
-      <description>修改配置文件，无密码登录 编辑文件：&#xA;/etc/mysql/mysq.conf.d/mysqld.cnf 加入skip-grant-tables 跳过密码登录；&#xA;重启mysql服务&#xA;systemctl restart mysql.service 进入mysql&#xA;# mysql;&#xD;# use mysql;&#xD;# 更新密码为空&#xD;# UPDATE user SET authentication_string=&amp;#39;&amp;#39; WHERE User=&amp;#39;root&amp;#39; AND Host =&amp;#39;localhost&amp;#39;;&#xD;# flush privileges;&#xD;退出 注释掉skip-grant-tables&#xA;重启mysql，无密码登录&#xD;#&#xD;</description>
+      <description>修改配置文件，无密码登录 编辑文件：&#xA;/etc/mysql/mysq.conf.d/mysqld.cnf 加入skip-grant-tables 跳过密码登录；&#xA;重启mysql服务&#xA;systemctl restart mysql.service 进入mysql&#xA;# mysql; # use mysql; # 更新密码为空 # UPDATE user SET authentication_string=&amp;#39;&amp;#39; WHERE User=&amp;#39;root&amp;#39; AND Host =&amp;#39;localhost&amp;#39;; # flush privileges; 退出 注释掉skip-grant-tables&#xA;重启mysql，无密码登录&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/database/mysql/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E5%90%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/database/mysql/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E5%90%AF/</guid>
-      <description>&#xD;开启mysql的远程访问 两种方式&#xD;#&#xD;方式1 grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.168.1.145&amp;#39; identified by &amp;#39;123456&amp;#39; with grant option; flush privileges; 方式2 use mysql;&#xD;update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;; 更细权限之后，一定要刷新一下，否则不会生效&#xA;flush privileges; 方式3 此处为设置root用户远程&#xD;mysql -uroot -p #输入密码&#xD;use mysql;&#xD;update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;;&#xD;select host, user from user;&#xD;flush privileges; 去掉配置文件中bind-address&#xD;#&#xD;bind-address = 127.0.0.1 # bind-address = 127.0.0.1 </description>
+      <description>&#xD;开启mysql的远程访问 两种方式&#xD;#&#xD;方式1 grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.168.1.145&amp;#39; identified by &amp;#39;123456&amp;#39; with grant option; flush privileges; 方式2 use mysql; update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;; 更细权限之后，一定要刷新一下，否则不会生效&#xA;flush privileges; 方式3 此处为设置root用户远程 mysql -uroot -p #输入密码 use mysql; update user set host = &amp;#39;%&amp;#39; where user = &amp;#39;root&amp;#39;; select host, user from user; flush privileges; 去掉配置文件中bind-address&#xD;#&#xD;bind-address = 127.0.0.1 # bind-address = 127.0.0.1 </description>
     </item>
     <item>
       <title></title>
@@ -348,7 +348,7 @@
       <link>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</guid>
-      <description>1. Windows 安装步骤&#xD;#&#xD;安装： 官网下载 https://hub.docker.com/对应版本&#xA;设置：&#xA;修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com {&#xD;&amp;#34;registry-mirrors&amp;#34;:[&#xD;&amp;#34;https://reg-mirror.qiniu.com&amp;#34;,&#xD;&amp;#34;http://hub-mirror.c.163.com/&amp;#34;,&#xD;&amp;#34;https://registry.docker-cn.com&amp;#34;&#xD;],&#xD;&amp;#34;builder&amp;#34;: {&#xD;&amp;#34;gc&amp;#34;: {&#xD;&amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;,&#xD;&amp;#34;enabled&amp;#34;: true&#xD;}&#xD;},&#xD;&amp;#34;experimental&amp;#34;: false,&#xD;&amp;#34;features&amp;#34;: {&#xD;&amp;#34;buildkit&amp;#34;: true&#xD;}&#xD;} 2. CentOS 安装步骤&#xD;#&#xD;官网&#xD;#&#xD;https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本&#xA;sudo yum remove docker \&#xD;docker-client \&#xD;docker-client-latest \&#xD;docker-common \&#xD;docker-latest \&#xD;docker-latest-logrotate \&#xD;docker-logrotate \&#xD;docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。&#xA;sudo yum install -y yum-utils&#xD;sudo yum-config-manager \&#xD;--add-repo \&#xD;https://download.</description>
+      <description>1. Windows 安装步骤&#xD;#&#xD;安装： 官网下载 https://hub.docker.com/对应版本&#xA;设置：&#xA;修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com { &amp;#34;registry-mirrors&amp;#34;:[ &amp;#34;https://reg-mirror.qiniu.com&amp;#34;, &amp;#34;http://hub-mirror.c.163.com/&amp;#34;, &amp;#34;https://registry.docker-cn.com&amp;#34; ], &amp;#34;builder&amp;#34;: { &amp;#34;gc&amp;#34;: { &amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;, &amp;#34;enabled&amp;#34;: true } }, &amp;#34;experimental&amp;#34;: false, &amp;#34;features&amp;#34;: { &amp;#34;buildkit&amp;#34;: true } } 2. CentOS 安装步骤&#xD;#&#xD;官网&#xD;#&#xD;https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本&#xA;sudo yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。&#xA;sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download.</description>
     </item>
     <item>
       <title></title>
@@ -362,7 +362,7 @@
       <link>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</guid>
-      <description>创建容器：&#xA;docker run -itd --name=container_name images_name 常用参数说明：&#xA;-p 88:80 端口映射：&#xA;88:宿主机端口 80:容器端口&#xD;docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)&#xA;-itd&#xA;-i: 以交互模式运行容器;&#xA;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;--name&#xA;&amp;ndash;name: 容器名字;</description>
+      <description>创建容器：&#xA;docker run -itd --name=container_name images_name 常用参数说明：&#xA;-p 88:80 端口映射：&#xA;88:宿主机端口 80:容器端口 docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)&#xA;-itd&#xA;-i: 以交互模式运行容器;&#xA;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;--name&#xA;&amp;ndash;name: 容器名字;</description>
     </item>
     <item>
       <title></title>
@@ -383,7 +383,7 @@
       <link>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</guid>
-      <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3 修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories 阿里云镜像源地址：&#xD;https://developer.aliyun.com/mirror/ </description>
+      <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3 修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories 阿里云镜像源地址： https://developer.aliyun.com/mirror/ </description>
     </item>
     <item>
       <title></title>
@@ -432,7 +432,7 @@
       <link>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</guid>
-      <description>&#xD;下载镜像&#xD;#&#xD;# 官方提供的mysql镜像&#xD;docker pull mysql 创建容器&#xD;#&#xD;docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器&#xD;#&#xD;docker exec -it mysql_wxc bash </description>
+      <description>&#xD;下载镜像&#xD;#&#xD;# 官方提供的mysql镜像 docker pull mysql 创建容器&#xD;#&#xD;docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器&#xD;#&#xD;docker exec -it mysql_wxc bash </description>
     </item>
     <item>
       <title></title>
@@ -495,7 +495,7 @@
       <link>https://r.xboox.cn/document/ffmpeg/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/ffmpeg/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</guid>
-      <description>1. 交叉编译 ffmpeg -&amp;gt; aarch64&#xD;#&#xD;1.1参数说明：&#xD;#&#xD;--cross-prefix 指定交叉编译工具链路径&#xD;--arch 指定cpu指令集架构&#xD;--target-os 目标系统 linux&#xD;--cc c 编译器 默认：cc 这里指定clang google官方已经在ndk去掉了gcc&#xD;--enable-cross-compile 开启交叉编译&#xD;--disable-static 关闭静态编译&#xD;--enable-shared 开启shared表示编译动态链接库&#xD;--disable-ffmpeg 不开启ffmpeg 模块&#xD;--disable-ffplay 不开启ffplay 播放器模块&#xD;--disable-ffprobe 不开启ffprobe 音视频分析模块 1.2设置环境变量&#xD;#&#xD;NDK版本：android-ndk-r22b&#xA;export NDK_ROOT=/mnt/e/WorkRoom/ubuntu/android-ndk-r22b/toolchains/llvm/prebuilt/linux-x86_64 export SYSROOT=$NDK_ROOT/sysroot 1.3 执行 ./configure&#xD;#&#xD;需要注意：新版本ndk工具链取消了gcc编译器，默认编译器是clang,配置项目里面需要指定c/c++ 编译器&#xA;&amp;ndash;cc=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang &amp;ndash;cxx=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang++&#xA;完整的编译参数如下：&#xA;small@small:~$ ./configure \ --prefix=/mnt/e/WorkRoom/ffmpeg/ffarm \ --arch=aarch64 \ --cpu=armv8 \ --target-os=android \ --sysroot=$SYSROOT \ --cross-prefix=$NDK_ROOT/bin/aarch64-linux-android- \ --extra-cflags=&amp;#34;-I$SYSROOT/usr/include -fPIC -DANDROID -mfpu=neon -mfloat-abi=softfp &amp;#34; \ --extra-ldflags=&amp;#34;-L$SYSROOT/usr/lib&amp;#34; \ --cc=$NDK_ROOT/bin/aarch64-linux-android21-clang \ --nm=$NDK_ROOT/bin/aarch64-linux-android-nm \ --cxx=$NDK_ROOT/bin/aarch64-linux-android21-clang++ \ --enable-runtime-cpudetect \ --enable-neon \ --enable-shared \ --enable-asm \ --disable-static \ --enable-cross-compile \ --enable-small \ --enable-jni \ --enable-mediacodec \ --enable-gpl \ --enable-decoder=h264_mediacodec \ --disable-doc \ --disable-debug \ --disable-ffmpeg \ --disable-ffplay \ --disable-ffprobe \ --disable-postproc \ --disable-avdevice \ --disable-symver \ --disable-stripping # --enable-hwaccel=h264_mediacodec \&#xD;# --enable-asm \&#xD;设置环境变量 export NDK_ROOT=/mnt/e/WorkRoom/android/ndk/android-ndk-r26b/toolchains/llvm/prebuilt/linux-x86_64</description>
+      <description>1. 交叉编译 ffmpeg -&amp;gt; aarch64&#xD;#&#xD;1.1参数说明：&#xD;#&#xD;--cross-prefix 指定交叉编译工具链路径 --arch 指定cpu指令集架构 --target-os 目标系统 linux --cc c 编译器 默认：cc 这里指定clang google官方已经在ndk去掉了gcc --enable-cross-compile 开启交叉编译 --disable-static 关闭静态编译 --enable-shared 开启shared表示编译动态链接库 --disable-ffmpeg 不开启ffmpeg 模块 --disable-ffplay 不开启ffplay 播放器模块 --disable-ffprobe 不开启ffprobe 音视频分析模块 1.2设置环境变量&#xD;#&#xD;NDK版本：android-ndk-r22b&#xA;export NDK_ROOT=/mnt/e/WorkRoom/ubuntu/android-ndk-r22b/toolchains/llvm/prebuilt/linux-x86_64 export SYSROOT=$NDK_ROOT/sysroot 1.3 执行 ./configure&#xD;#&#xD;需要注意：新版本ndk工具链取消了gcc编译器，默认编译器是clang,配置项目里面需要指定c/c++ 编译器&#xA;&amp;ndash;cc=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang &amp;ndash;cxx=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang++&#xA;完整的编译参数如下：&#xA;small@small:~$ ./configure \ --prefix=/mnt/e/WorkRoom/ffmpeg/ffarm \ --arch=aarch64 \ --cpu=armv8 \ --target-os=android \ --sysroot=$SYSROOT \ --cross-prefix=$NDK_ROOT/bin/aarch64-linux-android- \ --extra-cflags=&amp;#34;-I$SYSROOT/usr/include -fPIC -DANDROID -mfpu=neon -mfloat-abi=softfp &amp;#34; \ --extra-ldflags=&amp;#34;-L$SYSROOT/usr/lib&amp;#34; \ --cc=$NDK_ROOT/bin/aarch64-linux-android21-clang \ --nm=$NDK_ROOT/bin/aarch64-linux-android-nm \ --cxx=$NDK_ROOT/bin/aarch64-linux-android21-clang++ \ --enable-runtime-cpudetect \ --enable-neon \ --enable-shared \ --enable-asm \ --disable-static \ --enable-cross-compile \ --enable-small \ --enable-jni \ --enable-mediacodec \ --enable-gpl \ --enable-decoder=h264_mediacodec \ --disable-doc \ --disable-debug \ --disable-ffmpeg \ --disable-ffplay \ --disable-ffprobe \ --disable-postproc \ --disable-avdevice \ --disable-symver \ --disable-stripping # --enable-hwaccel=h264_mediacodec \&#xD;# --enable-asm \&#xD;设置环境变量 export NDK_ROOT=/mnt/e/WorkRoom/android/ndk/android-ndk-r26b/toolchains/llvm/prebuilt/linux-x86_64</description>
     </item>
     <item>
       <title></title>
@@ -544,7 +544,7 @@
       <link>https://r.xboox.cn/document/ffmpeg/%E7%BC%96%E8%AF%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/ffmpeg/%E7%BC%96%E8%AF%91/</guid>
-      <description>linux 编译 ffmpeg&#xD;#&#xD;下载源码&#xA;下载ffmpeg源码 或者通过git clone源码：&#xA;git clone git@github.com:FFmpeg/FFmpeg.git 进入源码根目录，执行./configure 出现如下错误：&#xA;nasm/yasm not found 需要下载yasm汇编器&#xA;下载yasm汇编器&#xA;wget https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz 解压安装 :&#xA;tar -zxvf yasm-1.3.0.tar.gz 进入解压后目录&#xA;cd yasm-1.3.0&#xD;./configure&#xD;# 接着 make sudo make install 接着返回 ffmpeg目录，执行命令&#xA;small@small:~/FFmpeg$&#xD;./configure --prefix=&amp;#34;/usr/local/ffmpeg/&amp;#34; --enable-libx264 --enable-gpl --enable-nonfree --enable-libfdk-aac 出现如下显示就代表成功了：&#xA;small@small:~/FFmpeg$ ./configure install prefix /usr/local source path . C compiler gcc C library glibc ARCH x86 (generic) big-endian no runtime cpu detection yes standalone assembly yes x86 assembler yasm MMX enabled yes MMXEXT enabled yes 3DNow!</description>
+      <description>linux 编译 ffmpeg&#xD;#&#xD;下载源码&#xA;下载ffmpeg源码 或者通过git clone源码：&#xA;git clone git@github.com:FFmpeg/FFmpeg.git 进入源码根目录，执行./configure 出现如下错误：&#xA;nasm/yasm not found 需要下载yasm汇编器&#xA;下载yasm汇编器&#xA;wget https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz 解压安装 :&#xA;tar -zxvf yasm-1.3.0.tar.gz 进入解压后目录&#xA;cd yasm-1.3.0 ./configure # 接着 make sudo make install 接着返回 ffmpeg目录，执行命令&#xA;small@small:~/FFmpeg$ ./configure --prefix=&amp;#34;/usr/local/ffmpeg/&amp;#34; --enable-libx264 --enable-gpl --enable-nonfree --enable-libfdk-aac 出现如下显示就代表成功了：&#xA;small@small:~/FFmpeg$ ./configure install prefix /usr/local source path . C compiler gcc C library glibc ARCH x86 (generic) big-endian no runtime cpu detection yes standalone assembly yes x86 assembler yasm MMX enabled yes MMXEXT enabled yes 3DNow!</description>
     </item>
     <item>
       <title></title>
@@ -565,7 +565,7 @@
       <link>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
-      <description>新建flutter module&#xD;#&#xD;1. module 的 settings.gradle ：&#xD;#&#xD;// Generated file. Do not edit.&#xD;include &amp;#39;:app&amp;#39;&#xD;//复制下面内容到主项目的 settings.gradle 中&#xD;rootProject.name = &amp;#39;android_generated&amp;#39;&#xD;setBinding(new Binding([gradle: this]))&#xD;//这里模块名称修改成自己的，参考下图&#xD;evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：&#xD;#&#xD;dependencies {&#xD;implementation project(&amp;#39;:flutter&amp;#39;)&#xD;} 3. 编译运行：失败&#xD;#&#xD;Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.&#xD;#&#xD;这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1.</description>
+      <description>新建flutter module&#xD;#&#xD;1. module 的 settings.gradle ：&#xD;#&#xD;// Generated file. Do not edit. include &amp;#39;:app&amp;#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &amp;#39;android_generated&amp;#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：&#xD;#&#xD;dependencies { implementation project(&amp;#39;:flutter&amp;#39;) } 3. 编译运行：失败&#xD;#&#xD;Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.&#xD;#&#xD;这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1.</description>
     </item>
     <item>
       <title></title>
@@ -586,7 +586,7 @@
       <link>https://r.xboox.cn/document/flutter/1.setup/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/flutter/1.setup/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
-      <description>&#xD;flutter 初体验&#xD;#&#xD;1. 下载flutter sdk&#xD;#&#xD;2. 配置环境变量&#xD;#&#xD;E:\WorkRoom\android\flutter\flutter\bin&#xD;添加到path中 运行命令：&#xA;flutter doctor 这一步有可能卡在 Running pub upgrade... 解决办法：&#xD;#&#xD;# 配置环境变量，国内镜像 PUB_HOSTED_URL=https://pub.flutter-io.cn FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn 许可证的问题，not accepted,那就让他ok，根据提示输入命令：&#xA;flutter doctor --android-licenses 一路yes到底，最后再检查一次就 ok 了 3. 配置IDE&#xD;#&#xD;vscode 配置 ：搜索 安装flutter插件&#xA;android studio : 安装flutter插件&#xA;接着运行 flutter doctor&#xA;手动更新依赖包：&#xA;flutter packages get </description>
+      <description>&#xD;flutter 初体验&#xD;#&#xD;1. 下载flutter sdk&#xD;#&#xD;2. 配置环境变量&#xD;#&#xD;E:\WorkRoom\android\flutter\flutter\bin 添加到path中 运行命令：&#xA;flutter doctor 这一步有可能卡在 Running pub upgrade... 解决办法：&#xD;#&#xD;# 配置环境变量，国内镜像 PUB_HOSTED_URL=https://pub.flutter-io.cn FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn 许可证的问题，not accepted,那就让他ok，根据提示输入命令：&#xA;flutter doctor --android-licenses 一路yes到底，最后再检查一次就 ok 了 3. 配置IDE&#xD;#&#xD;vscode 配置 ：搜索 安装flutter插件&#xA;android studio : 安装flutter插件&#xA;接着运行 flutter doctor&#xA;手动更新依赖包：&#xA;flutter packages get </description>
     </item>
     <item>
       <title></title>
@@ -656,7 +656,7 @@
       <link>https://r.xboox.cn/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
-      <description>将本地项目提交到远程仓库需要以下操作：&#xD;#&#xD;1. 本地提交&#xD;#&#xD;git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; 2. 添加目标仓库地址&#xD;#&#xD;git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push&#xD;#&#xD;# 允许一些无关联的历史&#x9;git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支&#xD;# 强制进行push&#xD;git push origin master -f 修改远程仓库地址3种方式&#xD;#&#xD;1. 直接修改&#xD;#&#xD;git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库&#xD;git remote set-url --add origin [url] 2. 先删除后修改&#xD;#&#xD;删除</description>
+      <description>将本地项目提交到远程仓库需要以下操作：&#xD;#&#xD;1. 本地提交&#xD;#&#xD;git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; 2. 添加目标仓库地址&#xD;#&#xD;git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push&#xD;#&#xD;# 允许一些无关联的历史&#x9;git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 # 强制进行push git push origin master -f 修改远程仓库地址3种方式&#xD;#&#xD;1. 直接修改&#xD;#&#xD;git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库 git remote set-url --add origin [url] 2. 先删除后修改&#xD;#&#xD;删除</description>
     </item>
     <item>
       <title></title>
@@ -712,7 +712,7 @@
       <link>https://r.xboox.cn/document/git/nas%E4%BD%BF%E7%94%A8gitserver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/git/nas%E4%BD%BF%E7%94%A8gitserver/</guid>
-      <description>群晖nas 使用 git server&#xD;#&#xD;安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits&#xA;创建git本地账户在nas上 控制面板-&amp;gt; 用户群组 -&amp;gt; 新增 gits 用户&#xA;进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git&#xD;chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</description>
+      <description>群晖nas 使用 git server&#xD;#&#xD;安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits&#xA;创建git本地账户在nas上 控制面板-&amp;gt; 用户群组 -&amp;gt; 新增 gits 用户&#xA;进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</description>
     </item>
     <item>
       <title></title>
@@ -740,7 +740,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>&#xD;安装环境，配置环境变量&#xD;#&#xD;GOROOT:go安装路径&#xD;GOPATH: 项目目录&#xD;PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境&#xD;#&#xD;https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct&#xA;# 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）&#xD;go env -w GOPRIVATE=*.corp.example.com&#xD;# 设置不走 proxy 的私有组织（可选）&#xD;go env -w GOPRIVATE=example.com/org_name&#xD;go moudle 初始化&#xD;#&#xD;go mod project_name&#xD;go build&#xD;go mod 引用本地项目&#xD;#&#xD;go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt </description>
+      <description>&#xD;安装环境，配置环境变量&#xD;#&#xD;GOROOT:go安装路径 GOPATH: 项目目录 PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境&#xD;#&#xD;https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct&#xA;# 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）&#xD;go env -w GOPRIVATE=*.corp.example.com&#xD;# 设置不走 proxy 的私有组织（可选）&#xD;go env -w GOPRIVATE=example.com/org_name&#xD;go moudle 初始化&#xD;#&#xD;go mod project_name&#xD;go build&#xD;go mod 引用本地项目&#xD;#&#xD;go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt </description>
     </item>
     <item>
       <title></title>
@@ -761,7 +761,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</guid>
-      <description>闭包&#xD;#&#xD;func TestCloser(t *testing.T) { x := func() func() { var i = 1 return func() { i++ log.Println(&amp;#34;i = &amp;#34;, i) } }() x() x() } 输出结果：&#xA;=== RUN TestCloser&#xD;2022/04/10 21:42:09 2&#xD;2022/04/10 21:42:09 3&#xD;--- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
+      <description>闭包&#xD;#&#xD;func TestCloser(t *testing.T) { x := func() func() { var i = 1 return func() { i++ log.Println(&amp;#34;i = &amp;#34;, i) } }() x() x() } 输出结果：&#xA;=== RUN TestCloser 2022/04/10 21:42:09 2 2022/04/10 21:42:09 3 --- PASS: TestCloser (0.01s) 闭包持有外部变量i，</description>
     </item>
     <item>
       <title></title>
@@ -803,7 +803,7 @@
       <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/7.%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
-      <description>go中的异常处理机制&#xD;#&#xD;为了保证程序不会因为一个异常而导致停摆，同时又不像其它语言那么啰嗦，对go语言的异常机制的简单理解实践一下吧&#xA;package main import &amp;#34;fmt&amp;#34; func divide(a int,b int,isPanic bool) int { //,类似于 java try catch ，，通过panic抛出异常 recover 捕获， if isPanic{ defer func() { if err := recover(); err != nil{ fmt.Println(err) } }() } //可以自行捕获异常,自定义异常信息 /*if b==0{ panic(&amp;#34;除数不能等于0&amp;#34;) }*/ c := a/b return c } func main() { divide(3,0,true) fmt.Println(&amp;#34;我的天，一切运转正常&amp;#34;) } Out1:&#xA;runtime error: integer divide by zero&#xD;我的天，一切运转正常 Out2:&#xA;自定义异常信息&#xD;除数不能等于0&#xD;我的天，一切运转正常 如果没有recover,程序不能正常往下执行，就此打住了；</description>
+      <description>go中的异常处理机制&#xD;#&#xD;为了保证程序不会因为一个异常而导致停摆，同时又不像其它语言那么啰嗦，对go语言的异常机制的简单理解实践一下吧&#xA;package main import &amp;#34;fmt&amp;#34; func divide(a int,b int,isPanic bool) int { //,类似于 java try catch ，，通过panic抛出异常 recover 捕获， if isPanic{ defer func() { if err := recover(); err != nil{ fmt.Println(err) } }() } //可以自行捕获异常,自定义异常信息 /*if b==0{ panic(&amp;#34;除数不能等于0&amp;#34;) }*/ c := a/b return c } func main() { divide(3,0,true) fmt.Println(&amp;#34;我的天，一切运转正常&amp;#34;) } Out1:&#xA;runtime error: integer divide by zero 我的天，一切运转正常 Out2:&#xA;自定义异常信息 除数不能等于0 我的天，一切运转正常 如果没有recover,程序不能正常往下执行，就此打住了；</description>
     </item>
     <item>
       <title></title>
@@ -852,7 +852,7 @@
       <link>https://r.xboox.cn/document/golang/2.beego/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/2.beego/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</guid>
-      <description>&#xD;安装beego管理工具bee&#xD;#&#xD;go get github.com/beego/bee go get github.com/astaxie/beego 装好了bee管理工具之后，运用bee创建项目&#xD;#&#xD;创建项目&#xD;#&#xD;bee new会自动在GOPATH路径src目录下创建项目&#xA;bee new project_name 运行项目&#xD;#&#xD;定位到项目目录 GOPATH/src/project_name&#xA;go build project_name&#xD;go run&#xD;或者&#xD;bee run </description>
+      <description>&#xD;安装beego管理工具bee&#xD;#&#xD;go get github.com/beego/bee go get github.com/astaxie/beego 装好了bee管理工具之后，运用bee创建项目&#xD;#&#xD;创建项目&#xD;#&#xD;bee new会自动在GOPATH路径src目录下创建项目&#xA;bee new project_name 运行项目&#xD;#&#xD;定位到项目目录 GOPATH/src/project_name&#xA;go build project_name go run 或者 bee run </description>
     </item>
     <item>
       <title></title>
@@ -901,14 +901,14 @@
       <link>https://r.xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</guid>
-      <description>&#xD;1. 定义proto文件&#xD;#&#xD;//声明protobuf版本&#xD;syntax = &amp;#34;proto3&amp;#34;; 自动生成pb的时候，会提示要有go_package&#xA;option go_package=&amp;#39;.;grpc&amp;#39;; .: 表示生成pb文件在哪个位置 ;grpc: 表示生成的pb文件所属包名 package grpc;&#xD;service Greeter{&#xD;rpc SayHello (HelloRequest) returns(HelloReply){}&#xD;}&#xD;message HelloRequest{&#xD;string name = 1;&#xD;}&#xD;message HelloReply{&#xD;string message = 1;&#xD;} 2. 生成pb文件&#xD;#&#xD;//go:generate protoc -I . --go_out=plugins=grpc:./ ./helloworld.proto </description>
+      <description>&#xD;1. 定义proto文件&#xD;#&#xD;//声明protobuf版本 syntax = &amp;#34;proto3&amp;#34;; 自动生成pb的时候，会提示要有go_package&#xA;option go_package=&amp;#39;.;grpc&amp;#39;; .: 表示生成pb文件在哪个位置 ;grpc: 表示生成的pb文件所属包名 package grpc; service Greeter{ rpc SayHello (HelloRequest) returns(HelloReply){} } message HelloRequest{ string name = 1; } message HelloReply{ string message = 1; } 2. 生成pb文件&#xD;#&#xD;//go:generate protoc -I . --go_out=plugins=grpc:./ ./helloworld.proto </description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
-      <description>&#xD;配置基本信息&#xD;#&#xD;获取grpc go get -u google.golang.org/grpc&#xD;go get -u github.com/golang/protobuf/{proto,protoc-gen-go} </description>
+      <description>&#xD;配置基本信息&#xD;#&#xD;获取grpc go get -u google.golang.org/grpc go get -u github.com/golang/protobuf/{proto,protoc-gen-go} </description>
     </item>
     <item>
       <title></title>
@@ -943,7 +943,7 @@
       <link>https://r.xboox.cn/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>mkdir /lib64&#xD;ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 </description>
+      <description>mkdir /lib64 ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 </description>
     </item>
     <item>
       <title></title>
@@ -978,7 +978,7 @@
       <link>https://r.xboox.cn/document/golang/socket.io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/socket.io/</guid>
-      <description>socket.io 配置到外网 服务器后，就会出现如下问题&#xA;Error during WebSocket handshake: Unexpected response code: 400&#xD;，根据github的讨论，得到如下答案&#xA;proxy_http_version 1.1;&#xD;proxy_set_header Upgrade $http_upgrade;&#xD;proxy_set_header Connection &amp;#34;upgrade&amp;#34;;&#xD;proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
+      <description>socket.io 配置到外网 服务器后，就会出现如下问题&#xA;Error during WebSocket handshake: Unexpected response code: 400&#xD;，根据github的讨论，得到如下答案&#xA;proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection &amp;#34;upgrade&amp;#34;; proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
     </item>
     <item>
       <title></title>
@@ -1013,7 +1013,7 @@
       <link>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地&#xD;git clone git@github.com:Yourname/Yourname.github.io.git&#xD;# 切换分支到master，默认应该是main&#xD;git checkout -b master&#xD;# 查看分支&#xD;git branch&#xD;main&#xD;* master&#xD;# 添加 index.html文件,并编辑&#xD;touch index.html&#xD;# 提交&#xD;git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
+      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>
@@ -1097,7 +1097,7 @@
       <link>https://r.xboox.cn/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</guid>
-      <description>&#xD;卸载软件&#xD;#&#xD;apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.d&#xD;sudo rm -rf /var/lib/docker 卸载完毕 docker --version </description>
+      <description>&#xD;卸载软件&#xD;#&#xD;apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc 看看还有没有 dpkg -l | grep docker 卸载一切有关联的软件 sudo apt-get autoremove docker-ce-* 删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.d sudo rm -rf /var/lib/docker 卸载完毕 docker --version </description>
     </item>
     <item>
       <title></title>
@@ -1132,7 +1132,7 @@
       <link>https://r.xboox.cn/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</guid>
-      <description>&#xD;进程相关&#xD;#&#xD;# 查找进程&#xD;ps auxf |grep uwsgi&#xD;# 查看当前进程&#xD;pstree -ap|grep gunicorn&#xD;# 杀死 进程&#xD;kill -9 544 </description>
+      <description>&#xD;进程相关&#xD;#&#xD;# 查找进程 ps auxf |grep uwsgi # 查看当前进程 pstree -ap|grep gunicorn # 杀死 进程 kill -9 544 </description>
     </item>
     <item>
       <title></title>
@@ -1181,7 +1181,7 @@
       <link>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>Linux 防火墙 ufw firewalld iptables&#xD;#&#xD;默认：iptables 2. ubuntu : ufw&#xD;#&#xD;ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall&#xD;#&#xD;systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld&#xD;查看状态： systemctl status firewalld&#xD;停止： systemctl disable firewalld&#xD;禁用： systemctl stop firewalld&#xD;启动服务：systemctl start firewalld.</description>
+      <description>Linux 防火墙 ufw firewalld iptables&#xD;#&#xD;默认：iptables 2. ubuntu : ufw&#xD;#&#xD;ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall&#xD;#&#xD;systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld.</description>
     </item>
     <item>
       <title></title>
@@ -1230,7 +1230,7 @@
       <link>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
-      <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8])&#xD;&amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
+      <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8]) &amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
     </item>
     <item>
       <title></title>
@@ -1377,14 +1377,14 @@
       <link>https://r.xboox.cn/document/nas/synology-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nas/synology-config/</guid>
-      <description>群晖nas配置 ssh连接，root用户登录&#xA;群晖默认不支持root权限登录，需要修改权限&#xA;普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件&#xA;修改sshd_config 权限&#xA;chmod 755 sshd_config 编辑sshd_config文件，找到&#xA;#PermitRootLogin prohibit-password # 修改成 yes&#xD;PermitRootLogin yes 退出编辑&#xA;修改root密码&#xA;synouser --setpw root 这里是新密码 退出重新用root登录 . OK!</description>
+      <description>群晖nas配置 ssh连接，root用户登录&#xA;群晖默认不支持root权限登录，需要修改权限&#xA;普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件&#xA;修改sshd_config 权限&#xA;chmod 755 sshd_config 编辑sshd_config文件，找到&#xA;#PermitRootLogin prohibit-password # 修改成 yes PermitRootLogin yes 退出编辑&#xA;修改root密码&#xA;synouser --setpw root 这里是新密码 退出重新用root登录 . OK!</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</guid>
-      <description>&#xD;一个端口配置多个服务&#xD;#&#xD;实验阶段&amp;mdash;&amp;mdash;-&#xA;server { listen 80; server_name apitest.aa.com; location / {&#xD;proxy_pass http://10.26.31.176:8081; #微服务地址测试环境&#xD;root html; index index.html index.htm; } }&#xD;server { listen 80; server_name api.aa.com; location / { proxy_pass http://10.26.31.176:8080; #微服务地址线上环境&#xD;root html; index index.html index.htm; } } </description>
+      <description>&#xD;一个端口配置多个服务&#xD;#&#xD;实验阶段&amp;mdash;&amp;mdash;-&#xA;server { listen 80; server_name apitest.aa.com; location / { proxy_pass http://10.26.31.176:8081; #微服务地址测试环境 root html; index index.html index.htm; } } server { listen 80; server_name api.aa.com; location / { proxy_pass http://10.26.31.176:8080; #微服务地址线上环境 root html; index index.html index.htm; } } </description>
     </item>
     <item>
       <title></title>
@@ -1426,7 +1426,7 @@
       <link>https://r.xboox.cn/document/nginx/%E8%BF%94%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E8%BF%94%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE/</guid>
-      <description>配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置&#xA;location / {&#xD;try_files $uri /index.html;&#xD;} </description>
+      <description>配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置&#xA;location / { try_files $uri /index.html; } </description>
     </item>
     <item>
       <title></title>
@@ -1440,7 +1440,7 @@
       <link>https://r.xboox.cn/document/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
-      <description>&#xD;性能测试工具使用&#xD;#&#xD;1.安装&#xA;git clone https://github.com/wg/wrk&#xD;cd wrk&#xD;make # 编译&#xD;cp wrk /usr/local/sbin # 二进制文件 放入非管理员目录，可直接运行命令 wrk http://163.com&#xA;Thread Stats Avg Stdev Max +/- Stdev&#xD;Latency 32.49ms 56.14ms 230.86ms 84.38%&#xD;Req/Sec 637.05 222.35 1.09k 63.00%&#xD;12710 requests in 10.03s, 6.71MB read&#xD;Requests/sec: 1267.57&#xD;Transfer/sec: 685.72KB </description>
+      <description>&#xD;性能测试工具使用&#xD;#&#xD;1.安装&#xA;git clone https://github.com/wg/wrk cd wrk make # 编译 cp wrk /usr/local/sbin # 二进制文件 放入非管理员目录，可直接运行命令 wrk http://163.com&#xA;Thread Stats Avg Stdev Max +/- Stdev Latency 32.49ms 56.14ms 230.86ms 84.38% Req/Sec 637.05 222.35 1.09k 63.00% 12710 requests in 10.03s, 6.71MB read Requests/sec: 1267.57 Transfer/sec: 685.72KB </description>
     </item>
     <item>
       <title></title>
@@ -1475,14 +1475,14 @@
       <link>https://r.xboox.cn/document/python/enviroment/anaconda/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/enviroment/anaconda/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
-      <description>生成配置文件：conda config命令&#xA;conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/&#xD;conda config --set show_channel_urls yes 会在用户根目录下生成.condarc文件&#xA;conda info 查看是否生效</description>
+      <description>生成配置文件：conda config命令&#xA;conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ conda config --set show_channel_urls yes 会在用户根目录下生成.condarc文件&#xA;conda info 查看是否生效</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>创建虚拟环境，并指定安装的model&#xA;conda create -n env_name script_name&#xD;F:&#xD;conda create -n tensorflow tensorflow-gpu==2.1 指定要安装的model版本，conda会自动安装所有关联的包</description>
+      <description>创建虚拟环境，并指定安装的model&#xA;conda create -n env_name script_name F: conda create -n tensorflow tensorflow-gpu==2.1 指定要安装的model版本，conda会自动安装所有关联的包</description>
     </item>
     <item>
       <title></title>
@@ -1503,7 +1503,7 @@
       <link>https://r.xboox.cn/document/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
-      <description>&#xD;修改源的两种方式&#xD;#&#xD;临时修改 -i 指定源 安装指定的 model&#xA;-U : 升级到最新版本&#xA;-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -U&#xD;pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源&#xD;#&#xD;name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ </description>
+      <description>&#xD;修改源的两种方式&#xD;#&#xD;临时修改 -i 指定源 安装指定的 model&#xA;-U : 升级到最新版本&#xA;-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat 永久修改 pip install pip -U pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ 源&#xD;#&#xD;name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ </description>
     </item>
     <item>
       <title></title>
@@ -1559,7 +1559,7 @@
       <link>https://r.xboox.cn/document/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>
-      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip&#xD;127.0.0.1&#x9;student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;) 3.设置 config 配置 SERVER_NAME=主域名</description>
+      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip 127.0.0.1&#x9;student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;) 3.设置 config 配置 SERVER_NAME=主域名</description>
     </item>
     <item>
       <title></title>
@@ -1587,7 +1587,7 @@
       <link>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</guid>
-      <description>编译配套 ssl的 uwsgi&#xD;#&#xD;安装编译需要的环境&#xD;#&#xD;yum install openssl&#xD;yum install openssl-devel 安装 greenlet&#xD;#&#xD;pip3 install greenlet 找到 greenlet 位置&#xD;#&#xD;/root/.virtualenvs/flask/include/site/python3.6 安装&#xD;#&#xD;CFLAGS=&amp;#34;-I/root/.virtualenvs/flask/include/site/python3.6&amp;#34; UWSGI_PROFILE=&amp;#34;asyncio&amp;#34; pip install uwsgi --no-use-wheel or&#xA;CFLAGS=&amp;#34;-I/usr/include/openssl&amp;#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir CFLAGS=&amp;quot;-I$/usr/bin/python3.6&amp;quot; UWSGI_PROFILE=&amp;ldquo;asyncio&amp;rdquo; pip3 install uwsgi &amp;ndash;no-use-wheel&#xA;CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;CFLAGS=&amp;quot;-I/usr/include/openssl&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;sudo CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &amp;ndash;no-cache-dir</description>
+      <description>编译配套 ssl的 uwsgi&#xD;#&#xD;安装编译需要的环境&#xD;#&#xD;yum install openssl yum install openssl-devel 安装 greenlet&#xD;#&#xD;pip3 install greenlet 找到 greenlet 位置&#xD;#&#xD;/root/.virtualenvs/flask/include/site/python3.6 安装&#xD;#&#xD;CFLAGS=&amp;#34;-I/root/.virtualenvs/flask/include/site/python3.6&amp;#34; UWSGI_PROFILE=&amp;#34;asyncio&amp;#34; pip install uwsgi --no-use-wheel or&#xA;CFLAGS=&amp;#34;-I/usr/include/openssl&amp;#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir CFLAGS=&amp;quot;-I$/usr/bin/python3.6&amp;quot; UWSGI_PROFILE=&amp;ldquo;asyncio&amp;rdquo; pip3 install uwsgi &amp;ndash;no-use-wheel&#xA;CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;CFLAGS=&amp;quot;-I/usr/include/openssl&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;sudo CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &amp;ndash;no-cache-dir</description>
     </item>
     <item>
       <title></title>
@@ -1601,7 +1601,7 @@
       <link>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
-      <description>mysql 配置&#xD;#&#xD;首先查看centos是否已经安装了mysql源&#xD;#&#xD;yum list installed mysql*&#xD;如果有就删除&#xD;yum remove mysql-community-* 安装mysql源&#xD;#&#xD;https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql&#xD;#&#xD;yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源&#xD;#&#xD;yum repolist all | grep mysql 查看数据库源&#xD;#&#xD;/etc/yum.repos.d/mysql-community.repo&#xD;修改源可用 mysql80 enable = 1 安装数据库服务&#xD;#&#xD;yum install mysql-server 启动mysql&#xD;#&#xD;systemctl start mysqld.service 查看状态&#xD;#&#xD;systemctl status mysqld.service 查看初始密码&#xD;#&#xD;grep &amp;#34;password&amp;#34; /var/log/mysqld.log 修改密码&#xD;#&#xD;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功&#xD;#&#xD;开启mysql的远程访问 两种方式&#xD;#&#xD;方式1 grant all privileges on *.</description>
+      <description>mysql 配置&#xD;#&#xD;首先查看centos是否已经安装了mysql源&#xD;#&#xD;yum list installed mysql* 如果有就删除 yum remove mysql-community-* 安装mysql源&#xD;#&#xD;https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql&#xD;#&#xD;yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源&#xD;#&#xD;yum repolist all | grep mysql 查看数据库源&#xD;#&#xD;/etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1 安装数据库服务&#xD;#&#xD;yum install mysql-server 启动mysql&#xD;#&#xD;systemctl start mysqld.service 查看状态&#xD;#&#xD;systemctl status mysqld.service 查看初始密码&#xD;#&#xD;grep &amp;#34;password&amp;#34; /var/log/mysqld.log 修改密码&#xD;#&#xD;mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功&#xD;#&#xD;开启mysql的远程访问 两种方式&#xD;#&#xD;方式1 grant all privileges on *.</description>
     </item>
     <item>
       <title></title>
@@ -1706,7 +1706,7 @@
       <link>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</guid>
-      <description>windows 平台 环境配置&#xD;#&#xD;首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包&#xD;pip install pyqt5&#xD;pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具&#xD;#&#xD;打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：&#xA;D:\Anaconda3\envs\python_basic\Scripts\designer.exe&#xA;Working directory 这个路径是工作路径，所以一般就填入$FileDir$&#xA;编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：&#xA;Program: python.exe 路径&#xD;Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py&#xD;Working directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了&#xA;最后一步，转换成py文件 end</description>
+      <description>windows 平台 环境配置&#xD;#&#xD;首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包 pip install pyqt5 pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具&#xD;#&#xD;打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：&#xA;D:\Anaconda3\envs\python_basic\Scripts\designer.exe&#xA;Working directory 这个路径是工作路径，所以一般就填入$FileDir$&#xA;编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：&#xA;Program: python.exe 路径 Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py Working directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了&#xA;最后一步，转换成py文件 end</description>
     </item>
     <item>
       <title></title>
@@ -1741,7 +1741,7 @@
       <link>https://r.xboox.cn/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>&#xD;windows&#xD;#&#xD;-b 绑定ip地址&#xD;python -m http.server -b 192.168.1.145 8888 Mac 系统&#xD;#&#xD;python -m SimpleHTTPServer 8888 </description>
+      <description>&#xD;windows&#xD;#&#xD;-b 绑定ip地址 python -m http.server -b 192.168.1.145 8888 Mac 系统&#xD;#&#xD;python -m SimpleHTTPServer 8888 </description>
     </item>
     <item>
       <title></title>
@@ -1895,7 +1895,7 @@
       <link>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
-      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more&#xD;/.&#xD;/etc&#xD;/etc/default&#xD;/etc/default/openvpn&#xD;/etc/init.d&#xD;/etc/init.d/openvpn&#xD;/etc/network&#xD;/etc/network/if-down.d&#xD;/etc/network/if-down.d/openvpn&#xD;/etc/network/if-up.d&#xD;/etc/network/if-up.d/openvpn&#xD;/etc/openvpn&#xD;/etc/openvpn/client&#xD;/etc/openvpn/server&#xD;/etc/openvpn/update-resolv-conf&#xD;/lib&#xD;/lib/systemd&#xD;/lib/systemd/system&#xD;/lib/systemd/system/openvpn-client@.service&#xD;/lib/systemd/system/openvpn-server@.service&#xD;/lib/systemd/system/openvpn.service&#xD;/lib/systemd/system/openvpn@.service&#xD;/lib/systemd/system-generators&#xD;/lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn&#xD;mkdir easy-rsa&#xD;cd easy-rsa/&#xD;cp -r /usr/share/easy-rsa/* .</description>
+      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn&#xD;mkdir easy-rsa&#xD;cd easy-rsa/&#xD;cp -r /usr/share/easy-rsa/* .</description>
     </item>
     <item>
       <title></title>
@@ -1937,7 +1937,7 @@
       <link>https://r.xboox.cn/document/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</guid>
-      <description>&#xD;vue 和jinjia2模板冲突：&#xD;#&#xD;修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[&#xD;app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39; </description>
+      <description>&#xD;vue 和jinjia2模板冲突：&#xD;#&#xD;修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[ app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39; </description>
     </item>
     <item>
       <title></title>
@@ -1965,7 +1965,7 @@
       <link>https://r.xboox.cn/document/windows/windows-terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/windows/windows-terminal/</guid>
-      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片，&#xD;#&#xD;&amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;,&#xD;&amp;#34;backgroundImageOpacity&amp;#34;: 0.3,&#xD;&amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果：&#xD;#&#xD;重新打开终端，ok</description>
+      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片，&#xD;#&#xD;&amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;, &amp;#34;backgroundImageOpacity&amp;#34;: 0.3, &amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果：&#xD;#&#xD;重新打开终端，ok</description>
     </item>
     <item>
       <title></title>

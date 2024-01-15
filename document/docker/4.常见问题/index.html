@@ -5610,8 +5610,8 @@ docker logs -f -t --tail 20 nginx 操作无权限#aa-remove-unknown
   <a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%a4%b1%e8%b4%a5">#</a>
 </h2>
 <p>查看日志</p>
-<pre tabindex="0"><code>docker logs -f -t --tail 20 nginx
-</code></pre><h2 id="操作无权限">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker logs -f -t --tail <span style="color:#ae81ff">20</span> nginx
+</span></span></code></pre></div><h2 id="操作无权限">
   操作无权限
   <a class="anchor" href="#%e6%93%8d%e4%bd%9c%e6%97%a0%e6%9d%83%e9%99%90">#</a>
 </h2>
@@ -5671,25 +5671,25 @@ docker logs -f -t --tail 20 nginx 操作无权限#aa-remove-unknown
 </span></span></code></pre></div><ol start="3">
 <li>检查docker 网卡设置</li>
 </ol>
-<pre tabindex="0"><code>docker容器启动后外部无法连接
-		1第一种
-			sudo service docker stop
-			sudo ip link set dev docker0 down            %关闭docker虚拟网卡
-			sudo brctl delbr docker0
-			sudo iptables -t nat -F POSTROUTING
-			sudo brctl addbr docker0
-			sudo ip addr add 172.16.10.1/24 dev docker0
-			sudo ip link set dev docker0 up 				%开启docker虚拟网卡
-			systemctl  restart  docker
-			brctl命令需要安装： yum install -y bridge-utils
-			
-		2.第二种
-			systemctl stop docker
-			ifconfig docker0 down
-			brctl delbr docker0
-			systemctl start docker
-# 原文链接：https://blog.csdn.net/CSDN877425287/article/details/106909673
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker容器启动后外部无法连接
+</span></span><span style="display:flex;"><span>		1第一种
+</span></span><span style="display:flex;"><span>			sudo service docker stop
+</span></span><span style="display:flex;"><span>			sudo ip link set dev docker0 down            %关闭docker虚拟网卡
+</span></span><span style="display:flex;"><span>			sudo brctl delbr docker0
+</span></span><span style="display:flex;"><span>			sudo iptables -t nat -F POSTROUTING
+</span></span><span style="display:flex;"><span>			sudo brctl addbr docker0
+</span></span><span style="display:flex;"><span>			sudo ip addr add 172.16.10.1/24 dev docker0
+</span></span><span style="display:flex;"><span>			sudo ip link set dev docker0 up 				%开启docker虚拟网卡
+</span></span><span style="display:flex;"><span>			systemctl  restart  docker
+</span></span><span style="display:flex;"><span>			brctl命令需要安装： yum install -y bridge-utils
+</span></span><span style="display:flex;"><span>			
+</span></span><span style="display:flex;"><span>		2.第二种
+</span></span><span style="display:flex;"><span>			systemctl stop docker
+</span></span><span style="display:flex;"><span>			ifconfig docker0 down
+</span></span><span style="display:flex;"><span>			brctl delbr docker0
+</span></span><span style="display:flex;"><span>			systemctl start docker
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 原文链接：https://blog.csdn.net/CSDN877425287/article/details/106909673</span>
+</span></span></code></pre></div>
 
     
 

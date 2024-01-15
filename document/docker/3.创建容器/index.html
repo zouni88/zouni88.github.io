@@ -5,7 +5,7 @@
 <meta property="og:description" content="创建容器：
 docker run -itd --name=container_name images_name 常用参数说明：
 -p 88:80 端口映射：
-88:宿主机端口 80:容器端口docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)
+88:宿主机端口 80:容器端口 docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)
 -itd
 -i: 以交互模式运行容器;
 -d: 后台运行;
@@ -37,7 +37,7 @@ https://github.com/alex-shpak/hugo-book
   content="创建容器：
 docker run -itd --name=container_name images_name 常用参数说明：
 -p 88:80 端口映射：
-88:宿主机端口 80:容器端口docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)
+88:宿主机端口 80:容器端口 docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)
 -itd
 -i: 以交互模式运行容器;
 -d: 后台运行;
@@ -5616,14 +5616,14 @@ docker run -itd --name=container_name images_name 常用参数说明：
 
 
 <p>创建容器：</p>
-<pre tabindex="0"><code>docker run -itd --name=container_name images_name
-</code></pre><p>常用参数说明：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -itd --name<span style="color:#f92672">=</span>container_name images_name
+</span></span></code></pre></div><p>常用参数说明：</p>
 <p><code>-p 88:80</code> <br>
 端口映射：</p>
-<pre tabindex="0"><code>88:宿主机端口  
-80:容器端口
-docker run -itd --name=ct_name -p 88:80 img_name
-</code></pre><p><code>-v</code> : 文件挂载(宿主机文件目录：容器文件目录)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>88:宿主机端口  
+</span></span><span style="display:flex;"><span>80:容器端口
+</span></span><span style="display:flex;"><span>docker run -itd --name<span style="color:#f92672">=</span>ct_name -p 88:80 img_name
+</span></span></code></pre></div><p><code>-v</code> : 文件挂载(宿主机文件目录：容器文件目录)</p>
 <p><code>-itd</code></p>
 <blockquote>
 <p><strong>-i</strong>: 以交互模式运行容器;<br>

@@ -4,7 +4,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="socket.io 配置到外网 服务器后，就会出现如下问题
 Error during WebSocket handshake: Unexpected response code: 400，根据github的讨论，得到如下答案
-proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header Connection &#34;upgrade&#34;;proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。" />
+proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection &#34;upgrade&#34;; proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/golang/socket.io/" /><meta property="article:section" content="document" />
 
@@ -29,7 +29,7 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="socket.io 配置到外网 服务器后，就会出现如下问题
 Error during WebSocket handshake: Unexpected response code: 400，根据github的讨论，得到如下答案
-proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header Connection &#34;upgrade&#34;;proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。"
+proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection &#34;upgrade&#34;; proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。"
 />
 <title>
   📓 zouni88
@@ -5594,11 +5594,11 @@ proxy_http_version 1.1;proxy_set_header Upgrade $http_upgrade;proxy_set_header
 <pre><code>Error during WebSocket handshake: Unexpected response code: 400
 </code></pre>
 <p>，根据github的讨论，得到如下答案</p>
-<pre tabindex="0"><code>proxy_http_version 1.1;
-proxy_set_header Upgrade $http_upgrade;
-proxy_set_header Connection &#34;upgrade&#34;;
-proxy_set_header Host $host;
-</code></pre><p>其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>proxy_http_version 1.1;
+</span></span><span style="display:flex;"><span>proxy_set_header Upgrade $http_upgrade;
+</span></span><span style="display:flex;"><span>proxy_set_header Connection <span style="color:#e6db74">&#34;upgrade&#34;</span>;
+</span></span><span style="display:flex;"><span>proxy_set_header Host $host;
+</span></span></code></pre></div><p>其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。
 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</p>
 
 

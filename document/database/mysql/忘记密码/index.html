@@ -6,7 +6,7 @@
 /etc/mysql/mysq.conf.d/mysqld.cnf 加入skip-grant-tables 跳过密码登录；
 重启mysql服务
 systemctl restart mysql.service 进入mysql
-# mysql;# use mysql;# 更新密码为空# UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;;# flush privileges;退出 注释掉skip-grant-tables
+# mysql; # use mysql; # 更新密码为空 # UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;; # flush privileges; 退出 注释掉skip-grant-tables
 重启mysql，无密码登录#" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/database/mysql/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81/" /><meta property="article:section" content="document" />
@@ -34,7 +34,7 @@ https://github.com/alex-shpak/hugo-book
 /etc/mysql/mysq.conf.d/mysqld.cnf 加入skip-grant-tables 跳过密码登录；
 重启mysql服务
 systemctl restart mysql.service 进入mysql
-# mysql;# use mysql;# 更新密码为空# UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;;# flush privileges;退出 注释掉skip-grant-tables
+# mysql; # use mysql; # 更新密码为空 # UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;; # flush privileges; 退出 注释掉skip-grant-tables
 重启mysql，无密码登录#"
 />
 <title>
@@ -5595,20 +5595,20 @@ systemctl restart mysql.service 进入mysql
 
 <p>修改配置文件，无密码登录
 编辑文件：</p>
-<pre tabindex="0"><code>/etc/mysql/mysq.conf.d/mysqld.cnf
-</code></pre><p>加入<code>skip-grant-tables</code>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/etc/mysql/mysq.conf.d/mysqld.cnf
+</span></span></code></pre></div><p>加入<code>skip-grant-tables</code>
 跳过密码登录；</p>
 <p>重启mysql服务</p>
-<pre tabindex="0"><code>systemctl restart mysql.service
-</code></pre><p>进入mysql</p>
-<pre tabindex="0"><code># mysql;
-# use mysql;
-# 更新密码为空
-# UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;;
-
-# flush privileges;
-退出
-</code></pre><p>注释掉<code>skip-grant-tables</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl restart mysql.service
+</span></span></code></pre></div><p>进入mysql</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># mysql;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># use mysql;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新密码为空</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># UPDATE user SET authentication_string=&#39;&#39; WHERE User=&#39;root&#39; AND Host =&#39;localhost&#39;;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># flush privileges;</span>
+</span></span><span style="display:flex;"><span>退出
+</span></span></code></pre></div><p>注释掉<code>skip-grant-tables</code></p>
 <h3 id="重启mysql无密码登录">
   重启mysql，无密码登录
   <a class="anchor" href="#%e9%87%8d%e5%90%afmysql%e6%97%a0%e5%af%86%e7%a0%81%e7%99%bb%e5%bd%95">#</a>

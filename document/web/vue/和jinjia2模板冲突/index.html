@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="vue 和jinjia2模板冲突：#修改vue模板： delimiters: [&#39;{[&#39;, &#39;]}&#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &#39;[[app.jinja_env.variable_end_string = &#39;]]&#39; " />
+<meta property="og:description" content="vue 和jinjia2模板冲突：#修改vue模板： delimiters: [&#39;{[&#39;, &#39;]}&#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &#39;[[ app.jinja_env.variable_end_string = &#39;]]&#39; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/" /><meta property="article:section" content="document" />
 
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="vue 和jinjia2模板冲突：#修改vue模板： delimiters: [&#39;{[&#39;, &#39;]}&#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &#39;[[app.jinja_env.variable_end_string = &#39;]]&#39; "
+  content="vue 和jinjia2模板冲突：#修改vue模板： delimiters: [&#39;{[&#39;, &#39;]}&#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &#39;[[ app.jinja_env.variable_end_string = &#39;]]&#39; "
 />
 <title>
   📓 zouni88
@@ -5590,14 +5590,14 @@ https://github.com/alex-shpak/hugo-book
 <ol>
 <li>修改vue模板：</li>
 </ol>
-<pre tabindex="0"><code>delimiters: [&#39;{[&#39;, &#39;]}&#39;]
-</code></pre><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>delimiters: <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;{[&#39;</span>, <span style="color:#e6db74">&#39;]}&#39;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><ol start="2">
 <li>修改jinjia2模板：</li>
 </ol>
-<pre tabindex="0"><code>app.jinja_env.variable_start_string = &#39;[[
-
-app.jinja_env.variable_end_string = &#39;]]&#39;
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>app.jinja_env.variable_start_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;[[
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">app.jinja_env.variable_end_string = &#39;</span><span style="color:#f92672">]]</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span></code></pre></div>
 
     
 

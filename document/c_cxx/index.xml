@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
-      <description>&#xD;配置环境&#xD;#&#xD;第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android&#xD;-DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34;&#xD;-DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5&#xD;-DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34;&#xD;-DANDROID_PLATFORM=&amp;#34;android-21&amp;#34;&#xD;-DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34;&#xD;-DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;&#xD;-DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34;&#xD;-DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
+      <description>&#xD;配置环境&#xD;#&#xD;第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34; -DANDROID_PLATFORM=&amp;#34;android-21&amp;#34; -DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34; -DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
     </item>
     <item>
       <title></title>

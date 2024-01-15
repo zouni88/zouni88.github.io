@@ -40,7 +40,7 @@
       <link>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
-      <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8])&#xD;&amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
+      <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8]) &amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
     </item>
     <item>
       <title></title>

@@ -19,7 +19,7 @@
       <link>https://r.xboox.cn/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/git/2.%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
-      <description>将本地项目提交到远程仓库需要以下操作：&#xD;#&#xD;1. 本地提交&#xD;#&#xD;git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; 2. 添加目标仓库地址&#xD;#&#xD;git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push&#xD;#&#xD;# 允许一些无关联的历史&#x9;git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支&#xD;# 强制进行push&#xD;git push origin master -f 修改远程仓库地址3种方式&#xD;#&#xD;1. 直接修改&#xD;#&#xD;git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库&#xD;git remote set-url --add origin [url] 2. 先删除后修改&#xD;#&#xD;删除</description>
+      <description>将本地项目提交到远程仓库需要以下操作：&#xD;#&#xD;1. 本地提交&#xD;#&#xD;git init 初始化本地仓库 git add . git commit -m &amp;#34;###&amp;#34; 2. 添加目标仓库地址&#xD;#&#xD;git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git 3. 同步到远程仓库，先 pull 后 push&#xD;#&#xD;# 允许一些无关联的历史&#x9;git pull origin master --allow-unrelated-histories git push origin 本地分支:远程分支 # 强制进行push git push origin master -f 修改远程仓库地址3种方式&#xD;#&#xD;1. 直接修改&#xD;#&#xD;git remote set-url origin [url] # 可以添加多个仓库地址，也就意味着可以同时把代码提交到多个仓库 git remote set-url --add origin [url] 2. 先删除后修改&#xD;#&#xD;删除</description>
     </item>
     <item>
       <title></title>
@@ -75,7 +75,7 @@
       <link>https://r.xboox.cn/document/git/nas%E4%BD%BF%E7%94%A8gitserver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/git/nas%E4%BD%BF%E7%94%A8gitserver/</guid>
-      <description>群晖nas 使用 git server&#xD;#&#xD;安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits&#xA;创建git本地账户在nas上 控制面板-&amp;gt; 用户群组 -&amp;gt; 新增 gits 用户&#xA;进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git&#xD;chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</description>
+      <description>群晖nas 使用 git server&#xD;#&#xD;安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits&#xA;创建git本地账户在nas上 控制面板-&amp;gt; 用户群组 -&amp;gt; 新增 gits 用户&#xA;进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</description>
     </item>
     <item>
       <title></title>

@@ -4,7 +4,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="配置环境#第一次打开Clion,首先配置Toolchains,这里使用了Mingw
 配置Cmake options,增加以下参数：
--DCMAKE_SYSTEM_NAME=Android-DANDROID_NDK=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34;-DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5-DCMAKE_TOOLCHAIN_FILE=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34;-DANDROID_PLATFORM=&#34;android-21&#34;-DANDROID_TOOLCHAIN=&#34;clang&#34;-DCMAKE_C_FLAGS=&#34;-fpic -fexceptions -frtti&#34;-DCMAKE_CXX_FLAGS=&#34;-fpic -fexceptions -frtti&#34;-DANDROID_STL=&#34;c&#43;&#43;_static&#34; " />
+-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34; -DANDROID_PLATFORM=&#34;android-21&#34; -DANDROID_TOOLCHAIN=&#34;clang&#34; -DCMAKE_C_FLAGS=&#34;-fpic -fexceptions -frtti&#34; -DCMAKE_CXX_FLAGS=&#34;-fpic -fexceptions -frtti&#34; -DANDROID_STL=&#34;c&#43;&#43;_static&#34; " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/" /><meta property="article:section" content="document" />
 
@@ -29,7 +29,7 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="配置环境#第一次打开Clion,首先配置Toolchains,这里使用了Mingw
 配置Cmake options,增加以下参数：
--DCMAKE_SYSTEM_NAME=Android-DANDROID_NDK=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34;-DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5-DCMAKE_TOOLCHAIN_FILE=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34;-DANDROID_PLATFORM=&#34;android-21&#34;-DANDROID_TOOLCHAIN=&#34;clang&#34;-DCMAKE_C_FLAGS=&#34;-fpic -fexceptions -frtti&#34;-DCMAKE_CXX_FLAGS=&#34;-fpic -fexceptions -frtti&#34;-DANDROID_STL=&#34;c&#43;&#43;_static&#34; "
+-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34; -DANDROID_PLATFORM=&#34;android-21&#34; -DANDROID_TOOLCHAIN=&#34;clang&#34; -DCMAKE_C_FLAGS=&#34;-fpic -fexceptions -frtti&#34; -DCMAKE_CXX_FLAGS=&#34;-fpic -fexceptions -frtti&#34; -DANDROID_STL=&#34;c&#43;&#43;_static&#34; "
 />
 <title>
   📓 zouni88
@@ -5601,16 +5601,16 @@ https://github.com/alex-shpak/hugo-book
 
 <img src="https://r.xboox.cn//res/cxx/clion1.png" width="auto" alt="设置"  /></p>
 <p>配置Cmake options,增加以下参数：</p>
-<pre tabindex="0"><code>-DCMAKE_SYSTEM_NAME=Android
--DANDROID_NDK=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34;
--DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5
--DCMAKE_TOOLCHAIN_FILE=&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34;
--DANDROID_PLATFORM=&#34;android-21&#34;
--DANDROID_TOOLCHAIN=&#34;clang&#34;
--DCMAKE_C_FLAGS=&#34;-fpic -fexceptions -frtti&#34;
--DCMAKE_CXX_FLAGS=&#34;-fpic -fexceptions -frtti&#34;
--DANDROID_STL=&#34;c++_static&#34;
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>-DCMAKE_SYSTEM_NAME<span style="color:#f92672">=</span>Android
+</span></span><span style="display:flex;"><span>-DANDROID_NDK<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&#34;</span>
+</span></span><span style="display:flex;"><span>-DANDROID_TOOLCHAIN_NAME<span style="color:#f92672">=</span>aarch64-linux-android-clang3.5
+</span></span><span style="display:flex;"><span>-DCMAKE_TOOLCHAIN_FILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&#34;</span>
+</span></span><span style="display:flex;"><span>-DANDROID_PLATFORM<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;android-21&#34;</span>
+</span></span><span style="display:flex;"><span>-DANDROID_TOOLCHAIN<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clang&#34;</span>
+</span></span><span style="display:flex;"><span>-DCMAKE_C_FLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-fpic -fexceptions -frtti&#34;</span>
+</span></span><span style="display:flex;"><span>-DCMAKE_CXX_FLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-fpic -fexceptions -frtti&#34;</span>
+</span></span><span style="display:flex;"><span>-DANDROID_STL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;c++_static&#34;</span>
+</span></span></code></pre></div>
 
     
 

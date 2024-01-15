@@ -40,7 +40,7 @@
       <link>https://r.xboox.cn/document/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>
-      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip&#xD;127.0.0.1&#x9;student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;) 3.设置 config 配置 SERVER_NAME=主域名</description>
+      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip 127.0.0.1&#x9;student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;) 3.设置 config 配置 SERVER_NAME=主域名</description>
     </item>
   </channel>
 </rss>

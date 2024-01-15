@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="mysql 配置#首先查看centos是否已经安装了mysql源#yum list installed mysql*如果有就删除yum remove mysql-community-* 安装mysql源#https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql#yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源#yum repolist all | grep mysql 查看数据库源#/etc/yum.repos.d/mysql-community.repo修改源可用 mysql80 enable = 1 安装数据库服务#yum install mysql-server 启动mysql#systemctl start mysqld.service 查看状态#systemctl status mysqld.service 查看初始密码#grep &#34;password&#34; /var/log/mysqld.log 修改密码#mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new password&#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&rsquo;;:等）,不然不能配置成功#开启mysql的远程访问 两种方式#方式1 grant all privileges on *." />
+<meta property="og:description" content="mysql 配置#首先查看centos是否已经安装了mysql源#yum list installed mysql* 如果有就删除 yum remove mysql-community-* 安装mysql源#https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql#yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源#yum repolist all | grep mysql 查看数据库源#/etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1 安装数据库服务#yum install mysql-server 启动mysql#systemctl start mysqld.service 查看状态#systemctl status mysqld.service 查看初始密码#grep &#34;password&#34; /var/log/mysqld.log 修改密码#mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new password&#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&rsquo;;:等）,不然不能配置成功#开启mysql的远程访问 两种方式#方式1 grant all privileges on *." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="document" />
 
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="mysql 配置#首先查看centos是否已经安装了mysql源#yum list installed mysql*如果有就删除yum remove mysql-community-* 安装mysql源#https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql#yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源#yum repolist all | grep mysql 查看数据库源#/etc/yum.repos.d/mysql-community.repo修改源可用 mysql80 enable = 1 安装数据库服务#yum install mysql-server 启动mysql#systemctl start mysqld.service 查看状态#systemctl status mysqld.service 查看初始密码#grep &#34;password&#34; /var/log/mysqld.log 修改密码#mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new password&#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&rsquo;;:等）,不然不能配置成功#开启mysql的远程访问 两种方式#方式1 grant all privileges on *."
+  content="mysql 配置#首先查看centos是否已经安装了mysql源#yum list installed mysql* 如果有就删除 yum remove mysql-community-* 安装mysql源#https://dev.mysql.com/downloads/repo/yum/ wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm 安装mysql#yum -y install mysql57-community-release-el7-10.noarch.rpm 查看是否已经安装了数据库源#yum repolist all | grep mysql 查看数据库源#/etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1 安装数据库服务#yum install mysql-server 启动mysql#systemctl start mysqld.service 查看状态#systemctl status mysqld.service 查看初始密码#grep &#34;password&#34; /var/log/mysqld.log 修改密码#mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new password&#39;; 注意:密码设置必须要大小写字母数字和特殊符号（,/&rsquo;;:等）,不然不能配置成功#开启mysql的远程访问 两种方式#方式1 grant all privileges on *."
 />
 <title>
   📓 zouni88
@@ -5591,57 +5591,57 @@ https://github.com/alex-shpak/hugo-book
   首先查看centos是否已经安装了mysql源
   <a class="anchor" href="#%e9%a6%96%e5%85%88%e6%9f%a5%e7%9c%8bcentos%e6%98%af%e5%90%a6%e5%b7%b2%e7%bb%8f%e5%ae%89%e8%a3%85%e4%ba%86mysql%e6%ba%90">#</a>
 </h3>
-<pre tabindex="0"><code>yum list installed mysql*
-如果有就删除
-yum remove mysql-community-*
-</code></pre><h4 id="安装mysql源">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum list installed mysql*
+</span></span><span style="display:flex;"><span>如果有就删除
+</span></span><span style="display:flex;"><span>yum remove mysql-community-*
+</span></span></code></pre></div><h4 id="安装mysql源">
   安装mysql源
   <a class="anchor" href="#%e5%ae%89%e8%a3%85mysql%e6%ba%90">#</a>
 </h4>
 <pre tabindex="0"><code class="language-数据库官网地址" data-lang="数据库官网地址">https://dev.mysql.com/downloads/repo/yum/
-</code></pre><pre tabindex="0"><code>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
-</code></pre><h4 id="安装mysql">
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+</span></span></code></pre></div><h4 id="安装mysql">
   安装mysql
   <a class="anchor" href="#%e5%ae%89%e8%a3%85mysql">#</a>
 </h4>
-<pre tabindex="0"><code>yum -y install mysql57-community-release-el7-10.noarch.rpm
-</code></pre><h3 id="查看是否已经安装了数据库源">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum -y install mysql57-community-release-el7-10.noarch.rpm
+</span></span></code></pre></div><h3 id="查看是否已经安装了数据库源">
   查看是否已经安装了数据库源
   <a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e6%98%af%e5%90%a6%e5%b7%b2%e7%bb%8f%e5%ae%89%e8%a3%85%e4%ba%86%e6%95%b0%e6%8d%ae%e5%ba%93%e6%ba%90">#</a>
 </h3>
-<pre tabindex="0"><code>yum repolist all | grep mysql
-</code></pre><h3 id="查看数据库源">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum repolist all | grep mysql
+</span></span></code></pre></div><h3 id="查看数据库源">
   查看数据库源
   <a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e6%95%b0%e6%8d%ae%e5%ba%93%e6%ba%90">#</a>
 </h3>
-<pre tabindex="0"><code>/etc/yum.repos.d/mysql-community.repo
-修改源可用 mysql80  enable = 1
-</code></pre><h3 id="安装数据库服务">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/etc/yum.repos.d/mysql-community.repo
+</span></span><span style="display:flex;"><span>修改源可用 mysql80  enable <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h3 id="安装数据库服务">
   安装数据库服务
   <a class="anchor" href="#%e5%ae%89%e8%a3%85%e6%95%b0%e6%8d%ae%e5%ba%93%e6%9c%8d%e5%8a%a1">#</a>
 </h3>
-<pre tabindex="0"><code>yum install mysql-server
-</code></pre><h4 id="启动mysql">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum install mysql-server
+</span></span></code></pre></div><h4 id="启动mysql">
   启动mysql
   <a class="anchor" href="#%e5%90%af%e5%8a%a8mysql">#</a>
 </h4>
-<pre tabindex="0"><code>systemctl start mysqld.service
-</code></pre><h4 id="查看状态">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl start mysqld.service
+</span></span></code></pre></div><h4 id="查看状态">
   查看状态
   <a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e7%8a%b6%e6%80%81">#</a>
 </h4>
-<pre tabindex="0"><code>systemctl status mysqld.service
-</code></pre><h4 id="查看初始密码">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl status mysqld.service
+</span></span></code></pre></div><h4 id="查看初始密码">
   查看初始密码
   <a class="anchor" href="#%e6%9f%a5%e7%9c%8b%e5%88%9d%e5%a7%8b%e5%af%86%e7%a0%81">#</a>
 </h4>
-<pre tabindex="0"><code>grep &#34;password&#34; /var/log/mysqld.log
-</code></pre><h4 id="修改密码">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#34;password&#34;</span> /var/log/mysqld.log
+</span></span></code></pre></div><h4 id="修改密码">
   修改密码
   <a class="anchor" href="#%e4%bf%ae%e6%94%b9%e5%af%86%e7%a0%81">#</a>
 </h4>
-<pre tabindex="0"><code>mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new password&#39;;
-</code></pre><h5 id="注意密码设置必须要大小写字母数字和特殊符号等不然不能配置成功">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mysql&gt; ALTER USER <span style="color:#e6db74">&#39;root&#39;</span>@<span style="color:#e6db74">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;new password&#39;</span>;
+</span></span></code></pre></div><h5 id="注意密码设置必须要大小写字母数字和特殊符号等不然不能配置成功">
   注意:密码设置必须要大小写字母数字和特殊符号（,/&rsquo;;:等）,不然不能配置成功
   <a class="anchor" href="#%e6%b3%a8%e6%84%8f%e5%af%86%e7%a0%81%e8%ae%be%e7%bd%ae%e5%bf%85%e9%a1%bb%e8%a6%81%e5%a4%a7%e5%b0%8f%e5%86%99%e5%ad%97%e6%af%8d%e6%95%b0%e5%ad%97%e5%92%8c%e7%89%b9%e6%ae%8a%e7%ac%a6%e5%8f%b7%e7%ad%89%e4%b8%8d%e7%84%b6%e4%b8%8d%e8%83%bd%e9%85%8d%e7%bd%ae%e6%88%90%e5%8a%9f">#</a>
 </h5>
@@ -5652,16 +5652,16 @@ yum remove mysql-community-*
 <ul>
 <li>方式1</li>
 </ul>
-<pre tabindex="0"><code>grant all privileges on *.* to &#39;root&#39;@&#39;192.168.0.1&#39; identified by &#39;password&#39; with grant option;
-</code></pre><pre tabindex="0"><code>flush privileges;
-</code></pre><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>grant all privileges on *.* to <span style="color:#e6db74">&#39;root&#39;</span>@<span style="color:#e6db74">&#39;192.168.0.1&#39;</span> identified by <span style="color:#e6db74">&#39;password&#39;</span> with grant option;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>flush privileges;
+</span></span></code></pre></div><ul>
 <li>方式2</li>
 </ul>
-<pre tabindex="0"><code>use mysql;
-update user set host = &#39;%&#39; where user = &#39;root&#39;;
-</code></pre><p><code>更细权限之后，一定要刷新一下，否则不会生效</code></p>
-<pre tabindex="0"><code>flush privileges;
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>use mysql;
+</span></span><span style="display:flex;"><span>update user set host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;%&#39;</span> where user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;root&#39;</span>;
+</span></span></code></pre></div><p><code>更细权限之后，一定要刷新一下，否则不会生效</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>flush privileges;
+</span></span></code></pre></div>
 
     
 

@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</guid>
-      <description>&#xD;vue 和jinjia2模板冲突：&#xD;#&#xD;修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[&#xD;app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39; </description>
+      <description>&#xD;vue 和jinjia2模板冲突：&#xD;#&#xD;修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;] 修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[ app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39; </description>
     </item>
   </channel>
 </rss>

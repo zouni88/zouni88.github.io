@@ -3,7 +3,7 @@
 <head>
   <meta property="og:title" content="" />
 <meta property="og:description" content="配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置
-location / {try_files $uri /index.html;} " />
+location / { try_files $uri /index.html; } " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/nginx/%E8%BF%94%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="document" />
 
@@ -27,7 +27,7 @@ https://github.com/alex-shpak/hugo-book
 <meta
   name="description"
   content="配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置
-location / {try_files $uri /index.html;} "
+location / { try_files $uri /index.html; } "
 />
 <title>
   📓 zouni88
@@ -5586,10 +5586,10 @@ location / {try_files $uri /index.html;} "
 
 
 <p>配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置</p>
-<pre tabindex="0"><code>location / {
-    try_files $uri /index.html;
-}
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>location / <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    try_files $uri /index.html;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div>
 
     
 

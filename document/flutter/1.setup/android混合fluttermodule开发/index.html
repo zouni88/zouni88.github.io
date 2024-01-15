@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="新建flutter module#1. module 的 settings.gradle ：#// Generated file. Do not edit.include &#39;:app&#39;//复制下面内容到主项目的 settings.gradle 中rootProject.name = &#39;android_generated&#39;setBinding(new Binding([gradle: this]))//这里模块名称修改成自己的，参考下图evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：#dependencies {implementation project(&#39;:flutter&#39;)} 3. 编译运行：失败#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.#这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+<meta property="og:description" content="新建flutter module#1. module 的 settings.gradle ：#// Generated file. Do not edit. include &#39;:app&#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &#39;android_generated&#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：#dependencies { implementation project(&#39;:flutter&#39;) } 3. 编译运行：失败#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.#这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
 病根：参照下面settings.gradle文件
 pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1." />
 <meta property="og:type" content="article" />
@@ -27,7 +27,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="新建flutter module#1. module 的 settings.gradle ：#// Generated file. Do not edit.include &#39;:app&#39;//复制下面内容到主项目的 settings.gradle 中rootProject.name = &#39;android_generated&#39;setBinding(new Binding([gradle: this]))//这里模块名称修改成自己的，参考下图evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：#dependencies {implementation project(&#39;:flutter&#39;)} 3. 编译运行：失败#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.#这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
+  content="新建flutter module#1. module 的 settings.gradle ：#// Generated file. Do not edit. include &#39;:app&#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &#39;android_generated&#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：#dependencies { implementation project(&#39;:flutter&#39;) } 3. 编译运行：失败#Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &lsquo;FlutterPlugin&rsquo;.#这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现
 病根：参照下面settings.gradle文件
 pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1."
 />
@@ -5595,14 +5595,14 @@ pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() }
   1. module 的 <code>settings.gradle</code> ：
   <a class="anchor" href="#1-module-%e7%9a%84-settingsgradle-">#</a>
 </h2>
-<pre tabindex="0"><code>// Generated file. Do not edit.
-include &#39;:app&#39;
-//复制下面内容到主项目的 settings.gradle 中
-rootProject.name = &#39;android_generated&#39;
-setBinding(new Binding([gradle: this]))
-//这里模块名称修改成自己的，参考下图
-evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;))
-</code></pre><p>效果：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>// Generated file. Do not edit.
+</span></span><span style="display:flex;"><span>include <span style="color:#e6db74">&#39;:app&#39;</span>
+</span></span><span style="display:flex;"><span>//复制下面内容到主项目的 settings.gradle 中
+</span></span><span style="display:flex;"><span>rootProject.name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;android_generated&#39;</span>
+</span></span><span style="display:flex;"><span>setBinding<span style="color:#f92672">(</span>new Binding<span style="color:#f92672">([</span>gradle: this<span style="color:#f92672">]))</span>
+</span></span><span style="display:flex;"><span>//这里模块名称修改成自己的，参考下图
+</span></span><span style="display:flex;"><span>evaluate<span style="color:#f92672">(</span>new File<span style="color:#f92672">(</span>settingsDir, <span style="color:#e6db74">&#39;include_flutter.groovy&#39;</span><span style="color:#f92672">))</span>
+</span></span></code></pre></div><p>效果：
 
 
 
@@ -5611,10 +5611,10 @@ evaluate(new File(settingsDir, &#39;include_flutter.groovy&#39;))
   2. 引入依赖 在工程app/build.gradle 中：
   <a class="anchor" href="#2-%e5%bc%95%e5%85%a5%e4%be%9d%e8%b5%96-%e5%9c%a8%e5%b7%a5%e7%a8%8bappbuildgradle-%e4%b8%ad">#</a>
 </h2>
-<pre tabindex="0"><code>dependencies {
-  implementation project(&#39;:flutter&#39;)
-}
-</code></pre><h2 id="3-编译运行失败">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  implementation project<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;:flutter&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="3-编译运行失败">
   3. 编译运行：失败
   <a class="anchor" href="#3-%e7%bc%96%e8%af%91%e8%bf%90%e8%a1%8c%e5%a4%b1%e8%b4%a5">#</a>
 </h2>

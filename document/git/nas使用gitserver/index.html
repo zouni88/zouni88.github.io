@@ -4,7 +4,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="群晖nas 使用 git server#安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits
 创建git本地账户在nas上 控制面板-&gt; 用户群组 -&gt; 新增 gits 用户
-进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.gitchown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776" />
+进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/git/nas%E4%BD%BF%E7%94%A8gitserver/" /><meta property="article:section" content="document" />
 
@@ -29,7 +29,7 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="群晖nas 使用 git server#安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits
 创建git本地账户在nas上 控制面板-&gt; 用户群组 -&gt; 新增 gits 用户
-进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.gitchown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776"
+进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git chown -R gits:users repo.git 参考链接：https://blog.csdn.net/xiaxl/article/details/129165776"
 />
 <title>
   📓 zouni88
@@ -5611,9 +5611,9 @@ https://github.com/alex-shpak/hugo-book
 编辑key文件，增加用户 id_rsa.pub 公钥</li>
 <li>进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户</li>
 </ol>
-<pre tabindex="0"><code>    mkdir repo.git
-    chown -R gits:users repo.git
-</code></pre><p>参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    mkdir repo.git
+</span></span><span style="display:flex;"><span>    chown -R gits:users repo.git
+</span></span></code></pre></div><p>参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</p>
 
 
     

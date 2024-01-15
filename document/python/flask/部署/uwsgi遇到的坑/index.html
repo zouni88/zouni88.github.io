@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="编译配套 ssl的 uwsgi#安装编译需要的环境#yum install opensslyum install openssl-devel 安装 greenlet#pip3 install greenlet 找到 greenlet 位置#/root/.virtualenvs/flask/include/site/python3.6 安装#CFLAGS=&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34; UWSGI_PROFILE=&#34;asyncio&#34; pip install uwsgi --no-use-wheel or
+<meta property="og:description" content="编译配套 ssl的 uwsgi#安装编译需要的环境#yum install openssl yum install openssl-devel 安装 greenlet#pip3 install greenlet 找到 greenlet 位置#/root/.virtualenvs/flask/include/site/python3.6 安装#CFLAGS=&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34; UWSGI_PROFILE=&#34;asyncio&#34; pip install uwsgi --no-use-wheel or
 CFLAGS=&#34;-I/usr/include/openssl&#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir CFLAGS=&quot;-I$/usr/bin/python3.6&quot; UWSGI_PROFILE=&ldquo;asyncio&rdquo; pip3 install uwsgi &ndash;no-use-wheel
 CFLAGS=&quot;-I/usr/local/opt/openssl/include&quot; LDFLAGS=&quot;-L/usr/local/opt/openssl/lib&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir
 CFLAGS=&quot;-I/usr/include/openssl&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir
@@ -29,7 +29,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="编译配套 ssl的 uwsgi#安装编译需要的环境#yum install opensslyum install openssl-devel 安装 greenlet#pip3 install greenlet 找到 greenlet 位置#/root/.virtualenvs/flask/include/site/python3.6 安装#CFLAGS=&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34; UWSGI_PROFILE=&#34;asyncio&#34; pip install uwsgi --no-use-wheel or
+  content="编译配套 ssl的 uwsgi#安装编译需要的环境#yum install openssl yum install openssl-devel 安装 greenlet#pip3 install greenlet 找到 greenlet 位置#/root/.virtualenvs/flask/include/site/python3.6 安装#CFLAGS=&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34; UWSGI_PROFILE=&#34;asyncio&#34; pip install uwsgi --no-use-wheel or
 CFLAGS=&#34;-I/usr/include/openssl&#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir CFLAGS=&quot;-I$/usr/bin/python3.6&quot; UWSGI_PROFILE=&ldquo;asyncio&rdquo; pip3 install uwsgi &ndash;no-use-wheel
 CFLAGS=&quot;-I/usr/local/opt/openssl/include&quot; LDFLAGS=&quot;-L/usr/local/opt/openssl/lib&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir
 CFLAGS=&quot;-I/usr/include/openssl&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir
@@ -5599,26 +5599,26 @@ sudo CFLAGS=&quot;-I/usr/local/opt/openssl/include&quot; LDFLAGS=&quot;-L/usr/lo
   安装编译需要的环境
   <a class="anchor" href="#%e5%ae%89%e8%a3%85%e7%bc%96%e8%af%91%e9%9c%80%e8%a6%81%e7%9a%84%e7%8e%af%e5%a2%83">#</a>
 </h4>
-<pre tabindex="0"><code>yum install openssl
-yum install openssl-devel
-</code></pre><h4 id="安装-greenlet">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yum install openssl
+</span></span><span style="display:flex;"><span>yum install openssl-devel
+</span></span></code></pre></div><h4 id="安装-greenlet">
   安装 greenlet
   <a class="anchor" href="#%e5%ae%89%e8%a3%85-greenlet">#</a>
 </h4>
-<pre tabindex="0"><code>pip3 install greenlet
-</code></pre><h3 id="找到-greenlet-位置">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip3 install greenlet
+</span></span></code></pre></div><h3 id="找到-greenlet-位置">
   找到 greenlet 位置
   <a class="anchor" href="#%e6%89%be%e5%88%b0-greenlet-%e4%bd%8d%e7%bd%ae">#</a>
 </h3>
-<pre tabindex="0"><code>/root/.virtualenvs/flask/include/site/python3.6
-</code></pre><h3 id="安装">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/root/.virtualenvs/flask/include/site/python3.6
+</span></span></code></pre></div><h3 id="安装">
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
 </h3>
-<pre tabindex="0"><code>CFLAGS=&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34; UWSGI_PROFILE=&#34;asyncio&#34; pip install uwsgi --no-use-wheel
-</code></pre><p>or</p>
-<pre tabindex="0"><code>CFLAGS=&#34;-I/usr/include/openssl&#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir
-</code></pre><p>CFLAGS=&quot;-I$/usr/bin/python3.6&quot; UWSGI_PROFILE=&ldquo;asyncio&rdquo; pip3 install uwsgi &ndash;no-use-wheel</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-I/root/.virtualenvs/flask/include/site/python3.6&#34;</span> UWSGI_PROFILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;asyncio&#34;</span> pip install uwsgi --no-use-wheel
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>CFLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-I/usr/include/openssl&#34;</span> UWSGI_PROFILE_OVERRIDE<span style="color:#f92672">=</span>ssl<span style="color:#f92672">=</span>true pip install uwsgi -I --no-cache-dir
+</span></span></code></pre></div><p>CFLAGS=&quot;-I$/usr/bin/python3.6&quot; UWSGI_PROFILE=&ldquo;asyncio&rdquo; pip3 install uwsgi &ndash;no-use-wheel</p>
 <p>CFLAGS=&quot;-I/usr/local/opt/openssl/include&quot; LDFLAGS=&quot;-L/usr/local/opt/openssl/lib&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir</p>
 <p>CFLAGS=&quot;-I/usr/include/openssl&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &ndash;no-cache-dir</p>
 <p>sudo CFLAGS=&quot;-I/usr/local/opt/openssl/include&quot; LDFLAGS=&quot;-L/usr/local/opt/openssl/lib&quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &ndash;no-cache-dir</p>

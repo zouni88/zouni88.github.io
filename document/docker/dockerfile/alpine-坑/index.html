@@ -5650,14 +5650,14 @@ apk update apk add gcc 执行pip3 install uWSGI In file included from core/socke
 <li>由于uWSGI功能众多，所以，使用的参数不同，需要的功能也会有差异。
 在使用&ndash;static-map等参数时，可能会有额外的编译依赖，否则会有运行时报错。</li>
 </ol>
-<pre tabindex="0"><code>!!! no internal routing support, rebuild with pcre support !!!
-</code></pre><p>PCRE（Perl Compatible Regular Expressions）是一个Perl库，包括 perl 兼容的正则表达式库。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>!!! no internal routing support, rebuild with pcre support !!!
+</span></span></code></pre></div><p>PCRE（Perl Compatible Regular Expressions）是一个Perl库，包括 perl 兼容的正则表达式库。
 编译依赖为pcre-dev，运行依赖为pcre。</p>
 <ol start="5">
 <li>运行时，某些功能需要访问/etc/mime.types文件。</li>
 </ol>
-<pre tabindex="0"><code>!!! no /etc/mime.types file found !!!
-</code></pre><p>MIME（Multipurpose Internet Mail Extensions）多用途互联网邮件扩展类型。 是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>!!! no /etc/mime.types file found !!!
+</span></span></code></pre></div><p>MIME（Multipurpose Internet Mail Extensions）多用途互联网邮件扩展类型。 是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。</p>
 <p>这个东西对应的Alpine库是mailcap。</p>
 <blockquote>
 <p>最终通过以下命令安装成功</p>

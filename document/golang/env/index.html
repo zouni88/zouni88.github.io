@@ -5594,8 +5594,8 @@ go env -w GOOS= linux # 这里GOARCH 分为 amd64 arm64 根据个人环境决定
   <a class="anchor" href="#golang-%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83">#</a>
 </h3>
 <p>不通架构运行可能出现  不能运行的问题</p>
-<pre tabindex="0"><code>-ash: ./alidns: cannot execute binary file: Exec format error
-</code></pre><p>这种情况要根据当前运行环境决定修改 go env参数</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>-ash: ./alidns: cannot execute binary file: Exec format error
+</span></span></code></pre></div><p>这种情况要根据当前运行环境决定修改 go env参数</p>
 <p><code>GOARCH</code>&amp; <code>GOOS</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>go env -w GOOS<span style="color:#f92672">=</span> linux 
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 这里GOARCH 分为  amd64  arm64  根据个人环境决定</span>

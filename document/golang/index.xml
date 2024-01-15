@@ -26,7 +26,7 @@
       <link>https://r.xboox.cn/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>mkdir /lib64&#xD;ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 </description>
+      <description>mkdir /lib64 ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 </description>
     </item>
     <item>
       <title></title>
@@ -61,7 +61,7 @@
       <link>https://r.xboox.cn/document/golang/socket.io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/socket.io/</guid>
-      <description>socket.io 配置到外网 服务器后，就会出现如下问题&#xA;Error during WebSocket handshake: Unexpected response code: 400&#xD;，根据github的讨论，得到如下答案&#xA;proxy_http_version 1.1;&#xD;proxy_set_header Upgrade $http_upgrade;&#xD;proxy_set_header Connection &amp;#34;upgrade&amp;#34;;&#xD;proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
+      <description>socket.io 配置到外网 服务器后，就会出现如下问题&#xA;Error during WebSocket handshake: Unexpected response code: 400&#xD;，根据github的讨论，得到如下答案&#xA;proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection &amp;#34;upgrade&amp;#34;; proxy_set_header Host $host; 其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
     </item>
     <item>
       <title></title>

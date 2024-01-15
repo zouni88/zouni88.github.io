@@ -4,7 +4,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="配置openVpn#linux 服务端安装配置#一. openvpn安装
 sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件
-root@zouni:~# dpkg -L openvpn | more/./etc/etc/default/etc/default/openvpn/etc/init.d/etc/init.d/openvpn/etc/network/etc/network/if-down.d/etc/network/if-down.d/openvpn/etc/network/if-up.d/etc/network/if-up.d/openvpn/etc/openvpn/etc/openvpn/client/etc/openvpn/server/etc/openvpn/update-resolv-conf/lib/lib/systemd/lib/systemd/system/lib/systemd/system/openvpn-client@.service/lib/systemd/system/openvpn-server@.service/lib/systemd/system/openvpn.service/lib/systemd/system/openvpn@.service/lib/systemd/system-generators/lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
+root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
 root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件
 dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
 将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpnmkdir easy-rsacd easy-rsa/cp -r /usr/share/easy-rsa/* ." />
@@ -32,7 +32,7 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="配置openVpn#linux 服务端安装配置#一. openvpn安装
 sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件
-root@zouni:~# dpkg -L openvpn | more/./etc/etc/default/etc/default/openvpn/etc/init.d/etc/init.d/openvpn/etc/network/etc/network/if-down.d/etc/network/if-down.d/openvpn/etc/network/if-up.d/etc/network/if-up.d/openvpn/etc/openvpn/etc/openvpn/client/etc/openvpn/server/etc/openvpn/update-resolv-conf/lib/lib/systemd/lib/systemd/system/lib/systemd/system/openvpn-client@.service/lib/systemd/system/openvpn-server@.service/lib/systemd/system/openvpn.service/lib/systemd/system/openvpn@.service/lib/systemd/system-generators/lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
+root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
 root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件
 dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
 将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpnmkdir easy-rsacd easy-rsa/cp -r /usr/share/easy-rsa/* ."
@@ -5602,34 +5602,34 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
   <a class="anchor" href="#linux-%e6%9c%8d%e5%8a%a1%e7%ab%af%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae">#</a>
 </h3>
 <p>一. openvpn安装</p>
-<pre tabindex="0"><code>sudo apt-get -y install openvpn libssl-dev openssl
-</code></pre><p>二. 查看安装产生的文件</p>
-<pre tabindex="0"><code>root@zouni:~# dpkg -L openvpn | more
-/.
-/etc
-/etc/default
-/etc/default/openvpn
-/etc/init.d
-/etc/init.d/openvpn
-/etc/network
-/etc/network/if-down.d
-/etc/network/if-down.d/openvpn
-/etc/network/if-up.d
-/etc/network/if-up.d/openvpn
-/etc/openvpn
-/etc/openvpn/client
-/etc/openvpn/server
-/etc/openvpn/update-resolv-conf
-/lib
-/lib/systemd
-/lib/systemd/system
-/lib/systemd/system/openvpn-client@.service
-/lib/systemd/system/openvpn-server@.service
-/lib/systemd/system/openvpn.service
-/lib/systemd/system/openvpn@.service
-/lib/systemd/system-generators
-/lib/systemd/system-generators/openvpn-generator
-</code></pre><p>三.  接下来安装easy-rsa 制作证书</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get -y install openvpn libssl-dev openssl
+</span></span></code></pre></div><p>二. 查看安装产生的文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:~# dpkg -L openvpn | more
+</span></span><span style="display:flex;"><span>/.
+</span></span><span style="display:flex;"><span>/etc
+</span></span><span style="display:flex;"><span>/etc/default
+</span></span><span style="display:flex;"><span>/etc/default/openvpn
+</span></span><span style="display:flex;"><span>/etc/init.d
+</span></span><span style="display:flex;"><span>/etc/init.d/openvpn
+</span></span><span style="display:flex;"><span>/etc/network
+</span></span><span style="display:flex;"><span>/etc/network/if-down.d
+</span></span><span style="display:flex;"><span>/etc/network/if-down.d/openvpn
+</span></span><span style="display:flex;"><span>/etc/network/if-up.d
+</span></span><span style="display:flex;"><span>/etc/network/if-up.d/openvpn
+</span></span><span style="display:flex;"><span>/etc/openvpn
+</span></span><span style="display:flex;"><span>/etc/openvpn/client
+</span></span><span style="display:flex;"><span>/etc/openvpn/server
+</span></span><span style="display:flex;"><span>/etc/openvpn/update-resolv-conf
+</span></span><span style="display:flex;"><span>/lib
+</span></span><span style="display:flex;"><span>/lib/systemd
+</span></span><span style="display:flex;"><span>/lib/systemd/system
+</span></span><span style="display:flex;"><span>/lib/systemd/system/openvpn-client@.service
+</span></span><span style="display:flex;"><span>/lib/systemd/system/openvpn-server@.service
+</span></span><span style="display:flex;"><span>/lib/systemd/system/openvpn.service
+</span></span><span style="display:flex;"><span>/lib/systemd/system/openvpn@.service
+</span></span><span style="display:flex;"><span>/lib/systemd/system-generators
+</span></span><span style="display:flex;"><span>/lib/systemd/system-generators/openvpn-generator
+</span></span></code></pre></div><p>三.  接下来安装easy-rsa 制作证书</p>
 <pre tabindex="0"><code>root@zouni:~# apt-get -y install easy-rsa
 </code></pre><p>查看 easy-rsa 的安装文件</p>
 <pre><code>dpkg -L easy-rsa |more

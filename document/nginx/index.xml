@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</guid>
-      <description>&#xD;一个端口配置多个服务&#xD;#&#xD;实验阶段&amp;mdash;&amp;mdash;-&#xA;server { listen 80; server_name apitest.aa.com; location / {&#xD;proxy_pass http://10.26.31.176:8081; #微服务地址测试环境&#xD;root html; index index.html index.htm; } }&#xD;server { listen 80; server_name api.aa.com; location / { proxy_pass http://10.26.31.176:8080; #微服务地址线上环境&#xD;root html; index index.html index.htm; } } </description>
+      <description>&#xD;一个端口配置多个服务&#xD;#&#xD;实验阶段&amp;mdash;&amp;mdash;-&#xA;server { listen 80; server_name apitest.aa.com; location / { proxy_pass http://10.26.31.176:8081; #微服务地址测试环境 root html; index index.html index.htm; } } server { listen 80; server_name api.aa.com; location / { proxy_pass http://10.26.31.176:8080; #微服务地址线上环境 root html; index index.html index.htm; } } </description>
     </item>
     <item>
       <title></title>
@@ -54,7 +54,7 @@
       <link>https://r.xboox.cn/document/nginx/%E8%BF%94%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E8%BF%94%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE/</guid>
-      <description>配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置&#xA;location / {&#xD;try_files $uri /index.html;&#xD;} </description>
+      <description>配置静态站点，有些时候需要返回固定页面，访问url: /site/pageA /site/pageB 都返回index.html页面，这时候需要用到下面配置&#xA;location / { try_files $uri /index.html; } </description>
     </item>
     <item>
       <title></title>

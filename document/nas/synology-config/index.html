@@ -7,7 +7,7 @@
 普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件
 修改sshd_config 权限
 chmod 755 sshd_config 编辑sshd_config文件，找到
-#PermitRootLogin prohibit-password # 修改成 yesPermitRootLogin yes 退出编辑
+#PermitRootLogin prohibit-password # 修改成 yes PermitRootLogin yes 退出编辑
 修改root密码
 synouser --setpw root 这里是新密码 退出重新用root登录 . OK!" />
 <meta property="og:type" content="article" />
@@ -37,7 +37,7 @@ https://github.com/alex-shpak/hugo-book
 普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件
 修改sshd_config 权限
 chmod 755 sshd_config 编辑sshd_config文件，找到
-#PermitRootLogin prohibit-password # 修改成 yesPermitRootLogin yes 退出编辑
+#PermitRootLogin prohibit-password # 修改成 yes PermitRootLogin yes 退出编辑
 修改root密码
 synouser --setpw root 这里是新密码 退出重新用root登录 . OK!"
 />
@@ -5605,19 +5605,19 @@ synouser --setpw root 这里是新密码 退出重新用root登录 . OK!"
 </li>
 <li>
 <p>修改sshd_config 权限</p>
-<pre tabindex="0"><code>chmod 755 sshd_config 
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>chmod <span style="color:#ae81ff">755</span> sshd_config 
+</span></span></code></pre></div></li>
 <li>
 <p>编辑<code>sshd_config</code>文件，找到</p>
-<pre tabindex="0"><code>#PermitRootLogin prohibit-password  
-# 修改成 yes
-PermitRootLogin yes
-</code></pre><p>退出编辑</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#PermitRootLogin prohibit-password  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 修改成 yes</span>
+</span></span><span style="display:flex;"><span>PermitRootLogin yes
+</span></span></code></pre></div><p>退出编辑</p>
 </li>
 <li>
 <p>修改root密码</p>
-<pre tabindex="0"><code>synouser --setpw root 这里是新密码
-</code></pre></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>synouser --setpw root 这里是新密码
+</span></span></code></pre></div></li>
 <li>
 <p>退出重新用root登录 . OK!</p>
 </li>

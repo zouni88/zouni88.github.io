@@ -19,7 +19,7 @@
       <link>https://r.xboox.cn/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>&#xD;windows&#xD;#&#xD;-b 绑定ip地址&#xD;python -m http.server -b 192.168.1.145 8888 Mac 系统&#xD;#&#xD;python -m SimpleHTTPServer 8888 </description>
+      <description>&#xD;windows&#xD;#&#xD;-b 绑定ip地址 python -m http.server -b 192.168.1.145 8888 Mac 系统&#xD;#&#xD;python -m SimpleHTTPServer 8888 </description>
     </item>
     <item>
       <title></title>

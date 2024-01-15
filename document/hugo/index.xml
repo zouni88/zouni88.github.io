@@ -19,7 +19,7 @@
       <link>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地&#xD;git clone git@github.com:Yourname/Yourname.github.io.git&#xD;# 切换分支到master，默认应该是main&#xD;git checkout -b master&#xD;# 查看分支&#xD;git branch&#xD;main&#xD;* master&#xD;# 添加 index.html文件,并编辑&#xD;touch index.html&#xD;# 提交&#xD;git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
+      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>

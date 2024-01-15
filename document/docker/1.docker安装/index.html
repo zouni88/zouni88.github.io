@@ -4,9 +4,9 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="1. Windows 安装步骤#安装： 官网下载 https://hub.docker.com/对应版本
 设置：
-修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com {&#34;registry-mirrors&#34;:[&#34;https://reg-mirror.qiniu.com&#34;,&#34;http://hub-mirror.c.163.com/&#34;,&#34;https://registry.docker-cn.com&#34;],&#34;builder&#34;: {&#34;gc&#34;: {&#34;defaultKeepStorage&#34;: &#34;20GB&#34;,&#34;enabled&#34;: true}},&#34;experimental&#34;: false,&#34;features&#34;: {&#34;buildkit&#34;: true}} 2. CentOS 安装步骤#官网#https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本
-sudo yum remove docker \docker-client \docker-client-latest \docker-common \docker-latest \docker-latest-logrotate \docker-logrotate \docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。
-sudo yum install -y yum-utilssudo yum-config-manager \--add-repo \https://download." />
+修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com { &#34;registry-mirrors&#34;:[ &#34;https://reg-mirror.qiniu.com&#34;, &#34;http://hub-mirror.c.163.com/&#34;, &#34;https://registry.docker-cn.com&#34; ], &#34;builder&#34;: { &#34;gc&#34;: { &#34;defaultKeepStorage&#34;: &#34;20GB&#34;, &#34;enabled&#34;: true } }, &#34;experimental&#34;: false, &#34;features&#34;: { &#34;buildkit&#34;: true } } 2. CentOS 安装步骤#官网#https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本
+sudo yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。
+sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/" /><meta property="article:section" content="document" />
 
@@ -31,9 +31,9 @@ https://github.com/alex-shpak/hugo-book
   name="description"
   content="1. Windows 安装步骤#安装： 官网下载 https://hub.docker.com/对应版本
 设置：
-修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com {&#34;registry-mirrors&#34;:[&#34;https://reg-mirror.qiniu.com&#34;,&#34;http://hub-mirror.c.163.com/&#34;,&#34;https://registry.docker-cn.com&#34;],&#34;builder&#34;: {&#34;gc&#34;: {&#34;defaultKeepStorage&#34;: &#34;20GB&#34;,&#34;enabled&#34;: true}},&#34;experimental&#34;: false,&#34;features&#34;: {&#34;buildkit&#34;: true}} 2. CentOS 安装步骤#官网#https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本
-sudo yum remove docker \docker-client \docker-client-latest \docker-common \docker-latest \docker-latest-logrotate \docker-logrotate \docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。
-sudo yum install -y yum-utilssudo yum-config-manager \--add-repo \https://download."
+修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com { &#34;registry-mirrors&#34;:[ &#34;https://reg-mirror.qiniu.com&#34;, &#34;http://hub-mirror.c.163.com/&#34;, &#34;https://registry.docker-cn.com&#34; ], &#34;builder&#34;: { &#34;gc&#34;: { &#34;defaultKeepStorage&#34;: &#34;20GB&#34;, &#34;enabled&#34;: true } }, &#34;experimental&#34;: false, &#34;features&#34;: { &#34;buildkit&#34;: true } } 2. CentOS 安装步骤#官网#https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本
+sudo yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。
+sudo yum install -y yum-utils sudo yum-config-manager \ --add-repo \ https://download."
 />
 <title>
   📓 zouni88
@@ -5616,24 +5616,24 @@ sudo yum install -y yum-utilssudo yum-config-manager \--add-repo \https://dow
 </ul>
 </li>
 </ol>
-<pre tabindex="0"><code>{
-  &#34;registry-mirrors&#34;:[
-      &#34;https://reg-mirror.qiniu.com&#34;,
-      &#34;http://hub-mirror.c.163.com/&#34;,
-      &#34;https://registry.docker-cn.com&#34;
-  ],
-  &#34;builder&#34;: {
-    &#34;gc&#34;: {
-      &#34;defaultKeepStorage&#34;: &#34;20GB&#34;,
-      &#34;enabled&#34;: true
-    }
-  },
-  &#34;experimental&#34;: false,
-  &#34;features&#34;: {
-    &#34;buildkit&#34;: true
-  }
-}
-</code></pre><p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;registry-mirrors&#34;</span>:<span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;https://reg-mirror.qiniu.com&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;http://hub-mirror.c.163.com/&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;https://registry.docker-cn.com&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;builder&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;gc&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;defaultKeepStorage&#34;</span>: <span style="color:#e6db74">&#34;20GB&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;enabled&#34;</span>: true
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;experimental&#34;</span>: false,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;features&#34;</span>: <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;buildkit&#34;</span>: true
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>
 
 
 <img src="https://r.xboox.cn//res/docker/docker_1.png" width="auto" alt="docker"  /></p>
@@ -5648,27 +5648,27 @@ sudo yum install -y yum-utilssudo yum-config-manager \--add-repo \https://dow
 <p>
 <a href="https://docs.docker.com/engine/install/centos/#prerequisites" rel="noopener">https://docs.docker.com/engine/install/centos/#prerequisites</a>
 先卸载旧版本</p>
-<pre tabindex="0"><code>sudo yum remove docker \
-                  docker-client \
-                  docker-client-latest \
-                  docker-common \
-                  docker-latest \
-                  docker-latest-logrotate \
-                  docker-logrotate \
-                  docker-engine
-</code></pre><p>安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。</p>
-<pre tabindex="0"><code>sudo yum install -y yum-utils
-
-sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
-</code></pre><p>开始安装引擎</p>
-<pre tabindex="0"><code>sudo yum install docker-ce docker-ce-cli containerd.io
-</code></pre><p>启动</p>
-<pre tabindex="0"><code>sudo systemctl start docker
-</code></pre><p>测试是否正常</p>
-<pre tabindex="0"><code>sudo docker run hello-world
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo yum remove docker <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-client <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-client-latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-common <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-latest <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-latest-logrotate <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-logrotate <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>                  docker-engine
+</span></span></code></pre></div><p>安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo yum install -y yum-utils
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo yum-config-manager <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    --add-repo <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    https://download.docker.com/linux/centos/docker-ce.repo
+</span></span></code></pre></div><p>开始安装引擎</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo yum install docker-ce docker-ce-cli containerd.io
+</span></span></code></pre></div><p>启动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl start docker
+</span></span></code></pre></div><p>测试是否正常</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo docker run hello-world
+</span></span></code></pre></div>
 
     
 

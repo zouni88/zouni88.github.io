@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="安装环境，配置环境变量#GOROOT:go安装路径GOPATH: 项目目录PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境#https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct
+<meta property="og:description" content="安装环境，配置环境变量#GOROOT:go安装路径 GOPATH: 项目目录 PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境#https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct
 # 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）go env -w GOPRIVATE=*.corp.example.com# 设置不走 proxy 的私有组织（可选）go env -w GOPRIVATE=example.com/org_namego moudle 初始化#go mod project_namego buildgo mod 引用本地项目#go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="document" />
@@ -26,7 +26,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="安装环境，配置环境变量#GOROOT:go安装路径GOPATH: 项目目录PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境#https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct
+  content="安装环境，配置环境变量#GOROOT:go安装路径 GOPATH: 项目目录 PATH ：%GOROOT%\bin;%GOPATH%\bin GOland 配置环境#https://github.com/goproxyio/goproxy go env -w GO111MODULE=on go env -w GOPROXY=https://goproxy.io,direct
 # 设置不走 proxy 的私有仓库，多个用逗号相隔（可选）go env -w GOPRIVATE=*.corp.example.com# 设置不走 proxy 的私有组织（可选）go env -w GOPRIVATE=example.com/org_namego moudle 初始化#go mod project_namego buildgo mod 引用本地项目#go mod edit -replace 项目名称=项目路径 go mod edit -replace testttt=/home/small/gopath/src/testttt "
 />
 <title>
@@ -5589,10 +5589,10 @@ https://github.com/alex-shpak/hugo-book
   安装环境，配置环境变量
   <a class="anchor" href="#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f">#</a>
 </h3>
-<pre tabindex="0"><code>GOROOT:go安装路径
-GOPATH: 项目目录
-PATH ：%GOROOT%\bin;%GOPATH%\bin
-</code></pre><h3 id="goland-配置环境">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>GOROOT:go安装路径
+</span></span><span style="display:flex;"><span>GOPATH: 项目目录
+</span></span><span style="display:flex;"><span>PATH ：%GOROOT%<span style="color:#ae81ff">\b</span>in;%GOPATH%<span style="color:#ae81ff">\b</span>in
+</span></span></code></pre></div><h3 id="goland-配置环境">
   GOland 配置环境
   <a class="anchor" href="#goland-%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83">#</a>
 </h3>
@@ -5620,8 +5620,8 @@ go build
 <ul>
 <li>go mod edit -replace 项目名称=项目路径</li>
 </ul>
-<pre tabindex="0"><code>go mod edit -replace testttt=/home/small/gopath/src/testttt
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>go mod edit -replace testttt<span style="color:#f92672">=</span>/home/small/gopath/src/testttt
+</span></span></code></pre></div>
 
     
 

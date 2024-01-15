@@ -3,7 +3,7 @@
 <head>
   <meta property="og:title" content="" />
 <meta property="og:description" content="1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录
-127.0.0.1	zouni.vip127.0.0.1	student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名
+127.0.0.1	zouni.vip 127.0.0.1	student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名
 bp = Blueprint(&#39;cms&#39;, __name__, subdomain=&#39;cms&#39;) 3.设置 config 配置 SERVER_NAME=主域名" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/" /><meta property="article:section" content="document" />
@@ -28,7 +28,7 @@ https://github.com/alex-shpak/hugo-book
 <meta
   name="description"
   content="1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录
-127.0.0.1	zouni.vip127.0.0.1	student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名
+127.0.0.1	zouni.vip 127.0.0.1	student.zouni.vip 2.代码中设置： 修改蓝图 subdomain 为指定的子域名
 bp = Blueprint(&#39;cms&#39;, __name__, subdomain=&#39;cms&#39;) 3.设置 config 配置 SERVER_NAME=主域名"
 />
 <title>
@@ -5588,9 +5588,9 @@ bp = Blueprint(&#39;cms&#39;, __name__, subdomain=&#39;cms&#39;) 3.设置 config
 
 
 <p>1.本地测试需要修改<code>hosts文件</code>：<code>C:\Windows\System32\drivers\etc\hosts</code>目录</p>
-<pre tabindex="0"><code>127.0.0.1	zouni.vip
-127.0.0.1	student.zouni.vip
-</code></pre><p>2.代码中设置：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>127.0.0.1	zouni.vip
+</span></span><span style="display:flex;"><span>127.0.0.1	student.zouni.vip
+</span></span></code></pre></div><p>2.代码中设置：
 修改蓝图 <code>subdomain</code> 为指定的子域名</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bp <span style="color:#f92672">=</span> Blueprint(<span style="color:#e6db74">&#39;cms&#39;</span>, __name__,  subdomain<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;cms&#39;</span>)
 </span></span></code></pre></div><p>3.设置 <code>config</code> 配置 <code>SERVER_NAME=主域名</code></p>

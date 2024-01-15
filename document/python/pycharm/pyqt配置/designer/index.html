@@ -2,11 +2,11 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="windows 平台 环境配置#首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包pip install pyqt5pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具#打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：
+<meta property="og:description" content="windows 平台 环境配置#首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包 pip install pyqt5 pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具#打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：
 D:\Anaconda3\envs\python_basic\Scripts\designer.exe
 Working directory 这个路径是工作路径，所以一般就填入$FileDir$
 编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：
-Program: python.exe 路径Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.pyWorking directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了
+Program: python.exe 路径 Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py Working directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了
 最后一步，转换成py文件 end" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/" /><meta property="article:section" content="document" />
@@ -30,11 +30,11 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="windows 平台 环境配置#首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包pip install pyqt5pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具#打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：
+  content="windows 平台 环境配置#首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包 pip install pyqt5 pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具#打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：
 D:\Anaconda3\envs\python_basic\Scripts\designer.exe
 Working directory 这个路径是工作路径，所以一般就填入$FileDir$
 编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：
-Program: python.exe 路径Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.pyWorking directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了
+Program: python.exe 路径 Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py Working directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了
 最后一步，转换成py文件 end"
 />
 <title>
@@ -5612,10 +5612,10 @@ Program: python.exe 路径Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileName
 <ol>
 <li>首先安装pyqt5</li>
 </ol>
-<pre tabindex="0"><code>pip install sip    //这个是pyqt开发商提供的支持包
-pip install pyqt5
-pip install pyqt5-tools
-</code></pre><h3 id="pycharm-配置pyqt-可拖拽控件工具">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install sip    //这个是pyqt开发商提供的支持包
+</span></span><span style="display:flex;"><span>pip install pyqt5
+</span></span><span style="display:flex;"><span>pip install pyqt5-tools
+</span></span></code></pre></div><h3 id="pycharm-配置pyqt-可拖拽控件工具">
   pycharm 配置pyqt 可拖拽控件工具
   <a class="anchor" href="#pycharm-%e9%85%8d%e7%bd%aepyqt-%e5%8f%af%e6%8b%96%e6%8b%bd%e6%8e%a7%e4%bb%b6%e5%b7%a5%e5%85%b7">#</a>
 </h3>
@@ -5641,10 +5641,10 @@ pip install pyqt5-tools
 <li>编辑完UI后，还需要转换成<code>py</code>文件才行，所以需要配置pyui转换</li>
 </ol>
 <p>需要配置下参数：</p>
-<pre tabindex="0"><code>Program: python.exe 路径
-Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
-Working directory: $FileDir$
-</code></pre><p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Program: python.exe 路径
+</span></span><span style="display:flex;"><span>Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
+</span></span><span style="display:flex;"><span>Working directory: $FileDir$
+</span></span></code></pre></div><p>
 
 
 <img src="https://r.xboox.cn//res/python/pyui.png" width="auto" alt="pyui"  /></p>

@@ -19,7 +19,7 @@
       <link>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</guid>
-      <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3 修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories 阿里云镜像源地址：&#xD;https://developer.aliyun.com/mirror/ </description>
+      <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3 修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories 阿里云镜像源地址： https://developer.aliyun.com/mirror/ </description>
     </item>
     <item>
       <title></title>

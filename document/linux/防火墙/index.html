@@ -2,7 +2,7 @@
 <html lang="en-us" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="Linux 防火墙 ufw firewalld iptables#默认：iptables 2. ubuntu : ufw#ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall#systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld查看状态： systemctl status firewalld停止： systemctl disable firewalld禁用： systemctl stop firewalld启动服务：systemctl start firewalld." />
+<meta property="og:description" content="Linux 防火墙 ufw firewalld iptables#默认：iptables 2. ubuntu : ufw#ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall#systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/" /><meta property="article:section" content="document" />
 
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="Linux 防火墙 ufw firewalld iptables#默认：iptables 2. ubuntu : ufw#ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall#systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld查看状态： systemctl status firewalld停止： systemctl disable firewalld禁用： systemctl stop firewalld启动服务：systemctl start firewalld."
+  content="Linux 防火墙 ufw firewalld iptables#默认：iptables 2. ubuntu : ufw#ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall#systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld."
 />
 <title>
   📓 zouni88
@@ -5643,30 +5643,30 @@ https://github.com/alex-shpak/hugo-book
 </span></span></code></pre></div><ul>
 <li>其它防火墙命令</li>
 </ul>
-<pre tabindex="0"><code>启动： systemctl start firewalld
-查看状态： systemctl status firewalld
-停止： systemctl disable firewalld
-禁用： systemctl stop firewalld
-启动服务：systemctl start firewalld.service
-关闭服务：systemctl stop firewalld.service
-重启服务：systemctl restart firewalld.service
-服务的状态：systemctl status firewalld.service
-在开机时启用一个服务：systemctl enable firewalld.service
-在开机时禁用一个服务：systemctl disable firewalld.service
-查看服务是否开机启动：systemctl is-enabled firewalld.service
-查看已启动的服务列表：systemctl list-unit-files|grep enabled
-查看启动失败的服务列表：systemctl --failed
-查看版本： firewall-cmd --version
-查看帮助： firewall-cmd --help
-显示状态： firewall-cmd --state
-查看所有打开的端口： firewall-cmd --zone=public --list-ports
-更新防火墙规则： firewall-cmd --reload
-查看区域信息: firewall-cmd --get-active-zones
-查看指定接口所属区域： firewall-cmd --get-zone-of-interface=eth0
-拒绝所有包：firewall-cmd --panic-on
-取消拒绝状态： firewall-cmd --panic-off
-查看是否拒绝： firewall-cmd --query-panic
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>启动： systemctl start firewalld
+</span></span><span style="display:flex;"><span>查看状态： systemctl status firewalld
+</span></span><span style="display:flex;"><span>停止： systemctl disable firewalld
+</span></span><span style="display:flex;"><span>禁用： systemctl stop firewalld
+</span></span><span style="display:flex;"><span>启动服务：systemctl start firewalld.service
+</span></span><span style="display:flex;"><span>关闭服务：systemctl stop firewalld.service
+</span></span><span style="display:flex;"><span>重启服务：systemctl restart firewalld.service
+</span></span><span style="display:flex;"><span>服务的状态：systemctl status firewalld.service
+</span></span><span style="display:flex;"><span>在开机时启用一个服务：systemctl enable firewalld.service
+</span></span><span style="display:flex;"><span>在开机时禁用一个服务：systemctl disable firewalld.service
+</span></span><span style="display:flex;"><span>查看服务是否开机启动：systemctl is-enabled firewalld.service
+</span></span><span style="display:flex;"><span>查看已启动的服务列表：systemctl list-unit-files|grep enabled
+</span></span><span style="display:flex;"><span>查看启动失败的服务列表：systemctl --failed
+</span></span><span style="display:flex;"><span>查看版本： firewall-cmd --version
+</span></span><span style="display:flex;"><span>查看帮助： firewall-cmd --help
+</span></span><span style="display:flex;"><span>显示状态： firewall-cmd --state
+</span></span><span style="display:flex;"><span>查看所有打开的端口： firewall-cmd --zone<span style="color:#f92672">=</span>public --list-ports
+</span></span><span style="display:flex;"><span>更新防火墙规则： firewall-cmd --reload
+</span></span><span style="display:flex;"><span>查看区域信息: firewall-cmd --get-active-zones
+</span></span><span style="display:flex;"><span>查看指定接口所属区域： firewall-cmd --get-zone-of-interface<span style="color:#f92672">=</span>eth0
+</span></span><span style="display:flex;"><span>拒绝所有包：firewall-cmd --panic-on
+</span></span><span style="display:flex;"><span>取消拒绝状态： firewall-cmd --panic-off
+</span></span><span style="display:flex;"><span>查看是否拒绝： firewall-cmd --query-panic
+</span></span></code></pre></div>
 
     
 

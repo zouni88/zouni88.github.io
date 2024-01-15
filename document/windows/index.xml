@@ -33,7 +33,7 @@
       <link>https://r.xboox.cn/document/windows/windows-terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/windows/windows-terminal/</guid>
-      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片，&#xD;#&#xD;&amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;,&#xD;&amp;#34;backgroundImageOpacity&amp;#34;: 0.3,&#xD;&amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果：&#xD;#&#xD;重新打开终端，ok</description>
+      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片，&#xD;#&#xD;&amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;, &amp;#34;backgroundImageOpacity&amp;#34;: 0.3, &amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果：&#xD;#&#xD;重新打开终端，ok</description>
     </item>
     <item>
       <title></title>

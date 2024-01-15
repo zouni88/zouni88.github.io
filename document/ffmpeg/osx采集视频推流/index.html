@@ -5589,8 +5589,8 @@ https://github.com/alex-shpak/hugo-book
   视频推流
   <a class="anchor" href="#%e8%a7%86%e9%a2%91%e6%8e%a8%e6%b5%81">#</a>
 </h3>
-<pre tabindex="0"><code>ffmpeg -f avfoundation -framerate 30 -i &#34;0:0&#34; -rtsp_transport tcp -f rtsp rtsp://192.168.3.44:8554/stream
-</code></pre><p>rtsp 推流参数说明</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ffmpeg -f avfoundation -framerate <span style="color:#ae81ff">30</span> -i <span style="color:#e6db74">&#34;0:0&#34;</span> -rtsp_transport tcp -f rtsp rtsp://192.168.3.44:8554/stream
+</span></span></code></pre></div><p>rtsp 推流参数说明</p>
 <ul>
 <li>-i &ldquo;0:0&rdquo;  指明采集设备  第1个视频设备和音频设备</li>
 <li>-i &ldquo;FaceTime HD Camera&rdquo; 指定 摄像头设备

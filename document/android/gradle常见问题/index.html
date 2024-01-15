@@ -5612,10 +5612,10 @@ https://github.com/alex-shpak/hugo-book
   android studio 运行 main 方法 报错
   <a class="anchor" href="#android-studio-%e8%bf%90%e8%a1%8c-main-%e6%96%b9%e6%b3%95-%e6%8a%a5%e9%94%99">#</a>
 </h1>
-<pre tabindex="0"><code>SourceSet with name ‘main‘ not found
-</code></pre><p>解决：./idea/gradle.xml -&gt; <!-- raw HTML omitted --> 节点下 加入下面这句</p>
-<pre tabindex="0"><code>&lt;option name=&#34;delegatedBuild&#34; value=&#34;false&#34; /&gt;
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>SourceSet with name ‘main‘ not found
+</span></span></code></pre></div><p>解决：./idea/gradle.xml -&gt; <!-- raw HTML omitted --> 节点下 加入下面这句</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&lt;option name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;delegatedBuild&#34;</span> value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> /&gt;
+</span></span></code></pre></div>
 
     
 
