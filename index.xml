@@ -5,13 +5,13 @@
     <link>https://r.xboox.cn/</link>
     <description>Recent content in 个人学习笔记和平时的记录整理! on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/android/faq/</link>
+      <link>https://r.xboox.cn/document/android/FAQ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/android/faq/</guid>
+      <guid>https://r.xboox.cn/document/android/FAQ/</guid>
       <description>&#xD;经常遇到的问题：&#xD;#&#xD;读取本地存储文件权限受限&#xD;#&#xD;open failed: EACCES (Permission denied) //manifest.xml application标签&#xD;&amp;lt;application android:requestLegacyExternalStorage=&amp;#34;true&amp;#34;&#xD;/&amp;gt; </description>
     </item>
     <item>
@@ -65,9 +65,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</link>
+      <link>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80TextView%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80TextView%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</guid>
       <description>1.修改textview的约束条件&#xA;app:layout_constraintStart_toEndOf=&amp;#34;@+id/textView3&amp;#34; 改为 app:layout_constraintLeft_toRightOf=&amp;#34;@+id/textView3&amp;#34; 注意 其他的start end也都改为left right 2.其他属性搭配：&#xA;android:layout_height=&amp;#34;wrap_content&amp;#34; 搭配：app:layout_constrainedWidth=&amp;#34;true&amp;#34; android:layout_height=&amp;#34;wrap_content&amp;#34; 搭配：app:layout_constrainedHeight=&amp;#34;false&amp;#34;（不写默认即false） </description>
     </item>
     <item>
@@ -226,51 +226,51 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
+      <link>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
       <description>&#xD;配置环境&#xD;#&#xD;第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34; -DANDROID_PLATFORM=&amp;#34;android-21&amp;#34; -DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34; -DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DANDROID_STL=&amp;#34;c++_static&amp;#34; </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/cxx%E7%89%B9%E8%89%B2/</link>
+      <link>https://r.xboox.cn/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/cxx%E7%89%B9%E8%89%B2/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</guid>
       <description>&#xD;extern &amp;ldquo;C&amp;rdquo; 学习记录&#xD;#&#xD;// A.cpp //告诉编译器这里修饰的是C语言的代码， extern &amp;#34;C&amp;#34; { //在编译阶段，不会被编译成C++这样的fun_int_int符号，即使找不到函数也不会报错 void fun(int a,int b){ } } //B.cpp #include &amp;#34;A.h&amp;#34; int main(){ //对于C++来说，因为有函数重载的机制，编译后的函数会以 函数名 + 形参 来命名， //对于C来说，没有函数重载，不会被转成fun_int_int这样的符号 fun(1,2); } </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/main/</link>
+      <link>https://r.xboox.cn/document/C_CXX/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/main/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/main/</guid>
       <description>#include &amp;lt;stdio.h&amp;gt;&#xD;int main(int argc, char const *argv[])&#xD;{&#xD;printf(&#39;123&#39;);&#xD;return 0;&#xD;}&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</link>
+      <link>https://r.xboox.cn/document/C_CXX/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</guid>
       <description>原码反码补码的概念和理解&#xD;#&#xD;1. 原码&#xD;#&#xD;原码就是符号位加上真值的绝对值, 即用第一位表示符号, 其余位表示值. 比如如果是8位二进制:&#xA;[+1]原 = 0000 0001&#xA;[-1]原 = 1000 0001&#xA;第一位是符号位. 因为第一位是符号位, 所以8位二进制数的取值范围就是:&#xA;[1111 1111 , 0111 1111]&#xA;即&#xA;[-127 , 127]&#xA;原码是人脑最容易理解和计算的表示方式.&#xA;2. 反码&#xD;#&#xD;反码的表示方法是:&#xA;正数的反码是其本身&#xA;负数的反码是在其原码的基础上, 符号位不变，其余各个位取反.&#xA;[+1] = [00000001]原 = [00000001]反&#xA;[-1] = [10000001]原 = [11111110]反&#xA;可见如果一个反码表示的是负数, 人脑无法直观的看出来它的数值. 通常要将其转换成原码再计算.&#xA;3. 补码&#xD;#&#xD;补码的表示方法是:&#xA;正数的补码就是其本身&#xA;负数的补码是在其原码的基础上, 符号位不变, 其余各位取反, 最后+1. (即在反码的基础上+1)&#xA;[+1] = [00000001]原 = [00000001]反 = [00000001]补&#xA;[-1] = [10000001]原 = [11111110]反 = [11111111]补</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://r.xboox.cn/document/C_CXX/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>&#xD;printf不能输出打印&#xD;#&#xD;setbuf(stdout,NULL);&#xD;Cannot jump from this goto statement to its label&#xD;#&#xD;不能在 goto 声明变量 </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</link>
+      <link>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
       <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库&#xD;#&#xD;error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/c_cxx/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</link>
+      <link>https://r.xboox.cn/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/c_cxx/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</guid>
+      <guid>https://r.xboox.cn/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</guid>
       <description>编译过程描述&#xD;#&#xD;//生成预处理文件 g++ -o HelloWorld.ii -E HelloWorld.cpp //生成汇编文件&#xA;g++ -o HelloWorld.s -S HelloWorld.ii&#xA;//生成二进制也就是目标文件&#xA;g++ -o HelloWorld.o -c HelloWorld.s&#xA;//生成可执行文件 g++ -o HelloWorld.exe HelloWorld.o</description>
     </item>
     <item>
@@ -373,30 +373,30 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/docker/dockerfile/alpine-%E5%9D%91/</link>
+      <link>https://r.xboox.cn/document/docker/DockerFile/alpine-%E5%9D%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/docker/dockerfile/alpine-%E5%9D%91/</guid>
+      <guid>https://r.xboox.cn/document/docker/DockerFile/alpine-%E5%9D%91/</guid>
       <description>安装uwsgi 报各种 致命错误&#xD;#&#xD;缺少c编译器 File &amp;#34;uwsgiconfig.py&amp;#34;, line 742, in __init__ raise Exception(&amp;#34;you need a C compiler to build uWSGI&amp;#34;) Exception: you need a C compiler to build uWSGI 首次安装软件，需要先更新源。&#xA;apk update apk add gcc 执行pip3 install uWSGI In file included from core/socket.c:1:0: ./uwsgi.h:165:19: fatal error: stdio.h: No such file or directory compilation terminated. In file included from core/logging.c:2:0: ./uwsgi.h:165:19: fatal error: stdio.h: No such file or directory compilation terminated.</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</link>
+      <link>https://r.xboox.cn/document/docker/DockerFile/alpine%E9%95%9C%E5%83%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</guid>
+      <guid>https://r.xboox.cn/document/docker/DockerFile/alpine%E9%95%9C%E5%83%8F/</guid>
       <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3 修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories 阿里云镜像源地址： https://developer.aliyun.com/mirror/ </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/docker/dockerfile/command/</link>
+      <link>https://r.xboox.cn/document/docker/DockerFile/command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/docker/dockerfile/command/</guid>
+      <guid>https://r.xboox.cn/document/docker/DockerFile/command/</guid>
       <description>DockerFile 分为四部分：基础镜像、维护者、镜像操作指令、容器启动时执行指令&#xA;WORKDIR 指定工作目录，类似于 cd,定位到某一个目录&#xA;WORKDIR /usr/local/nginx RUN 构建镜像时运行指令&#xA;RUN apk add nginx &amp;amp;&amp;amp; mkdir /run/nginx/ 构建指令：&#xA;docker build -f dockerfile-path . </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/docker/dockerfile/%E8%BF%90%E8%A1%8Cdockerfile/</link>
+      <link>https://r.xboox.cn/document/docker/DockerFile/%E8%BF%90%E8%A1%8Cdockerfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/docker/dockerfile/%E8%BF%90%E8%A1%8Cdockerfile/</guid>
+      <guid>https://r.xboox.cn/document/docker/DockerFile/%E8%BF%90%E8%A1%8Cdockerfile/</guid>
       <description>&#xD;运行构建dockerfile&#xD;#&#xD;-f 指定dockerfile 文件构建镜像 docker build -f D:\docker\dockerfile\Dockerfile -t docker build -t image_name:tag . </description>
     </item>
     <item>
@@ -478,9 +478,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
+      <link>https://r.xboox.cn/document/ffmpeg/OSX%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
+      <guid>https://r.xboox.cn/document/ffmpeg/OSX%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
       <description>&#xD;视频推流&#xD;#&#xD;ffmpeg -f avfoundation -framerate 30 -i &amp;#34;0:0&amp;#34; -rtsp_transport tcp -f rtsp rtsp://192.168.3.44:8554/stream rtsp 推流参数说明&#xA;-i &amp;ldquo;0:0&amp;rdquo; 指明采集设备 第1个视频设备和音频设备 -i &amp;ldquo;FaceTime HD Camera&amp;rdquo; 指定 摄像头设备 设备列表枚举 ffmpeg -f avfoundation -list_devices true -i &amp;quot;&amp;quot; framerate 30 采集视频30帧 </description>
     </item>
     <item>
@@ -562,9 +562,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
+      <link>https://r.xboox.cn/document/flutter/1.setup/Android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
+      <guid>https://r.xboox.cn/document/flutter/1.setup/Android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
       <description>新建flutter module&#xD;#&#xD;1. module 的 settings.gradle ：&#xD;#&#xD;// Generated file. Do not edit. include &amp;#39;:app&amp;#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &amp;#39;android_generated&amp;#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：&#xD;#&#xD;dependencies { implementation project(&amp;#39;:flutter&amp;#39;) } 3. 编译运行：失败&#xD;#&#xD;Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.&#xD;#&#xD;这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1.</description>
     </item>
     <item>
@@ -765,9 +765,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.rsa%E5%8A%A0%E5%AF%86/</link>
+      <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.rsa%E5%8A%A0%E5%AF%86/</guid>
+      <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</guid>
       <description>//GenerateKey函数使用随机数据生成器random生成一对具有指定字位数的RSA密钥 //Reader是一个全局、共享的密码用强随机数生成器 var bits = 2048 priKey, err := rsa.GenerateKey(rand.Reader, bits) if err != nil { panic(err) } x509Key := x509.MarshalPKCS1PrivateKey(priKey) priKeyFile, err := os.Create(&amp;#34;pk.pem&amp;#34;) if err != nil { panic(err) } defer priKeyFile.Close() priKeyBlock := pem.Block{Type: &amp;#34;RSA Private Key&amp;#34;, Bytes: x509Key} pem.Encode(priKeyFile, &amp;amp;priKeyBlock) x509PubKey := x509.MarshalPKCS1PublicKey(&amp;amp;priKey.PublicKey) pubKeyFile, err := os.Create(&amp;#34;pubKey.pem&amp;#34;) if err != nil { panic(err) } defer pubKeyFile.Close() pubKeyBlock := pem.Block{Type: &amp;#34;RSA Public Key&amp;#34;, Bytes: x509PubKey} // block 输出到文件 pem.</description>
     </item>
     <item>
@@ -947,9 +947,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>CGO需要安装gcc&#xA;windows安装mingw-w64&#xA;下载&#xA;https://sourceforge.net/projects/mingw-w64/files/mingw-w64/&#xA;两种方式：&#xA;下载exe可执行文件，交给程序下载安装，网络不好很大概率会一直失败 直接下载压缩包解压，然后配置环境变量即可。(推荐) </description>
     </item>
     <item>
@@ -1031,9 +1031,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</link>
+      <link>https://r.xboox.cn/document/linux/ftp/FTP%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</guid>
+      <guid>https://r.xboox.cn/document/linux/ftp/FTP%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</guid>
       <description>查看ftp默认用户主目录在哪里 Yum install finger&#xA;finger ftp [root@OX39Ø6c finger ftp Login: ftp Directory: / var/ftp Never logged in. No mail. No Plan. Name: FTP User Shell: /sbin/nologin /&#xA;修改默认目录 vim /etc/passwd&#xA;[root@OX39Ø6c vim /etc/passwd ftp:x:14:50: FTP&#xA;修改/var/ftp 为想要修改的目录路径 然后重启vsftpd服务 service vsftpd restart&#xA;如果修改之后仍不能用，需要关闭 SELinux&#xA;修改/etc/selinux/config文件中的SELINUX=&amp;quot;&amp;quot; 为 disabled ，然后重启。 如果不想重启系统，使用命令setenforce 0 </description>
     </item>
     <item>
@@ -1073,9 +1073,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9Aip/</link>
+      <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9Aip/</guid>
+      <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</guid>
       <description>一、ubuntu server 设置静态IP&#xD;#&#xD;root@zouni:~# cd /etc/netplan root@zouni:/etc/netplan# ls 00-installer-config.yaml 00-installer-config.yaml.bak 00-installer-config.yaml.bak1 # 编辑 00-installer-config.yaml 内容如下 root@zouni:/etc/netplan# vim 00-installer-config.yaml # This is the network config written by &amp;#39;subiquity&amp;#39; network: ethernets: eno1: dhcp4: false dhcp6: false addresses: - 192.168.1.6/24 routes: - to: default via: 192.168.1.1 enp4s0: dhcp4: false version: 2 # 编辑完之后使生效 root@zouni:/etc/netplan# netplan apply 二、其他系统&#xD;#&#xD;给系统设置固定IP&#xD;#&#xD;定位到目录：&#xA;cd /etc/sysconfig/network-scripts ifcfg-em1 ifdown-eth ifdown-ppp ifup ifup-ipv6 ifup-routes init.ipv6-global ifcfg-em1.bak ifdown-ib ifdown-routes ifup-aliases ifup-isdn ifup-sit network-functions ifcfg-em2 ifdown-ippp ifdown-sit ifup-bnep ifup-plip ifup-Team network-functions-ipv6 ifcfg-lo ifdown-ipv6 ifdown-Team ifup-eth ifup-plusb ifup-TeamPort ifdown ifdown-isdn ifdown-TeamPort ifup-ib ifup-post ifup-tunnel ifdown-bnep ifdown-post ifdown-tunnel ifup-ippp ifup-ppp ifup-wireless vi 编辑 ifcfg-em1文件， 这个文件是对应网卡的脚本内容，直接修改：增加如下几项，包括IP地址，网关等等</description>
     </item>
     <item>
@@ -1143,9 +1143,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</link>
+      <link>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91IP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</guid>
+      <guid>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91IP/</guid>
       <description>a. 获取当前IP，优先显示IPV6：&#xD;https://ip.netarm.com&#xD;b. 获取IPV4：&#xD;https://ipv4.netarm.com&#xD;c. 获取IPV6：&#xD;https://ipv6.netarm.com </description>
     </item>
     <item>
@@ -1171,9 +1171,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip/</link>
+      <link>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip/</guid>
+      <guid>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</guid>
       <description>linux 设置静态IP&#xD;#&#xD;查看网卡 root@zouni:~# ifconfig eno1: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 inet 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255 inet6 fe80::2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt; inet6 240e:305:7880:36d2:2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x0&amp;lt;global&amp;gt; ether 20:47:47:98:9e:30 txqueuelen 1000 (Ethernet) RX packets 15733 bytes 3827041 (3.8 MB) RX errors 0 dropped 8440 overruns 0 frame 0 TX packets 3586 bytes 376173 (376.1 KB) TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0 device interrupt 16 enp3s0: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt; mtu 1500 ether 00:e0:51:46:0b:01 txqueuelen 1000 (Ethernet) RX packets 0 bytes 0 (0.</description>
     </item>
     <item>
@@ -1192,184 +1192,184 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/kl%E6%95%A3%E5%BA%A6/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/KL%E6%95%A3%E5%BA%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/kl%E6%95%A3%E5%BA%A6/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/KL%E6%95%A3%E5%BA%A6/</guid>
       <description>KL散度 -&amp;gt; 相对熵</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/tensorboard/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/tensorboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/tensorboard/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/tensorboard/</guid>
       <description> import tensorflow as tf # 这一步在网络初始化后 mode.summary() tf.summary.create_file_writer(&amp;#39;logs&amp;#39;) 指定要监听的工作日志目录&#xD;#&#xD;tensorboard --logdir logs </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</guid>
       <description>官网地址&#xA;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=CentOS&amp;target_version=8&amp;target_type=runfilelocal&#xA;wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run sudo sh cuda_10.2.89_440.33.01_linux.run </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%B9%E5%99%A8/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%B9%E5%99%A8/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%B9%E5%99%A8/</guid>
       <description>docker run -itd &amp;ndash;name=tensorflow -p 8888:8888 -v D:\docker\tf:/tmp -w /tmp 90338865fe9&#xA;Cannot connect:Cannot connect to the Docker daemon at tcp://localhost:2375,Is the docker daemon running?</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%AF%B9%E6%95%B0log2/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%AF%B9%E6%95%B0log2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%AF%B9%E6%95%B0log2/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%AF%B9%E6%95%B0log2/</guid>
       <description>tensorlfow math.log() 是以自然常数e为底 转化为以2为底：&#xA;根据对数换底公式：&#xA;∵&#xA;∴ loge(4)/loge(2) = log2(4) = 2&#xD;代码实例：&#xA;import tensorflow as tf x = tf.math.log(4.)/tf.math.log(2.) Out:&#xA;&amp;lt;tf.Tensor: shape=(), dtype=float32, numpy=2.0&amp;gt;&#xD;效果等同于 numpy log2(4)&#xA;import numpy as np np.log2(4) Out:&#xA;2.0 </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
       <description>常用函数&#xD;#&#xD;unstack&#xD;#&#xD;作用：把向量按照维度拆分&#xA;gather&#xD;#&#xD;通过索引获取 标量或者向量&#xA;gather_nd&#xD;#&#xD;可以索引多维&#xA;argmax 最大值的索引&#xA;tf.argmax([1,2,3,4,5,6,7,8]) &amp;lt;tf.Tensor: shape=(), dtype=int64, numpy=7&amp;gt; softmax 概率最大的索引</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</guid>
       <description># %% import tensorflow as tf from matplotlib import pyplot as plt x = tf.zeros([2, 2], dtype=tf.int32) # 如果要画一个灰度图，那么如下 # 填充一个[2,2]的矩阵为128 也就是灰色值 # [[255,255], # [255,255]] z = tf.fill([2, 2], 128) # 在最后一个维度展开一次，变成[2,2,1] z = tf.expand_dims(z, axis=-1) # 在最后一个维度平铺3次 # [2,2,3] z = tf.tile(z, [1, 1, 3]) plt.imshow(z) plt.show() # %% # 画一个红色的图，也很简单 # 三个通道不同颜色 比如洋红色的rgb色值[255,0,255] r = tf.fill([3, 3], 255) g = tf.zeros([3, 3],dtype=tf.int32) b = r img = tf.</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</link>
+      <link>https://r.xboox.cn/document/ML/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</guid>
+      <guid>https://r.xboox.cn/document/ML/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</guid>
       <description>张量是一维 二维是矩阵 张量</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</guid>
       <description>数据缩放到某个区间&#xD;#&#xD;归一化公式：&#xA;每一个样本减去最小值，除以 最大值-最小值 (x - min(x) )/ (max(x) - min(x))</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</guid>
       <description>数据预处理&#xD;#&#xD;无量纲化&#xA;数据缩放： 标准化，归一化&#xA;标准化&#xA;处理缺失值&#xA;处理编码哑变量&#xA;二值化，分箱</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</guid>
       <description>关于反向传播&#xD;#&#xD;前向传播</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</guid>
       <description>&#xD;sigmoid&#xD;#&#xD;import tensorflow as tf from matplotlib import pyplot as plt x = tf.linspace(-5.,5,20) x = tf.nn.sigmoid(x) plt.figure(facecolor=&amp;#39;white&amp;#39;) plt.plot(x) plt.show() numpy实现的sigmoid函数&#xA;from matplotlib import pyplot as plt import numpy as np x = np.linspace(-5,5,20) x = list(map(lambda x: 1/(1+np.exp(-x)),x)) plt.figure(facecolor=&amp;#39;white&amp;#39;) plt.plot(x) plt.show() relu&#xD;#&#xD;&amp;lt; 0 就化为0&#xA;from tensorflow.keras import activations activations.relu([1,2,3,-1,0]) out: &amp;lt;tf.Tensor: shape=(5,), dtype=int32, numpy=array([1, 2, 3, 0, 0])&amp;gt; </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</guid>
       <description>准备数据集&#xD;#&#xD;labelImg 数据标注工具 模型结构 如下图：&#xD;#&#xD;网络输入 416x416 经过一系列卷积层之后分成了三个分支，最终得到三个输出：[13,13,c],[26,26,c],[52,52,c] c是通道数&#xA;feature map 越大，感受野越小，适合预测小目标，&#xA;[13,13] feature map适合预测大目标&#xA;数据 target转换&#xD;#&#xD;同等变换，[512,512,3] =&amp;gt; [13,13,5]&#xA;因为网络输出是 [13,13,255] [26,26,255] [52,52,255] 这里的255是：3*(5+80) 每一个网格预测3个bbox,每个box有(x,y,w,h,iou,classes) 所以要将y_true也进行转换 [13,13,3,6] =&amp;gt;[13,13,3,(x,y,w,h,iou,class)] 意思是 512x512的图片上的真是框 映射到13x13的 feature map上，缩放32倍&#xA;每个图片上 最多有 gtbox_max个框，每个box 有5个值[x,y,w,h,confidence]&#xA;因为网络输出是中心点坐标，所以x,y得转换成中心点坐标 图片转换成网络输入大小 x = [h,w,3] =&amp;gt; [416,416,3] label转换成网络输出 yolov3有9个anchors 网络输出有三个分支： [boxes,(x,y,x1,y1,class)] =&amp;gt;[13,13,3,(x,y,w,h,confidence,class))] # x,y是中心点坐标 [boxes,5] =&amp;gt;[26,26,3,6] [boxes,5] =&amp;gt;[52,52,3,6] y</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</guid>
       <description>标注数据集&#xD;#&#xD;labelImg.exe 工具标注&#xA;制作数据集&#xD;#&#xD;训练集&#xA;python tools/voc2012.py &amp;ndash;data_dir &amp;lsquo;D:/DeepLearning/datasets\VOCtrainval_11-May-2012\VOCdevkit\VOC2012&amp;rsquo; &amp;ndash;split train &amp;ndash;output_file ./data/voc2012_train.tfrecord&#xA;测试集&#xA;python tools/voc2012.py &amp;ndash;data_dir &amp;lsquo;./data/voc2012_raw/VOCdevkit/VOC2012&amp;rsquo; &amp;ndash;split val &amp;ndash;output_file ./data/voc2012_val.tfrecord</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</link>
+      <link>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</guid>
       <description>over fitting&#xD;#&#xD;过拟合：当模型在训练集上表现好，在验证集上表现变差的时候出现过拟合&#xA;解决过拟合 问题的方向&#xD;#&#xD;降低模型复杂度，减少参数量， 正则化 早停法 early stopping&#xD;#&#xD;早停法： 当模型在验证集上的表现开始下降的时候，停止训练</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/MSE_MAE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/MSE_MAE/</guid>
       <description>&#xD;均方误差&#xD;#&#xD;平均绝对误差&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</guid>
       <description>事件的信息量随着事件发生概率的变大而 递减，信息不为负&#xA;两个不相关事件同时发生所产生的信息： h(x,y) = h(x) + h(y)&#xA;两个事件的概率满足： p(x,y) = p(x) * p(y).&#xA;对数形式的 真数相乘=&amp;gt;对数相加&#xA;信息： 𝐡(𝐱) = −𝒍𝒐𝒈𝟐𝒑(𝒙)&#xA;熵： 𝐇(𝐱) = −𝒔𝒖𝒎(𝒑(𝒙)𝒍𝒐𝒈𝟐𝒑(𝒙))&#xA;𝐟(𝐱) = −𝒍𝒐𝒈𝟐𝒙 函数图像 交叉熵&#xD;#&#xD;交叉熵： 两个事件的分布相似情况， H(p,q) = H(p) + KL(p,q)&#xA;KL散度用来衡量真实分布和预测分布的差异情况&#xA;假设 两个事件的概率分布相同则有：&#xA;∵ p=q,则 KL(p,q)=0&#xA;∴ H(p,q) = H(p)&#xA;根据 以上推导可知：&#xA;假设 p = [0,1,0]&#xA;H(p) = -log2(p) = 0 # P事件的信息为0 惊喜度最低&#xA;H(p,q) = 0 + KL(p,q) = KL(p,q)&#xA;所以H(p,q) = -plog(q) = -1log(q) # 其实就是计算KL最小值 KL(p,q) = 0, p=q</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</guid>
       <description>平方和公式&#xD;#&#xD;求连续的自然数的平方和</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</guid>
       <description>https://www.zhihu.com/question/336322284/answer/918067537?clicktime=1579274262&#xA;我们假设0到1之间被平均分成了n份，那么每一份的宽度就是1/n。而矩形的高度就是函数的纵坐标的值，纵坐标可以通过y=x²很容易算出来。于是，我们就知道，第1个矩形的高度为（1/n）²，第2个为（2/n）²，第3个为（3/n）²……&#xA;微分积分互逆 积分是求原函数 微分是对原函数求导&#xA;反向微分 =&amp;gt; 原函数 =&amp;gt; 积分</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
       <description>平方和公式&#xA;三角函数：正切</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</guid>
       <description>&#xD;信息论&#xD;#&#xD;统计代数&#xD;#&#xD;微积分&#xD;#&#xD;方差 均方误差 MSE 3. 傅里叶变换 4. 逆矩阵 5. 贝叶斯 概率 6. 线性代数 7. 概率论 8. 信息论 9. 微积分 10. 方差，标准差 正态分布 熵，交叉熵 贝叶斯，朴素贝叶斯概率 极大似然估计 最小二乘法 拉格朗日乘子法 微积分 矩阵：逆矩阵，单位矩阵，矩阵乘法 =》 向量模，向量内积（点积） 对数定理&#xA;傅里叶变换&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
       <description>机器学习&#xA;数据特征处理 数据无量纲化：数据缩放 数据标准化 概率论：条件概率，联合概率，贝叶斯，朴素贝叶斯 信息论：信息熵，交叉熵，条件熵 线性回归 矩阵 了解全连接神经网络要先了解一些基本数学概念&#xA;数据无量纲化 数据缩放 数据标准化&#xA;什么是线性函数 线性回归和线性回归解决什么问题&#xA;函数求导&#xA;微积分，微分积分互逆性，导数运算法则， 定积分，不定积分 矩阵乘法和矩阵逆&#xA;方差和标准差和偏差&#xA;对数概念</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</guid>
       <description>方差：方差就是 衡量数据的离散程度&#xA;每个样本和（所有样本的平均数 的差 的平方 的和除以 样本数&#xA;低方差：数据看起来比较密集，离散程度 比较低&#xA;高方差：数据看起来比较离散&#xA;低偏差：数据看起来距离靶心比较近&#xA;高偏差：数据距离则偏离靶心 较远</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</guid>
       <description>极大似然估计&#xA;抛硬币，已知硬币是正方两面，抛出硬币为花的概率</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</guid>
       <description>&#xD;自然常数e&#xD;#&#xD;(1+1/n)^n ≈ 2.718&#xA;伯努利研究发现： </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</link>
+      <link>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</guid>
+      <guid>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</guid>
       <description>量纲&#xD;#&#xD;量纲就好像是 度量单位一样，不同的单位的数据是没办法比较的，所以要统一，这就叫 去量纲化 or 无量纲化&#xA;百科解释 : 时间的长短（秒、分、时）、质量的大小（g、Kg）、速度的快慢（Km/h、m/s）等，都是量纲，它们反映特定物理量或物理现象的度量，在物理学或者计算上通常以物理量的单位来表示。&#xA;量纲是物理量的度量，是物理量的测量数据的表示。用来表示量纲的单位必须反映特定物理现象或物理量，如温度、位移、速度、质量等。仅代表特定数目的单位，称为“无量纲单位”。例如“打”代表12；“罗”代表12打或144。</description>
     </item>
     <item>
@@ -1612,9 +1612,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
+      <link>https://r.xboox.cn/document/python/Ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://r.xboox.cn/document/python/Ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
       <description>IPython是一个增强的shell工具,&#xD;#&#xD;%cd —更改当前工作目录&#xA;%edit —打开编辑器并在关闭编辑器后执行键入的代码&#xA;%env —显示当前环境变量&#xA;%pip install [pkgs] —在不离开交互式shell的情况下安装软件包&#xA;%time和%timeit—定时执行Python代码</description>
     </item>
     <item>
@@ -1815,44 +1815,44 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
+      <link>https://r.xboox.cn/document/RaspberryPi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
+      <guid>https://r.xboox.cn/document/RaspberryPi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
       <description>用户名：pi 密码：raspberry</description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/raspberrypi/%E5%AE%89%E8%A3%85docker/</link>
+      <link>https://r.xboox.cn/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/raspberrypi/%E5%AE%89%E8%A3%85docker/</guid>
+      <guid>https://r.xboox.cn/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</guid>
       <description>&#xD;docker 脚本安装&#xD;#&#xD;sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh&#xD;sudo sh docker_install.sh –mirror Aliyun </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://r.xboox.cn/document/RaspberryPi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://r.xboox.cn/document/RaspberryPi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&#xD;打开配置&#xD;#&#xD;sudo raspi-config </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
+      <link>https://r.xboox.cn/document/RaspberryPi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
+      <guid>https://r.xboox.cn/document/RaspberryPi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
       <description>&#xD;出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。&#xD;#&#xD;设置root用户密码&#xD;#&#xD;sudo passwd root&#xD;启用root用户&#xD;#&#xD;sudo passwd --unlock root&#xD;设置ssh允许登录&#xD;#&#xD;sudo sed -i &amp;quot;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;quot; /etc/ssh/sshd_config&#xD;重启ssh服务&#xD;#&#xD;sudo systemctl restart ssh&#xD;为root用户应用于当前用户相同的bash配置&#xD;#&#xD;sudo cp ~/.bashrc /root/.bashrc </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
+      <link>https://r.xboox.cn/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://r.xboox.cn/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
       <description>&#xD;下载镜像&#xD;#&#xD;将镜像写入sd卡 ，下载写入程序&#xA;https://www.raspberrypi.org/downloads/ 修改配置&#xD;#&#xD;写入sd卡后，不要拔出，直接在sdcard中修改配置：&#xA;开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件 hdmi_safe=1&#xD;config_hdmi_boost=4&#xD;hdmi_ignore_edid=0xa5000080&#xD;hdmi_group=2&#xD;hdmi_mode=82 参数 说明 hdmi_safe=1 安全启动HDMI config_hdmi_boost=4 开启热插拔 hdmi_group=1 CEA电视显示器 hdmi_group=2 DMT电脑显示器 hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率 hdmi_mode=4 640x480 60Hz hdmi_mode=9 800x600 60Hz hdmi_mode=16 1024x768 60Hz hdmi_mode=82 1080p 60Hz 连接树莓派&#xD;#&#xD;树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3. 设置无线wifi 新建wpa_supplicant.conf文件&#xA;country=CN&#xD;ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev&#xD;update_config=1&#xD;network={&#xD;ssid=&amp;#34;wifiname&amp;#34;&#xD;psk=&amp;#34;password&amp;#34;&#xD;priority=1&#xD;} 说明：&#xA;ssid: wifi名字 psk: wifi 密码 </description>
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/readme/</link>
+      <link>https://r.xboox.cn/document/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/readme/</guid>
+      <guid>https://r.xboox.cn/document/README/</guid>
       <description>学习笔记&#xD;#&#xD;笔记中主要记录个人的编程生涯的一些学习笔记；</description>
     </item>
     <item>

@@ -5,13 +5,13 @@
     <link>https://r.xboox.cn/document/ffmpeg/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/document/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
+      <link>https://r.xboox.cn/document/ffmpeg/OSX%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
+      <guid>https://r.xboox.cn/document/ffmpeg/OSX%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
       <description>&#xD;视频推流&#xD;#&#xD;ffmpeg -f avfoundation -framerate 30 -i &amp;#34;0:0&amp;#34; -rtsp_transport tcp -f rtsp rtsp://192.168.3.44:8554/stream rtsp 推流参数说明&#xA;-i &amp;ldquo;0:0&amp;rdquo; 指明采集设备 第1个视频设备和音频设备 -i &amp;ldquo;FaceTime HD Camera&amp;rdquo; 指定 摄像头设备 设备列表枚举 ffmpeg -f avfoundation -list_devices true -i &amp;quot;&amp;quot; framerate 30 采集视频30帧 </description>
     </item>
     <item>

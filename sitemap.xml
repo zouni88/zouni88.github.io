@@ -10,7 +10,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/blockchain/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/container/</loc>
   </url><url>
@@ -34,7 +34,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/mac/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/</loc>
+    <loc>https://r.xboox.cn/document/ML/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/nginx/</loc>
   </url><url>
@@ -42,7 +42,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/python/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/shadowsocks2/</loc>
   </url><url>
@@ -60,7 +60,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/database/postgresql/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/docker/dockerfile/</loc>
+    <loc>https://r.xboox.cn/document/docker/DockerFile/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/docker/nginx/</loc>
   </url><url>
@@ -90,13 +90,13 @@
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E7%94%A8%E6%88%B7/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/python/bs4/</loc>
   </url><url>
@@ -126,11 +126,11 @@
   </url><url>
     <loc>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%89%E8%A3%85/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/python/enviroment/anaconda/</loc>
   </url><url>
@@ -144,7 +144,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/android/faq/</loc>
+    <loc>https://r.xboox.cn/document/android/FAQ/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/android/gradle%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
   </url><url>
@@ -160,7 +160,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/android/kotlin/%E6%B3%A8%E8%A7%A3/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://r.xboox.cn/document/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80TextView%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/android/style%E6%A0%B7%E5%BC%8F/</loc>
   </url><url>
@@ -206,19 +206,19 @@
   </url><url>
     <loc>https://r.xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/cxx%E7%89%B9%E8%89%B2/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/main/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/main/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/c_cxx/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</loc>
+    <loc>https://r.xboox.cn/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/container/1.windows%E4%BD%BF%E7%94%A8containerd/</loc>
   </url><url>
@@ -248,13 +248,13 @@
   </url><url>
     <loc>https://r.xboox.cn/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/docker/dockerfile/alpine-%E5%9D%91/</loc>
+    <loc>https://r.xboox.cn/document/docker/DockerFile/alpine-%E5%9D%91/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</loc>
+    <loc>https://r.xboox.cn/document/docker/DockerFile/alpine%E9%95%9C%E5%83%8F/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/docker/dockerfile/command/</loc>
+    <loc>https://r.xboox.cn/document/docker/DockerFile/command/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/docker/dockerfile/%E8%BF%90%E8%A1%8Cdockerfile/</loc>
+    <loc>https://r.xboox.cn/document/docker/DockerFile/%E8%BF%90%E8%A1%8Cdockerfile/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</loc>
   </url><url>
@@ -278,7 +278,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/embedded/%E5%90%84%E7%A7%8D%E7%94%B5%E5%B9%B3%E6%A0%87%E5%87%86/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</loc>
+    <loc>https://r.xboox.cn/document/ffmpeg/OSX%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/ffmpeg/rtmp%E7%9B%B4%E6%92%AD/</loc>
   </url><url>
@@ -302,7 +302,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/flutter/1.setup/3.vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://r.xboox.cn/document/flutter/1.setup/Android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/flutter/1.setup/web%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE/</loc>
   </url><url>
@@ -360,7 +360,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/12.%E9%97%AD%E5%8C%85/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.rsa%E5%8A%A0%E5%AF%86/</loc>
+    <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/14.context/</loc>
   </url><url>
@@ -412,7 +412,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://r.xboox.cn/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/chromedp/%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85/</loc>
   </url><url>
@@ -436,7 +436,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/linux/1.dell%E5%AE%89%E8%A3%85centos/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</loc>
+    <loc>https://r.xboox.cn/document/linux/ftp/FTP%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
@@ -448,7 +448,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/linux/ubuntu/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9Aip/</loc>
+    <loc>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</loc>
   </url><url>
@@ -468,7 +468,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</loc>
+    <loc>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91IP/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E7%94%A8%E6%88%B7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</loc>
   </url><url>
@@ -476,63 +476,63 @@
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip/</loc>
+    <loc>https://r.xboox.cn/document/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81IP/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/mac/brew%E9%94%99%E8%AF%AF/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/kl%E6%95%A3%E5%BA%A6/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/KL%E6%95%A3%E5%BA%A6/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/tensorboard/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/tensorboard/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%AE%B9%E5%99%A8/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%B9%E5%99%A8/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%AF%B9%E6%95%B0log2/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%AF%B9%E6%95%B0log2/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0/fill/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</loc>
+    <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%BC%A0%E9%87%8F%E5%90%91%E9%87%8F/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E5%B8%B8%E7%94%A8%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E8%BF%87%E6%8B%9F%E5%90%88/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/MSE_MAE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</loc>
+    <loc>https://r.xboox.cn/document/ML/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/nas/synology-config/</loc>
   </url><url>
@@ -602,7 +602,7 @@
   </url><url>
     <loc>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://r.xboox.cn/document/python/Ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/python/jupyter/%E8%8E%B7%E5%8F%96token/</loc>
   </url><url>
@@ -660,17 +660,17 @@
   </url><url>
     <loc>https://r.xboox.cn/document/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/%E5%AE%89%E8%A3%85docker/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://r.xboox.cn/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/readme/</loc>
+    <loc>https://r.xboox.cn/document/README/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/shadowsocks2/init/</loc>
   </url><url>
@@ -727,5 +727,6 @@
     <loc>https://r.xboox.cn/tags/</loc>
   </url><url>
     <loc>https://r.xboox.cn/</loc>
+    <lastmod>2024-01-15T09:35:59+08:00</lastmod>
   </url>
 </urlset>

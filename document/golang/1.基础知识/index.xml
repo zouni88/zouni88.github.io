@@ -5,7 +5,7 @@
     <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -37,9 +37,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.rsa%E5%8A%A0%E5%AF%86/</link>
+      <link>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.rsa%E5%8A%A0%E5%AF%86/</guid>
+      <guid>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/13.RSA%E5%8A%A0%E5%AF%86/</guid>
       <description>//GenerateKey函数使用随机数据生成器random生成一对具有指定字位数的RSA密钥 //Reader是一个全局、共享的密码用强随机数生成器 var bits = 2048 priKey, err := rsa.GenerateKey(rand.Reader, bits) if err != nil { panic(err) } x509Key := x509.MarshalPKCS1PrivateKey(priKey) priKeyFile, err := os.Create(&amp;#34;pk.pem&amp;#34;) if err != nil { panic(err) } defer priKeyFile.Close() priKeyBlock := pem.Block{Type: &amp;#34;RSA Private Key&amp;#34;, Bytes: x509Key} pem.Encode(priKeyFile, &amp;amp;priKeyBlock) x509PubKey := x509.MarshalPKCS1PublicKey(&amp;amp;priKey.PublicKey) pubKeyFile, err := os.Create(&amp;#34;pubKey.pem&amp;#34;) if err != nil { panic(err) } defer pubKeyFile.Close() pubKeyBlock := pem.Block{Type: &amp;#34;RSA Public Key&amp;#34;, Bytes: x509PubKey} // block 输出到文件 pem.</description>
     </item>
     <item>

@@ -5,7 +5,7 @@
     <link>https://r.xboox.cn/document/golang/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/document/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/golang/CGO%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>CGO需要安装gcc&#xA;windows安装mingw-w64&#xA;下载&#xA;https://sourceforge.net/projects/mingw-w64/files/mingw-w64/&#xA;两种方式：&#xA;下载exe可执行文件，交给程序下载安装，网络不好很大概率会一直失败 直接下载压缩包解压，然后配置环境变量即可。(推荐) </description>
     </item>
     <item>

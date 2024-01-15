@@ -5,7 +5,7 @@
     <link>https://r.xboox.cn/document/flutter/1.setup/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/document/flutter/1.setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -16,9 +16,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
+      <link>https://r.xboox.cn/document/flutter/1.setup/Android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
+      <guid>https://r.xboox.cn/document/flutter/1.setup/Android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
       <description>新建flutter module&#xD;#&#xD;1. module 的 settings.gradle ：&#xD;#&#xD;// Generated file. Do not edit. include &amp;#39;:app&amp;#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &amp;#39;android_generated&amp;#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;)) 效果： 2. 引入依赖 在工程app/build.gradle 中：&#xD;#&#xD;dependencies { implementation project(&amp;#39;:flutter&amp;#39;) } 3. 编译运行：失败&#xD;#&#xD;Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;.&#xD;#&#xD;这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1.</description>
     </item>
     <item>
