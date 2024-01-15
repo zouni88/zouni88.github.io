@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/flutter/</link>
+    <link>https://r.xboox.cn/document/flutter/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/flutter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/flutter/2.0web%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://r.xboox.cn/document/flutter/2.0web%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/flutter/2.0web%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://r.xboox.cn/document/flutter/2.0web%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>最近在做一个 Flutter 2.0 for Web 的项目，在项目打开第一次运行的时候，总是要等很久才能看到效果.&#xD;#&#xD;经过一番研究发现是 Flutter 使用的一个渲染引擎 Canvaskit 下载太慢导致的.&#xD;#&#xD;解决方法&#xD;#&#xD;Canvaskit 是一个 js 框架，Flutter 定义默认是从 https://unpkg.com 去加载的，在国内最好是改变这个地址，让它通过镜像地址去加载.&#xD;#&#xD;编译发布修改&#xD;#&#xD;在 {SDK_PATH}/bin/cache/flutter_web_sdk/lib/_engine/engine/canvaskit/initialization.dart 文件中有定义:&#xA;/// The URL to use when downloading the CanvasKit script and associated wasm. /// /// The expected directory structure nested under this URL is as follows: /// /// /canvaskit.js - the release build of CanvasKit JS API bindings /// /canvaskit.wasm - the release build of CanvasKit WASM module /// /profiling/canvaskit.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/flutter/drawimage/</link>
+      <link>https://r.xboox.cn/document/flutter/drawimage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/flutter/drawimage/</guid>
+      <guid>https://r.xboox.cn/document/flutter/drawimage/</guid>
       <description>自定义画板,canvas&#xA;drawImageRect函数使用&#xA;drawImageRect(Image image, Rect src, Rect dst, Paint paint)&#xA;image: 传入图片&#xA;src: 这里相当于画布的前景，这里是将给定大小的src，绘制到指定的dst矩形上面去&#xA;dst: 这里相当于画布，用来绘制src&#xA;@override void paint(Canvas canvas, Size size) { if (image != null) { canvas.clipPath(Path() ..moveTo(0 + dx, 0 + dy) ..lineTo(scan + dx, 0 + dy) ..lineTo(scan + dx, scan + dy) ..lineTo(0 + dx, scan + dy)); var imgh = size.width / (image.width / image.height); print(&amp;#39;最终取值：$image,$imgh&amp;#39;); print(&amp;#34;size : $size&amp;#34;); //绘制矩形，4个参数： canvas.drawImageRect( image, Rect.fromLTRB(0.0, 0.0, image.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/flutter/urllauncher/</link>
+      <link>https://r.xboox.cn/document/flutter/urllauncher/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/flutter/urllauncher/</guid>
+      <guid>https://r.xboox.cn/document/flutter/urllauncher/</guid>
       <description>&#xD;flutter webview 访问url&#xD;#&#xD;Future&amp;lt;void&amp;gt; launcherURL() async { // Uri uri = Uri(scheme: &amp;#39;http&amp;#39;,host: &amp;#39;www.baidu.com&amp;#39;); Uri url = Uri.parse(&amp;#39;https://www.baidu.com&amp;#39;); if (!await launchUrl( url, mode: LaunchMode.inAppWebView, webViewConfiguration: const WebViewConfiguration(enableJavaScript: true), )) { throw &amp;#39;Could not launch $url&amp;#39;; } } </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/flutter/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
+      <link>https://r.xboox.cn/document/flutter/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/flutter/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
+      <guid>https://r.xboox.cn/document/flutter/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
       <description>&#xD;常用库展示&#xD;#&#xD;http _get() async { var url = &amp;#39;www.zouni.vip&amp;#39;; // Await the http get response, then decode the json-formatted response. var response = await get(url); if (response.statusCode == 200) { var res = response.body.toString(); print(&amp;#39;Number of books about http: $res&amp;#39;); } else { print(&amp;#39;Request failed with status: $ {response.statusCode}.&amp;#39;); } } url_launcher; _launchURL() async { const url = &amp;#39;https://flutter.dev&amp;#39;; if (await canLaunch(url)) { await launch(url); } else { throw &amp;#39;Could not launch $url&amp;#39;; } } </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/flutter/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/</link>
+      <link>https://r.xboox.cn/document/flutter/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/flutter/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/</guid>
+      <guid>https://r.xboox.cn/document/flutter/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF/</guid>
       <description>参考文章： https://blog.csdn.net/tianhai110/article/details/2203572 https://www.jianshu.com/p/8f82db9556d2</description>
     </item>
   </channel>

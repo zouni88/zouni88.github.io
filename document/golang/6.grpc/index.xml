@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/golang/6.grpc/</link>
+    <link>https://r.xboox.cn/document/golang/6.grpc/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/golang/6.grpc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/golang/6.grpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</link>
+      <link>https://r.xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://r.xboox.cn/document/golang/6.grpc/proto3%E5%9F%BA%E7%A1%80/</guid>
       <description>&#xD;1. 定义proto文件&#xD;#&#xD;//声明protobuf版本&#xD;syntax = &amp;#34;proto3&amp;#34;; 自动生成pb的时候，会提示要有go_package&#xA;option go_package=&amp;#39;.;grpc&amp;#39;; .: 表示生成pb文件在哪个位置 ;grpc: 表示生成的pb文件所属包名 package grpc;&#xD;service Greeter{&#xD;rpc SayHello (HelloRequest) returns(HelloReply){}&#xD;}&#xD;message HelloRequest{&#xD;string name = 1;&#xD;}&#xD;message HelloReply{&#xD;string message = 1;&#xD;} 2. 生成pb文件&#xD;#&#xD;//go:generate protoc -I . --go_out=plugins=grpc:./ ./helloworld.proto </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/golang/6.grpc/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;配置基本信息&#xD;#&#xD;获取grpc go get -u google.golang.org/grpc&#xD;go get -u github.com/golang/protobuf/{proto,protoc-gen-go} </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/golang/6.grpc/%E7%94%9F%E6%88%90pb%E6%96%87%E4%BB%B6/</link>
+      <link>https://r.xboox.cn/document/golang/6.grpc/%E7%94%9F%E6%88%90pb%E6%96%87%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/golang/6.grpc/%E7%94%9F%E6%88%90pb%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://r.xboox.cn/document/golang/6.grpc/%E7%94%9F%E6%88%90pb%E6%96%87%E4%BB%B6/</guid>
       <description></description>
     </item>
   </channel>

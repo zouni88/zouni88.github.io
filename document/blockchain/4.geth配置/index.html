@@ -9,11 +9,11 @@ miner.threads 线程数量,默认是0 参数说明
 identity //唯一标识，在众多节点中快速找到当前节点 networkid // 当前节点网络id
 genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 //直接用这个也可以 &#34;nonce&#34;:&#34;0x0000000000000042&#34;, //与nonce 共同用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 &#34;mixhash&#34;:&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, //挖矿难度，你可以随意控制，这里设置的难度比较小 &#34;difficulty&#34;: &#34;0x4000&#34;, //用来提前设置帐号的以太币数量，例： //&#34;alloc&#34;: { //“0x0000000000000000000000000000000000000001”:{&#34;balance&#34;:&#34;10000000&#34;}, //&#34;0x0000000000000000000000000000000000000002&#34;:{&#34;balance&#34;:&#34;20000000&#34;} //}, &#34;alloc&#34;: {}, //挖矿的账户，默认钱包地址，这里因为没有地址，所有全是0 //后面运行geth 后创建新账户时，如果geth 发现没有地址，会默认将第一个账户地址设置为矿工帐号 &#34;coinbase&#34;:&#34;0x0000000000000000000000000000000000000000&#34;, //创世块的时间戳 &#34;timestamp&#34;: &#34;0x00&#34;, //上一个区块的Hash值，因为是创世块，前面没有，所以是0 &#34;parentHash&#34;:&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, //附加信息，随便填文本或不填也行 &#34;extraData&#34;: &#34;0x00000000&#34;, //gas 最高限制，以太坊运行交易，合约等消耗的gas最高限制，这里设置为最高 &#34;gaslimit&#34;:&#34;0xffffffff&#34;, &#34;config&#34;: { &#34;chainId&#34;: 666, //链ID 随便起 和主链、测试连不同就OK，公链ID为1 &#34;homesteadBlock&#34;: 0, &#34;eip150Block&#34;: 0, &#34;eip155Block&#34;: 0, &#34;eip158Block&#34;: 0, &#34;byzantiumBlock&#34;: 0, &#34;constantinopleBlock&#34;: 0, &#34;petersburgBlock&#34;: 0, &#34;istanbulBlock&#34;: 0 }, } 完整例子#{ &#34;config&#34;: { &#34;chainId&#34;: 666, &#34;homesteadBlock&#34;: 0, &#34;eip150Block&#34;: 0, &#34;eip155Block&#34;: 0, &#34;eip158Block&#34;: 0, &#34;byzantiumBlock&#34;: 0, &#34;constantinopleBlock&#34;: 0, &#34;petersburgBlock&#34;: 0, &#34;istanbulBlock&#34;: 0 }, &#34;alloc&#34;: { &#34;aee29ddd94a36f6d3415310046863929a59e30be&#34;: { &#34;balance&#34;: &#34;100&#34; } }, &#34;coinbase&#34;: &#34;0x0000000000000000000000000000000000000000&#34;, &#34;difficulty&#34;: &#34;0x2000&#34;, &#34;extraData&#34;: &#34;&#34;, &#34;gasLimit&#34;: &#34;0x2fefd8&#34;, &#34;nonce&#34;: &#34;0x0000000000000042&#34;, &#34;mixhash&#34;: &#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, &#34;parentHash&#34;: &#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, &#34;timestamp&#34;: &#34;0x00&#34; } " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="document" />
+<meta property="og:url" content="https://r.xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/" /><meta property="article:section" content="document" />
 
-<meta property="og:site_name" content="📓 Amethystsasss" />
+<meta property="og:site_name" content="📓 zouni88" />
 
-<title>4.geth配置 | 📓 Amethystsasss</title>
+<title>4.geth配置 | 📓 zouni88</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.15aa62585098ccaa9e8da293f9f08b7823027a72778491ec5bb18defc53f34b0.css" integrity="sha256-FapiWFCYzKqejaKT&#43;fCLeCMCenJ3hJHsW7GN78U/NLA=" crossorigin="anonymous">
@@ -38,7 +38,7 @@ identity //唯一标识，在众多节点中快速找到当前节点 networkid /
 genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 //直接用这个也可以 &#34;nonce&#34;:&#34;0x0000000000000042&#34;, //与nonce 共同用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 &#34;mixhash&#34;:&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, //挖矿难度，你可以随意控制，这里设置的难度比较小 &#34;difficulty&#34;: &#34;0x4000&#34;, //用来提前设置帐号的以太币数量，例： //&#34;alloc&#34;: { //“0x0000000000000000000000000000000000000001”:{&#34;balance&#34;:&#34;10000000&#34;}, //&#34;0x0000000000000000000000000000000000000002&#34;:{&#34;balance&#34;:&#34;20000000&#34;} //}, &#34;alloc&#34;: {}, //挖矿的账户，默认钱包地址，这里因为没有地址，所有全是0 //后面运行geth 后创建新账户时，如果geth 发现没有地址，会默认将第一个账户地址设置为矿工帐号 &#34;coinbase&#34;:&#34;0x0000000000000000000000000000000000000000&#34;, //创世块的时间戳 &#34;timestamp&#34;: &#34;0x00&#34;, //上一个区块的Hash值，因为是创世块，前面没有，所以是0 &#34;parentHash&#34;:&#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, //附加信息，随便填文本或不填也行 &#34;extraData&#34;: &#34;0x00000000&#34;, //gas 最高限制，以太坊运行交易，合约等消耗的gas最高限制，这里设置为最高 &#34;gaslimit&#34;:&#34;0xffffffff&#34;, &#34;config&#34;: { &#34;chainId&#34;: 666, //链ID 随便起 和主链、测试连不同就OK，公链ID为1 &#34;homesteadBlock&#34;: 0, &#34;eip150Block&#34;: 0, &#34;eip155Block&#34;: 0, &#34;eip158Block&#34;: 0, &#34;byzantiumBlock&#34;: 0, &#34;constantinopleBlock&#34;: 0, &#34;petersburgBlock&#34;: 0, &#34;istanbulBlock&#34;: 0 }, } 完整例子#{ &#34;config&#34;: { &#34;chainId&#34;: 666, &#34;homesteadBlock&#34;: 0, &#34;eip150Block&#34;: 0, &#34;eip155Block&#34;: 0, &#34;eip158Block&#34;: 0, &#34;byzantiumBlock&#34;: 0, &#34;constantinopleBlock&#34;: 0, &#34;petersburgBlock&#34;: 0, &#34;istanbulBlock&#34;: 0 }, &#34;alloc&#34;: { &#34;aee29ddd94a36f6d3415310046863929a59e30be&#34;: { &#34;balance&#34;: &#34;100&#34; } }, &#34;coinbase&#34;: &#34;0x0000000000000000000000000000000000000000&#34;, &#34;difficulty&#34;: &#34;0x2000&#34;, &#34;extraData&#34;: &#34;&#34;, &#34;gasLimit&#34;: &#34;0x2fefd8&#34;, &#34;nonce&#34;: &#34;0x0000000000000042&#34;, &#34;mixhash&#34;: &#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, &#34;parentHash&#34;: &#34;0x0000000000000000000000000000000000000000000000000000000000000000&#34;, &#34;timestamp&#34;: &#34;0x00&#34; } "
 />
 <title>
-  📓 Amethystsasss
+  📓 zouni88
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -47,7 +47,7 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
 
 
 
-<link rel="shortcut icon" type="image/png"  href="https://xboox.cn//favicon.png" />
+<link rel="shortcut icon" type="image/png"  href="https://r.xboox.cn//favicon.png" />
 
 
 
@@ -77,10 +77,10 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
   
 
 
-<link href="https://xboox.cn/styles.e08ceb33360cec132feb69cfb982e2a4.min.css" rel="stylesheet" />
+<link href="https://r.xboox.cn/styles.e08ceb33360cec132feb69cfb982e2a4.min.css" rel="stylesheet" />
 
 
-<link href="https://xboox.cn/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+<link href="https://r.xboox.cn/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
 
   
 
@@ -104,33 +104,33 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
 
 
 
-<script src="https://xboox.cn/quartz/js/darkmode.c79b9a16195fad1a28aefd8de9970bd4.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/darkmode.469d0f10ff9bfd4dd6a1b01ebe8c6d97.min.js"></script>
 
 
 
-<script src="https://xboox.cn/quartz/js/util.e6844bcc6148c92f3b102d867c918e7c.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/util.e6844bcc6148c92f3b102d867c918e7c.min.js"></script>
 
 
 
 <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
 <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
 
-<script src="https://xboox.cn/quartz/js/popover.d15bbb66588317f9fbee1a95e4750bea.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/popover.d15bbb66588317f9fbee1a95e4750bea.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/code-title.d6525fa48597ed29631fab15192407e2.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/code-title.d6525fa48597ed29631fab15192407e2.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/clipboard.3ce3710d38377077f1cee5228144b8a8.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/clipboard.3ce3710d38377077f1cee5228144b8a8.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/callouts.e83135249ba7df7bb9912c90a91a55c6.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/callouts.e83135249ba7df7bb9912c90a91a55c6.min.js"></script>
 
 
 
@@ -139,15 +139,15 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
   const SEARCH_ENABLED =  false 
   const LATEX_ENABLED =  true 
   const PRODUCTION =  true 
-  const BASE_URL = "https://xboox.cn/"
+  const BASE_URL = "https://r.xboox.cn/"
   const fetchData = Promise.all([
-        fetch("https:\/\/xboox.cn\/indices\/linkIndex.8f82182ab1f0691ed61ef55d039d916d.min.json")
+        fetch("https:\/\/r.xboox.cn\/indices\/linkIndex.8f82182ab1f0691ed61ef55d039d916d.min.json")
           .then(data => data.json())
           .then(data => ({
             index: data.index,
             links: data.links,
           })),
-        fetch("https:\/\/xboox.cn\/indices\/contentIndex.8263e16ff65aa55ee0ce2c719e87df13.min.json")
+        fetch("https:\/\/r.xboox.cn\/indices\/contentIndex.8263e16ff65aa55ee0ce2c719e87df13.min.json")
           .then(data => data.json()),
       ])
       .then(([{index, links}, content]) => ({
@@ -173,7 +173,7 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
 
     
     initPopover(
-      "https://xboox.cn",
+      "https://r.xboox.cn",
        true 
     )
     
@@ -189,7 +189,7 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
 
       const drawGlobal = isHome &&  true ;
       drawGraph(
-          "https://xboox.cn",
+          "https://r.xboox.cn",
           drawGlobal,
           [{"/moc":"#4388cc"}],
           drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":1,"opacityScale":3,"repelForce":2,"scale":1.2}
@@ -258,7 +258,7 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
   integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script defer src="https://xboox.cn/quartz/js/full-text-search.cc0284dc74ffd43585e5227c0138681e.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/full-text-search.cc0284dc74ffd43585e5227c0138681e.min.js"></script>
 
 
 
@@ -267,7 +267,7 @@ genesis.json#{ //64位随机数，用于挖矿，注意他和mixhash 的设置
     <label for="menu-control">
       <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
     </label>
-    <h1 id="page-title"><a href="https://xboox.cn/">📓 Amethystsasss</a></h1>
+    <h1 id="page-title"><a href="https://r.xboox.cn/">📓 zouni88</a></h1>
     <div class="spacer"></div>
     <div id="search-icon" class="quartz-search">
       <p>Search</p>
@@ -5763,7 +5763,7 @@ networkid // 当前节点网络id</p>
   }
 </style>
 
-<script src="https://xboox.cn/quartz/js/graph.3d608db416a7219b41b53602cd180019.js"></script>
+<script src="https://r.xboox.cn/quartz/js/graph.3d608db416a7219b41b53602cd180019.js"></script>
 
     </div>
 </div>
@@ -5780,7 +5780,7 @@ networkid // 当前节点网络id</p>
         <p>Made with <a href="https://github.com/64bitpandas/amethyst">Amethyst</a>, © 2024 Ben Cuan</p>
         <ul>
             
-            <li><a href="https://xboox.cn/">Home</a></li>
+            <li><a href="https://r.xboox.cn/">Home</a></li>
             <li><a href="https://bencuan.me">Website</a></li><li><a href="https://blog.bencuan.me">Blog</a></li></ul>
     </footer>
 </div>

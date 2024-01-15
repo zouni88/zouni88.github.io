@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/</link>
+    <link>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</link>
+      <link>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</guid>
+      <guid>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</guid>
       <description>windows 平台 环境配置&#xD;#&#xD;首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包&#xD;pip install pyqt5&#xD;pip install pyqt5-tools pycharm 配置pyqt 可拖拽控件工具&#xD;#&#xD;打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：&#xA;D:\Anaconda3\envs\python_basic\Scripts\designer.exe&#xA;Working directory 这个路径是工作路径，所以一般就填入$FileDir$&#xA;编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：&#xA;Program: python.exe 路径&#xD;Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py&#xD;Working directory: $FileDir$ 第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了&#xA;最后一步，转换成py文件 end</description>
     </item>
   </channel>

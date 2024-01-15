@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/blockchain/</link>
+    <link>https://r.xboox.cn/document/blockchain/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/1.solidity/</link>
+      <link>https://r.xboox.cn/document/blockchain/1.solidity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/1.solidity/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/1.solidity/</guid>
       <description>语法学习&#xD;#&#xD;//没有这一句会有警告 // SPDX-License-Identifier: GPL-3.0 //指明版本 pragma solidity &amp;gt;=0.8.7 &amp;lt;0.9.0; //声明合约 contract trans{ uint8 tt; function setTT(uint8 i) public { tt = i; } //view : 当前函数不会修改账本数据 //int uint : 默认是uint256 function getTT() public view returns (uint8){ return tt; } } 关键字&#xD;#&#xD;contract constructor public private external internal view pure payable 数据类型&#xD;#&#xD;uint8 -&amp;gt; uint256: 地址长度 8位递增 string -&amp;gt; 字符串，不可变，可强转 mapping(uint =&amp;gt; uint) scoreList; 字典 数据存储位置&#xD;#&#xD;memory 内存变量，调用结束就消失 storage 状态变量，随着合约进入分布式账本 calldata 永久存储 修饰符&#xD;#&#xD;变量修饰符: public or private 函数修饰符 view 函数不会改变任何东西，被view修饰的函数可以读取外部变量，不能修改 pure 函数只能处理参数，不能读写函数以外的任何东西 合约调用者地址 address owner = msg.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/2.remix/</link>
+      <link>https://r.xboox.cn/document/blockchain/2.remix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/2.remix/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/2.remix/</guid>
       <description>&#xD;智能合约 编辑器 remix-ide&#xD;#&#xD;在线编辑，对网络有要求，在线地址&#xA;https://remix.ethereum.org/&#xA;离线编辑,docker down镜像&#xA;docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest or docker pull remixproject/remix-ide:remix_live docker run -p 8080:80 remixproject/remix-ide:remix_live 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了&#xA;remix-project 连接本地文件夹：&#xA;安装remixd npm install -g @remix-project/remixd&#xA;连接 remixd -s d:/workspace -u http://localhost:8080&#xA;没有编译插件,点击下图中 打叉的地方&#xD;#&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <link>https://r.xboox.cn/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/2.solidity%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>智能合约 编辑器 remix-ide&#xD;#&#xD;在线编辑，对网络有要求，在线地址&#xA;https://remix.ethereum.org/&#xA;离线编辑,docker down镜像&#xA;docker pull remixproject/remix-ide:latest docker run -p 8080:80 remixproject/remix-ide:latest 浏览器运行 localhost:8080，就可以用 solidity 编写智能合约了&#xA;remix-project 连接本地文件夹：&#xA;安装remixd&#xA;npm install -g @remix-project/remixd&#xA;连接&#xA;remixd -s d:/workspace -u http://localhost:8080 address public owner;&#xA;function getOwner() public { owner = msg.sender; }</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/3.geth/</link>
+      <link>https://r.xboox.cn/document/blockchain/3.geth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/3.geth/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/3.geth/</guid>
       <description>启动geth客户端，geth 创建账户，转账&#xD;#&#xD;示例：&#xA;geth &amp;ndash;ropsten &amp;ndash;syncmode snap &amp;ndash;identity &amp;ldquo;smallc&amp;rdquo; &amp;ndash;http &amp;ndash;http.port 7545 &amp;ndash;http.api &amp;ldquo;db,eth,net,web3,personal&amp;rdquo; &amp;ndash;datadir &amp;ldquo;ropsten&amp;rdquo;&#xA;常用命令&#xD;#&#xD;命令 说明 removedb asdf account Manage accounts console 控制台命令行 启动参数说明&#xD;#&#xD;参数 说明 &amp;ndash;identity 节点身份标识 –networkid 我们创建的私有链的网络id –datadir 节点的数据文件夹 –http 表示允许远程调用。这个参数以前叫rpc，后来在新版的Geth中改成http了，当然用rpc也可以，只不过这个参数很快就被丢弃了，还是早点改的好，这个可以在Geth的帮助中看到。 –http.port 表示允许远程调用的端口。默认是8545。这个参数以前是rpcport。 –http.addr 把这个值写成“0.0.0.0”表示允许远程访问，否则只能本地访问。这个参数以前是rpcaddr。 –port 表示网络监听端口，默认值是30303。 –http.corsdomain 允许跨域请求的域列表，这里指定为“*”。这个参数以前是rpccorsdomain –http.api 允许远程调用的API，用逗号间隔，凡是列出来的，在远程调用时均可以使用。 –unlock 表示被解锁账户的编号，0表示node数据文件中第一个被创建的账户，这个账户被解锁才能使用该账户进行交易。 –password 表示解锁账户时的账户密码，就是在创建账户时输入的密码。 –allow-insecure-unlock 允许使用不安全的账户解锁 console 表示打开Geth JavaScript console &amp;ndash;syncmode 同步模式 full,fast,light,snap(新开发的功能，21年刚上线，快照同步模式，同步速度极快) # full geth &amp;ndash;syncmode &amp;ldquo;full&amp;rdquo; # fast geth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo; # light geth &amp;ndash;syncmode &amp;ldquo;fast&amp;rdquo; snap geth &amp;ndash;syncmode &amp;ldquo;snap&amp;rdquo; (新开发的功能，21年刚上线，快照同步模式，同步速度极快) API调用说明&#xD;#&#xD;查看账户&#xD;#&#xD;geth account list</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</link>
+      <link>https://r.xboox.cn/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/3.geth%E5%85%A5%E9%97%A8/</guid>
       <description>clef 以太坊账户管理&#xD;#&#xD;创建账户&#xD;#&#xD;clef newaccount &amp;ndash;keystore geth-tutorial/keystore</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/4.geth%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;创建私链&#xD;#&#xD;创建账户 geth&#xA;初始化 geth &amp;ndash;datadir smallc init genesis.json&#xA;启动 geth &amp;ndash;identity smallchain &amp;ndash;http &amp;ndash;http.api net,web3,eth,personal &amp;ndash;datadir smallchain &amp;ndash;mine &amp;ndash;miner.threads 0 &amp;ndash;http.corsdomain &amp;ldquo;*&amp;rdquo; &amp;ndash;http.addr 0.0.0.0 console &amp;ndash;networkid 666&#xA;miner.threads 线程数量,默认是0 参数说明&#xA;identity //唯一标识，在众多节点中快速找到当前节点 networkid // 当前节点网络id&#xA;genesis.json&#xD;#&#xD;{ //64位随机数，用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 //直接用这个也可以 &amp;#34;nonce&amp;#34;:&amp;#34;0x0000000000000042&amp;#34;, //与nonce 共同用于挖矿，注意他和mixhash 的设置需要满足以太坊黄皮书的要求 &amp;#34;mixhash&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, //挖矿难度，你可以随意控制，这里设置的难度比较小 &amp;#34;difficulty&amp;#34;: &amp;#34;0x4000&amp;#34;, //用来提前设置帐号的以太币数量，例： //&amp;#34;alloc&amp;#34;: { //“0x0000000000000000000000000000000000000001”:{&amp;#34;balance&amp;#34;:&amp;#34;10000000&amp;#34;}, //&amp;#34;0x0000000000000000000000000000000000000002&amp;#34;:{&amp;#34;balance&amp;#34;:&amp;#34;20000000&amp;#34;} //}, &amp;#34;alloc&amp;#34;: {}, //挖矿的账户，默认钱包地址，这里因为没有地址，所有全是0 //后面运行geth 后创建新账户时，如果geth 发现没有地址，会默认将第一个账户地址设置为矿工帐号 &amp;#34;coinbase&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000&amp;#34;, //创世块的时间戳 &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34;, //上一个区块的Hash值，因为是创世块，前面没有，所以是0 &amp;#34;parentHash&amp;#34;:&amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, //附加信息，随便填文本或不填也行 &amp;#34;extraData&amp;#34;: &amp;#34;0x00000000&amp;#34;, //gas 最高限制，以太坊运行交易，合约等消耗的gas最高限制，这里设置为最高 &amp;#34;gaslimit&amp;#34;:&amp;#34;0xffffffff&amp;#34;, &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 666, //链ID 随便起 和主链、测试连不同就OK，公链ID为1 &amp;#34;homesteadBlock&amp;#34;: 0, &amp;#34;eip150Block&amp;#34;: 0, &amp;#34;eip155Block&amp;#34;: 0, &amp;#34;eip158Block&amp;#34;: 0, &amp;#34;byzantiumBlock&amp;#34;: 0, &amp;#34;constantinopleBlock&amp;#34;: 0, &amp;#34;petersburgBlock&amp;#34;: 0, &amp;#34;istanbulBlock&amp;#34;: 0 }, } 完整例子&#xD;#&#xD;{ &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 666, &amp;#34;homesteadBlock&amp;#34;: 0, &amp;#34;eip150Block&amp;#34;: 0, &amp;#34;eip155Block&amp;#34;: 0, &amp;#34;eip158Block&amp;#34;: 0, &amp;#34;byzantiumBlock&amp;#34;: 0, &amp;#34;constantinopleBlock&amp;#34;: 0, &amp;#34;petersburgBlock&amp;#34;: 0, &amp;#34;istanbulBlock&amp;#34;: 0 }, &amp;#34;alloc&amp;#34;: { &amp;#34;aee29ddd94a36f6d3415310046863929a59e30be&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;100&amp;#34; } }, &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;, &amp;#34;difficulty&amp;#34;: &amp;#34;0x2000&amp;#34;, &amp;#34;extraData&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;gasLimit&amp;#34;: &amp;#34;0x2fefd8&amp;#34;, &amp;#34;nonce&amp;#34;: &amp;#34;0x0000000000000042&amp;#34;, &amp;#34;mixhash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34; } </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/4.%E5%88%9B%E4%B8%96%E5%9D%97%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;创建私链&#xD;#&#xD;定位到数据目录 cd D:\workproject\blockchain\geth_data&#xA;初始化 geth &amp;ndash;datadir smallchain init genesis.json&#xA;geth &amp;ndash;datadir smallchain &amp;ndash;http &amp;ndash;http.api net,web3,db,personal &amp;ndash;identity smallc &amp;ndash;networkid 666 &amp;ndash;corsdomain *&#xA;//genesis.json { &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 77 //链ID 随便起 和主链、测试连不同就OK }, &amp;#34;alloc&amp;#34;: { &amp;#34;0xc7c4f9a0Cd0a3e45348c5ed8c3909C69aA9FA8fC&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;10000000000000000000000&amp;#34; } //创世块分配的账户及余额 }, &amp;#34;difficulty&amp;#34;: &amp;#34;9000&amp;#34;, //挖矿难度 &amp;#34;gasLimit&amp;#34;: &amp;#34;2100000&amp;#34; //汽油费 } { &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 123, &amp;#34;homesteadBlock&amp;#34;: 0, &amp;#34;eip150Block&amp;#34;: 0, &amp;#34;eip155Block&amp;#34;: 0, &amp;#34;eip158Block&amp;#34;: 0, &amp;#34;byzantiumBlock&amp;#34;: 0, &amp;#34;constantinopleBlock&amp;#34;: 0, &amp;#34;petersburgBlock&amp;#34;: 0, &amp;#34;istanbulBlock&amp;#34;: 0 }, &amp;#34;alloc&amp;#34;: {}, &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;, &amp;#34;difficulty&amp;#34;: &amp;#34;0x2000&amp;#34;, &amp;#34;extraData&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;gasLimit&amp;#34;: &amp;#34;0x2fefd8&amp;#34;, &amp;#34;nonce&amp;#34;: &amp;#34;0x0000000000000042&amp;#34;, &amp;#34;mixhash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;timestamp&amp;#34;: &amp;#34;0x00&amp;#34; } </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</link>
+      <link>https://r.xboox.cn/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/5.geth%E8%BD%AC%E8%B4%A6/</guid>
       <description>以太坊转账，&#xD;#&#xD;账户 &amp;ndash;&amp;gt; 账户 x 账户 &amp;ndash;&amp;gt; 合约 √ 合约 &amp;ndash;&amp;gt; 账户 √&#xA;1、打开控制台&#xA;F:\Geth&amp;gt;geth &amp;ndash;datadir &amp;ldquo;data&amp;rdquo; console&#xA;2、查看目前所拥有的账户列表&#xA;eth.accounts&#xA;[&amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;]&#xA;3、新建账户&#xA;personal.newAccount(&amp;lsquo;123456&amp;rsquo;)&#xA;&amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8efed9a8240&amp;rdquo;&#xA;4、查看目前所拥有的账户列表&#xA;eth.accounts&#xA;[&amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;, &amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8&#xA;efed9a8240&amp;rdquo;]&#xA;5、查看账户余额&#xA;eth.getBalance(eth.accounts[0])&#xA;665000000000000000000&#xA;eth.getBalance(eth.accounts[1])&#xA;0&#xA;6、定义变量&#xA;var acc1=eth.accounts[0]&#xA;undefined&#xA;acc1&#xA;&amp;ldquo;0xf4fb90bd8713491d62778d0a46f8f6b83b98ed91&amp;rdquo;&#xA;var acc2=eth.accounts[1]&#xA;undefined&#xA;acc2&#xA;&amp;ldquo;0x1dfa2d1d645e45f5d77025f63b73c8efed9a8240&amp;rdquo;&#xA;7、转账&#xA;eth.sendTransaction({from: acc1 , to: acc2, value: web3.toWei(10,&amp;ldquo;ether&amp;rdquo;)})&#xA;Error: authentication needed: password or unlock&#xA;at web3.js:3143:20&#xA;at web3.js:6347:15&#xA;at web3.js:5081:36&#xA;at :1:1&#xA;（账户被锁报错）</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/6.abigen/</link>
+      <link>https://r.xboox.cn/document/blockchain/6.abigen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/6.abigen/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/6.abigen/</guid>
       <description>&#xD;智能合约转go代码&#xD;#&#xD;abigen &amp;ndash;abi xx.abi &amp;ndash;pkg packageName &amp;ndash;type structName &amp;ndash;out xx.go&#xA;.abi 文件在remix 部署后就能拿到 .pkg 指定文件输出包名 type 指定合约结构体名称 out 指定输出go文件名称 </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</link>
+      <link>https://r.xboox.cn/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B/</guid>
       <description>&#xD;智能合约的运行流程&#xD;#&#xD;编写智能合约代码，并编译成字节码。 部署智能合约。过程是向“0”地址发送一笔带有智能合约字节码数据的交易，这个交易会生成该智能合约的地址，并将字节码存储在该地址下的状态树中。 执行智能合约（调用智能合约函数）。向智能合约地址发送一个交易，该交易携带被调用的智能合约函数信息及调用参数，携带的信息遵循ABI编码协议。 智能合约地址收到这样的调用合约函数的交易，首先会解码数据，根据结果查找到对应函数的入口，再传入参数执行该函数。 执行函数的过程是状态转换的过程，执行完成后会扣除调用者相应的Gas花费。 状态转换的过程会全网同步并被再次执行验证，确保执行结果一致，这样通过验证后的交易会记录到区块中，同时更新状态数据。 </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</link>
+      <link>https://r.xboox.cn/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E5%90%AF%E5%8A%A8/</guid>
       <description> 运行geth 容器 运行remix容器 运行remixd，npm install remixd 连接本地solidity workspace </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;官网下载geth 客户端&#xD;#&#xD;geth 是由以太坊官方提供的 go 语言版本的客户端程序&#xA;安装gcc windows下安装 mingw-w64&#xD;#&#xD;安装golang开发环境&#xD;#&#xD;</description>
     </item>
   </channel>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/linux/ftp/</link>
+    <link>https://r.xboox.cn/document/linux/ftp/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/linux/ftp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/linux/ftp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</link>
+      <link>https://r.xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</guid>
+      <guid>https://r.xboox.cn/document/linux/ftp/ftp%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E5%9C%B0%E5%9D%80/</guid>
       <description>查看ftp默认用户主目录在哪里 Yum install finger&#xA;finger ftp [root@OX39Ø6c finger ftp Login: ftp Directory: / var/ftp Never logged in. No mail. No Plan. Name: FTP User Shell: /sbin/nologin /&#xA;修改默认目录 vim /etc/passwd&#xA;[root@OX39Ø6c vim /etc/passwd ftp:x:14:50: FTP&#xA;修改/var/ftp 为想要修改的目录路径 然后重启vsftpd服务 service vsftpd restart&#xA;如果修改之后仍不能用，需要关闭 SELinux&#xA;修改/etc/selinux/config文件中的SELINUX=&amp;quot;&amp;quot; 为 disabled ，然后重启。 如果不想重启系统，使用命令setenforce 0 </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/</link>
+      <link>https://r.xboox.cn/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://r.xboox.cn/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/</guid>
       <description>1.查看是否安装ftp服务&#xA;rpm -q vsftpd&#xA;2.安装ftp服务&#xA;yum install vsftpd&#xA;3.开机启动&#xA;chkconfig vsftpd on&#xA;4.启动服务&#xA;service vsftpd start&#xA;5.重新启动vsftpd&#xA;service vsftpd restart&#xA;来自 https://www.cnblogs.com/surge/p/3868270.html&#xA;修改相关配置项在 /etc/vsftpd/vsftpd.conf中</description>
     </item>
   </channel>

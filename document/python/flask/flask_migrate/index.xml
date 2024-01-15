@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/python/flask/flask_migrate/</link>
+    <link>https://r.xboox.cn/document/python/flask/flask_migrate/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/python/flask/flask_migrate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/python/flask/flask_migrate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/python/flask/flask_migrate/%E5%9D%91/</link>
+      <link>https://r.xboox.cn/document/python/flask/flask_migrate/%E5%9D%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/python/flask/flask_migrate/%E5%9D%91/</guid>
+      <guid>https://r.xboox.cn/document/python/flask/flask_migrate/%E5%9D%91/</guid>
       <description>&#xD;flask-migrate 坑&#xD;#&#xD;字段长度更新会提示 No changes in schema detected. 解决办法：初始化Migrate的时候增加属性compare_type为True&#xA;Migrate(app=app, db=db,render_as_batch = True,compare_type = True) </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</link>
+      <link>https://r.xboox.cn/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</guid>
+      <guid>https://r.xboox.cn/document/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</guid>
       <description>&#xD;初始化&#xD;#&#xD;初始化迁移文件&#xA;python manage.py db init 将模型映射 添加到文件中&#xA;python manage.py db migrate 最后 映射到数据库中：&#xA;python manage.py db upgrade manage.py 添加数据&#xD;#&#xD;命令行 添加数据&#xA;python manage.py create_user -u yunhai -e cao_cgq@163.com -p 1234 </description>
     </item>
   </channel>

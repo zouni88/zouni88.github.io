@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+    <link>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8C%BA%E9%97%B4/</link>
+      <link>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8C%BA%E9%97%B4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8C%BA%E9%97%B4/</guid>
+      <guid>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8C%BA%E9%97%B4/</guid>
       <description>&#xD;区间使用&#xD;#&#xD;1..10: 1-10 区间内的数字打印（ 包含10）&#xA;fun main() { for(i in 1 .. 10){ print(i) } } //until 不包含10 step:指定步长，每隔 两个输出一个 for(i in 1 until 10 step 2){ print(i) } 10 downTo 1:倒着输出区间 10-1&#xA;for(i in 10 downTo 1 step 1){ print(i) } </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8F%8C%E5%86%92%E5%8F%B7/</link>
+      <link>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8F%8C%E5%86%92%E5%8F%B7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8F%8C%E5%86%92%E5%8F%B7/</guid>
+      <guid>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/%E5%8F%8C%E5%86%92%E5%8F%B7/</guid>
       <description>双冒号 :: 返回函数体&#xA;class Apply(){ var name = &amp;#34;cao&amp;#34; var age = 12 fun print(){ println(&amp;#34;name is $name,age is $age&amp;#34;) } } fun main() { var app = Apply() app.apply { name = &amp;#34;zhang&amp;#34; age = 1 } val print = app::print print() } </description>
     </item>
   </channel>

@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/docker/</link>
+    <link>https://r.xboox.cn/document/docker/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</link>
+      <link>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://r.xboox.cn/document/docker/1.docker%E5%AE%89%E8%A3%85/</guid>
       <description>1. Windows 安装步骤&#xD;#&#xD;安装： 官网下载 https://hub.docker.com/对应版本&#xA;设置：&#xA;修改 registry-mirrors 镜像地址 https://reg-mirror.qiniu.com http://hub-mirror.c.163.com/ https://registry.docker-cn.com {&#xD;&amp;#34;registry-mirrors&amp;#34;:[&#xD;&amp;#34;https://reg-mirror.qiniu.com&amp;#34;,&#xD;&amp;#34;http://hub-mirror.c.163.com/&amp;#34;,&#xD;&amp;#34;https://registry.docker-cn.com&amp;#34;&#xD;],&#xD;&amp;#34;builder&amp;#34;: {&#xD;&amp;#34;gc&amp;#34;: {&#xD;&amp;#34;defaultKeepStorage&amp;#34;: &amp;#34;20GB&amp;#34;,&#xD;&amp;#34;enabled&amp;#34;: true&#xD;}&#xD;},&#xD;&amp;#34;experimental&amp;#34;: false,&#xD;&amp;#34;features&amp;#34;: {&#xD;&amp;#34;buildkit&amp;#34;: true&#xD;}&#xD;} 2. CentOS 安装步骤&#xD;#&#xD;官网&#xD;#&#xD;https://docs.docker.com/engine/install/centos/#prerequisites 先卸载旧版本&#xA;sudo yum remove docker \&#xD;docker-client \&#xD;docker-client-latest \&#xD;docker-common \&#xD;docker-latest \&#xD;docker-latest-logrotate \&#xD;docker-logrotate \&#xD;docker-engine 安装yum-utils软件包（提供yum-config-manager 实用程序）并设置稳定的存储库。&#xA;sudo yum install -y yum-utils&#xD;sudo yum-config-manager \&#xD;--add-repo \&#xD;https://download.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/2.docker%E6%93%8D%E4%BD%9C/</link>
+      <link>https://r.xboox.cn/document/docker/2.docker%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/2.docker%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://r.xboox.cn/document/docker/2.docker%E6%93%8D%E4%BD%9C/</guid>
       <description>镜像操作：&#xD;#&#xD;从仓库搜索镜像：docker search image-name&#xA;搜索结果过滤: #是否是官方提供： docker search --filter &amp;#34;is-official=true&amp;#34; image_name # 是否是自动化构建： docker search --filter &amp;#34;is-automated=true&amp;#34; image_name # 大于多少个`star` docker search --filter stars=3 image_name 下载镜像：&#xD;docker pull image_name 本地镜像的查看： docker images 删除： docker rmi image_name 修改镜像名字： docker tag images_id 要推送的主机地址/镜像名：版本号 push到docker仓库 # 前提是已经在docker服务注册并创建了仓库 docker push 刚刚修改的镜像名字（要推送的主机地址/镜像名：版本号）这一长串 容器基本操作：&#xD;#&#xD;查看容器： docker ps 创建容器: docker run -itd --name=container_name images_name -i: 以交互模式运行容器;&#x9;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;&amp;ndash;name: 容器名字;&#xA;查看所有容器: docker ps -a 停止容器： docker stop container_name 重启容器: docker restart container_name 删除容器: # 删除之前要先停止 docker rm container_name 容器修改与保存&#xD;#&#xD;进入容器 docker exec -it container_name /bin/bash 修改容器提交: docker commit -a &amp;#34;author&amp;#34; -m &amp;#34;modify&amp;#34; container_name/container_id new_image_name:tag_name 端口映射&#xD;#&#xD;docker run -itd --name=container_name -p 8888:80 images_name -p 8888 指的是 宿主机端口-&amp;gt;端口映射到容器80端口 访问：127.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</link>
+      <link>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</guid>
+      <guid>https://r.xboox.cn/document/docker/3.%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8/</guid>
       <description>创建容器：&#xA;docker run -itd --name=container_name images_name 常用参数说明：&#xA;-p 88:80 端口映射：&#xA;88:宿主机端口 80:容器端口&#xD;docker run -itd --name=ct_name -p 88:80 img_name -v : 文件挂载(宿主机文件目录：容器文件目录)&#xA;-itd&#xA;-i: 以交互模式运行容器;&#xA;-d: 后台运行;&#xA;-t: 为容器重新分配一个伪输入终端;&#xA;--name&#xA;&amp;ndash;name: 容器名字;</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://r.xboox.cn/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://r.xboox.cn/document/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>启动失败&#xD;#&#xD;查看日志&#xA;docker logs -f -t --tail 20 nginx 操作无权限&#xD;#&#xD;aa-remove-unknown&#xA;修改容器端口映射&#xD;#&#xD;编辑容器配置文件 /var/lib/docker/containers/{containersid}/hostconfig.json root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls 572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log hostconfig.json mounts checkpoints hostname resolv.conf config.v2.json hosts resolv.conf.hash ！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了&#xA;,&amp;ldquo;PortBindings&amp;rdquo;:{&amp;ldquo;5432/tcp&amp;rdquo;:[{&amp;ldquo;HostIp&amp;rdquo;:&amp;quot;&amp;quot;,&amp;ldquo;HostPort&amp;rdquo;:&amp;ldquo;8099&amp;rdquo;}]}&#xA;端口映射，本地可以访问，远程不能访问！！！&#xD;#&#xD;检查防火墙 #查看防火墙状态，运行中 root@zouni:/# firewall-cmd --state running #查看放开的端口，开放这几个端口，8088为放开 root@zouni:/# firewall-cmd --list-all You&amp;#39;re performing an operation over default zone (&amp;#39;public&amp;#39;), but your connections/interfaces are in zone &amp;#39;docker&amp;#39; (see --get-active-zones) You most likely need to use --zone=docker option. public target: default icmp-block-inversion: no interfaces: sources: services: dhcpv6-client ssh ports: 8088/tcp 8099/tcp 5432/tcp 443/tcp # 开放的端口列表 protocols: forward: yes masquerade: no forward-ports: source-ports: icmp-blocks: rich rules: 检查ip转发 root@zouni:/# sysctl net.</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</link>
+      <link>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</guid>
+      <guid>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</guid>
       <description>文件挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_nginx -p 8888:80 -v d:/index.html:/usr/share/nginx/html/index.html small/nginx&#xA;-v 表示： 宿主机文件路径：容器文件路径 -p 表示: 宿主机ip:容器ip 这里修改了nginx默认启动页面关联到本地&#xA;文件目录挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_mysql -p 33066:3306 -v d:/docker/mysql/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql&#xA;-e 表示：向容器内传参，ex:设定数据库密码：MYSQL_ROOT_PASSWORD=123456 docker run -itd &amp;ndash;name=flask_mysql -p 33066:3306 -v /var/lib/mysql:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</link>
+      <link>https://r.xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</guid>
+      <guid>https://r.xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</guid>
       <description>docker打开设置&#xA;Expose daemon on tcp://localhost:2375 without TLS&#xA;设置连接docker 显示Connection successfull 表示连接成功了&#xA;接下来配置python 解释器 如果已经创建了容器，就会自动加载</description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</link>
+      <link>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</guid>
+      <guid>https://r.xboox.cn/document/docker/%E5%88%9B%E5%BB%BAmysql%E5%AE%B9%E5%99%A8/</guid>
       <description>&#xD;下载镜像&#xD;#&#xD;# 官方提供的mysql镜像&#xD;docker pull mysql 创建容器&#xD;#&#xD;docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql -p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器&#xD;#&#xD;docker exec -it mysql_wxc bash </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</link>
+      <link>https://r.xboox.cn/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</guid>
+      <guid>https://r.xboox.cn/document/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</guid>
       <description>&#xD;容器互联&#xD;#&#xD;docker run -itd --name=small_nginx --link container_name:alias -v path:local_path image_name &amp;ndash;link 表示：被挂载容器名：别名 docker run -itd --name=flask_t -p 81:80 --link flask_mysql:flask_mysql -v /root/small/mysql/:/var/lib/mysql flask:1.2 </description>
     </item>
     <item>
       <title></title>
-      <link>https://xboox.cn/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</link>
+      <link>https://r.xboox.cn/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</guid>
+      <guid>https://r.xboox.cn/document/docker/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</guid>
       <description>&#xD;搭建本地仓库&#xD;#&#xD;搜索 官方仓库&#xD;#&#xD;docker search registry 下载仓库&#xD;#&#xD;docker pull registry 创建容器&#xD;#&#xD;docker run -d -p 5000:5000 --restart=always --privileged=true --name=registry-small -v d:/docker/registry:/var/lib/registry registry 修改镜像，准备推送 到仓库容器&#xD;#&#xD;docker tag image_id registry_name:port/images_name 修改hosts 增加 域名&#xD;#&#xD;127.0.0.1 registry_name 推送镜像到私有仓库&#xD;#&#xD;docker push registry_name:port/images_name 查看镜像是否推送成功&#xD;#&#xD;windows 浏览器 可以直接打开&#xA;http://127.0.0.1:5000/v2/_catalog&#xA;查看版本号&#xA;http://127.0.0.1:5000/v2/alpine/tags/list&#xA;linux 查看同样的方法 用命令查看&#xA;curl -X GET http://127.0.0.1:5000/v2/_catalog </description>
     </item>
   </channel>

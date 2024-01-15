@@ -4,11 +4,11 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="主要目录介绍#/ ：根目录，所有的目录、文件、设备都在/之下，/就是Linux文件系统的组织者，也是最上级的领导者。 /bin ：bin 就是二进制（binary）英文缩写。在一般的系统当中，都可以在这个目录下找到linux常用的命令。系统所需要的那些命令位于此目录。 /boot ：Linux的内核及引导系统程序所需要的文件目录，比如 vmlinuz initrd.img 文件都位于这个目录中。在一般情况下，GRUB或LILO系统引导管理器也位于这个目录。 /cdrom ：这个目录在刚刚安装系统的时候是空的。可以将光驱文件系统挂在这个目录下。例如：mount /dev/cdrom /cdrom /dev ：dev 是设备（device)的英文缩写。这个目录对所有的用户都十分重要。因为在这个目录中包含了所有linux系统中使用的外部设备。但是这里并不是放的外部设备的驱动程序。这一点和常用的windows,dos操作系统不一样。它实际上是一个访问这些外部设备的端口。可以非常方便地去访问这些外部设备，和访问一个文件，一个目录没有任何区别。 /etc ：etc这个目录是linux系统中最重要的目录之一。在这个目录下存放了系统管理时要用到的各种配置文件和子目录。要用到的网络配置文件，文件系统，x系统配置文件，设备配置信息，设置用户信息等都在这个目录下。 /home：如果建立一个用户，用户名是&quot;xx&quot;,那么在/home目录下就有一个对应的/home/xx路径，用来存放用户的主目录。 /lib：lib是库（library）英文缩写。这个目录是用来存放系统动态连接共享库的。几乎所有的应用程序都会用到这个目录下的共享库。因此，千万不要轻易对这个目录进行什么操作，一旦发生问题，系统就不能工作了。 /lost&#43;found ：在ext2或ext3文件系统中，当系统意外崩溃或机器意外关机，而产生一些文件碎片放在这里。当系统启动的过程中fsck工具会检查这里，并修复已经损坏的文件系统。正在上传、重新上传、取消Linux系统有时系统发生问题，有很多的文件被移到这个目录中，可能会用手工的方式来修复，或移到文件到原来的位置上。 /mnt ：这个目录一般是用于存放挂载储存设备的挂载目录的，比如有cdrom等目录。可以参看/etc/fstab的定义。 /media ：有些linux的发行版使用这个目录来挂载那些usb接口的移动硬盘（包括U盘）、CD/DVD驱动器等等。 /opt ：这里主要存放那些可选的程序。 /proc ：可以在这个目录下获取系统信息。这些信息是在内存中，由系统自己产生的。 /root ：Linux超级权限用户root的家目录。 /sbin ：这个目录是用来存放系统管理员的系统管理程序。大多是涉及系统管理的命令的存放，是超级权限用户root的可执行命令存放地，普通用户无权限执行这个目录下的命令，这个目录和/usr/sbin ：/usr/X11R6/sbin或/usr/local/sbin目录是相似的，凡是目录sbin中包含的都是root权限才能执行的。 /selinux ：对SElinux的一些配置文件目录，SElinux可以让linux更加安全。 /srv ： 服务启动后，所需访问的数据目录，举个例子来说，www服务启动读取的网页数据就可以放在/srv/www中 /sys ：Linux 内核中设计较新的一种虚拟的基于内存的文件系统，它的作用与 proc 有些类似，但除了与 proc 相同的具有查看和设定内核参数功能之外，还有为 Linux 统一设备模型作为管理之用。 /tmp ：临时文件目录，用来存放不同程序执行时产生的临时文件。有时用户运行程序的时候，会产生临时文件。/tmp就用来存放临时文件的。/var/tmp目录和这个目录相似。 /usr：这是linux系统中占用硬盘空间最大的目录。用户的很多应用程序和文件都存放在这个目录下。在这个目录下，可以找到那些不适合放在/bin或/etc目录下的额外的工具 /usr/local ：这里主要存放那些手动安装的软件，即不是通过“新立得”或apt-get安装的软件。它和/usr目录具有相类似的目录结构。让软件包管理器来管理/usr目录，而把自定义的脚本（scripts)放到/usr/local目录下面。 /usr/share ：系统共用的东西存放地，比如 /usr/share/fonts 是字体目录，/usr/share/doc和/usr/share/man帮助文件。 /var ：这个目录的内容是经常变动的，看名字就知道，可以理解为vary的缩写，/var下有/var/log 这是用来存放系统日志的目录。/var/ www目录是定义Apache服务器站点存放目录；/var/lib 用来存放一些库文件，比如MySQL的，以及MySQL数据库的的存放地。 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xboox.cn/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/" /><meta property="article:section" content="document" />
+<meta property="og:url" content="https://r.xboox.cn/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/" /><meta property="article:section" content="document" />
 
-<meta property="og:site_name" content="📓 Amethystsasss" />
+<meta property="og:site_name" content="📓 zouni88" />
 
-<title>主要目录 | 📓 Amethystsasss</title>
+<title>主要目录 | 📓 zouni88</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.15aa62585098ccaa9e8da293f9f08b7823027a72778491ec5bb18defc53f34b0.css" integrity="sha256-FapiWFCYzKqejaKT&#43;fCLeCMCenJ3hJHsW7GN78U/NLA=" crossorigin="anonymous">
@@ -28,7 +28,7 @@ https://github.com/alex-shpak/hugo-book
   content="主要目录介绍#/ ：根目录，所有的目录、文件、设备都在/之下，/就是Linux文件系统的组织者，也是最上级的领导者。 /bin ：bin 就是二进制（binary）英文缩写。在一般的系统当中，都可以在这个目录下找到linux常用的命令。系统所需要的那些命令位于此目录。 /boot ：Linux的内核及引导系统程序所需要的文件目录，比如 vmlinuz initrd.img 文件都位于这个目录中。在一般情况下，GRUB或LILO系统引导管理器也位于这个目录。 /cdrom ：这个目录在刚刚安装系统的时候是空的。可以将光驱文件系统挂在这个目录下。例如：mount /dev/cdrom /cdrom /dev ：dev 是设备（device)的英文缩写。这个目录对所有的用户都十分重要。因为在这个目录中包含了所有linux系统中使用的外部设备。但是这里并不是放的外部设备的驱动程序。这一点和常用的windows,dos操作系统不一样。它实际上是一个访问这些外部设备的端口。可以非常方便地去访问这些外部设备，和访问一个文件，一个目录没有任何区别。 /etc ：etc这个目录是linux系统中最重要的目录之一。在这个目录下存放了系统管理时要用到的各种配置文件和子目录。要用到的网络配置文件，文件系统，x系统配置文件，设备配置信息，设置用户信息等都在这个目录下。 /home：如果建立一个用户，用户名是&quot;xx&quot;,那么在/home目录下就有一个对应的/home/xx路径，用来存放用户的主目录。 /lib：lib是库（library）英文缩写。这个目录是用来存放系统动态连接共享库的。几乎所有的应用程序都会用到这个目录下的共享库。因此，千万不要轻易对这个目录进行什么操作，一旦发生问题，系统就不能工作了。 /lost&#43;found ：在ext2或ext3文件系统中，当系统意外崩溃或机器意外关机，而产生一些文件碎片放在这里。当系统启动的过程中fsck工具会检查这里，并修复已经损坏的文件系统。正在上传、重新上传、取消Linux系统有时系统发生问题，有很多的文件被移到这个目录中，可能会用手工的方式来修复，或移到文件到原来的位置上。 /mnt ：这个目录一般是用于存放挂载储存设备的挂载目录的，比如有cdrom等目录。可以参看/etc/fstab的定义。 /media ：有些linux的发行版使用这个目录来挂载那些usb接口的移动硬盘（包括U盘）、CD/DVD驱动器等等。 /opt ：这里主要存放那些可选的程序。 /proc ：可以在这个目录下获取系统信息。这些信息是在内存中，由系统自己产生的。 /root ：Linux超级权限用户root的家目录。 /sbin ：这个目录是用来存放系统管理员的系统管理程序。大多是涉及系统管理的命令的存放，是超级权限用户root的可执行命令存放地，普通用户无权限执行这个目录下的命令，这个目录和/usr/sbin ：/usr/X11R6/sbin或/usr/local/sbin目录是相似的，凡是目录sbin中包含的都是root权限才能执行的。 /selinux ：对SElinux的一些配置文件目录，SElinux可以让linux更加安全。 /srv ： 服务启动后，所需访问的数据目录，举个例子来说，www服务启动读取的网页数据就可以放在/srv/www中 /sys ：Linux 内核中设计较新的一种虚拟的基于内存的文件系统，它的作用与 proc 有些类似，但除了与 proc 相同的具有查看和设定内核参数功能之外，还有为 Linux 统一设备模型作为管理之用。 /tmp ：临时文件目录，用来存放不同程序执行时产生的临时文件。有时用户运行程序的时候，会产生临时文件。/tmp就用来存放临时文件的。/var/tmp目录和这个目录相似。 /usr：这是linux系统中占用硬盘空间最大的目录。用户的很多应用程序和文件都存放在这个目录下。在这个目录下，可以找到那些不适合放在/bin或/etc目录下的额外的工具 /usr/local ：这里主要存放那些手动安装的软件，即不是通过“新立得”或apt-get安装的软件。它和/usr目录具有相类似的目录结构。让软件包管理器来管理/usr目录，而把自定义的脚本（scripts)放到/usr/local目录下面。 /usr/share ：系统共用的东西存放地，比如 /usr/share/fonts 是字体目录，/usr/share/doc和/usr/share/man帮助文件。 /var ：这个目录的内容是经常变动的，看名字就知道，可以理解为vary的缩写，/var下有/var/log 这是用来存放系统日志的目录。/var/ www目录是定义Apache服务器站点存放目录；/var/lib 用来存放一些库文件，比如MySQL的，以及MySQL数据库的的存放地。 "
 />
 <title>
-  📓 Amethystsasss
+  📓 zouni88
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -37,7 +37,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<link rel="shortcut icon" type="image/png"  href="https://xboox.cn//favicon.png" />
+<link rel="shortcut icon" type="image/png"  href="https://r.xboox.cn//favicon.png" />
 
 
 
@@ -67,10 +67,10 @@ https://github.com/alex-shpak/hugo-book
   
 
 
-<link href="https://xboox.cn/styles.e08ceb33360cec132feb69cfb982e2a4.min.css" rel="stylesheet" />
+<link href="https://r.xboox.cn/styles.e08ceb33360cec132feb69cfb982e2a4.min.css" rel="stylesheet" />
 
 
-<link href="https://xboox.cn/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+<link href="https://r.xboox.cn/quartz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
 
   
 
@@ -94,33 +94,33 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<script src="https://xboox.cn/quartz/js/darkmode.c79b9a16195fad1a28aefd8de9970bd4.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/darkmode.469d0f10ff9bfd4dd6a1b01ebe8c6d97.min.js"></script>
 
 
 
-<script src="https://xboox.cn/quartz/js/util.e6844bcc6148c92f3b102d867c918e7c.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/util.e6844bcc6148c92f3b102d867c918e7c.min.js"></script>
 
 
 
 <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
 <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
 
-<script src="https://xboox.cn/quartz/js/popover.d15bbb66588317f9fbee1a95e4750bea.min.js"></script>
+<script src="https://r.xboox.cn/quartz/js/popover.d15bbb66588317f9fbee1a95e4750bea.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/code-title.d6525fa48597ed29631fab15192407e2.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/code-title.d6525fa48597ed29631fab15192407e2.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/clipboard.3ce3710d38377077f1cee5228144b8a8.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/clipboard.3ce3710d38377077f1cee5228144b8a8.min.js"></script>
 
 
 
 
-<script defer src="https://xboox.cn/quartz/js/callouts.e83135249ba7df7bb9912c90a91a55c6.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/callouts.e83135249ba7df7bb9912c90a91a55c6.min.js"></script>
 
 
 
@@ -129,15 +129,15 @@ https://github.com/alex-shpak/hugo-book
   const SEARCH_ENABLED =  false 
   const LATEX_ENABLED =  true 
   const PRODUCTION =  true 
-  const BASE_URL = "https://xboox.cn/"
+  const BASE_URL = "https://r.xboox.cn/"
   const fetchData = Promise.all([
-        fetch("https:\/\/xboox.cn\/indices\/linkIndex.8f82182ab1f0691ed61ef55d039d916d.min.json")
+        fetch("https:\/\/r.xboox.cn\/indices\/linkIndex.8f82182ab1f0691ed61ef55d039d916d.min.json")
           .then(data => data.json())
           .then(data => ({
             index: data.index,
             links: data.links,
           })),
-        fetch("https:\/\/xboox.cn\/indices\/contentIndex.8263e16ff65aa55ee0ce2c719e87df13.min.json")
+        fetch("https:\/\/r.xboox.cn\/indices\/contentIndex.8263e16ff65aa55ee0ce2c719e87df13.min.json")
           .then(data => data.json()),
       ])
       .then(([{index, links}, content]) => ({
@@ -163,7 +163,7 @@ https://github.com/alex-shpak/hugo-book
 
     
     initPopover(
-      "https://xboox.cn",
+      "https://r.xboox.cn",
        true 
     )
     
@@ -179,7 +179,7 @@ https://github.com/alex-shpak/hugo-book
 
       const drawGlobal = isHome &&  true ;
       drawGraph(
-          "https://xboox.cn",
+          "https://r.xboox.cn",
           drawGlobal,
           [{"/moc":"#4388cc"}],
           drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":1,"opacityScale":3,"repelForce":2,"scale":1.2}
@@ -248,7 +248,7 @@ https://github.com/alex-shpak/hugo-book
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
   integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script defer src="https://xboox.cn/quartz/js/full-text-search.cc0284dc74ffd43585e5227c0138681e.min.js"></script>
+<script defer src="https://r.xboox.cn/quartz/js/full-text-search.cc0284dc74ffd43585e5227c0138681e.min.js"></script>
 
 
 
@@ -257,7 +257,7 @@ https://github.com/alex-shpak/hugo-book
     <label for="menu-control">
       <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
     </label>
-    <h1 id="page-title"><a href="https://xboox.cn/">📓 Amethystsasss</a></h1>
+    <h1 id="page-title"><a href="https://r.xboox.cn/">📓 zouni88</a></h1>
     <div class="spacer"></div>
     <div id="search-icon" class="quartz-search">
       <p>Search</p>
@@ -5655,7 +5655,7 @@ https://github.com/alex-shpak/hugo-book
   }
 </style>
 
-<script src="https://xboox.cn/quartz/js/graph.3d608db416a7219b41b53602cd180019.js"></script>
+<script src="https://r.xboox.cn/quartz/js/graph.3d608db416a7219b41b53602cd180019.js"></script>
 
     </div>
 </div>
@@ -5672,7 +5672,7 @@ https://github.com/alex-shpak/hugo-book
         <p>Made with <a href="https://github.com/64bitpandas/amethyst">Amethyst</a>, © 2024 Ben Cuan</p>
         <ul>
             
-            <li><a href="https://xboox.cn/">Home</a></li>
+            <li><a href="https://r.xboox.cn/">Home</a></li>
             <li><a href="https://bencuan.me">Website</a></li><li><a href="https://blog.bencuan.me">Blog</a></li></ul>
     </footer>
 </div>

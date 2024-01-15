@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习笔记</title>
-    <link>https://xboox.cn/document/golang/8.consul/</link>
+    <link>https://r.xboox.cn/document/golang/8.consul/</link>
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://xboox.cn/document/golang/8.consul/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r.xboox.cn/document/golang/8.consul/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://xboox.cn/document/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</link>
+      <link>https://r.xboox.cn/document/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xboox.cn/document/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</guid>
+      <guid>https://r.xboox.cn/document/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</guid>
       <description>consul 实例1&#xD;#&#xD;docker run -itd --name=consule1 -p 8500:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul1 consul agent -server -bootstrap-expect=2 -ui -node=consul1 -client=&#39;0.0.0.0&#39; -data-dir /consul/data -config-dir /consul/config -datacenter=consul_dc&#xD;参数说明：&#xA;docker run -itd --name=consul -p 8500:8500 consul agent -server -bootstrap -ui -client 0.0.0.0 -server : 以服务端方式启动 -bootstrap : 指定自己为leader ,而不需要选举 -ui : 启动一个内置管理web界面 -client : 指定客户端可以访问的IP. 设置为0.0.0.0 则任意访问，否则默认本机可以访问&#xA;实例1 ip : 172.17.0.2&#xA;consul 实例2&#xD;#&#xD;docker run -itd --name=consule1 -p 8200:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul2 consul agent -server -bootstrap-expect=2 -ui -node=consul2 -client=&#39;0.</description>
     </item>
   </channel>
