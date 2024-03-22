@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/android/FAQ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/android/FAQ/</guid>
-      <description>&#xD;经常遇到的问题：&#xD;#&#xD;读取本地存储文件权限受限&#xD;#&#xD;open failed: EACCES (Permission denied) //manifest.xml application标签&#xD;&amp;lt;application android:requestLegacyExternalStorage=&amp;#34;true&amp;#34;&#xD;/&amp;gt; </description>
+      <description>&#xD;经常遇到的问题：&#xD;#&#xD;读取本地存储文件权限受限&#xD;#&#xD;open failed: EACCES (Permission denied) //manifest.xml application标签 &amp;lt;application android:requestLegacyExternalStorage=&amp;#34;true&amp;#34; /&amp;gt; </description>
     </item>
     <item>
       <title></title>
@@ -226,6 +226,27 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>初始化&#xD;#&#xD;下载hugo已发布版本&#xA;配置环境变量：&#xA;2.1. 创建 bin 文件夹，将hugo.exe 放在bin文件夹下；&#xA;2.2. 配置换进变量：将hugo/bin/目录添加到 path 中；&#xA;创建站点：&#xA;hugo new site path/project_name&#xA;运行站点：&#xA;cd path/project_name //定位到当前站点目录&#xA;hugo server //运行服务&#xA;部署：&#xA;hugo //hugo 命令构建站点 build完后的站点文件夹下 public 目录&#xA;设置主题&#xD;#&#xD;主题选择：https://themes.gohugo.io/tags/dark/&#xA;cd themes&#xA;git clone git@github.com:setsevireon/photophobia.git&#xA;git submodule add https://github.com/alex-shpak/hugo-book&#xA;themes/book&#xA;启动本地调试&#xD;#&#xD;hugo server &amp;ndash;theme=photophobia &amp;ndash;buildDrafts &amp;ndash;watch</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</guid>
+      <description>hugo皮肤网站 找到自己喜欢的皮肤&#xD;#&#xD;皮肤官网&#xA;目前在用的&#xA;https://github.com/zouni88/amethyst&#xA;导入到项目目录 themes 文件夹中&#xA;修改 hugo.yaml 配置文件 ，完成自定义项改造&#xA;之前用过&#xA;https://github.com/idealvin/hugo-book</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
@@ -279,6 +300,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/container/1.windows%E4%BD%BF%E7%94%A8containerd/</guid>
       <description>&#xD;1. 下载&amp;amp;配置环境变量&#xD;#&#xD;2. 生成默认配置文件&#xD;#&#xD;containerd config default &amp;gt; d:/path 3. 启动&#xD;#&#xD;containerd 4. 查看版本&#xD;#&#xD;ctr version </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/container/containerd%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/container/containerd%E5%AE%89%E8%A3%85/</guid>
+      <description>yum 安装&#xA;yum install containerd&#xA;二进制包安装&#xA;官方说明文档： https://github.com/containerd/containerd/blob/main/docs/getting-started.md</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</guid>
+      <description>查看镜像列表&#xD;#&#xD;ctr images ls ctr i ls ctr i list&#xA;拉取镜像&#xD;#&#xD;ctr i pull docker.io/library/nginx:alpine # 指定平台 --platform ctr i pull --platform linux/amd64 docker.io/library/nginx:alpine # 所有平台同时拉取 --all-platform ctr i pull --all-platforms docker.io/library/nginx:alpine out&#xA;REF TYPE DIGEST SIZE PLATFORMS LABELS docker.io/library/nginx:alpine application/vnd.oci.image.index.v1+json sha256:a59278fd22a9d411121e190b8cec8aa57b306aa3332459197777583beb728f59 17.1 MiB linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,unknown/unknown - 镜像挂在&#xD;#&#xD;# 挂载 ctr images mount docker.io/library/nginx:alpine /root/zouni # 取消挂载 umount /root/zouni 镜像导出&#xD;#&#xD;# 导出 作为分享使用 ctr images export zouni.</description>
     </item>
     <item>
       <title></title>
@@ -961,6 +996,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/golang/ddns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/ddns/</guid>
+      <description>获取访问者ip地址&#xD;#&#xD;https://www.ip.cn/api/index?ip&amp;type=0</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/golang/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/env/</guid>
@@ -996,31 +1038,17 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
+      <description>&#xD;godotenv&#xD;#&#xD;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) } </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;私有仓库配置&#xD;#&#xD;将gitee.com 设置为私有仓库&#xA;首先配置https请求转换为ssh: git config --global url.&amp;#34;git@gitee.com:&amp;#34;.insteadOf &amp;#34;https://gitee.com/&amp;#34; git config --global http.extraheader &amp;#34;PRIVATE-TOKEN: B9TWLqsLdh1-513os1Pm&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://192.168.200.47:8083/&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://git.zhongzhuoxin.com:9000/&amp;#34; 配置环境变量 go env -w GOPRIVATE=gitee.com&#xA;新建的仓库名字一定要改成和仓库地址一致&#xA;新建仓库 gitee.com/zouni88/util 项目目录下 go.mod 修改module为gitee.com/zouni88/util </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>初始化&#xD;#&#xD;下载hugo已发布版本&#xA;配置环境变量：&#xA;2.1. 创建 bin 文件夹，将hugo.exe 放在bin文件夹下；&#xA;2.2. 配置换进变量：将hugo/bin/目录添加到 path 中；&#xA;创建站点：&#xA;hugo new site path/project_name&#xA;运行站点：&#xA;cd path/project_name //定位到当前站点目录&#xA;hugo server //运行服务&#xA;部署：&#xA;hugo //hugo 命令构建站点 build完后的站点文件夹下 public 目录&#xA;设置主题&#xD;#&#xD;主题选择：https://themes.gohugo.io/tags/dark/&#xA;cd themes&#xA;git clone git@github.com:setsevireon/photophobia.git&#xA;git submodule add https://github.com/alex-shpak/hugo-book&#xA;themes/book&#xA;启动本地调试&#xD;#&#xD;hugo server &amp;ndash;theme=photophobia &amp;ndash;buildDrafts &amp;ndash;watch</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/hugo/book%E7%9A%AE%E8%82%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/hugo/book%E7%9A%AE%E8%82%A4/</guid>
-      <description>https://github.com/idealvin/hugo-book</description>
     </item>
     <item>
       <title></title>
@@ -1189,6 +1217,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/mac/brew%E9%94%99%E8%AF%AF/</guid>
       <description>brew异常&#xA;yunhai@bogon Downloads % brew Traceback (most recent call last): 11: from /usr/local/Homebrew/Library/Homebrew/brew.rb:13:in `&amp;lt;main&amp;gt;&amp;#39; 10: from /usr/local/Homebrew/Library/Homebrew/brew.rb:13:in `require_relative&amp;#39; 9: from /usr/local/Homebrew/Library/Homebrew/global.rb:26:in `&amp;lt;top (required)&amp;gt;&amp;#39; 8: from /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require&amp;#39; 7: from /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:54:in `require&amp;#39; 6: from /usr/local/Homebrew/Library/Homebrew/os.rb:1:in `&amp;lt;top (required)&amp;gt;&amp;#39; 5: from /usr/local/Homebrew/Library/Homebrew/os.rb:19:in `&amp;lt;module:OS&amp;gt;&amp;#39; 4: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:52:in `prerelease?&amp;#39; 3: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:18:in `version&amp;#39; 2: from /usr/local/Homebrew/Library/Homebrew/os/mac.rb:18:in `new&amp;#39; 1: from /usr/local/Homebrew/Library/Homebrew/os/mac/version.rb:29:in `initialize&amp;#39; /usr/local/Homebrew/Library/Homebrew/version.rb:369:in `initialize&amp;#39;: Version value must be a string; got a NilClass () (TypeError) 重置试试：</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/</guid>
+      <description>安装 stable-diffusion&#xD;#&#xD;https://github.com/AUTOMATIC1111/stable-diffusion-webui&#xA;源码down下来之后&#xA;安装创绘软件&#xD;#&#xD;https://note.youdao.com/ynoteshare/index.html?id=ba9ead402507588e5b6307d8b5b7b3fd&amp;type=note&amp;_time=1710747620935&#xA;模型下载&#xD;#&#xD;https://www.liblib.art/modelinfo/4d6c6e3ee9934e9f8d921b46be56ed91&#xA;https://civitai.com/</description>
     </item>
     <item>
       <title></title>
@@ -1804,7 +1839,7 @@
       <link>https://r.xboox.cn/document/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</guid>
-      <description>a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0 [Out]:&#xA;Traceback (most recent call last):&#xD;File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code&#xD;exec(code_obj, self.user_global_ns, self.user_ns)&#xD;File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt;&#xD;assert a&amp;gt;0&#xD;AssertionError </description>
+      <description>a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0 [Out]:&#xA;Traceback (most recent call last): File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code exec(code_obj, self.user_global_ns, self.user_ns) File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt; assert a&amp;gt;0 AssertionError </description>
     </item>
     <item>
       <title></title>
@@ -1825,7 +1860,7 @@
       <link>https://r.xboox.cn/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/RaspberryPi/%E5%AE%89%E8%A3%85docker/</guid>
-      <description>&#xD;docker 脚本安装&#xD;#&#xD;sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh&#xD;sudo sh docker_install.sh –mirror Aliyun </description>
+      <description>&#xD;docker 脚本安装&#xD;#&#xD;sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh sudo sh docker_install.sh –mirror Aliyun </description>
     </item>
     <item>
       <title></title>
@@ -1839,14 +1874,14 @@
       <link>https://r.xboox.cn/document/RaspberryPi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/RaspberryPi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
-      <description>&#xD;出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。&#xD;#&#xD;设置root用户密码&#xD;#&#xD;sudo passwd root&#xD;启用root用户&#xD;#&#xD;sudo passwd --unlock root&#xD;设置ssh允许登录&#xD;#&#xD;sudo sed -i &amp;quot;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;quot; /etc/ssh/sshd_config&#xD;重启ssh服务&#xD;#&#xD;sudo systemctl restart ssh&#xD;为root用户应用于当前用户相同的bash配置&#xD;#&#xD;sudo cp ~/.bashrc /root/.bashrc </description>
+      <description>&#xD;出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。&#xD;#&#xD;设置root用户密码&#xD;#&#xD;sudo passwd root 启用root用户&#xD;#&#xD;sudo passwd --unlock root 设置ssh允许登录&#xD;#&#xD;sudo sed -i &amp;#34;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;#34; /etc/ssh/sshd_config 重启ssh服务&#xD;#&#xD;sudo systemctl restart ssh 为root用户应用于当前用户相同的bash配置&#xD;#&#xD;sudo cp ~/.bashrc /root/.bashrc </description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/RaspberryPi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
-      <description>&#xD;下载镜像&#xD;#&#xD;将镜像写入sd卡 ，下载写入程序&#xA;https://www.raspberrypi.org/downloads/ 修改配置&#xD;#&#xD;写入sd卡后，不要拔出，直接在sdcard中修改配置：&#xA;开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件 hdmi_safe=1&#xD;config_hdmi_boost=4&#xD;hdmi_ignore_edid=0xa5000080&#xD;hdmi_group=2&#xD;hdmi_mode=82 参数 说明 hdmi_safe=1 安全启动HDMI config_hdmi_boost=4 开启热插拔 hdmi_group=1 CEA电视显示器 hdmi_group=2 DMT电脑显示器 hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率 hdmi_mode=4 640x480 60Hz hdmi_mode=9 800x600 60Hz hdmi_mode=16 1024x768 60Hz hdmi_mode=82 1080p 60Hz 连接树莓派&#xD;#&#xD;树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3. 设置无线wifi 新建wpa_supplicant.conf文件&#xA;country=CN&#xD;ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev&#xD;update_config=1&#xD;network={&#xD;ssid=&amp;#34;wifiname&amp;#34;&#xD;psk=&amp;#34;password&amp;#34;&#xD;priority=1&#xD;} 说明：&#xA;ssid: wifi名字 psk: wifi 密码 </description>
+      <description>&#xD;下载镜像&#xD;#&#xD;将镜像写入sd卡 ，下载写入程序&#xA;https://www.raspberrypi.org/downloads/ 修改配置&#xD;#&#xD;写入sd卡后，不要拔出，直接在sdcard中修改配置：&#xA;开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件 hdmi_safe=1 config_hdmi_boost=4 hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=82 参数 说明 hdmi_safe=1 安全启动HDMI config_hdmi_boost=4 开启热插拔 hdmi_group=1 CEA电视显示器 hdmi_group=2 DMT电脑显示器 hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率 hdmi_mode=4 640x480 60Hz hdmi_mode=9 800x600 60Hz hdmi_mode=16 1024x768 60Hz hdmi_mode=82 1080p 60Hz 连接树莓派&#xD;#&#xD;树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3. 设置无线wifi 新建wpa_supplicant.conf文件&#xA;country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&amp;#34;wifiname&amp;#34; psk=&amp;#34;password&amp;#34; priority=1 } 说明：&#xA;ssid: wifi名字 psk: wifi 密码 </description>
     </item>
     <item>
       <title></title>
@@ -1895,7 +1930,7 @@
       <link>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
-      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn&#xD;mkdir easy-rsa&#xD;cd easy-rsa/&#xD;cp -r /usr/share/easy-rsa/* .</description>
+      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
     </item>
     <item>
       <title></title>
@@ -1916,7 +1951,7 @@
       <link>https://r.xboox.cn/document/web/nodejs/npm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/web/nodejs/npm/</guid>
-      <description>查看版本&#xD;#&#xD;npm -v&#xA;更新&#xD;#&#xD;npm install -g npm&#xA;指定版本更新&#xD;#&#xD;npm -g install npm@6.8.0&#xA;清理&#xD;#&#xD;npm cache clean &amp;ndash;force&#xA;查看当前使用的源&#xD;#&#xD;npm config get registry&#xA;重置为官方源&#xD;#&#xD;npm config set registry https://registry.npmjs.org/q&#xA;修改国内源&#xD;#&#xD;# 阿里源升级&#xD;http://npm.taobao.org =&amp;gt; http://npmmirror.com&#xD;http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com 1. 临时修改源&#xD;#&#xD;npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改&#xD;#&#xD;npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版&#xD;#&#xD;npm install -g cnpm &amp;ndash;registry=https://registry.</description>
+      <description>查看版本&#xD;#&#xD;npm -v&#xA;更新&#xD;#&#xD;npm install -g npm&#xA;指定版本更新&#xD;#&#xD;npm -g install npm@6.8.0&#xA;清理&#xD;#&#xD;npm cache clean &amp;ndash;force&#xA;查看当前使用的源&#xD;#&#xD;npm config get registry&#xA;重置为官方源&#xD;#&#xD;npm config set registry https://registry.npmjs.org/q&#xA;修改国内源&#xD;#&#xD;# 阿里源升级 http://npm.taobao.org =&amp;gt; http://npmmirror.com http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com 1. 临时修改源&#xD;#&#xD;npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改&#xD;#&#xD;npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版&#xD;#&#xD;npm install -g cnpm &amp;ndash;registry=https://registry.</description>
     </item>
     <item>
       <title></title>

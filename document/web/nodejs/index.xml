@@ -19,7 +19,7 @@
       <link>https://r.xboox.cn/document/web/nodejs/npm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/web/nodejs/npm/</guid>
-      <description>查看版本&#xD;#&#xD;npm -v&#xA;更新&#xD;#&#xD;npm install -g npm&#xA;指定版本更新&#xD;#&#xD;npm -g install npm@6.8.0&#xA;清理&#xD;#&#xD;npm cache clean &amp;ndash;force&#xA;查看当前使用的源&#xD;#&#xD;npm config get registry&#xA;重置为官方源&#xD;#&#xD;npm config set registry https://registry.npmjs.org/q&#xA;修改国内源&#xD;#&#xD;# 阿里源升级&#xD;http://npm.taobao.org =&amp;gt; http://npmmirror.com&#xD;http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com 1. 临时修改源&#xD;#&#xD;npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改&#xD;#&#xD;npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版&#xD;#&#xD;npm install -g cnpm &amp;ndash;registry=https://registry.</description>
+      <description>查看版本&#xD;#&#xD;npm -v&#xA;更新&#xD;#&#xD;npm install -g npm&#xA;指定版本更新&#xD;#&#xD;npm -g install npm@6.8.0&#xA;清理&#xD;#&#xD;npm cache clean &amp;ndash;force&#xA;查看当前使用的源&#xD;#&#xD;npm config get registry&#xA;重置为官方源&#xD;#&#xD;npm config set registry https://registry.npmjs.org/q&#xA;修改国内源&#xD;#&#xD;# 阿里源升级 http://npm.taobao.org =&amp;gt; http://npmmirror.com http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com 1. 临时修改源&#xD;#&#xD;npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改&#xD;#&#xD;npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版&#xD;#&#xD;npm install -g cnpm &amp;ndash;registry=https://registry.</description>
     </item>
     <item>
       <title></title>

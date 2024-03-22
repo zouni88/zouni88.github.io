@@ -7,5 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <atom:link href="https://r.xboox.cn/document/ML/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/</guid>
+      <description>安装 stable-diffusion&#xD;#&#xD;https://github.com/AUTOMATIC1111/stable-diffusion-webui&#xA;源码down下来之后&#xA;安装创绘软件&#xD;#&#xD;https://note.youdao.com/ynoteshare/index.html?id=ba9ead402507588e5b6307d8b5b7b3fd&amp;type=note&amp;_time=1710747620935&#xA;模型下载&#xD;#&#xD;https://www.liblib.art/modelinfo/4d6c6e3ee9934e9f8d921b46be56ed91&#xA;https://civitai.com/</description>
+    </item>
   </channel>
 </rss>

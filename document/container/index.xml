@@ -16,6 +16,20 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/container/containerd%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/container/containerd%E5%AE%89%E8%A3%85/</guid>
+      <description>yum 安装&#xA;yum install containerd&#xA;二进制包安装&#xA;官方说明文档： https://github.com/containerd/containerd/blob/main/docs/getting-started.md</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</guid>
+      <description>查看镜像列表&#xD;#&#xD;ctr images ls ctr i ls ctr i list&#xA;拉取镜像&#xD;#&#xD;ctr i pull docker.io/library/nginx:alpine # 指定平台 --platform ctr i pull --platform linux/amd64 docker.io/library/nginx:alpine # 所有平台同时拉取 --all-platform ctr i pull --all-platforms docker.io/library/nginx:alpine out&#xA;REF TYPE DIGEST SIZE PLATFORMS LABELS docker.io/library/nginx:alpine application/vnd.oci.image.index.v1+json sha256:a59278fd22a9d411121e190b8cec8aa57b306aa3332459197777583beb728f59 17.1 MiB linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,unknown/unknown - 镜像挂在&#xD;#&#xD;# 挂载 ctr images mount docker.io/library/nginx:alpine /root/zouni # 取消挂载 umount /root/zouni 镜像导出&#xD;#&#xD;# 导出 作为分享使用 ctr images export zouni.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/container/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/container/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</guid>

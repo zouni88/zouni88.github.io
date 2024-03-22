@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/android/FAQ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/android/FAQ/</guid>
-      <description>&#xD;经常遇到的问题：&#xD;#&#xD;读取本地存储文件权限受限&#xD;#&#xD;open failed: EACCES (Permission denied) //manifest.xml application标签&#xD;&amp;lt;application android:requestLegacyExternalStorage=&amp;#34;true&amp;#34;&#xD;/&amp;gt; </description>
+      <description>&#xD;经常遇到的问题：&#xD;#&#xD;读取本地存储文件权限受限&#xD;#&#xD;open failed: EACCES (Permission denied) //manifest.xml application标签 &amp;lt;application android:requestLegacyExternalStorage=&amp;#34;true&amp;#34; /&amp;gt; </description>
     </item>
     <item>
       <title></title>

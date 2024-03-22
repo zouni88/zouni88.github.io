@@ -68,7 +68,7 @@
       <link>https://r.xboox.cn/document/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</guid>
-      <description>a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0 [Out]:&#xA;Traceback (most recent call last):&#xD;File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code&#xD;exec(code_obj, self.user_global_ns, self.user_ns)&#xD;File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt;&#xD;assert a&amp;gt;0&#xD;AssertionError </description>
+      <description>a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0 [Out]:&#xA;Traceback (most recent call last): File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code exec(code_obj, self.user_global_ns, self.user_ns) File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt; assert a&amp;gt;0 AssertionError </description>
     </item>
   </channel>
 </rss>

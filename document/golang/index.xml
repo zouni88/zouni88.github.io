@@ -44,6 +44,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/golang/ddns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/ddns/</guid>
+      <description>获取访问者ip地址&#xD;#&#xD;https://www.ip.cn/api/index?ip&amp;type=0</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/golang/env/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/env/</guid>
@@ -76,6 +83,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</guid>
       <description>函数计算需要设置时区&#xD;#&#xD;添加环境变量即可：&#xA;TZ = Asia/Shanghai</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
+      <description>&#xD;godotenv&#xD;#&#xD;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) } </description>
     </item>
     <item>
       <title></title>

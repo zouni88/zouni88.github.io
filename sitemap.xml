@@ -10,6 +10,8 @@
   </url><url>
     <loc>https://r.xboox.cn/document/blockchain/</loc>
   </url><url>
+    <loc>https://r.xboox.cn/document/blog/</loc>
+  </url><url>
     <loc>https://r.xboox.cn/document/C_CXX/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/container/</loc>
@@ -27,8 +29,6 @@
     <loc>https://r.xboox.cn/document/git/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/hugo/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/</loc>
   </url><url>
@@ -206,6 +206,12 @@
   </url><url>
     <loc>https://r.xboox.cn/document/blockchain/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
+    <loc>https://r.xboox.cn/document/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+  </url><url>
     <loc>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/C_CXX/CXX%E7%89%B9%E8%89%B2/</loc>
@@ -221,6 +227,10 @@
     <loc>https://r.xboox.cn/document/C_CXX/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/container/1.windows%E4%BD%BF%E7%94%A8containerd/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/container/containerd%E5%AE%89%E8%A3%85/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/container/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
   </url><url>
@@ -416,6 +426,8 @@
   </url><url>
     <loc>https://r.xboox.cn/document/golang/chromedp/%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85/</loc>
   </url><url>
+    <loc>https://r.xboox.cn/document/golang/ddns/</loc>
+  </url><url>
     <loc>https://r.xboox.cn/document/golang/env/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/goland%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
@@ -426,13 +438,9 @@
   </url><url>
     <loc>https://r.xboox.cn/document/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</loc>
   </url><url>
+    <loc>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</loc>
+  </url><url>
     <loc>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/hugo/book%E7%9A%AE%E8%82%A4/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/1.dell%E5%AE%89%E8%A3%85centos/</loc>
   </url><url>
@@ -481,6 +489,8 @@
     <loc>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/mac/brew%E9%94%99%E8%AF%AF/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/ML/tensorflow/KL%E6%95%A3%E5%BA%A6/</loc>
   </url><url>

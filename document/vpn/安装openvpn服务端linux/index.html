@@ -7,7 +7,7 @@ sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文
 root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
 root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件
 dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
-将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpnmkdir easy-rsacd easy-rsa/cp -r /usr/share/easy-rsa/* ." />
+将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/" /><meta property="article:section" content="document" />
 
@@ -35,7 +35,7 @@ sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文
 root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书
 root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件
 dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
-将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpnmkdir easy-rsacd easy-rsa/cp -r /usr/share/easy-rsa/* ."
+将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* ."
 />
 <title>
   📓 西凉观云海
@@ -869,6 +869,66 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
   
 
   
+    <input type="checkbox" id="section-10ce6b33b1b6f63b8fb915c2bf727138" class="toggle"  />
+    <label for="section-10ce6b33b1b6f63b8fb915c2bf727138" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Blog</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="">1.hugo环境配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/" class="">2.hugo换皮肤</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="">3.github博客搭建</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-eca075ebf7c165bd597228fdc989ce16" class="toggle"  />
     <label for="section-eca075ebf7c165bd597228fdc989ce16" class="flex justify-between">
       <a role="button" class="book-collapse-toggle ">C Cxx</a>
@@ -998,6 +1058,32 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
 
   
     <a href="/document/container/1.windows%E4%BD%BF%E7%94%A8containerd/" class="">1.windows使用containerd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/container/containerd%E5%AE%89%E8%A3%85/" class="">Containerd安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/" class="">操作镜像</a>
   
 
         </li>
@@ -2698,6 +2784,19 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
   
 
   
+    <a href="/document/golang/ddns/" class="">Ddns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/golang/env/" class="">Env</a>
   
 
@@ -2763,67 +2862,20 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
   
 
   
+    <a href="/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/" class="">常用库</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/" class="">私有仓库配置</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-887091a510df141dadaefe13e154e46e" class="toggle"  />
-    <label for="section-887091a510df141dadaefe13e154e46e" class="flex justify-between">
-      <a role="button" class="book-collapse-toggle ">Hugo</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/hugo/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="">1.环境配置</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/hugo/2.%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="">2.搭建个人博客</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/hugo/book%E7%9A%AE%E8%82%A4/" class="">Book皮肤</a>
   
 
         </li>
@@ -3716,6 +3768,19 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/" class="">Ai绘画创绘</a>
+  
 
         </li>
       
@@ -5630,8 +5695,8 @@ dpkg -L easy-rsa |moredpkg --list easy-rsa四. 制作证书
 </span></span><span style="display:flex;"><span>/lib/systemd/system-generators
 </span></span><span style="display:flex;"><span>/lib/systemd/system-generators/openvpn-generator
 </span></span></code></pre></div><p>三.  接下来安装easy-rsa 制作证书</p>
-<pre tabindex="0"><code>root@zouni:~# apt-get -y install easy-rsa
-</code></pre><p>查看 easy-rsa 的安装文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:~# apt-get -y install easy-rsa
+</span></span></code></pre></div><p>查看 easy-rsa 的安装文件</p>
 <pre><code>dpkg -L easy-rsa |more
 dpkg --list easy-rsa
 </code></pre>
@@ -5639,15 +5704,15 @@ dpkg --list easy-rsa
 <ol>
 <li>将<code>easy-rsa</code>目录下文件复制到 <code>/etc/easy-rsa</code> 目录</li>
 </ol>
-<pre tabindex="0"><code>cd /etc/openvpn
-mkdir easy-rsa
-cd easy-rsa/
-cp -r /usr/share/easy-rsa/* .
-</code></pre><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /etc/openvpn
+</span></span><span style="display:flex;"><span>mkdir easy-rsa
+</span></span><span style="display:flex;"><span>cd easy-rsa/
+</span></span><span style="display:flex;"><span>cp -r /usr/share/easy-rsa/* .
+</span></span></code></pre></div><ol start="2">
 <li>复制一份 vars.example  在当前目录</li>
 </ol>
-<pre tabindex="0"><code>cp vars.example vars  
-</code></pre><p>编辑 vars 文件
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cp vars.example vars  
+</span></span></code></pre></div><p>编辑 vars 文件
 
 
 
@@ -5667,19 +5732,19 @@ export KEY_NAME=&ldquo;vpnzouni&rdquo;</p>
 <p>生成客户端密钥
 ./easyrsa build-client-full zouni nopass</p>
 <p>./easyrsa gen-dh</p>
-<pre tabindex="0"><code>root@zouni:/etc/openvpn/easy-rsa#  ls pki/dh.pem -l
--rw------- 1 root root 424 Jun 21 12:01 pki/dh.pem
-</code></pre><p>复制 服务端 配置文件到当前目录，并编辑配置</p>
-<pre tabindex="0"><code>root@zouni:/etc/openvpn#  cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf ./
-</code></pre><pre tabindex="0"><code>root@zouni:/etc/openvpn/easy-rsa# cp easy-rsa/pki/issued/vpnzouni.crt  ./
-
-
-cp easy-rsa/pki/ca.crt ./
-
-cp easy-rsa/pki/issued/vpnzouni.crt  ./
-
- cp easy-rsa/pki/private/vpnzouni.key ./
-</code></pre><p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:/etc/openvpn/easy-rsa#  ls pki/dh.pem -l
+</span></span><span style="display:flex;"><span>-rw------- <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">424</span> Jun <span style="color:#ae81ff">21</span> 12:01 pki/dh.pem
+</span></span></code></pre></div><p>复制 服务端 配置文件到当前目录，并编辑配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:/etc/openvpn#  cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf ./
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@zouni:/etc/openvpn/easy-rsa# cp easy-rsa/pki/issued/vpnzouni.crt  ./
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp easy-rsa/pki/ca.crt ./
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cp easy-rsa/pki/issued/vpnzouni.crt  ./
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> cp easy-rsa/pki/private/vpnzouni.key ./
+</span></span></code></pre></div><p>
 
 
 <img src="https://r.xboox.cn/res/openvpn/server1.png" width="auto" alt="server1"  />
@@ -5705,32 +5770,32 @@ cp easy-rsa/pki/issued/vpnzouni.crt  ./
 
 <img src="https://r.xboox.cn/res/openvpn/client1.png" width="auto" alt="client1"  /></p>
 <p>新建client.ovpn文件，添加如下内容</p>
-<pre tabindex="0"><code>client
-
-dev tun 
-
-proto tcp
-
-remote test.xboox.cn 1194
-
-resolv-retry infinite
-
-nobind
-
-persist-key
-
-persist-tun
-
-ca ca.crt
-
-cert zouni.crt
-
-key zouni.key
-
-comp-lzo
-
-verb 3 
-</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>client
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dev tun 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>proto tcp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>remote test.xboox.cn <span style="color:#ae81ff">1194</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>resolv-retry infinite
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nobind
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>persist-key
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>persist-tun
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ca ca.crt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cert zouni.crt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>key zouni.key
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>comp-lzo
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>verb <span style="color:#ae81ff">3</span> 
+</span></span></code></pre></div>
 
     
 
