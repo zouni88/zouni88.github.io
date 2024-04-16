@@ -16,48 +16,6 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/nas/synology-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/nas/synology-config/</guid>
-      <description>群晖nas配置 ssh连接，root用户登录&#xA;群晖默认不支持root权限登录，需要修改权限&#xA;普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件&#xA;修改sshd_config 权限&#xA;chmod 755 sshd_config 编辑sshd_config文件，找到&#xA;#PermitRootLogin prohibit-password # 修改成 yes PermitRootLogin yes 退出编辑&#xA;修改root密码&#xA;synouser --setpw root 这里是新密码 退出重新用root登录 . OK!</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/</guid>
-      <description>https://ipinfo.io/&#xA;type = hosting 云服务提供商 type = isp 住宅类型ip&#xA;https://scamalytics.com/&#xA;bgp.he.net whoer.com&#xA;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7QReL6IORgCf/vMyuHHtbJ/JMOAO5p/IlLfca9MP+E+AGNtEmCN4ERW7TctFuS+Hoh1RaFLAkk/2cNfzB2F9RSYxPltlR3FySwZdbgzxdzE87Apz9dwtMit87Idx3arxy3tkTdTT3gZWXCRiSKLb6cN8u3z+CHVl5IRsPJbSB/8ZDhBDyA9HtiuzXPOqeBJVA4+R3DAEqZLAFEqtnhOjOVNxYxhDgy46bCF5V/GcQ1eMUEAf6b7uVbP4sGdgAjSvxBvaz8I58MBDqKnL1EO0vgiL99ZfHfCE3Sq6eFFlnvbbjB1iHWmo4aN1D7JRJ9wbDERAPcv13XL01+JCxyEm7&#xA;&amp;mdash;&amp;ndash;开始 OPENSSH 专用钥匙&amp;mdash;&amp;ndash; b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAAAABAAABFwAAAAdzc2gtcn NhAAAAAwEAAQAAAQEAu0EXi+iDkYAn/7zMrhx7WyfyTDgDuafyJS33GvTD/hPgBjbRJgje BEVu03LRbkvh6IdUWhSwJJP9nDX8wdhfUUmMT5bZUdxcksGXW4M8XcxPOwKc/XcLTIrfOy Hcd2q8ct7ZE3U094GVlwkYkii2+nDfLt8/gh1ZeSEbDyW0gf/GQ4QQ8gPR7Yrs1zzqngSV QOPkdwwBKmSwBRKrZ4TozlTcWMYQ4MuOmwheVfxnENXjFBAH+m+7lWz+LBnYAI0r8Qb2s/ COfDAQ6ipy9RDtL4Ii/fWXx3whN0qunhRZZ7224wdYh1pqOGjdQ+yUSfcGwxEQD3L9d1y9 NfiQschJuwAAA7ih31P2od9T9gAAAAdzc2gtcnNhAAABAQC7QReL6IORgCf/vMyuHHtbJ/ JMOAO5p/IlLfca9MP+E+AGNtEmCN4ERW7TctFuS+Hoh1RaFLAkk/2cNfzB2F9RSYxPltlR 3FySwZdbgzxdzE87Apz9dwtMit87Idx3arxy3tkTdTT3gZWXCRiSKLb6cN8u3z+CHVl5IR sPJbSB/8ZDhBDyA9HtiuzXPOqeBJVA4+R3DAEqZLAFEqtnhOjOVNxYxhDgy46bCF5V/GcQ 1eMUEAf6b7uVbP4sGdgAjSvxBvaz8I58MBDqKnL1EO0vgiL99ZfHfCE3Sq6eFFlnvbbjB1 iHWmo4aN1D7JRJ9wbDERAPcv13XL01+JCxyEm7AAAAAwEAAQAAAQAz/XqgKcp912tDohPi M548TPcFGnhOT8b3c6+sGFFidfo5P3cKbGPYI78Fjld/nCn4+bn92MifH0fG22Z2G7E7TI RchLGJ/Pjm9kEj82gLUvKcm7ki1q6YbeZU8K3ZqhTwf9cdg+lU3vG9oZTk39EN79DHnsxv P97btslgh0N65CKg666ftSxL4Nj6aFrfBsmrd/f63kh4oVwebW6ddzNfACQAvU7rmATe21 p1U+v7OiBKum+v2fceXYjeokJ9+CsDRIa/6xeIbD98yM7ZoHZp9T46JLMZWqvERgUi7o8U EpJPmVmqv3WdhsAiUr39QZVZN15A4wBbtqgi28y6wCOhAAAAgHrXaaHfF9FgrJZOs79AI5 WL+meKWaGqfVpPt4d1pS2K9c6Vu92kXlywfAo4Q+Xlf32A9tdh4Hmsb9tsrC49t7hPIBCZ OYH5uFcJLxFoju0SBiyk//xEqVF7pCWEYT1ItF60O99ccygJruJvEeDWeGnXYn/RPheGl4 ngdsmzXJuWAAAAgQD2wBP63QMeeXKjxsqznvqiXmQDSIAkwfDviFXs1dflMTAJ/TPdX9Bv 4V8j+NS96KiU+t0brag6+l9uA4aMlzadi677i+nPWJ+4fuPPxwjkebFED18y0/GP6z18GK NY2VRhJh3S7VNzRmuZ4KQf8UmRDvpaHZS6ZtQZyiNOjfLEjQAAAIEAwkYQesTBgLvjF6oP qEnrRLwYnuepslQqwFJIhQOcAcgzsU+tqzC/Arcuhw8CnNgt0X251tOX9qsVHWi+DG9vTc yBFyzz5uBt9kJNghyKCAA3va5ypDupj1eeieeXWqxwj52SOEbkPLa5tWNa6Jzj5f2+ei0N kpnOFc8pSM0LSWcAAAAAAQID &amp;mdash;&amp;ndash;结束 OPENSSH 私钥&amp;mdash;&amp;ndash;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/proxy/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/proxy/readme/</guid>
-      <description>1. 什么是 VPS&#xD;#&#xD;虚拟专用服务器（英语：Virtual private server，缩写为 VPS），是将一台服务器分割成多个虚拟专享服务器的服务。&#xA;2. 什么是 VPN&#xD;#&#xD;VPN 在很多人心目中就是用来翻墙的工具，其实不是。VPN 最主要的功能，并不是用来翻墙，只是它可以达到翻墙的目的。&#xA;虚拟专用网络（英语：Virtual Private Network，缩写为VPN），它的功能是：在公用网络上建立专用网络，进行加密通讯。在企业网络和高校的网络中应用很广泛。你接入 VPN，其实就是接入了一个专有网络，你的网络访问都从这个出口出去，你和 VPN 之间的通信是否加密，取决于你连接 VPN 的方式或者协议。&#xA;3. 什么是 ss / ssr&#xD;#&#xD;ss ss作者是 GitHub：clowwindy，大约两年前，他自己为了翻墙写了shadowsocks，简称 ss 或者叫影梭，后来他觉得这个东西非常好用，速度快，而且不会被封锁，他就把源码共享在了 GitHub 上，然后就火了，但是后来作者被请去喝茶，删了代码，并且保证不再参与维护更新。&#xA;ssr 在ss作者被喝茶之后，GitHub 上出现了一个叫 breakwa11(破娃)的帐号，声称 ss 容易被防火墙检测到，所以在混淆和协议方面做了改进，更加不容易被检测到，而且兼容 ss，改进后的项目叫 shadowsocks-R，简称 ssr，然后 ss 用户和 ssr 用户自然分成了两个派别，互相撕逼，后来，破娃被人肉出来，无奈之下删除了 ssr 的代码，并且解散了所有相关群组。&#xA;4. vpn和ss/ssr的区别和优缺点&#xD;#&#xD;通过上面的介绍，其实基本已经能看出 vpn 和 ss/ssr 的区别了，那么他们到底孰优孰劣。&#xA;因为 VPN 是走的专用通道，它是用来给企业传输加密数据用的，所以 VPN 的流量特征很明显，以 openvpn 为例，更详细的在这里不说了，流量特征明显，防火墙直接分析你的流量，如果特征匹配，直接封掉。&#xA;ss/ssr 的目的就是用来翻墙的，而 VPN 的目的是用来加密企业数据的，对于 VPN 来说安全是第一位的，而对于 ss/ssr 来说穿透防火墙是第一位，抗干扰性强，而且对流量做了混淆，所有流量在通过防火墙的时候，基本上都被识别为普通流量，也就是说你翻墙了，但是政府是检测不到你在翻墙的。两者的出发点和着重点就不同，ss/ssr 更注重流量的混淆加密。如果要安全匿名上网，可以用 vpn+tor 或者 ss/ssr+tor。</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</guid>
-      <description>&#xD;windows 客户端配置&#xD;#&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
-      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/</guid>
-      <description>https://medium.com/@thomas_summon/%E6%B5%85%E8%B0%88vpn-vps-proxy%E4%BB%A5%E5%8F%8Ashadowsocks%E4%B9%8B%E9%97%B4%E7%9A%84%E8%81%94%E7%B3%BB%E5%92%8C%E5%8C%BA%E5%88%AB-b0198f92db1b</description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/document/README/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/README/</guid>
