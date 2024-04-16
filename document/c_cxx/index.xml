@@ -47,7 +47,7 @@
       <link>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
-      <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库&#xD;#&#xD;error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/</description>
+      <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库&#xD;#&#xD;error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;&amp;ldquo;LD_LIBRARY_PATH&amp;rdquo;:&amp;quot;/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&amp;quot; LD_LIBRARY_PATH=/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/&#xA;严重性&#x9;代码&#x9;说明&#x9;项目&#x9;文件&#x9;行&#x9;禁止显示状态 错误&#x9;CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage</description>
     </item>
     <item>
       <title></title>

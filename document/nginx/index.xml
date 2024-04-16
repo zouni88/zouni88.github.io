@@ -26,7 +26,7 @@
       <link>https://r.xboox.cn/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</guid>
-      <description>构建nginx容器&#xD;#&#xD;docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static –restart=always –user=root nginx --privileged=true docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static -user=root nginx:latest docker run -itd &amp;ndash;name=nginx -p 8088:80 -p 443:443 -v /home/zouni88/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni88/web/static &amp;ndash;restart=always -user=root -privileged=true nginx:latest</description>
+      <description>构建nginx容器&#xD;#&#xD;docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static –restart=always –user=root nginx --privileged=true docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static -user=root nginx:latest docker run -itd &amp;ndash;name=nginx -p 5699:80 -p 443:443 -v /home/zouni88/nginx/conf.d:/etc/nginx/conf.d -v /home/web:/home/web &amp;ndash;restart=always &amp;ndash;user=root &amp;ndash;privileged=true nginx:latest</description>
     </item>
     <item>
       <title></title>

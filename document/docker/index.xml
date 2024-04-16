@@ -44,6 +44,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/docker/minio/run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/docker/minio/run/</guid>
+      <description>docker run -itd -p 9000:9000 -p 9001:9001 --name minio --restart=always -e &amp;#34;MINIO_ROOT_USER=zouni88&amp;#34; -e &amp;#34;MINIO_ROOT_PASSWORD=qaz521..&amp;#34; -v /mnt/data:/usr/local/minio/data -v /mnt/config:/usr/local/minio/config minio/minio server --console-address &amp;#34;:9001&amp;#34; --address &amp;#34;:9000&amp;#34; /data docker run -p 9000:9000 -p 9001:9001 minio/minio server /data --console-address &amp;#34;:9001&amp;#34; </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/pycharm%E4%BD%BF%E7%94%A8docker/</guid>

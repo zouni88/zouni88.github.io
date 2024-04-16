@@ -23,6 +23,20 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</guid>
+      <description>运行这段代码并在浏览器中访问 http://localhost:8080&#xA;package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E7%AE%80%E4%BB%8B/</guid>
+      <description>Gin 是一个 go 写的 web 框架，具有高性能的优点。官方地址：https://github.com/gin-gonic/gin</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/golang/3.gin/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/3.gin/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/</guid>

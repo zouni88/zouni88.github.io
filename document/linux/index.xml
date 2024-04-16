@@ -51,6 +51,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</guid>
+      <description>&#xD;linux 修改时区&#xD;#&#xD;1. 列出所有时区&#xD;#&#xD;timedatectl list-timezones 2. 设置时区&#xD;#&#xD;sudo timedatectl set-timezone Asia/Shanghai </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
@@ -89,7 +96,7 @@
       <link>https://r.xboox.cn/document/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>&#xD;两种方法&#xD;#&#xD;系统启动文件创建，在/etc/rc.local中添加需要执行的脚本，开机就会自动启动 创建systemd服务 1. 拷贝或创建软链接 -&amp;gt; /etc/systemd/system&#xD;#&#xD;sudo cp /lib/systemd/system/rc-local.service /etc/systemd/system&#xD;2. 编辑 rc-local.service 文件，增加如下内容：&#xD;#&#xD;[Install] WantedBy=multi-user.target Alias=rc-local.service 3.使用系统启动文件 创建/etc/rc.local&#xD;#&#xD;#!/bin/sh&#xD;/home/zouni88/dns/alidns dns &amp;amp;&#xD;4. 增加可执行权限&#xD;#&#xD;chmod +x /etc/rc.local&#xD;最后测试&#xD;#&#xD;启动&#xA;systemctl start rc-local.service&#xD;查看状态&#xA;systemctl status rc-local.service&#xD;</description>
+      <description>两种方法&#xD;#&#xD;1. 创建systemd服务&#xD;#&#xD;1.1 创建服务脚本 -&amp;gt; /etc/systemd/system/myddns.service&#xD;#&#xD;[Unit] Description=myservice ddns # 对服务的描述 After=network.target # 指该服务需要在网络服务启动后，再启动 [Service] Type=simple # 表示该服务是一个简单的进程 WorkingDirectory=/root/myddns # 服务所在文件夹 ExecStart=/root/myddns/myddns.sh # 服务启动命令 ExecStop=killall myddns # 服务停止命令 Restart=always # 不管什么原因，都会重启 RestartSec=3　# 重启间隔时间3秒 [Install] WantedBy=multi-user.target 1.2 systemd操作命令&#xD;#&#xD;# systemd 服务操作命令 sudo daemon-reload # 重新加载 systemd 的配置 sudo systemctl start myddns.service # 启动 systemd 服务 sudo systemctl stop myddns.service # 停止 systemd 服务 sudo systemctl enable myddns.</description>
     </item>
     <item>
       <title></title>

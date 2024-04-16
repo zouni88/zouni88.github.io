@@ -285,7 +285,7 @@
       <link>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/C_CXX/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
-      <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库&#xD;#&#xD;error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/</description>
+      <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库&#xD;#&#xD;error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;&amp;ldquo;LD_LIBRARY_PATH&amp;rdquo;:&amp;quot;/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&amp;quot; LD_LIBRARY_PATH=/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/&#xA;严重性&#x9;代码&#x9;说明&#x9;项目&#x9;文件&#x9;行&#x9;禁止显示状态 错误&#x9;CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage</description>
     </item>
     <item>
       <title></title>
@@ -440,6 +440,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</guid>
       <description>文件挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_nginx -p 8888:80 -v d:/index.html:/usr/share/nginx/html/index.html small/nginx&#xA;-v 表示： 宿主机文件路径：容器文件路径 -p 表示: 宿主机ip:容器ip 这里修改了nginx默认启动页面关联到本地&#xA;文件目录挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_mysql -p 33066:3306 -v d:/docker/mysql/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql&#xA;-e 表示：向容器内传参，ex:设定数据库密码：MYSQL_ROOT_PASSWORD=123456 docker run -itd &amp;ndash;name=flask_mysql -p 33066:3306 -v /var/lib/mysql:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/docker/minio/run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/docker/minio/run/</guid>
+      <description>docker run -itd -p 9000:9000 -p 9001:9001 --name minio --restart=always -e &amp;#34;MINIO_ROOT_USER=zouni88&amp;#34; -e &amp;#34;MINIO_ROOT_PASSWORD=qaz521..&amp;#34; -v /mnt/data:/usr/local/minio/data -v /mnt/config:/usr/local/minio/config minio/minio server --console-address &amp;#34;:9001&amp;#34; --address &amp;#34;:9000&amp;#34; /data docker run -p 9000:9000 -p 9001:9001 minio/minio server /data --console-address &amp;#34;:9001&amp;#34; </description>
     </item>
     <item>
       <title></title>
@@ -905,10 +912,290 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/1.%E4%BD%BF%E7%94%A8-GET-POST-PUT-PATCH-DELETE-OPTIONS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/1.%E4%BD%BF%E7%94%A8-GET-POST-PUT-PATCH-DELETE-OPTIONS/</guid>
+      <description>func main() { // Disable Console Color // gin.DisableConsoleColor() // 使用默认中间件创建一个gin路由器 // logger and recovery (crash-free) 中间件 router := gin.Default() router.GET(&amp;#34;/someGet&amp;#34;, getting) router.POST(&amp;#34;/somePost&amp;#34;, posting) router.PUT(&amp;#34;/somePut&amp;#34;, putting) router.DELETE(&amp;#34;/someDelete&amp;#34;, deleting) router.PATCH(&amp;#34;/somePatch&amp;#34;, patching) router.HEAD(&amp;#34;/someHead&amp;#34;, head) router.OPTIONS(&amp;#34;/someOptions&amp;#34;, options) // 默认启动的是 8080端口，也可以自己定义启动端口 router.Run() // router.Run(&amp;#34;:3000&amp;#34;) for a hard coded port } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/10.%E5%86%99%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/10.%E5%86%99%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</guid>
+      <description>func main() { // 禁用控制台颜色 gin.DisableConsoleColor() // 创建记录日志的文件 f, _ := os.Create(&amp;#34;gin.log&amp;#34;) gin.DefaultWriter = io.MultiWriter(f) // 如果需要将日志同时写入文件和控制台，请使用以下代码 // gin.DefaultWriter = io.MultiWriter(f, os.Stdout) router := gin.Default() router.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.String(200, &amp;#34;pong&amp;#34;) }) router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/11.%E8%87%AA%E5%AE%9A%E4%B9%89%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/11.%E8%87%AA%E5%AE%9A%E4%B9%89%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F/</guid>
+      <description>func main() { router := gin.New() // LoggerWithFormatter 中间件会将日志写入 gin.DefaultWriter // By default gin.DefaultWriter = os.Stdout router.Use(gin.LoggerWithFormatter(func(param gin.LogFormatterParams) string { // 你的自定义格式 return fmt.Sprintf(&amp;#34;%s - [%s] \&amp;#34;%s %s %s %d %s \&amp;#34;%s\&amp;#34; %s\&amp;#34;\n&amp;#34;, param.ClientIP, param.TimeStamp.Format(time.RFC1123), param.Method, param.Path, param.Request.Proto, param.StatusCode, param.Latency, param.Request.UserAgent(), param.ErrorMessage, ) })) router.Use(gin.Recovery()) router.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.String(200, &amp;#34;pong&amp;#34;) }) router.Run(&amp;#34;:8080&amp;#34;) } 输出示例：&#xA;::1 - [Fri, 07 Dec 2018 17:04:38 JST] &amp;#34;GET /ping HTTP/1.1 200 122.767µs &amp;#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/12.%E6%A8%A1%E5%9E%8B%E7%BB%91%E5%AE%9A%E5%92%8C%E9%AA%8C%E8%AF%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/12.%E6%A8%A1%E5%9E%8B%E7%BB%91%E5%AE%9A%E5%92%8C%E9%AA%8C%E8%AF%81/</guid>
+      <description>若要将请求主体绑定到结构体中，请使用模型绑定，目前支持JSON、XML、YAML和标准表单值(foo=bar&amp;amp;boo=baz)的绑定。&#xA;Gin使用 go-playground/validator.v8 验证参数，查看完整文档。&#xA;需要在绑定的字段上设置tag，比如，绑定格式为json，需要这样设置 json:&amp;ldquo;fieldname&amp;rdquo; 。&#xA;此外，Gin还提供了两套绑定方法：&#xA;Must bind Methods - Bind, BindJSON, BindXML, BindQuery, BindYAML Behavior - 这些方法底层使用 MustBindWith，如果存在绑定错误，请求将被以下指令中止 c.AbortWithError(400, err).SetType(ErrorTypeBind)，响应状态代码会被设置为400，请求头Content-Type被设置为text/plain; charset=utf-8。注意，如果你试图在此之后设置响应代码，将会发出一个警告 [GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 422，如果你希望更好地控制行为，请使用ShouldBind相关的方法 Should bind Methods - ShouldBind, ShouldBindJSON, ShouldBindXML, ShouldBindQuery, ShouldBindYAML Behavior - 这些方法底层使用 ShouldBindWith，如果存在绑定错误，则返回错误，开发人员可以正确处理请求和错误。 当我们使用绑定方法时，Gin会根据Content-Type推断出使用哪种绑定器，如果你确定你绑定的是什么，你可以使用MustBindWith或者BindingWith。&#xA;你还可以给字段指定特定规则的修饰符，如果一个字段用binding:&amp;quot;required&amp;quot;修饰，并且在绑定时该字段的值为空，那么将返回一个错误。&#xA;// 绑定为json type Login struct { User string `form:&amp;#34;user&amp;#34; json:&amp;#34;user&amp;#34; xml:&amp;#34;user&amp;#34; binding:&amp;#34;required&amp;#34;` Password string `form:&amp;#34;password&amp;#34; json:&amp;#34;password&amp;#34; xml:&amp;#34;password&amp;#34; binding:&amp;#34;required&amp;#34;` } func main() { router := gin.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/13.%E8%87%AA%E5%AE%9A%E4%B9%89%E9%AA%8C%E8%AF%81%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/13.%E8%87%AA%E5%AE%9A%E4%B9%89%E9%AA%8C%E8%AF%81%E5%99%A8/</guid>
+      <description>Gin允许我们自定义参数验证器，参考1，参考2，参考3&#xA;package main import ( &amp;#34;net/http&amp;#34; &amp;#34;reflect&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;github.com/gin-gonic/gin/binding&amp;#34; &amp;#34;gopkg.in/go-playground/validator.v8&amp;#34; ) // Booking contains binded and validated data. type Booking struct { CheckIn time.Time `form:&amp;#34;check_in&amp;#34; binding:&amp;#34;required,bookabledate&amp;#34; time_format:&amp;#34;2006-01-02&amp;#34;` CheckOut time.Time `form:&amp;#34;check_out&amp;#34; binding:&amp;#34;required,gtfield=CheckIn&amp;#34; time_format:&amp;#34;2006-01-02&amp;#34;` } func bookableDate( v *validator.Validate, topStruct reflect.Value, currentStructOrField reflect.Value, field reflect.Value, fieldType reflect.Type, fieldKind reflect.Kind, param string, ) bool { if date, ok := field.Interface().(time.Time); ok { today := time.Now() if today.Year() &amp;gt; date.Year() || today.YearDay() &amp;gt; date.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/14.%E5%8F%AA%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/14.%E5%8F%AA%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0/</guid>
+      <description>ShouldBindQuery 函数只绑定Get参数，不绑定post数据，查看详细信息&#xA;package main import ( &amp;#34;log&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) type Person struct { Name string `form:&amp;#34;name&amp;#34;` Address string `form:&amp;#34;address&amp;#34;` } func main() { route := gin.Default() route.Any(&amp;#34;/testing&amp;#34;, startPage) route.Run(&amp;#34;:8085&amp;#34;) } func startPage(c *gin.Context) { var person Person if c.ShouldBindQuery(&amp;amp;person) == nil { log.Println(&amp;#34;====== Only Bind By Query String ======&amp;#34;) log.Println(person.Name) log.Println(person.Address) } c.String(200, &amp;#34;Success&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/15.%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0%E6%88%96%E8%80%85Post%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/15.%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0%E6%88%96%E8%80%85Post%E5%8F%82%E6%95%B0/</guid>
+      <description>查看详细信息，这个例子很有用，可以自己实践一下&#xA;package main import ( &amp;#34;log&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) type Person struct { Name string `form:&amp;#34;name&amp;#34;` Address string `form:&amp;#34;address&amp;#34;` Birthday time.Time `form:&amp;#34;birthday&amp;#34; time_format:&amp;#34;2006-01-02&amp;#34; time_utc:&amp;#34;1&amp;#34;` } func main() { route := gin.Default() route.GET(&amp;#34;/testing&amp;#34;, startPage) route.Run(&amp;#34;:8085&amp;#34;) } func startPage(c *gin.Context) { var person Person // If `GET`, only `Form` binding engine (`query`) used. // 如果是Get，那么接收不到请求中的Post的数据？？ // 如果是Post, 首先判断 `content-type` 的类型 `JSON` or `XML`, 然后使用对应的绑定器获取数据. // See more at https://github.com/gin-gonic/gin/blob/master/binding/binding.go#L48 if c.ShouldBind(&amp;amp;person) == nil { log.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/16.%E7%BB%91%E5%AE%9Auri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/16.%E7%BB%91%E5%AE%9Auri/</guid>
+      <description>package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; type Person struct { ID string `uri:&amp;#34;id&amp;#34; binding:&amp;#34;required,uuid&amp;#34;` Name string `uri:&amp;#34;name&amp;#34; binding:&amp;#34;required&amp;#34;` } func main() { route := gin.Default() route.GET(&amp;#34;/:name/:id&amp;#34;, func(c *gin.Context) { var person Person if err := c.ShouldBindUri(&amp;amp;person); err != nil { c.JSON(400, gin.H{&amp;#34;msg&amp;#34;: err}) return } c.JSON(200, gin.H{&amp;#34;name&amp;#34;: person.Name, &amp;#34;uuid&amp;#34;: person.ID}) }) route.Run(&amp;#34;:8088&amp;#34;) } 测试用例：&#xA;$ curl -v localhost:8088/thinkerou/987fbc97-4bed-5078-9f07-9141ba07c9f3 $ curl -v localhost:8088/thinkerou/not-uuid </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/17.%E7%BB%91%E5%AE%9AHTML%E5%A4%8D%E9%80%89%E6%A1%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/17.%E7%BB%91%E5%AE%9AHTML%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
+      <description>查看详细信息&#xA;main.go&#xA;... type myForm struct { Colors []string `form:&amp;#34;colors[]&amp;#34;` } ... func formHandler(c *gin.Context) { var fakeForm myForm c.ShouldBind(&amp;amp;fakeForm) c.JSON(200, gin.H{&amp;#34;color&amp;#34;: fakeForm.Colors}) } ... form.html&#xA;&amp;lt;form action=&amp;#34;/&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Check some colors&amp;lt;/p&amp;gt; &amp;lt;label for=&amp;#34;red&amp;#34;&amp;gt;Red&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; name=&amp;#34;colors[]&amp;#34; value=&amp;#34;red&amp;#34; id=&amp;#34;red&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;green&amp;#34;&amp;gt;Green&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; name=&amp;#34;colors[]&amp;#34; value=&amp;#34;green&amp;#34; id=&amp;#34;green&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;blue&amp;#34;&amp;gt;Blue&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; name=&amp;#34;colors[]&amp;#34; value=&amp;#34;blue&amp;#34; id=&amp;#34;blue&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; result:&#xA;{&amp;#34;color&amp;#34;:[&amp;#34;red&amp;#34;,&amp;#34;green&amp;#34;,&amp;#34;blue&amp;#34;]} </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/18.%E7%BB%91%E5%AE%9APost%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/18.%E7%BB%91%E5%AE%9APost%E5%8F%82%E6%95%B0/</guid>
+      <description>package main import ( &amp;#34;github.com/gin-gonic/gin&amp;#34; ) type LoginForm struct { User string `form:&amp;#34;user&amp;#34; binding:&amp;#34;required&amp;#34;` Password string `form:&amp;#34;password&amp;#34; binding:&amp;#34;required&amp;#34;` } func main() { router := gin.Default() router.POST(&amp;#34;/login&amp;#34;, func(c *gin.Context) { // you can bind multipart form with explicit binding declaration: // c.ShouldBindWith(&amp;amp;form, binding.Form) // or you can simply use autobinding with ShouldBind method: var form LoginForm // in this case proper binding will be automatically selected if c.ShouldBind(&amp;amp;form) == nil { if form.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/19.XMLJSONYAML%E5%92%8CProtoBuf-%E6%B8%B2%E6%9F%93%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/19.XMLJSONYAML%E5%92%8CProtoBuf-%E6%B8%B2%E6%9F%93%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/</guid>
+      <description>即接口返回的数据格式&#xA;func main() { r := gin.Default() // gin.H is a shortcut for map[string]interface{} r.GET(&amp;#34;/someJSON&amp;#34;, func(c *gin.Context) { c.JSON(http.StatusOK, gin.H{&amp;#34;message&amp;#34;: &amp;#34;hey&amp;#34;, &amp;#34;status&amp;#34;: http.StatusOK}) }) r.GET(&amp;#34;/moreJSON&amp;#34;, func(c *gin.Context) { // You also can use a struct var msg struct { Name string `json:&amp;#34;user&amp;#34;` Message string Number int } msg.Name = &amp;#34;Lena&amp;#34; msg.Message = &amp;#34;hey&amp;#34; msg.Number = 123 // Note that msg.Name becomes &amp;#34;user&amp;#34; in the JSON // Will output : {&amp;#34;user&amp;#34;: &amp;#34;Lena&amp;#34;, &amp;#34;Message&amp;#34;: &amp;#34;hey&amp;#34;, &amp;#34;Number&amp;#34;: 123} c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/2.%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/2.%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <description>func main() { router := gin.Default() // 此规则能够匹配/user/john这种格式，但不能匹配/user/ 或 /user这种格式 router.GET(&amp;#34;/user/:name&amp;#34;, func(c *gin.Context) { name := c.Param(&amp;#34;name&amp;#34;) c.String(http.StatusOK, &amp;#34;Hello %s&amp;#34;, name) }) // 但是，这个规则既能匹配/user/john/格式也能匹配/user/john/send这种格式 // 如果没有其他路由器匹配/user/john，它将重定向到/user/john/ router.GET(&amp;#34;/user/:name/*action&amp;#34;, func(c *gin.Context) { name := c.Param(&amp;#34;name&amp;#34;) action := c.Param(&amp;#34;action&amp;#34;) message := name + &amp;#34; is &amp;#34; + action c.String(http.StatusOK, message) }) router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/20.%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/20.%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</guid>
+      <description>访问静态文件需要先设置路径&#xA;func main() { router := gin.Default() router.Static(&amp;#34;/assets&amp;#34;, &amp;#34;./assets&amp;#34;) router.StaticFS(&amp;#34;/more_static&amp;#34;, http.Dir(&amp;#34;my_file_system&amp;#34;)) router.StaticFile(&amp;#34;/favicon.ico&amp;#34;, &amp;#34;./resources/favicon.ico&amp;#34;) // Listen and serve on 0.0.0.0:8080 router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/21.%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%89%E6%96%B9%E8%8E%B7%E5%8F%96%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/21.%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%89%E6%96%B9%E8%8E%B7%E5%8F%96%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <description>func main() { router := gin.Default() router.GET(&amp;#34;/someDataFromReader&amp;#34;, func(c *gin.Context) { response, err := http.Get(&amp;#34;https://raw.githubusercontent.com/gin-gonic/logo/master/color.png&amp;#34;) if err != nil || response.StatusCode != http.StatusOK { c.Status(http.StatusServiceUnavailable) return } reader := response.Body contentLength := response.ContentLength contentType := response.Header.Get(&amp;#34;Content-Type&amp;#34;) extraHeaders := map[string]string{ &amp;#34;Content-Disposition&amp;#34;: `attachment; filename=&amp;#34;gopher.png&amp;#34;`, } c.DataFromReader(http.StatusOK, contentLength, contentType, reader, extraHeaders) }) router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/22.HTML%E6%B8%B2%E6%9F%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/22.HTML%E6%B8%B2%E6%9F%93/</guid>
+      <description>使用LoadHTMLGlob() 或者 LoadHTMLFiles()&#xA;func main() { router := gin.Default() router.LoadHTMLGlob(&amp;#34;templates/*&amp;#34;) //router.LoadHTMLFiles(&amp;#34;templates/template1.html&amp;#34;, &amp;#34;templates/template2.html&amp;#34;) router.GET(&amp;#34;/index&amp;#34;, func(c *gin.Context) { c.HTML(http.StatusOK, &amp;#34;index.tmpl&amp;#34;, gin.H{ &amp;#34;title&amp;#34;: &amp;#34;Main website&amp;#34;, }) }) router.Run(&amp;#34;:8080&amp;#34;) } templates/index.tmpl&#xA;&amp;lt;html&amp;gt; &amp;lt;h1&amp;gt; {{ .title }} &amp;lt;/h1&amp;gt; &amp;lt;/html&amp;gt; 在不同目录中使用具有相同名称的模板&#xA;func main() { router := gin.Default() router.LoadHTMLGlob(&amp;#34;templates/**/*&amp;#34;) router.GET(&amp;#34;/posts/index&amp;#34;, func(c *gin.Context) { c.HTML(http.StatusOK, &amp;#34;posts/index.tmpl&amp;#34;, gin.H{ &amp;#34;title&amp;#34;: &amp;#34;Posts&amp;#34;, }) }) router.GET(&amp;#34;/users/index&amp;#34;, func(c *gin.Context) { c.HTML(http.StatusOK, &amp;#34;users/index.tmpl&amp;#34;, gin.H{ &amp;#34;title&amp;#34;: &amp;#34;Users&amp;#34;, }) }) router.Run(&amp;#34;:8080&amp;#34;) } templates/posts/index.tmpl&#xA;{{ define &amp;#34;posts/index.tmpl&amp;#34; }} &amp;lt;html&amp;gt;&amp;lt;h1&amp;gt; {{ .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/23.%E5%A4%9A%E4%B8%AA%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/23.%E5%A4%9A%E4%B8%AA%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</guid>
+      <description>Gin默认情况下只允许使用一个html模板文件（即一次可以加载多个模板文件），点击这里查看实现案例</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/24.%E9%87%8D%E5%AE%9A%E5%90%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/24.%E9%87%8D%E5%AE%9A%E5%90%91/</guid>
+      <description>发布HTTP重定向很容易，支持内部和外部链接&#xA;r.GET(&amp;#34;/test&amp;#34;, func(c *gin.Context) { c.Redirect(http.StatusMovedPermanently, &amp;#34;http://www.google.com/&amp;#34;) }) Gin路由重定向，使用如下的HandleContext&#xA;r.GET(&amp;#34;/test&amp;#34;, func(c *gin.Context) { c.Request.URL.Path = &amp;#34;/test2&amp;#34; r.HandleContext(c) }) r.GET(&amp;#34;/test2&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{&amp;#34;hello&amp;#34;: &amp;#34;world&amp;#34;}) }) </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/25.%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/25.%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%AD%E9%97%B4%E4%BB%B6/</guid>
+      <description>func Logger() gin.HandlerFunc { return func(c *gin.Context) { t := time.Now() // Set example variable c.Set(&amp;#34;example&amp;#34;, &amp;#34;12345&amp;#34;) // before request c.Next() // after request latency := time.Since(t) log.Print(latency) // access the status we are sending status := c.Writer.Status() log.Println(status) } } func main() { r := gin.New() r.Use(Logger()) r.GET(&amp;#34;/test&amp;#34;, func(c *gin.Context) { example := c.MustGet(&amp;#34;example&amp;#34;).(string) // it would print: &amp;#34;12345&amp;#34; log.Println(example) }) // Listen and serve on 0.0.0.0:8080 r.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/26.%E4%BD%BF%E7%94%A8BasicAuth%E9%AA%8C%E8%AF%81%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/26.%E4%BD%BF%E7%94%A8BasicAuth%E9%AA%8C%E8%AF%81%E4%B8%AD%E9%97%B4%E4%BB%B6/</guid>
+      <description>// simulate some private data var secrets = gin.H{ &amp;#34;foo&amp;#34;: gin.H{&amp;#34;email&amp;#34;: &amp;#34;foo@bar.com&amp;#34;, &amp;#34;phone&amp;#34;: &amp;#34;123433&amp;#34;}, &amp;#34;austin&amp;#34;: gin.H{&amp;#34;email&amp;#34;: &amp;#34;austin@example.com&amp;#34;, &amp;#34;phone&amp;#34;: &amp;#34;666&amp;#34;}, &amp;#34;lena&amp;#34;: gin.H{&amp;#34;email&amp;#34;: &amp;#34;lena@guapa.com&amp;#34;, &amp;#34;phone&amp;#34;: &amp;#34;523443&amp;#34;}, } func main() { r := gin.Default() // Group using gin.BasicAuth() middleware // gin.Accounts is a shortcut for map[string]string authorized := r.Group(&amp;#34;/admin&amp;#34;, gin.BasicAuth(gin.Accounts{ &amp;#34;foo&amp;#34;: &amp;#34;bar&amp;#34;, &amp;#34;austin&amp;#34;: &amp;#34;1234&amp;#34;, &amp;#34;lena&amp;#34;: &amp;#34;hello2&amp;#34;, &amp;#34;manu&amp;#34;: &amp;#34;4321&amp;#34;, })) // /admin/secrets endpoint // hit &amp;#34;localhost:8080/admin/secrets authorized.GET(&amp;#34;/secrets&amp;#34;, func(c *gin.Context) { // get user, it was set by the BasicAuth middleware user := c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/27.%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8Goroutines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/27.%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8Goroutines/</guid>
+      <description>在中间件或处理程序中启动新的Goroutines时，你不应该使用其中的原始上下文，你必须使用只读副本（c.Copy()）&#xA;func main() { r := gin.Default() r.GET(&amp;#34;/long_async&amp;#34;, func(c *gin.Context) { // 创建要在goroutine中使用的副本 cCp := c.Copy() go func() { // simulate a long task with time.Sleep(). 5 seconds time.Sleep(5 * time.Second) // 这里使用你创建的副本 log.Println(&amp;#34;Done! in path &amp;#34; + cCp.Request.URL.Path) }() }) r.GET(&amp;#34;/long_sync&amp;#34;, func(c *gin.Context) { // simulate a long task with time.Sleep(). 5 seconds time.Sleep(5 * time.Second) // 这里没有使用goroutine，所以不用使用副本 log.Println(&amp;#34;Done! in path &amp;#34; + c.Request.URL.Path) }) // Listen and serve on 0.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/28.%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/28.%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E9%85%8D%E7%BD%AE/</guid>
+      <description>直接像这样使用http.ListenAndServe()&#xA;func main() { router := gin.Default() http.ListenAndServe(&amp;#34;:8080&amp;#34;, router) } 或者&#xA;func main() { router := gin.Default() s := &amp;amp;http.Server{ Addr: &amp;#34;:8080&amp;#34;, Handler: router, ReadTimeout: 10 * time.Second, WriteTimeout: 10 * time.Second, MaxHeaderBytes: 1 &amp;lt;&amp;lt; 20, } s.ListenAndServe() } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/29.%E6%94%AF%E6%8C%81Lets-Encrypt%E8%AF%81%E4%B9%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/29.%E6%94%AF%E6%8C%81Lets-Encrypt%E8%AF%81%E4%B9%A6/</guid>
+      <description>1行代码实现LetsEncrypt HTTPS服务器&#xA;package main import ( &amp;#34;log&amp;#34; &amp;#34;github.com/gin-gonic/autotls&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) func main() { r := gin.Default() // Ping handler r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.String(200, &amp;#34;pong&amp;#34;) }) log.Fatal(autotls.Run(r, &amp;#34;example1.com&amp;#34;, &amp;#34;example2.com&amp;#34;)) } 自定义autocert管理器的示例&#xA;package main import ( &amp;#34;log&amp;#34; &amp;#34;github.com/gin-gonic/autotls&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;golang.org/x/crypto/acme/autocert&amp;#34; ) func main() { r := gin.Default() // Ping handler r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.String(200, &amp;#34;pong&amp;#34;) }) m := autocert.Manager{ Prompt: autocert.AcceptTOS, HostPolicy: autocert.HostWhitelist(&amp;#34;example1.com&amp;#34;, &amp;#34;example2.com&amp;#34;), Cache: autocert.DirCache(&amp;#34;/var/www/.cache&amp;#34;), } log.Fatal(autotls.RunWithManager(r, &amp;amp;m)) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/3.%E8%8E%B7%E5%8F%96Get%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/3.%E8%8E%B7%E5%8F%96Get%E5%8F%82%E6%95%B0/</guid>
+      <description>func main() { router := gin.Default() // 匹配的url格式: /welcome?firstname=Jane&amp;amp;lastname=Doe router.GET(&amp;#34;/welcome&amp;#34;, func(c *gin.Context) { firstname := c.DefaultQuery(&amp;#34;firstname&amp;#34;, &amp;#34;Guest&amp;#34;) lastname := c.Query(&amp;#34;lastname&amp;#34;) // 是 c.Request.URL.Query().Get(&amp;#34;lastname&amp;#34;) 的简写 c.String(http.StatusOK, &amp;#34;Hello %s %s&amp;#34;, firstname, lastname) }) router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/30.Gin%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/30.Gin%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</guid>
+      <description>请参阅问题并尝试以下示例&#xA;package main import ( &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; &amp;#34;golang.org/x/sync/errgroup&amp;#34; ) var ( g errgroup.Group ) func router01() http.Handler { e := gin.New() e.Use(gin.Recovery()) e.GET(&amp;#34;/&amp;#34;, func(c *gin.Context) { c.JSON( http.StatusOK, gin.H{ &amp;#34;code&amp;#34;: http.StatusOK, &amp;#34;error&amp;#34;: &amp;#34;Welcome server 01&amp;#34;, }, ) }) return e } func router02() http.Handler { e := gin.New() e.Use(gin.Recovery()) e.GET(&amp;#34;/&amp;#34;, func(c *gin.Context) { c.JSON( http.StatusOK, gin.H{ &amp;#34;code&amp;#34;: http.StatusOK, &amp;#34;error&amp;#34;: &amp;#34;Welcome server 02&amp;#34;, }, ) }) return e } func main() { server01 := &amp;amp;http.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/31.%E4%BC%98%E9%9B%85%E9%87%8D%E5%90%AF%E6%88%96%E5%81%9C%E6%AD%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/31.%E4%BC%98%E9%9B%85%E9%87%8D%E5%90%AF%E6%88%96%E5%81%9C%E6%AD%A2/</guid>
+      <description>想要优雅地重启或停止你的Web服务器，使用下面的方法&#xA;我们可以使用fvbock/endless来替换默认的ListenAndServe，有关详细信息，请参阅问题＃296&#xA;router := gin.Default() router.GET(&amp;#34;/&amp;#34;, handler) // [...] endless.ListenAndServe(&amp;#34;:4242&amp;#34;, router) 一个替换方案&#xA;manners：一个Go HTTP服务器，能优雅的关闭 graceful：Graceful是一个go的包，支持优雅地关闭http.Handler服务器 grace：对Go服务器进行优雅的重启和零停机部署 如果你的Go版本是1.8，你可能不需要使用这个库，考虑使用http.Server内置的&#xD;Shutdown()方法进行优雅关闭，查看&#xD;例子&#xA;// +build go1.8 package main import ( &amp;#34;context&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/signal&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) func main() { router := gin.Default() router.GET(&amp;#34;/&amp;#34;, func(c *gin.Context) { time.Sleep(5 * time.Second) c.String(http.StatusOK, &amp;#34;Welcome Gin Server&amp;#34;) }) srv := &amp;amp;http.Server{ Addr: &amp;#34;:8080&amp;#34;, Handler: router, } go func() { // service connections if err := srv.ListenAndServe(); err !</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/32.%E6%9E%84%E5%BB%BA%E5%8C%85%E5%90%AB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/32.%E6%9E%84%E5%BB%BA%E5%8C%85%E5%90%AB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/</guid>
+      <description>你可以使用&#xD;go-assets将服务器构建成一个包含模板的二进制文件&#xA;func main() { r := gin.New() t, err := loadTemplate() if err != nil { panic(err) } r.SetHTMLTemplate(t) r.GET(&amp;#34;/&amp;#34;, func(c *gin.Context) { c.HTML(http.StatusOK, &amp;#34;/html/index.tmpl&amp;#34;,nil) }) r.Run(&amp;#34;:8080&amp;#34;) } // loadTemplate loads templates embedded by go-assets-builder func loadTemplate() (*template.Template, error) { t := template.New(&amp;#34;&amp;#34;) for name, file := range Assets.Files { if file.IsDir() || !strings.HasSuffix(name, &amp;#34;.tmpl&amp;#34;) { continue } h, err := ioutil.ReadAll(file) if err != nil { return nil, err } t, err = t.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/33.%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84%E7%BB%91%E5%AE%9A%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/33.%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84%E7%BB%91%E5%AE%9A%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</guid>
+      <description>以下示例使用自定义结构&#xA;type StructA struct { FieldA string `form:&amp;#34;field_a&amp;#34;` } type StructB struct { NestedStruct StructA FieldB string `form:&amp;#34;field_b&amp;#34;` } type StructC struct { NestedStructPointer *StructA FieldC string `form:&amp;#34;field_c&amp;#34;` } type StructD struct { NestedAnonyStruct struct { FieldX string `form:&amp;#34;field_x&amp;#34;` } FieldD string `form:&amp;#34;field_d&amp;#34;` } func GetDataB(c *gin.Context) { var b StructB c.Bind(&amp;amp;b) c.JSON(200, gin.H{ &amp;#34;a&amp;#34;: b.NestedStruct, &amp;#34;b&amp;#34;: b.FieldB, }) } func GetDataC(c *gin.Context) { var b StructC c.Bind(&amp;amp;b) c.JSON(200, gin.H{ &amp;#34;a&amp;#34;: b.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/34.%E5%B0%86%E8%AF%B7%E6%B1%82%E4%BD%93%E7%BB%91%E5%AE%9A%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/34.%E5%B0%86%E8%AF%B7%E6%B1%82%E4%BD%93%E7%BB%91%E5%AE%9A%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD/</guid>
+      <description>绑定请求体的常规方法使用c.Request.Body，并且不能多次调用&#xA;type formA struct { Foo string `json:&amp;#34;foo&amp;#34; xml:&amp;#34;foo&amp;#34; binding:&amp;#34;required&amp;#34;` } type formB struct { Bar string `json:&amp;#34;bar&amp;#34; xml:&amp;#34;bar&amp;#34; binding:&amp;#34;required&amp;#34;` } func SomeHandler(c *gin.Context) { objA := formA{} objB := formB{} // This c.ShouldBind consumes c.Request.Body and it cannot be reused. if errA := c.ShouldBind(&amp;amp;objA); errA == nil { c.String(http.StatusOK, `the body should be formA`) // Always an error is occurred by this because c.Request.Body is EOF now. } else if errB := c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/35.HTTP-2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E9%80%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/35.HTTP-2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E9%80%81/</guid>
+      <description>http.Pusher只支持Go 1.8或更高版本，有关详细信息，请参阅&#xD;golang博客&#xA;package main import ( &amp;#34;html/template&amp;#34; &amp;#34;log&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) var html = template.Must(template.New(&amp;#34;https&amp;#34;).Parse(` &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Https Test&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;/assets/app.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 style=&amp;#34;color:red;&amp;#34;&amp;gt;Welcome, Ginner!&amp;lt;/h1&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; `)) func main() { r := gin.Default() r.Static(&amp;#34;/assets&amp;#34;, &amp;#34;./assets&amp;#34;) r.SetHTMLTemplate(html) r.GET(&amp;#34;/&amp;#34;, func(c *gin.Context) { if pusher := c.Writer.Pusher(); pusher != nil { // use pusher.Push() to do server push if err := pusher.Push(&amp;#34;/assets/app.js&amp;#34;, nil); err != nil { log.Printf(&amp;#34;Failed to push: %v&amp;#34;, err) } } c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/36.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1%E6%97%A5%E5%BF%97%E7%9A%84%E6%A0%BC%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/36.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1%E6%97%A5%E5%BF%97%E7%9A%84%E6%A0%BC%E5%BC%8F/</guid>
+      <description>默认的路由日志是这样的：&#xA;[GIN-debug] POST /foo --&amp;gt; main.main.func1 (3 handlers) [GIN-debug] GET /bar --&amp;gt; main.main.func2 (3 handlers) [GIN-debug] GET /status --&amp;gt; main.main.func3 (3 handlers) 如果你想以给定的格式记录这些信息（例如 JSON，键值对或其他格式），你可以使用gin.DebugPrintRouteFunc来定义格式，在下面的示例中，我们使用标准日志包记录路由日志，你可以使用其他适合你需求的日志工具&#xA;import ( &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) func main() { r := gin.Default() gin.DebugPrintRouteFunc = func(httpMethod, absolutePath, handlerName string, nuHandlers int) { log.Printf(&amp;#34;endpoint %v %v %v %v\n&amp;#34;, httpMethod, absolutePath, handlerName, nuHandlers) } r.POST(&amp;#34;/foo&amp;#34;, func(c *gin.Context) { c.JSON(http.StatusOK, &amp;#34;foo&amp;#34;) }) r.GET(&amp;#34;/bar&amp;#34;, func(c *gin.Context) { c.JSON(http.StatusOK, &amp;#34;bar&amp;#34;) }) r.GET(&amp;#34;/status&amp;#34;, func(c *gin.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/37.%E8%AE%BE%E7%BD%AE%E5%B9%B6%E8%8E%B7%E5%8F%96cookie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/37.%E8%AE%BE%E7%BD%AE%E5%B9%B6%E8%8E%B7%E5%8F%96cookie/</guid>
+      <description>import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) func main() { router := gin.Default() router.GET(&amp;#34;/cookie&amp;#34;, func(c *gin.Context) { cookie, err := c.Cookie(&amp;#34;gin_cookie&amp;#34;) if err != nil { cookie = &amp;#34;NotSet&amp;#34; c.SetCookie(&amp;#34;gin_cookie&amp;#34;, &amp;#34;test&amp;#34;, 3600, &amp;#34;/&amp;#34;, &amp;#34;localhost&amp;#34;, false, true) } fmt.Printf(&amp;#34;Cookie value: %s \n&amp;#34;, cookie) }) router.Run() } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/38.%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/38.%E6%B5%8B%E8%AF%95/</guid>
+      <description>net/http/httptest包是http测试的首选方式&#xA;package main func setupRouter() *gin.Engine { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.String(200, &amp;#34;pong&amp;#34;) }) return r } func main() { r := setupRouter() r.Run(&amp;#34;:8080&amp;#34;) } 测试上面的示例代码&#xA;package main import ( &amp;#34;net/http&amp;#34; &amp;#34;net/http/httptest&amp;#34; &amp;#34;testing&amp;#34; &amp;#34;github.com/stretchr/testify/assert&amp;#34; ) func TestPingRoute(t *testing.T) { router := setupRouter() w := httptest.NewRecorder() req, _ := http.NewRequest(&amp;#34;GET&amp;#34;, &amp;#34;/ping&amp;#34;, nil) router.ServeHTTP(w, req) assert.Equal(t, 200, w.Code) assert.Equal(t, &amp;#34;pong&amp;#34;, w.Body.String()) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/4.%E8%8E%B7%E5%8F%96Post%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/4.%E8%8E%B7%E5%8F%96Post%E5%8F%82%E6%95%B0/</guid>
+      <description>func main() { router := gin.Default() router.POST(&amp;#34;/form_post&amp;#34;, func(c *gin.Context) { message := c.PostForm(&amp;#34;message&amp;#34;) nick := c.DefaultPostForm(&amp;#34;nick&amp;#34;, &amp;#34;anonymous&amp;#34;) // 此方法可以设置默认值 c.JSON(200, gin.H{ &amp;#34;status&amp;#34;: &amp;#34;posted&amp;#34;, &amp;#34;message&amp;#34;: message, &amp;#34;nick&amp;#34;: nick, }) }) router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/5.Get-&#43;-Post-%E6%B7%B7%E5%90%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/5.Get-&#43;-Post-%E6%B7%B7%E5%90%88/</guid>
+      <description>示例： POST /post?id=1234&amp;amp;page=1 HTTP/1.1 Content-Type: application/x-www-form-urlencoded name=manu&amp;amp;message=this_is_great&#xA;func main() { router := gin.Default() router.POST(&amp;#34;/post&amp;#34;, func(c *gin.Context) { id := c.Query(&amp;#34;id&amp;#34;) page := c.DefaultQuery(&amp;#34;page&amp;#34;, &amp;#34;0&amp;#34;) name := c.PostForm(&amp;#34;name&amp;#34;) message := c.PostForm(&amp;#34;message&amp;#34;) fmt.Printf(&amp;#34;id: %s; page: %s; name: %s; message: %s&amp;#34;, id, page, name, message) }) router.Run(&amp;#34;:8080&amp;#34;) } 结果：id: 1234; page: 1; name: manu; message: this_is_great </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/6.%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/6.%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</guid>
+      <description>单文件上传&#xD;#&#xD;参考问题 #774，细节 example code&#xA;慎用 file.Filename ，参考 Content-Disposition on MDN 和 #1693&#xA;上传文件的文件名可以由用户自定义，所以可能包含非法字符串，为了安全起见，应该由服务端统一文件名规则&#xA;func main() { router := gin.Default() // 给表单限制上传大小 (默认 32 MiB) // router.MaxMultipartMemory = 8 &amp;lt;&amp;lt; 20 // 8 MiB router.POST(&amp;#34;/upload&amp;#34;, func(c *gin.Context) { // 单文件 file, _ := c.FormFile(&amp;#34;file&amp;#34;) log.Println(file.Filename) // 上传文件到指定的路径 // c.SaveUploadedFile(file, dst) c.String(http.StatusOK, fmt.Sprintf(&amp;#34;&amp;#39;%s&amp;#39; uploaded!&amp;#34;, file.Filename)) }) router.Run(&amp;#34;:8080&amp;#34;) } curl 测试：&#xA;curl -X POST http://localhost:8080/upload \ -F &amp;#34;file=@/Users/appleboy/test.zip&amp;#34; \ -H &amp;#34;Content-Type: multipart/form-data&amp;#34; 多文件上传&#xD;#&#xD;详细示例：example code</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/7.%E8%B7%AF%E7%94%B1%E5%88%86%E7%BB%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/7.%E8%B7%AF%E7%94%B1%E5%88%86%E7%BB%84/</guid>
+      <description>func main() { router := gin.Default() // Simple group: v1 v1 := router.Group(&amp;#34;/v1&amp;#34;) { v1.POST(&amp;#34;/login&amp;#34;, loginEndpoint) v1.POST(&amp;#34;/submit&amp;#34;, submitEndpoint) v1.POST(&amp;#34;/read&amp;#34;, readEndpoint) } // Simple group: v2 v2 := router.Group(&amp;#34;/v2&amp;#34;) { v2.POST(&amp;#34;/login&amp;#34;, loginEndpoint) v2.POST(&amp;#34;/submit&amp;#34;, submitEndpoint) v2.POST(&amp;#34;/read&amp;#34;, readEndpoint) } router.Run(&amp;#34;:8080&amp;#34;) } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/8.%E6%97%A0%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/8.%E6%97%A0%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%90%AF%E5%8A%A8/</guid>
+      <description>使用&#xA;r := gin.New() 代替&#xA;// 默认启动方式，包含 Logger、Recovery 中间件 r := gin.Default() </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/9.%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/9.%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/</guid>
+      <description>func main() { // 创建一个不包含中间件的路由器 r := gin.New() // 全局中间件 // 使用 Logger 中间件 r.Use(gin.Logger()) // 使用 Recovery 中间件 r.Use(gin.Recovery()) // 路由添加中间件，可以添加任意多个 r.GET(&amp;#34;/benchmark&amp;#34;, MyBenchLogger(), benchEndpoint) // 路由组中添加中间件 // authorized := r.Group(&amp;#34;/&amp;#34;, AuthRequired()) // exactly the same as: authorized := r.Group(&amp;#34;/&amp;#34;) // per group middleware! in this case we use the custom created // AuthRequired() middleware just in the &amp;#34;authorized&amp;#34; group. authorized.Use(AuthRequired()) { authorized.POST(&amp;#34;/login&amp;#34;, loginEndpoint) authorized.POST(&amp;#34;/submit&amp;#34;, submitEndpoint) authorized.POST(&amp;#34;/read&amp;#34;, readEndpoint) // nested group testing := authorized.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/golang/3.gin/%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/3.gin/%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</guid>
       <description>跨域请求在网上找了很多文章都是下面这种做法：&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { method := c.Request.Method fmt.Println(&amp;#34;啥玩意儿的&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Origin&amp;#34;, &amp;#34;*&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type,AccessToken,X-CSRF-Token, Authorization, Token&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Methods&amp;#34;, &amp;#34;POST, GET, OPTIONS&amp;#34;) c.Header(&amp;#34;Access-Control-Expose-Headers&amp;#34;, &amp;#34;Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) if method == &amp;#34;OPTIONS&amp;#34; { c.AbortWithStatus(http.StatusNoContent) } c.Next() } } 但是并不好使用，所以又找到下面这种方法，总算是搞明白了啥意思了！&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { origin := c.Request.Header.Get(&amp;#34;origin&amp;#34;) if len(origin) == 0 { origin = c.Request.Header.Get(&amp;#34;Origin&amp;#34;) } c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Origin&amp;#34;, origin) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With&amp;#34;) c.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</guid>
+      <description>运行这段代码并在浏览器中访问 http://localhost:8080&#xA;package main import &amp;#34;github.com/gin-gonic/gin&amp;#34; func main() { r := gin.Default() r.GET(&amp;#34;/ping&amp;#34;, func(c *gin.Context) { c.JSON(200, gin.H{ &amp;#34;message&amp;#34;: &amp;#34;pong&amp;#34;, }) }) r.Run() // listen and serve on 0.0.0.0:8080 } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/3.gin/%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/3.gin/%E7%AE%80%E4%BB%8B/</guid>
+      <description>Gin 是一个 go 写的 web 框架，具有高性能的优点。官方地址：https://github.com/gin-gonic/gin</description>
     </item>
     <item>
       <title></title>
@@ -1108,6 +1395,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</guid>
+      <description>&#xD;linux 修改时区&#xD;#&#xD;1. 列出所有时区&#xD;#&#xD;timedatectl list-timezones 2. 设置时区&#xD;#&#xD;sudo timedatectl set-timezone Asia/Shanghai </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
@@ -1146,7 +1440,7 @@
       <link>https://r.xboox.cn/document/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>&#xD;两种方法&#xD;#&#xD;系统启动文件创建，在/etc/rc.local中添加需要执行的脚本，开机就会自动启动 创建systemd服务 1. 拷贝或创建软链接 -&amp;gt; /etc/systemd/system&#xD;#&#xD;sudo cp /lib/systemd/system/rc-local.service /etc/systemd/system&#xD;2. 编辑 rc-local.service 文件，增加如下内容：&#xD;#&#xD;[Install] WantedBy=multi-user.target Alias=rc-local.service 3.使用系统启动文件 创建/etc/rc.local&#xD;#&#xD;#!/bin/sh&#xD;/home/zouni88/dns/alidns dns &amp;amp;&#xD;4. 增加可执行权限&#xD;#&#xD;chmod +x /etc/rc.local&#xD;最后测试&#xD;#&#xD;启动&#xA;systemctl start rc-local.service&#xD;查看状态&#xA;systemctl status rc-local.service&#xD;</description>
+      <description>两种方法&#xD;#&#xD;1. 创建systemd服务&#xD;#&#xD;1.1 创建服务脚本 -&amp;gt; /etc/systemd/system/myddns.service&#xD;#&#xD;[Unit] Description=myservice ddns # 对服务的描述 After=network.target # 指该服务需要在网络服务启动后，再启动 [Service] Type=simple # 表示该服务是一个简单的进程 WorkingDirectory=/root/myddns # 服务所在文件夹 ExecStart=/root/myddns/myddns.sh # 服务启动命令 ExecStop=killall myddns # 服务停止命令 Restart=always # 不管什么原因，都会重启 RestartSec=3　# 重启间隔时间3秒 [Install] WantedBy=multi-user.target 1.2 systemd操作命令&#xD;#&#xD;# systemd 服务操作命令 sudo daemon-reload # 重新加载 systemd 的配置 sudo systemctl start myddns.service # 启动 systemd 服务 sudo systemctl stop myddns.service # 停止 systemd 服务 sudo systemctl enable myddns.</description>
     </item>
     <item>
       <title></title>
@@ -1433,7 +1727,7 @@
       <link>https://r.xboox.cn/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nginx/%E5%AE%B9%E5%99%A8%E6%9E%84%E5%BB%BA/</guid>
-      <description>构建nginx容器&#xD;#&#xD;docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static –restart=always –user=root nginx --privileged=true docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static -user=root nginx:latest docker run -itd &amp;ndash;name=nginx -p 8088:80 -p 443:443 -v /home/zouni88/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni88/web/static &amp;ndash;restart=always -user=root -privileged=true nginx:latest</description>
+      <description>构建nginx容器&#xD;#&#xD;docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static –restart=always –user=root nginx --privileged=true docker run -itd --name=nginx -p 8088:80 -p 443:443 -v /home/zouni/nginx/conf.d:/etc/nginx/conf.d -v /home/zouni/web/static:/home/zouni/web/static -user=root nginx:latest docker run -itd &amp;ndash;name=nginx -p 5699:80 -p 443:443 -v /home/zouni88/nginx/conf.d:/etc/nginx/conf.d -v /home/web:/home/web &amp;ndash;restart=always &amp;ndash;user=root &amp;ndash;privileged=true nginx:latest</description>
     </item>
     <item>
       <title></title>
@@ -1483,6 +1777,48 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</guid>
       <description> 英文 中文 trigger 触发 necessary 必要的 depending 依赖 logic 逻辑 acquire 获取 heavy 重；大；沉重 separate 单独的，分离的 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/</guid>
+      <description>https://ipinfo.io/&#xA;type = hosting 云服务提供商 type = isp 住宅类型ip&#xA;https://scamalytics.com/&#xA;bgp.he.net whoer.com&#xA;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7QReL6IORgCf/vMyuHHtbJ/JMOAO5p/IlLfca9MP+E+AGNtEmCN4ERW7TctFuS+Hoh1RaFLAkk/2cNfzB2F9RSYxPltlR3FySwZdbgzxdzE87Apz9dwtMit87Idx3arxy3tkTdTT3gZWXCRiSKLb6cN8u3z+CHVl5IRsPJbSB/8ZDhBDyA9HtiuzXPOqeBJVA4+R3DAEqZLAFEqtnhOjOVNxYxhDgy46bCF5V/GcQ1eMUEAf6b7uVbP4sGdgAjSvxBvaz8I58MBDqKnL1EO0vgiL99ZfHfCE3Sq6eFFlnvbbjB1iHWmo4aN1D7JRJ9wbDERAPcv13XL01+JCxyEm7&#xA;&amp;mdash;&amp;ndash;开始 OPENSSH 专用钥匙&amp;mdash;&amp;ndash; b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAAAABAAABFwAAAAdzc2gtcn NhAAAAAwEAAQAAAQEAu0EXi+iDkYAn/7zMrhx7WyfyTDgDuafyJS33GvTD/hPgBjbRJgje BEVu03LRbkvh6IdUWhSwJJP9nDX8wdhfUUmMT5bZUdxcksGXW4M8XcxPOwKc/XcLTIrfOy Hcd2q8ct7ZE3U094GVlwkYkii2+nDfLt8/gh1ZeSEbDyW0gf/GQ4QQ8gPR7Yrs1zzqngSV QOPkdwwBKmSwBRKrZ4TozlTcWMYQ4MuOmwheVfxnENXjFBAH+m+7lWz+LBnYAI0r8Qb2s/ COfDAQ6ipy9RDtL4Ii/fWXx3whN0qunhRZZ7224wdYh1pqOGjdQ+yUSfcGwxEQD3L9d1y9 NfiQschJuwAAA7ih31P2od9T9gAAAAdzc2gtcnNhAAABAQC7QReL6IORgCf/vMyuHHtbJ/ JMOAO5p/IlLfca9MP+E+AGNtEmCN4ERW7TctFuS+Hoh1RaFLAkk/2cNfzB2F9RSYxPltlR 3FySwZdbgzxdzE87Apz9dwtMit87Idx3arxy3tkTdTT3gZWXCRiSKLb6cN8u3z+CHVl5IR sPJbSB/8ZDhBDyA9HtiuzXPOqeBJVA4+R3DAEqZLAFEqtnhOjOVNxYxhDgy46bCF5V/GcQ 1eMUEAf6b7uVbP4sGdgAjSvxBvaz8I58MBDqKnL1EO0vgiL99ZfHfCE3Sq6eFFlnvbbjB1 iHWmo4aN1D7JRJ9wbDERAPcv13XL01+JCxyEm7AAAAAwEAAQAAAQAz/XqgKcp912tDohPi M548TPcFGnhOT8b3c6+sGFFidfo5P3cKbGPYI78Fjld/nCn4+bn92MifH0fG22Z2G7E7TI RchLGJ/Pjm9kEj82gLUvKcm7ki1q6YbeZU8K3ZqhTwf9cdg+lU3vG9oZTk39EN79DHnsxv P97btslgh0N65CKg666ftSxL4Nj6aFrfBsmrd/f63kh4oVwebW6ddzNfACQAvU7rmATe21 p1U+v7OiBKum+v2fceXYjeokJ9+CsDRIa/6xeIbD98yM7ZoHZp9T46JLMZWqvERgUi7o8U EpJPmVmqv3WdhsAiUr39QZVZN15A4wBbtqgi28y6wCOhAAAAgHrXaaHfF9FgrJZOs79AI5 WL+meKWaGqfVpPt4d1pS2K9c6Vu92kXlywfAo4Q+Xlf32A9tdh4Hmsb9tsrC49t7hPIBCZ OYH5uFcJLxFoju0SBiyk//xEqVF7pCWEYT1ItF60O99ccygJruJvEeDWeGnXYn/RPheGl4 ngdsmzXJuWAAAAgQD2wBP63QMeeXKjxsqznvqiXmQDSIAkwfDviFXs1dflMTAJ/TPdX9Bv 4V8j+NS96KiU+t0brag6+l9uA4aMlzadi677i+nPWJ+4fuPPxwjkebFED18y0/GP6z18GK NY2VRhJh3S7VNzRmuZ4KQf8UmRDvpaHZS6ZtQZyiNOjfLEjQAAAIEAwkYQesTBgLvjF6oP qEnrRLwYnuepslQqwFJIhQOcAcgzsU+tqzC/Arcuhw8CnNgt0X251tOX9qsVHWi+DG9vTc yBFyzz5uBt9kJNghyKCAA3va5ypDupj1eeieeXWqxwj52SOEbkPLa5tWNa6Jzj5f2+ei0N kpnOFc8pSM0LSWcAAAAAAQID &amp;mdash;&amp;ndash;结束 OPENSSH 私钥&amp;mdash;&amp;ndash;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/readme/</guid>
+      <description>1. 什么是 VPS&#xD;#&#xD;虚拟专用服务器（英语：Virtual private server，缩写为 VPS），是将一台服务器分割成多个虚拟专享服务器的服务。&#xA;2. 什么是 VPN&#xD;#&#xD;VPN 在很多人心目中就是用来翻墙的工具，其实不是。VPN 最主要的功能，并不是用来翻墙，只是它可以达到翻墙的目的。&#xA;虚拟专用网络（英语：Virtual Private Network，缩写为VPN），它的功能是：在公用网络上建立专用网络，进行加密通讯。在企业网络和高校的网络中应用很广泛。你接入 VPN，其实就是接入了一个专有网络，你的网络访问都从这个出口出去，你和 VPN 之间的通信是否加密，取决于你连接 VPN 的方式或者协议。&#xA;3. 什么是 ss / ssr&#xD;#&#xD;ss ss作者是 GitHub：clowwindy，大约两年前，他自己为了翻墙写了shadowsocks，简称 ss 或者叫影梭，后来他觉得这个东西非常好用，速度快，而且不会被封锁，他就把源码共享在了 GitHub 上，然后就火了，但是后来作者被请去喝茶，删了代码，并且保证不再参与维护更新。&#xA;ssr 在ss作者被喝茶之后，GitHub 上出现了一个叫 breakwa11(破娃)的帐号，声称 ss 容易被防火墙检测到，所以在混淆和协议方面做了改进，更加不容易被检测到，而且兼容 ss，改进后的项目叫 shadowsocks-R，简称 ssr，然后 ss 用户和 ssr 用户自然分成了两个派别，互相撕逼，后来，破娃被人肉出来，无奈之下删除了 ssr 的代码，并且解散了所有相关群组。&#xA;4. vpn和ss/ssr的区别和优缺点&#xD;#&#xD;通过上面的介绍，其实基本已经能看出 vpn 和 ss/ssr 的区别了，那么他们到底孰优孰劣。&#xA;因为 VPN 是走的专用通道，它是用来给企业传输加密数据用的，所以 VPN 的流量特征很明显，以 openvpn 为例，更详细的在这里不说了，流量特征明显，防火墙直接分析你的流量，如果特征匹配，直接封掉。&#xA;ss/ssr 的目的就是用来翻墙的，而 VPN 的目的是用来加密企业数据的，对于 VPN 来说安全是第一位的，而对于 ss/ssr 来说穿透防火墙是第一位，抗干扰性强，而且对流量做了混淆，所有流量在通过防火墙的时候，基本上都被识别为普通流量，也就是说你翻墙了，但是政府是检测不到你在翻墙的。两者的出发点和着重点就不同，ss/ssr 更注重流量的混淆加密。如果要安全匿名上网，可以用 vpn+tor 或者 ss/ssr+tor。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/shadowsocks2/init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/shadowsocks2/init/</guid>
+      <description>下载&#xD;#&#xD;go install github.com/shadowsocks/go-shadowsocks2 运行&#xD;#&#xD;go-shadowsocks2 -s &amp;#39;ss://AEAD_CHACHA20_POLY1305:qaz521..@:8488&amp;#39; -verbose 客户端&#xD;#&#xD;go-shadowsocks2 -c &amp;#39;ss://AEAD_CHACHA20_POLY1305:qaz521..@[zouni.vip]:8488&amp;#39; -verbose -socks :1080 -u -udptun :8053=8.8.8.8:53,:8054=8.8.4.4:53 -tcptun :8053=8.8.8.8:53,:8054=8.8.4.4:53 go-shadowsocks2 -c &amp;lsquo;ss://AEAD_CHACHA20_POLY1305:qaz521..@[zouni.vip]:8488&amp;rsquo; -redir :1082 -redir6 :1083</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</guid>
+      <description>&#xD;windows 客户端配置&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
+      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/</guid>
+      <description>https://medium.com/@thomas_summon/%E6%B5%85%E8%B0%88vpn-vps-proxy%E4%BB%A5%E5%8F%8Ashadowsocks%E4%B9%8B%E9%97%B4%E7%9A%84%E8%81%94%E7%B3%BB%E5%92%8C%E5%8C%BA%E5%88%AB-b0198f92db1b</description>
     </item>
     <item>
       <title></title>
@@ -1892,13 +2228,6 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/shadowsocks2/init/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/shadowsocks2/init/</guid>
-      <description>下载&#xD;#&#xD;go install github.com/shadowsocks/go-shadowsocks2 运行&#xD;#&#xD;go-shadowsocks2 -s &amp;#39;ss://AEAD_CHACHA20_POLY1305:qaz521..@:8488&amp;#39; -verbose 客户端&#xD;#&#xD;go-shadowsocks2 -c &amp;#39;ss://AEAD_CHACHA20_POLY1305:qaz521..@[zouni.vip]:8488&amp;#39; -verbose -socks :1080 -u -udptun :8053=8.8.8.8:53,:8054=8.8.4.4:53 -tcptun :8053=8.8.8.8:53,:8054=8.8.4.4:53 go-shadowsocks2 -c &amp;lsquo;ss://AEAD_CHACHA20_POLY1305:qaz521..@[zouni.vip]:8488&amp;rsquo; -redir :1082 -redir6 :1083</description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/document/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</guid>
@@ -1917,20 +2246,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/springboot/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>启动类位置： 一般放在根目录下&#xA;Failed to configure a DataSource: &amp;lsquo;url&amp;rsquo; attribute is not specified and no em&#xA;缺少配置信息</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</guid>
-      <description>&#xD;windows 客户端配置&#xD;#&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
-      <description>配置openVpn&#xD;#&#xD;linux 服务端安装配置&#xD;#&#xD;一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl 二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator 三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa 查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
     </item>
     <item>
       <title></title>
