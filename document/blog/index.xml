@@ -6,7 +6,15 @@
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://r.xboox.cn/document/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>first-gitbook配置</title>
+      <link>https://r.xboox.cn/document/blog/gitbook%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 26 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/blog/gitbook%E9%85%8D%E7%BD%AE/</guid>
+      <description>asdf</description>
+    </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
@@ -26,7 +34,14 @@
       <link>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
-      <description>&#xD;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;</description>
+      <description>搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&#xD;#&#xD;1. github pages 静态网页托管服务&#xD;#&#xD;这里有官方说明 分分钟搭建起来&#xA;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。 创建仓库，仓库名称 注意： github 账户名+github.io 比如：&#xD;zouni88.github.io 内容提交 # 仓库 down 到本地 git clone git@github.com:Yourname/Yourname.github.io.git # 切换分支到master，默认应该是main git checkout -b master # 查看分支 git branch main * master # 添加 index.html文件,并编辑 touch index.html # 提交 git push --set-upstream origin master 大功告成，浏览器打开： Yourname.github.io 2. gitee pages 静态网页托管服务&#xD;#&#xD;使用方法和github pages 类似, 官方帮助文档&#xA;3. gitbook,买个域名先&#xD;#&#xD;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&#xA;4. 如果有能力就自己搭建服务或购买云服务&#xD;#&#xD;github创建项目&#xD;#&#xD;创建仓库，项目名字要用username.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/blog/4.markdown%E5%AF%BC%E5%87%BAhtml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/blog/4.markdown%E5%AF%BC%E5%87%BAhtml/</guid>
+      <description>vscode 编辑markdown文件如何导出 未 html文件，并最终保存为pdf文件&#xD;#&#xD;vscode 下载插件：Markdown All in One</description>
     </item>
   </channel>
 </rss>

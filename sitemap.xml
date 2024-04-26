@@ -2,15 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://r.xboox.cn/document/blog/gitbook%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/1.%E4%BD%BF%E7%94%A8-GET-POST-PUT-PATCH-DELETE-OPTIONS/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://r.xboox.cn/document/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/blog/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/2.%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://r.xboox.cn/document/android/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/atom/</loc>
-  </url><url>
     <loc>https://r.xboox.cn/document/blockchain/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/blog/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/C_CXX/</loc>
   </url><url>
@@ -27,8 +39,6 @@
     <loc>https://r.xboox.cn/document/flutter/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/git/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/</loc>
   </url><url>
@@ -54,6 +64,12 @@
   </url><url>
     <loc>https://r.xboox.cn/document/windows/</loc>
   </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/3.%E8%8E%B7%E5%8F%96Get%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://r.xboox.cn/document/android/jetpack%E5%AD%A6%E4%B9%A0/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/android/kotlin/</loc>
@@ -77,8 +93,6 @@
     <loc>https://r.xboox.cn/document/golang/10.%E8%B0%83%E8%AF%95%E6%B5%8B%E8%AF%95/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/2.beego/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/6.grpc/</loc>
   </url><url>
@@ -130,9 +144,13 @@
   </url><url>
     <loc>https://r.xboox.cn/document/web/vue/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/4.%E8%8E%B7%E5%8F%96Post%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/android/kotlin/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/ML/tensorflow/%E5%AE%89%E8%A3%85/</loc>
   </url><url>
@@ -151,6 +169,108 @@
     <loc>https://r.xboox.cn/document/python/flask/%E9%83%A8%E7%BD%B2/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/5.Get-&#43;-Post-%E6%B7%B7%E5%90%88/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/6.%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/7.%E8%B7%AF%E7%94%B1%E5%88%86%E7%BB%84/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/8.%E6%97%A0%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%90%AF%E5%8A%A8/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/9.%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/10.%E5%86%99%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/11.%E8%87%AA%E5%AE%9A%E4%B9%89%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/12.%E6%A8%A1%E5%9E%8B%E7%BB%91%E5%AE%9A%E5%92%8C%E9%AA%8C%E8%AF%81/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/13.%E8%87%AA%E5%AE%9A%E4%B9%89%E9%AA%8C%E8%AF%81%E5%99%A8/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/14.%E5%8F%AA%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/15.%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0%E6%88%96%E8%80%85Post%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/16.%E7%BB%91%E5%AE%9Auri/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/17.%E7%BB%91%E5%AE%9AHTML%E5%A4%8D%E9%80%89%E6%A1%86/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/18.%E7%BB%91%E5%AE%9APost%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/19.XMLJSONYAML%E5%92%8CProtoBuf-%E6%B8%B2%E6%9F%93%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/20.%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/21.%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%89%E6%96%B9%E8%8E%B7%E5%8F%96%E7%9A%84%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/22.HTML%E6%B8%B2%E6%9F%93/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/23.%E5%A4%9A%E4%B8%AA%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/24.%E9%87%8D%E5%AE%9A%E5%90%91/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/25.%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/26.%E4%BD%BF%E7%94%A8BasicAuth%E9%AA%8C%E8%AF%81%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/27.%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8Goroutines/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/28.%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/29.%E6%94%AF%E6%8C%81Lets-Encrypt%E8%AF%81%E4%B9%A6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/30.Gin%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/31.%E4%BC%98%E9%9B%85%E9%87%8D%E5%90%AF%E6%88%96%E5%81%9C%E6%AD%A2/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/32.%E6%9E%84%E5%BB%BA%E5%8C%85%E5%90%AB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/33.%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84%E7%BB%91%E5%AE%9A%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/34.%E5%B0%86%E8%AF%B7%E6%B1%82%E4%BD%93%E7%BB%91%E5%AE%9A%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/35.HTTP-2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E9%80%81/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/36.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1%E6%97%A5%E5%BF%97%E7%9A%84%E6%A0%BC%E5%BC%8F/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/37.%E8%AE%BE%E7%BD%AE%E5%B9%B6%E8%8E%B7%E5%8F%96cookie/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/38.%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2024-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://r.xboox.cn/document/android/FAQ/</loc>
   </url><url>
@@ -186,10 +306,6 @@
   </url><url>
     <loc>https://r.xboox.cn/document/android/%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E5%8F%91%E5%B8%83%E8%A7%84%E8%8C%83/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/atom/markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/atom/%E5%BC%82%E5%B8%B8/</loc>
-  </url><url>
     <loc>https://r.xboox.cn/document/blockchain/1.solidity/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/blockchain/2.remix/</loc>
@@ -219,6 +335,8 @@
     <loc>https://r.xboox.cn/document/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/blog/4.markdown%E5%AF%BC%E5%87%BAhtml/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/C_CXX/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</loc>
   </url><url>
@@ -370,8 +488,6 @@
   </url><url>
     <loc>https://r.xboox.cn/document/git/%E4%B8%BB%E8%A6%81%E7%9B%AE%E5%BD%95/</loc>
   </url><url>
-    <loc>https://r.xboox.cn/document/github/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-  </url><url>
     <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1.%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/10.%E6%B3%9B%E5%9E%8B/</loc>
@@ -409,82 +525,6 @@
     <loc>https://r.xboox.cn/document/golang/2.beego/%E9%83%A8%E7%BD%B2/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/3.gin/gorm/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/1.%E4%BD%BF%E7%94%A8-GET-POST-PUT-PATCH-DELETE-OPTIONS/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/10.%E5%86%99%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/11.%E8%87%AA%E5%AE%9A%E4%B9%89%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/12.%E6%A8%A1%E5%9E%8B%E7%BB%91%E5%AE%9A%E5%92%8C%E9%AA%8C%E8%AF%81/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/13.%E8%87%AA%E5%AE%9A%E4%B9%89%E9%AA%8C%E8%AF%81%E5%99%A8/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/14.%E5%8F%AA%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/15.%E7%BB%91%E5%AE%9AGet%E5%8F%82%E6%95%B0%E6%88%96%E8%80%85Post%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/16.%E7%BB%91%E5%AE%9Auri/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/17.%E7%BB%91%E5%AE%9AHTML%E5%A4%8D%E9%80%89%E6%A1%86/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/18.%E7%BB%91%E5%AE%9APost%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/19.XMLJSONYAML%E5%92%8CProtoBuf-%E6%B8%B2%E6%9F%93%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/2.%E8%8E%B7%E5%8F%96%E8%B7%AF%E5%BE%84%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/20.%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/21.%E8%BF%94%E5%9B%9E%E7%AC%AC%E4%B8%89%E6%96%B9%E8%8E%B7%E5%8F%96%E7%9A%84%E6%95%B0%E6%8D%AE/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/22.HTML%E6%B8%B2%E6%9F%93/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/23.%E5%A4%9A%E4%B8%AA%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/24.%E9%87%8D%E5%AE%9A%E5%90%91/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/25.%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/26.%E4%BD%BF%E7%94%A8BasicAuth%E9%AA%8C%E8%AF%81%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/27.%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8Goroutines/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/28.%E8%87%AA%E5%AE%9A%E4%B9%89HTTP%E9%85%8D%E7%BD%AE/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/29.%E6%94%AF%E6%8C%81Lets-Encrypt%E8%AF%81%E4%B9%A6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/3.%E8%8E%B7%E5%8F%96Get%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/30.Gin%E8%BF%90%E8%A1%8C%E5%A4%9A%E4%B8%AA%E6%9C%8D%E5%8A%A1/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/31.%E4%BC%98%E9%9B%85%E9%87%8D%E5%90%AF%E6%88%96%E5%81%9C%E6%AD%A2/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/32.%E6%9E%84%E5%BB%BA%E5%8C%85%E5%90%AB%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/33.%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%93%E6%9E%84%E7%BB%91%E5%AE%9A%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/34.%E5%B0%86%E8%AF%B7%E6%B1%82%E4%BD%93%E7%BB%91%E5%AE%9A%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93%E4%B8%AD/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/35.HTTP-2-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E9%80%81/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/36.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1%E6%97%A5%E5%BF%97%E7%9A%84%E6%A0%BC%E5%BC%8F/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/37.%E8%AE%BE%E7%BD%AE%E5%B9%B6%E8%8E%B7%E5%8F%96cookie/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/38.%E6%B5%8B%E8%AF%95/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/4.%E8%8E%B7%E5%8F%96Post%E5%8F%82%E6%95%B0/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/5.Get-&#43;-Post-%E6%B7%B7%E5%90%88/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/6.%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/7.%E8%B7%AF%E7%94%B1%E5%88%86%E7%BB%84/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/8.%E6%97%A0%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%90%AF%E5%8A%A8/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/document/golang/3.gin/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/9.%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/3.gin/%E5%85%B3%E4%BA%8E%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</loc>
   </url><url>
@@ -531,6 +571,10 @@
     <loc>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/redis/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/s3%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</loc>
   </url><url>
     <loc>https://r.xboox.cn/document/linux/1.dell%E5%AE%89%E8%A3%85centos/</loc>
   </url><url>

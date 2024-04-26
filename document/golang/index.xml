@@ -6,6 +6,7 @@
     <description>Recent content on 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://r.xboox.cn/document/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -97,6 +98,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;私有仓库配置&#xD;#&#xD;将gitee.com 设置为私有仓库&#xA;首先配置https请求转换为ssh: git config --global url.&amp;#34;git@gitee.com:&amp;#34;.insteadOf &amp;#34;https://gitee.com/&amp;#34; git config --global http.extraheader &amp;#34;PRIVATE-TOKEN: B9TWLqsLdh1-513os1Pm&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://192.168.200.47:8083/&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://git.zhongzhuoxin.com:9000/&amp;#34; 配置环境变量 go env -w GOPRIVATE=gitee.com&#xA;新建的仓库名字一定要改成和仓库地址一致&#xA;新建仓库 gitee.com/zouni88/util 项目目录下 go.mod 修改module为gitee.com/zouni88/util </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/s3%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E9%83%A8%E7%BD%B2aws/s3%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</guid>
+      <description>亚马逊 s3 部署静态网站&#xD;#&#xD;1.创建存储桶 ，找到存储桶属性，&#xD;#&#xD;关于域名绑定，存储桶名字必须和要绑定域名一致，比如：abc.com 存储桶的名字也要abc.com才行&#xA;2. 滑到最下面，找到静态网站托管，有个状态，已禁用，点编辑 启用&#xD;#&#xD;3. 编辑&#xD;#&#xD;4. 设置权限&#xD;#&#xD;{ &amp;#34;Version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Sid&amp;#34;: &amp;#34;PublicReadGetObject&amp;#34;, &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Principal&amp;#34;: &amp;#34;*&amp;#34;, &amp;#34;Action&amp;#34;: &amp;#34;s3:GetObject&amp;#34;, &amp;#34;Resource&amp;#34;: &amp;#34;arn:aws:s3:::bucket-Name/*&amp;#34; } ] } bucket-name 替换为自己的bucket名字</description>
     </item>
   </channel>
 </rss>
