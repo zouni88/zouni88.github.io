@@ -9,17 +9,24 @@
     <atom:link href="https://r.xboox.cn/document/database/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/database/postgresql/installconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/database/postgresql/installconfig/</guid>
+      <description>安装&#xD;#&#xD;yum install postgresql-server 配置&#xD;#&#xD;alter user postgres with password &amp;#39;qaz521..&amp;#39; 修改端口和开放远程访问&#xD;#&#xD;端口修改在配置文件 /var/lib/pgsql/data/postgresql.conf&#xA;修改远程访问&#xA;pg_hba.conf 修改&#xD;#&#xD;1.切换到 postgres 用户：&#xA;sudo -i -u postgres&#xA;2.进入 PostgreSQL Shell：&#xA;psql&#xA;3.设置 postgres 用户的密码：&#xA;ALTER USER postgres PASSWORD &amp;rsquo;new_password&#39;;&#xA;4.退出 PostgreSQL Shell 和 postgres 用户的 shell：&#xA;\q&#xA;5.使用新密码登录：&#xA;psql -U postgres -W&#xA;输入新设置的密码以登录。如果这些步骤成功完成，你将能够以 postgres 用户身份管理你的 PostgreSQL 数据库。</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>容器运行 postgres&#xA;docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;facepark&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;qaz521!</description>
+      <description>容器运行 postgres&#xA;docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;facepark&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;Qaz521!</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/database/postgresql/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>表字段使用geography报错&#xD;#&#xD;因为要使用地理坐标来表示附近用户，需要空间坐标转换&#xA;type &amp;ldquo;geography&amp;rdquo; does not exist 解决方法： CREATE EXTENSION Postgis;</description>
+      <description>&#xD;表字段使用geography报错&#xD;#&#xD;因为要使用地理坐标来表示附近用户，需要空间坐标转换&#xA;type &amp;ldquo;geography&amp;rdquo; does not exist 解决方法： CREATE EXTENSION Postgis;&#xA;阿里云，如果安装了插件还是不行，必须在指定数据库安装插件，否则可能还是会出这个问题 docker同样的问题：&#xA;apt-get update&#xD;apt-get install postgresql-17-postgis </description>
     </item>
     <item>
       <title></title>

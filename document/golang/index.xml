@@ -83,14 +83,21 @@
       <link>https://r.xboox.cn/document/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</guid>
-      <description>函数计算需要设置时区&#xD;#&#xD;添加环境变量即可：&#xA;TZ = Asia/Shanghai</description>
+      <description>函数计算需要设置时区&#xD;#&#xD;添加环境变量即可：&#xA;TZ = Asia/Shanghai&#xA;部署时会遇到权限受限的问题，可执行文件没有执行权限&#xD;#&#xD;不要上传压缩包，直接上传文件夹</description>
     </item>
     <item>
       <title></title>
       <link>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
-      <description>&#xD;godotenv&#xD;#&#xD;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) } </description>
+      <description>&#xD;godotenv 源码&#xD;#&#xD;从 .env 文件加载环境变量&#xA;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) } gotify 官网 源码&#xD;#&#xD;用于发送和接收消息的简单服务器&#xA;mediamtx 源码&#xD;#&#xD;MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。&#xA;obs-studio 官网 源码&#xD;#&#xD;jellyfin 源码&#xD;#&#xD;Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！&#xA;包含各种终端：pc web android ios&#xA;home-assistant 源码&#xD;#&#xD;智能家居集成&#xA;hugo 源码&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/%E6%A0%87%E5%87%86%E5%8C%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E6%A0%87%E5%87%86%E5%8C%85/</guid>
+      <description>&#xD;</description>
     </item>
     <item>
       <title></title>
@@ -98,6 +105,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
       <description>&#xD;私有仓库配置&#xD;#&#xD;将gitee.com 设置为私有仓库&#xA;首先配置https请求转换为ssh: git config --global url.&amp;#34;git@gitee.com:&amp;#34;.insteadOf &amp;#34;https://gitee.com/&amp;#34; git config --global http.extraheader &amp;#34;PRIVATE-TOKEN: B9TWLqsLdh1-513os1Pm&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://192.168.200.47:8083/&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://git.zhongzhuoxin.com:9000/&amp;#34; 配置环境变量 go env -w GOPRIVATE=gitee.com&#xA;新建的仓库名字一定要改成和仓库地址一致&#xA;新建仓库 gitee.com/zouni88/util 项目目录下 go.mod 修改module为gitee.com/zouni88/util </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/golang/%E7%BC%96%E8%AF%91%E5%B8%A6%E5%9B%BE%E6%A0%87%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/golang/%E7%BC%96%E8%AF%91%E5%B8%A6%E5%9B%BE%E6%A0%87%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>打包exe可执行文件自定义图标&#xD;#&#xD;1. 提前制作好ico图标文件&#xD;#&#xD;favicon.ico 普通图片文件不可用&#xA;2. 生成syso文件&#xD;#&#xD;创建main.rc文件并编辑，文件名与应用main文件同名&#xA;IDI_ICON1 ICON &amp;ldquo;favicon.ico&amp;rdquo; 保存文件&#xA;3. 在文件所在目录执行命令生成main.syso文件&#xD;#&#xD;windres -o main.syso main.rc&#xA;命令运行生成文件：main.syso&#xA;4. 打包&#xD;#&#xD;go build&#xA;打包前要先设置环境变量：&#xA;go env -w GOOS=windows</description>
     </item>
     <item>
       <title></title>

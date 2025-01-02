@@ -21,5 +21,12 @@
       <guid>https://r.xboox.cn/document/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</guid>
       <description> 英文 中文 trigger 触发 necessary 必要的 depending 依赖 logic 逻辑 acquire 获取 heavy 重；大；沉重 separate 单独的，分离的 </description>
     </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/other/%E6%8E%A5%E5%8F%A3%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/other/%E6%8E%A5%E5%8F%A3%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/</guid>
+      <description>&#xD;公司里接口编写规范：&#xD;#&#xD;返回值的规范：&#xD;#&#xD;{ &amp;#34;code&amp;#34;:200, &amp;#34;msg&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;data&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#39;xxx&amp;#39;, &amp;#34;age&amp;#34;:&amp;#39;xxx&amp;#39; } } 状态码的规范：&#xD;#&#xD;200：成功。 401：没有授权。 400：参数错误。 500：服务器错误。 </description>
+    </item>
   </channel>
 </rss>

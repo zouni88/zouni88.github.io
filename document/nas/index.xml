@@ -9,10 +9,38 @@
     <atom:link href="https://r.xboox.cn/document/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/nas/jellyfin%E5%AD%97%E6%AF%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/nas/jellyfin%E5%AD%97%E6%AF%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</guid>
+      <description>&#xD;字幕乱码问题&#xD;#&#xD;1. 下载中文字体库 阿里巴巴字体库,文件格式必须woff,字库大小必须在20M以内,字库最好放在视频文件夹下，新建文件夹font&#xD;#&#xD;https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.609e3a810XPREp&amp;cnid=a9fXc2HD9n7s&#xA;如果没有想要的，可以转换格式 ttf-&amp;gt;woff&#xA;https://miconv.com/convert-ttf-to-woff2/#google_vignette&#xA;2. 修改影音服务器配置,启用备用字体&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/nas/scp%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/nas/scp%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/</guid>
+      <description>scp 上传文件失败&#xD;#&#xD;subsystem request failed on channel 0 C:\Windows\System32\OpenSSH\scp.exe: Connection closed&#xA;解决：&#xA;scp -p -O -P 5987 .\alidns root@192.168.3.2:/root/&#xA;-O 强制不依赖sftp协议，使用旧版协议传输</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/nas/synology-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/nas/synology-config/</guid>
       <description>群晖nas配置 ssh连接，root用户登录&#xA;群晖默认不支持root权限登录，需要修改权限&#xA;普通管理员用户登录之后，找到 /etc/ssh/sshd_config文件&#xA;修改sshd_config 权限&#xA;chmod 755 sshd_config 编辑sshd_config文件，找到&#xA;#PermitRootLogin prohibit-password # 修改成 yes PermitRootLogin yes 退出编辑&#xA;修改root密码&#xA;synouser --setpw root 这里是新密码 退出重新用root登录 . OK!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/nas/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85supervisor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/nas/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85supervisor/</guid>
+      <description>群晖安装supervisor&#xD;#&#xD;安装pip&#xD;#&#xD;pip地址&#xA;安装supervisor&#xD;#&#xD;pip install supervisor&#xA;编写shell脚本&#xD;#&#xD;#!bin/bash</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/nas/%E7%BE%A4%E6%99%96%E5%BD%B1%E9%9F%B3jellyfin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/nas/%E7%BE%A4%E6%99%96%E5%BD%B1%E9%9F%B3jellyfin/</guid>
+      <description>安装&#xD;#&#xD;第一种方式：&#xD;#&#xD;需要手动安装&#xA;源码地址：&#xA;jellyfin github地址：https://github.com/jellyfin/jellyfin&#xA;docker安装：&#xA;docker search jellyfin&#xA;第二种方式：直接用群晖非官方套件&#xD;#&#xD;名称：矿神DSM7&#xA;位置：https://spk7.imnks.com&#xA;参考： https://blog.csdn.net/xister/article/details/143691269 https://zhuanlan.zhihu.com/p/680289568</description>
     </item>
   </channel>
 </rss>

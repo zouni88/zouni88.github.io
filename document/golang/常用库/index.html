@@ -2,8 +2,14 @@
 <html lang="zh-cn" dir="ltr">
 <head>
   <meta property="og:title" content="" />
-<meta property="og:description" content="godotenv#常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件
-func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&#34;====&#34;, os.Getenv(&#34;a&#34;)) } " />
+<meta property="og:description" content="godotenv 源码#从 .env 文件加载环境变量
+常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件
+func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&#34;====&#34;, os.Getenv(&#34;a&#34;)) } gotify 官网 源码#用于发送和接收消息的简单服务器
+mediamtx 源码#MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。
+obs-studio 官网 源码#jellyfin 源码#Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！
+包含各种终端：pc web android ios
+home-assistant 源码#智能家居集成
+hugo 源码#" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.xboox.cn/document/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/" /><meta property="article:section" content="document" />
 
@@ -26,8 +32,14 @@ https://github.com/alex-shpak/hugo-book
 <meta charset="UTF-8" />
 <meta
   name="description"
-  content="godotenv#常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件
-func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&#34;====&#34;, os.Getenv(&#34;a&#34;)) } "
+  content="godotenv 源码#从 .env 文件加载环境变量
+常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件
+func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&#34;====&#34;, os.Getenv(&#34;a&#34;)) } gotify 官网 源码#用于发送和接收消息的简单服务器
+mediamtx 源码#MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。
+obs-studio 官网 源码#jellyfin 源码#Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！
+包含各种终端：pc web android ios
+home-assistant 源码#智能家居集成
+hugo 源码#"
 />
 <title>
   📓 西凉观云海
@@ -335,6 +347,212 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6913852ccd04a9b572b06f74629acebf" class="toggle"  />
+    <label for="section-6913852ccd04a9b572b06f74629acebf" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Proxy</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/xray/x2ray/" class="">X2ray</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f816296e8684f1ac6e8579f9d1fb2eab" class="toggle"  />
+    <label for="section-f816296e8684f1ac6e8579f9d1fb2eab" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Shadowsocks2</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/shadowsocks2/init/" class="">Init</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-64b1f289fc1fc1f0325f6a272083b9d8" class="toggle"  />
+    <label for="section-64b1f289fc1fc1f0325f6a272083b9d8" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">VPN</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/" class="">安装openvpn客户端配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/" class="">安装openvpn服务端linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/" class="">Ip类型查询</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/readme/" class="">Readme</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/xray/v2ray%E9%85%8D%E7%BD%AE/" class="">V2ray配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/xray/%E4%B8%AD%E8%BD%AC/" class="">中转</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/" class="">各种代理区别</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/%E5%90%84%E7%A7%8D%E7%AB%99%E7%82%B9/" class="">各种站点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/proxy/%E6%9F%A5%E8%AF%A2%E7%AB%AF%E5%8F%A3%E6%98%AF%E5%90%A6%E8%A2%AB%E5%B1%8F/" class="">查询端口是否被屏</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -1650,7 +1868,33 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/golang/%E6%A0%87%E5%87%86%E5%8C%85/" class="">标准包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/" class="">私有仓库配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/golang/%E7%BC%96%E8%AF%91%E5%B8%A6%E5%9B%BE%E6%A0%87%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/" class="">编译带图标可执行文件</a>
   
 
         </li>
@@ -2277,79 +2521,6 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
-    <input type="checkbox" id="section-81ec156e0a5249023c4cf943598467dd" class="toggle"  />
-    <label for="section-81ec156e0a5249023c4cf943598467dd" class="flex justify-between">
-      <a role="button" class="book-collapse-toggle ">Container</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/container/1.windows%E4%BD%BF%E7%94%A8containerd/" class="">1.windows使用containerd</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/container/containerd%E5%AE%89%E8%A3%85/" class="">Containerd安装</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/container/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/" class="">操作镜像</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/container/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" class="">错误记录</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-dad98524f86559d1eca05710f8923686" class="toggle"  />
     <label for="section-dad98524f86559d1eca05710f8923686" class="flex justify-between">
       <a role="button" class="book-collapse-toggle ">Database</a>
@@ -2442,6 +2613,19 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/database/postgresql/installconfig/" class="">Install&amp;config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/" class="">容器运行</a>
   
 
@@ -2525,6 +2709,79 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ef7082f418d553799dcf83a4e829330d" class="toggle"  />
+    <label for="section-ef7082f418d553799dcf83a4e829330d" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Containerd</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/docker/containerd/1.windows%E4%BD%BF%E7%94%A8containerd/" class="">1.windows使用containerd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/docker/containerd/containerd%E5%AE%89%E8%A3%85/" class="">Containerd安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/docker/containerd/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/" class="">操作镜像</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/docker/containerd/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/" class="">错误记录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -2726,7 +2983,33 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/docker/docercontainerd/" class="">Docer&amp;containerd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/" class="">Docker文件挂载</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/docker/docker%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/" class="">Docker网络代理</a>
   
 
         </li>
@@ -3444,6 +3727,40 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <input type="checkbox" id="section-f4edb9df3e42d5b6c4118f16404d9033" class="toggle"  />
+    <label for="section-f4edb9df3e42d5b6c4118f16404d9033" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Homeassistant</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/homeassistant/docker%E5%AE%89%E8%A3%85/" class="">Docker安装</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-cf635296050ae0bced2388b772af392c" class="toggle"  />
     <label for="section-cf635296050ae0bced2388b772af392c" class="flex justify-between">
       <a role="button" class="book-collapse-toggle ">Linux</a>
@@ -3452,6 +3769,40 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-800837f749da9e4510d2d3c2f2018cee" class="toggle"  />
+    <label for="section-800837f749da9e4510d2d3c2f2018cee" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Euler Os</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/eulerOS/cockpit%E5%AE%89%E8%A3%85/" class="">Cockpit安装</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
     
       
         <li>
@@ -3490,6 +3841,152 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
   
     <a href="/document/linux/ftp/ftp%E9%85%8D%E7%BD%AE/" class="">Ftp配置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd4eff902dc4d87fd964117ab2d310ff" class="toggle"  />
+    <label for="section-cd4eff902dc4d87fd964117ab2d310ff" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Mail</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/1.bind-chroot%E9%85%8D%E7%BD%AE/" class="">1.bind Chroot配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/2.postfix%E9%85%8D%E7%BD%AE/" class="">2.postfix配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/3.dovecot/" class="">3.dovecot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/docker-mailserver/" class="">Docker Mailserver</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/foxmail%E6%89%93%E4%B8%8D%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="">Foxmail打不开问题解决</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/%E7%9B%B8%E5%85%B3%E9%87%8D%E8%A6%81%E8%AE%BE%E7%BD%AE/" class="">相关重要设置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/mail/%E9%82%AE%E4%BB%B6%E7%90%86%E8%AE%BA/" class="">邮件理论</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2344c2517c6589cb8a2e48c48134b4cc" class="toggle"  />
+    <label for="section-2344c2517c6589cb8a2e48c48134b4cc" class="flex justify-between">
+      <a role="button" class="book-collapse-toggle ">Os系统安装</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/OS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/U%E7%9B%98%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/" class="">U盘制作启动盘</a>
   
 
         </li>
@@ -3569,6 +4066,19 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/linux/linux%E4%BB%A3%E7%90%86/" class="">Linux代理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/linux/ssh/" class="">SSH</a>
   
 
@@ -3596,19 +4106,6 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
   
     <a href="/document/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9AIP/" class="">修改固定 IP</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/" class="">修改时区</a>
   
 
         </li>
@@ -3699,7 +4196,33 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/linux/%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/supervisor/" class="">Supervisor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/linux/%E6%8C%82%E8%BD%BD%E5%92%8C%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87/" class="">挂载和卸载设备</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/" class="">文件共享</a>
   
 
         </li>
@@ -3825,6 +4348,19 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
   
     <a href="/document/mac/brew%E9%94%99%E8%AF%AF/" class="">Brew错误</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/mac/%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96/" class="">隐私政策</a>
   
 
         </li>
@@ -4343,6 +4879,19 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/ML/AI%E5%B7%A5%E5%85%B7%E5%9C%B0%E5%9D%80%E6%94%B6%E9%9B%86/" class="">Ai工具地址收集</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/ML/ai%E7%BB%98%E7%94%BB%E5%88%9B%E7%BB%98/" class="">Ai绘画创绘</a>
   
 
@@ -4377,7 +4926,59 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
+    <a href="/document/nas/jellyfin%E5%AD%97%E6%AF%8D%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" class="">Jellyfin字母乱码问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/nas/scp%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%B1%E8%B4%A5/" class="">Scp上传文件失败</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/document/nas/synology-config/" class="">Synology Config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/nas/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85supervisor/" class="">群晖安装supervisor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/document/nas/%E7%BE%A4%E6%99%96%E5%BD%B1%E9%9F%B3jellyfin/" class="">群晖影音jellyfin</a>
   
 
         </li>
@@ -4555,11 +5156,6 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
         </li>
       
     
-  </ul>
-
-        </li>
-      
-    
       
         <li>
           
@@ -4567,130 +5163,7 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   
 
   
-    <input type="checkbox" id="section-6913852ccd04a9b572b06f74629acebf" class="toggle"  />
-    <label for="section-6913852ccd04a9b572b06f74629acebf" class="flex justify-between">
-      <a role="button" class="book-collapse-toggle ">Proxy</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-f816296e8684f1ac6e8579f9d1fb2eab" class="toggle"  />
-    <label for="section-f816296e8684f1ac6e8579f9d1fb2eab" class="flex justify-between">
-      <a role="button" class="book-collapse-toggle ">Shadowsocks2</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/shadowsocks2/init/" class="">Init</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-64b1f289fc1fc1f0325f6a272083b9d8" class="toggle"  />
-    <label for="section-64b1f289fc1fc1f0325f6a272083b9d8" class="flex justify-between">
-      <a role="button" class="book-collapse-toggle ">VPN</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/" class="">安装openvpn客户端配置</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/" class="">安装openvpn服务端linux</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/" class="">Ip类型查询</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/readme/" class="">Readme</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/document/proxy/%E5%90%84%E7%A7%8D%E4%BB%A3%E7%90%86%E5%8C%BA%E5%88%AB/" class="">各种代理区别</a>
+    <a href="/document/other/%E6%8E%A5%E5%8F%A3%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/" class="">接口编写规范</a>
   
 
         </li>
@@ -6311,10 +6784,12 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 
 
 
-<h3 id="godotenv">
-  godotenv
-  <a class="anchor" href="#godotenv">#</a>
-</h3>
+<h2 id="godotenv-源码httpsgithubcomjohogodotenv">
+  godotenv 
+<a href="https://github.com/joho/godotenv" rel="noopener">源码</a>
+  <a class="anchor" href="#godotenv-%e6%ba%90%e7%a0%81httpsgithubcomjohogodotenv">#</a>
+</h2>
+<p>从 .env 文件加载环境变量</p>
 <p>常用库 环境变量从文件导入，默认文件名 <code>.env</code>; 文件放在项目根目录下，编译运行默认加载.env文件</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TestEnv</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">godotenv</span>.<span style="color:#a6e22e">Load</span>()
@@ -6324,7 +6799,44 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;====&#34;</span>, <span style="color:#a6e22e">os</span>.<span style="color:#a6e22e">Getenv</span>(<span style="color:#e6db74">&#34;a&#34;</span>))
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="gotify-官网httpsgotifynet--源码httpsgithubcomgotify">
+  gotify 
+<a href="https://gotify.net/" rel="noopener">官网</a>  
+<a href="https://github.com/gotify" rel="noopener">源码</a>
+  <a class="anchor" href="#gotify-%e5%ae%98%e7%bd%91httpsgotifynet--%e6%ba%90%e7%a0%81httpsgithubcomgotify">#</a>
+</h2>
+<p>用于发送和接收消息的简单服务器</p>
+<h2 id="mediamtx-源码httpsgithubcombluenvironmediamtx">
+  mediamtx 
+<a href="https://github.com/bluenviron/mediamtx" rel="noopener">源码</a>
+  <a class="anchor" href="#mediamtx-%e6%ba%90%e7%a0%81httpsgithubcombluenvironmediamtx">#</a>
+</h2>
+<p>MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。</p>
+<h2 id="obs-studio-官网httpsobsprojectcom--源码httpsgithubcomobsprojectobs-studio">
+  obs-studio 
+<a href="https://obsproject.com/" rel="noopener">官网</a>  
+<a href="https://github.com/obsproject/obs-studio" rel="noopener">源码</a>
+  <a class="anchor" href="#obs-studio-%e5%ae%98%e7%bd%91httpsobsprojectcom--%e6%ba%90%e7%a0%81httpsgithubcomobsprojectobs-studio">#</a>
+</h2>
+<h2 id="jellyfin-源码httpsgithubcomjellyfinjellyfin">
+  jellyfin 
+<a href="https://github.com/jellyfin/jellyfin" rel="noopener">源码</a>
+  <a class="anchor" href="#jellyfin-%e6%ba%90%e7%a0%81httpsgithubcomjellyfinjellyfin">#</a>
+</h2>
+<p>Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！</p>
+<p>包含各种终端：pc web android ios</p>
+<h2 id="home-assistant-源码httpsgithubcomhome-assistantcore">
+  home-assistant 
+<a href="https://github.com/home-assistant/core" rel="noopener">源码</a>
+  <a class="anchor" href="#home-assistant-%e6%ba%90%e7%a0%81httpsgithubcomhome-assistantcore">#</a>
+</h2>
+<p>智能家居集成</p>
+<h2 id="hugo--源码httpsgithubcomgohugoiohugo">
+  hugo  
+<a href="https://github.com/gohugoio/hugo" rel="noopener">源码</a>
+  <a class="anchor" href="#hugo--%e6%ba%90%e7%a0%81httpsgithubcomgohugoiohugo">#</a>
+</h2>
+
 
     
 
@@ -6381,7 +6893,7 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
     <footer>
         
         
-        <p>Made with <a href="https://github.com/64bitpandas/amethyst">Amethyst</a>, © 2024 zouni88</p>
+        <p>Made with <a href="https://github.com/64bitpandas/amethyst">Amethyst</a>, © 2025 zouni88</p>
         <ul>
             
             <li><a href="https://r.xboox.cn">Home</a></li>
@@ -6416,11 +6928,13 @@ func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(
   <ul>
     <li>
       <ul>
-        <li>
-          <ul>
-            <li><a href="#godotenv">godotenv</a></li>
-          </ul>
-        </li>
+        <li><a href="#godotenv-源码httpsgithubcomjohogodotenv">godotenv <a href="https://github.com/joho/godotenv">源码</a></a></li>
+        <li><a href="#gotify-官网httpsgotifynet--源码httpsgithubcomgotify">gotify <a href="https://gotify.net/">官网</a>  <a href="https://github.com/gotify">源码</a></a></li>
+        <li><a href="#mediamtx-源码httpsgithubcombluenvironmediamtx">mediamtx <a href="https://github.com/bluenviron/mediamtx">源码</a></a></li>
+        <li><a href="#obs-studio-官网httpsobsprojectcom--源码httpsgithubcomobsprojectobs-studio">obs-studio <a href="https://obsproject.com/">官网</a>  <a href="https://github.com/obsproject/obs-studio">源码</a></a></li>
+        <li><a href="#jellyfin-源码httpsgithubcomjellyfinjellyfin">jellyfin <a href="https://github.com/jellyfin/jellyfin">源码</a></a></li>
+        <li><a href="#home-assistant-源码httpsgithubcomhome-assistantcore">home-assistant <a href="https://github.com/home-assistant/core">源码</a></a></li>
+        <li><a href="#hugo--源码httpsgithubcomgohugoiohugo">hugo  <a href="https://github.com/gohugoio/hugo">源码</a></a></li>
       </ul>
     </li>
   </ul>

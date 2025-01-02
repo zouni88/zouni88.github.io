@@ -37,10 +37,24 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/docker/docercontainerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/docker/docercontainerd/</guid>
+      <description>&#xD;docker containerd 命令对比&#xD;#&#xD;命令 docker ctr(containerd) crictl(kubernetes) 查看运行的容器 docker ps ctr task ls/ctr container ls crictl ps 查看镜像 docker images ctr image ls crictl images 查看容器日志 docker logs 无 crictl logs 查看容器数据信息 docker inspect ctr container info crictl inspect 查看容器资源 docker stats 无 crictl stats 启动/关闭已有的容器 docker start/stop ctr task start/kill crictl start/stop 运行一个新的容器 docker run ctr run 无（最小单元为 pod） 修改镜像标签 docker tag ctr image tag 无 创建一个新的容器 docker create ctr container create crictl create 导入镜像 docker load ctr image import 无 导出镜像 docker save ctr image export 无 删除容器 docker rm ctr container rm crictl rm 删除镜像 docker rmi ctr image rm crictl rmi 拉取镜像 docker pull ctr image pull ctictl pull 推送镜像 docker push ctr image push 无 在容器内部执行命令 docker exec 无 crictl exec </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</guid>
       <description>文件挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_nginx -p 8888:80 -v d:/index.html:/usr/share/nginx/html/index.html small/nginx&#xA;-v 表示： 宿主机文件路径：容器文件路径 -p 表示: 宿主机ip:容器ip 这里修改了nginx默认启动页面关联到本地&#xA;文件目录挂载&#xD;#&#xD;docker run -itd &amp;ndash;name=small_mysql -p 33066:3306 -v d:/docker/mysql/:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql&#xA;-e 表示：向容器内传参，ex:设定数据库密码：MYSQL_ROOT_PASSWORD=123456 docker run -itd &amp;ndash;name=flask_mysql -p 33066:3306 -v /var/lib/mysql:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=123456 mysql</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/docker/docker%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/docker/docker%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/</guid>
+      <description>受限于网络环境，需要配置docker环境代理&#xD;#&#xD;windows电脑作为代理服务器，随便找个代理软件打开，设置好端口 http和https代理 Fiddler 设置docker代理, 编辑docker 配置文件，/etc/docker/daemon.json&#xA;[root@t30 ~]# cat /etc/docker/daemon.json { &amp;#34;proxies&amp;#34;:{ &amp;#34;http-proxy&amp;#34;:&amp;#34;http://192.168.3.8:5688&amp;#34;, &amp;#34;https-proxy&amp;#34;:&amp;#34;http://192.168.3.8:5688&amp;#34; } } 重启docker&#xA;systemctl restart docker</description>
     </item>
     <item>
       <title></title>

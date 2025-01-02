@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/document/linux/1.dell%E5%AE%89%E8%A3%85centos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/1.dell%E5%AE%89%E8%A3%85centos/</guid>
-      <description>&#xD;1. 创建磁盘阵列&#xD;#&#xD;`ctrl+r` 创建磁盘阵列&#xD;2. 启用磁盘阵列：F12 进入bios 选择 dataseting 选择 raid&#xD;#&#xD;3. 安装系统 f2 选择U盘安装&#xD;#&#xD;按e 把DVD改成U盘，那么得先知道U盘是哪个 按c 进入命令行， blkid 查看详细盘符说明 hd:/dev/sda4 quit ctrl + x 执行安装流程 </description>
+      <description>1. 创建磁盘阵列&#xD;#&#xD;`ctrl+r` 创建磁盘阵列&#xD;2. 启用磁盘阵列：F12 进入bios 选择 dataseting 选择 raid&#xD;#&#xD;3. 安装系统 f2 选择U盘安装&#xD;#&#xD;按e 把DVD改成U盘，那么得先知道U盘是哪个 按c 进入命令行， blkid 查看详细盘符说明 hd:/dev/sda4 quit ctrl + x 执行安装流程 问题1. 出现软件安装源出错&#xD;#&#xD;设置网络url源 http://mirrors.aliyun.com/centos/9/BaseOS/x86_64/os</description>
     </item>
     <item>
       <title></title>
@@ -30,10 +30,17 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/linux/linux%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/linux/linux%E4%BB%A3%E7%90%86/</guid>
+      <description>linux代理设置，编辑 /etc/profile文件 全局代理设置&#xD;#&#xD;export http_proxy=http://192.168.3.8:5688 export https_proxy=http://192.168.3.8:5688 export no_proxy=&amp;#34;127.0.0.1,localhost&amp;#34; export https_proxy=https://192.168.3.8:5688 http_proxy=http://192.168.3.8:5688 all_proxy=socks5://192.168.3.8:5688&#xA;unset http_proxy https_proxy all_proxy</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/linux/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/ssh/</guid>
-      <description>设置开启ssh服务&#xD;#&#xD;编辑 sshd_config文件 vim /etc/ssh/sshd_config 找到permitRootLogin ，在下面一行添加 PermitRootLogin yes&#xA;重新启动ssh服务 systemctl restart ssh&#xA;试试远程连接&#xA;ssh root@xxx.xx.xx.x</description>
+      <description>设置开启ssh服务&#xD;#&#xD;编辑 sshd_config文件&#xA;vim /etc/ssh/sshd_config&#xA;找到permitRootLogin ，在下面一行添加&#xA;PermitRootLogin yes&#xA;重新启动ssh服务&#xA;systemctl restart ssh&#xA;试试远程连接&#xA;ssh root@xxx.xx.xx.x&#xA;修改root密码&#xD;#&#xD;sudo passwd root 开启密码登陆&#xD;#&#xD;# 允许root远程连接登陆 PermitRootLogin yes # 取消密码登陆 no 密码登陆 yes PasswordAuthentication yes 关闭密码登陆，配置只能公钥连接&#xD;#&#xD;编辑/etc/ssh/sshd_config文件如下：&#xA;PermitRootLogin yes # 取消密码登陆 no 密码登陆 yes PasswordAuthentication no PubkeyAuthentication yes # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2 # but this is overridden so installations will only check .</description>
     </item>
     <item>
       <title></title>
@@ -51,13 +58,6 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%97%B6%E5%8C%BA/</guid>
-      <description>&#xD;linux 修改时区&#xD;#&#xD;1. 列出所有时区&#xD;#&#xD;timedatectl list-timezones 2. 设置时区&#xD;#&#xD;sudo timedatectl set-timezone Asia/Shanghai </description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
@@ -68,7 +68,7 @@
       <link>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/</guid>
-      <description>修改系统时区&#xD;#&#xD;sudo rm -f /etc/localtime sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime source:&#xA;https://m.php.cn/article/488386.html</description>
+      <description>linux 修改时区&#xD;#&#xD;1. 列出所有时区&#xD;#&#xD;timedatectl list-timezones 2. 设置时区&#xD;#&#xD;sudo timedatectl set-timezone Asia/Shanghai 修改系统时区&#xD;#&#xD;sudo rm -f /etc/localtime sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime source:&#xA;https://m.php.cn/article/488386.html</description>
     </item>
     <item>
       <title></title>
@@ -100,10 +100,24 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/document/linux/%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/supervisor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/linux/%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6/supervisor/</guid>
+      <description>群晖部署&#xD;#&#xD;python pip安装 supervisor&#xA;设置计划任务，触发任务，直接开机自启动&#xA;https://www.cnblogs.com/mklblog/p/18070785&#xA;https://www.cnblogs.com/zhenfei/p/16882882.html</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/document/linux/%E6%8C%82%E8%BD%BD%E5%92%8C%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E6%8C%82%E8%BD%BD%E5%92%8C%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87/</guid>
-      <description>&#xD;卸载和挂载linux设备 包括 USB设备&#xD;#&#xD;查看所有硬盘设备&#xD;#&#xD;1. Lsblk&#xD;2. Fdisk&#xD;挂载&#xD;#&#xD;1. 创建挂载设备的目录&#xD;a. Mkdir /data&#xD;2. Mount /dev/sda /data&#xD;卸载 1. Umount /dev/sda&#xA;常见问题 挂载失败 mount: /data: wrong fs type, bad option, bad superblock on /dev/md126, missing codepage or helper program, or other error.&#xA;1. 格式化硬盘&#xD;2. Mkfs -t ext4 /dev/sda&#xD;3. 然后接着挂载&#xD;</description>
+      <description>&#xD;卸载和挂载linux设备 包括 USB设备&#xD;#&#xD;查看所有硬盘设备&#xD;#&#xD;1. lsblk&#xD;2. fdisk&#xD;挂载&#xD;#&#xD;1. 创建挂载设备的目录&#xD;a. mkdir /data&#xD;2. mount /dev/sda /data&#xD;卸载 1. umount /dev/sda&#xA;常见问题 挂载失败 mount: /data: wrong fs type, bad option, bad superblock on /dev/md126, missing codepage or helper program, or other error.&#xA;1. 格式化硬盘&#xD;2. mkfs -t ext4 /dev/sda&#xD;3. 然后接着挂载&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/document/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/document/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</guid>
+      <description>在Linux中设置文件或文件夹共享，可以使用Samba服务。以下是一个基本的Samba配置示例，用于共享名为share的文件夹。&#xD;#&#xD;安装Samba服务： sudo apt-get update sudo apt-get install samba 创建共享文件夹并设置合适的权限： mkdir /path/to/share sudo chmod 777 /path/to/share 配置Samba共享设置。编辑配置文件/etc/samba/smb.conf： sudo nano /etc/samba/smb.conf 在smb.conf文件的末尾添加以下内容： ini&#xD;[Share]&#xD;path = /path/to/share&#xD;browseable = yes&#xD;read only = no&#xD;writable = yes&#xD;guest ok = yes 重启Samba服务： sudo systemctl restart smbd 如果有防火墙运行，允许Samba通过： sudo ufw allow samba 完成以上步骤后，你应该能够从网络中的其他计算机访问并共享/path/to/share文件夹了。记得根据实际情况调整文件夹路径和权限设置。</description>
     </item>
     <item>
       <title></title>
@@ -124,7 +138,7 @@
       <link>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91IP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91IP/</guid>
-      <description>a. 获取当前IP，优先显示IPV6：&#xD;https://ip.netarm.com&#xD;b. 获取IPV4：&#xD;https://ipv4.netarm.com&#xD;c. 获取IPV6：&#xD;https://ipv6.netarm.com </description>
+      <description>a. 获取当前IP，优先显示IPV6：&#xD;https://ip.netarm.com&#xD;b. 获取IPV4：&#xD;https://ipv4.netarm.com&#xD;c. 获取IPV6：&#xD;https://ipv6.netarm.com&#xD;</description>
     </item>
     <item>
       <title></title>
@@ -138,7 +152,7 @@
       <link>https://r.xboox.cn/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
-      <description>查看指定端口占用情况&#xD;#&#xD;netstat -apn|grep 8888&#xA;lsof -i:8080</description>
+      <description>查看指定端口占用情况&#xD;#&#xD;netstat -apn|grep 8888&#xA;lsof -t -i:8080&#xA;进程ID&#xA;强制关闭端口占用的进程&#xD;#&#xD;kill -9 进程ID</description>
     </item>
     <item>
       <title></title>
@@ -152,7 +166,7 @@
       <link>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/document/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>Linux 防火墙 ufw firewalld iptables&#xD;#&#xD;默认：iptables 2. ubuntu : ufw&#xD;#&#xD;ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall&#xD;#&#xD;systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld.</description>
+      <description>Linux 防火墙 ufw firewalld iptables&#xD;#&#xD;默认：iptables 2. ubuntu : ufw&#xD;#&#xD;ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable 3. 红帽系列 firewall&#xD;#&#xD;systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld 防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 关闭端口 firewall-cmd --permanent --zone=public --remove-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload 其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld.</description>
     </item>
   </channel>
 </rss>
