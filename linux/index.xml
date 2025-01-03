@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on 西凉观云海</title>
+    <link>https://r.xboox.cn/linux/</link>
+    <description>Recent content in linux on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. dell安装centos</title>
+      <link>https://r.xboox.cn/linux/1.dell%E5%AE%89%E8%A3%85centos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/1.dell%E5%AE%89%E8%A3%85centos/</guid>
+      <description>1. 创建磁盘阵列 `ctrl+r` 创建磁盘阵列&#xD;2. 启用磁盘阵列：F12 进入bios 选择 dataseting 选择 raid 3. 安装系统 f2 选择U盘安装 按e 把DVD改成U盘，那么得先知道U盘是哪个 按c 进入命令行， blkid 查看详细盘符说明 hd:/dev/sda4 quit ctrl + x 执行安装流程 问题1. 出现软件安装源出错 设置网络url源 http://mirrors.aliyun.com/centos/9/BaseOS/x86_64/os</description>
+    </item>
+    <item>
+      <title>grub2设置分辨率</title>
+      <link>https://r.xboox.cn/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/grub2%E8%AE%BE%E7%BD%AE%E5%88%86%E8%BE%A8%E7%8E%87/</guid>
+      <description>设置grub2 分辨率 进入grub 命令行&#xA;在grub 启动界面，按下c 键进入命令行界面 查询支持的分辨率&#xA;输入 videoinfo 得到支持的分辨率列表 命令行设置选择的分辨率&#xA;输入terminal_output console 进入终端模式，输入 set gfxmode=1024x768 (x 不是*) 退出&#xA;terminal_output gfxterm 退出到图形模式 进入系统设置 /boot/grub/grub.cfg</description>
+    </item>
+    <item>
+      <title>ldconfig</title>
+      <link>https://r.xboox.cn/linux/ldconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/ldconfig/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>linux网路代理设置</title>
+      <link>https://r.xboox.cn/linux/linux%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/linux%E4%BB%A3%E7%90%86/</guid>
+      <description>linux代理设置，编辑 /etc/profile文件 全局代理设置 export http_proxy=http://192.168.3.8:5688 export https_proxy=http://192.168.3.8:5688 export no_proxy=&amp;#34;127.0.0.1,localhost&amp;#34;&#xD;export https_proxy=https://192.168.3.8:5688 http_proxy=http://192.168.3.8:5688 all_proxy=socks5://192.168.3.8:5688&#xA;unset http_proxy https_proxy all_proxy</description>
+    </item>
+    <item>
+      <title>ssh</title>
+      <link>https://r.xboox.cn/linux/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/ssh/</guid>
+      <description>设置开启ssh服务 编辑 sshd_config文件&#xA;vim /etc/ssh/sshd_config&#xA;找到permitRootLogin ，在下面一行添加&#xA;PermitRootLogin yes&#xA;重新启动ssh服务&#xA;systemctl restart ssh&#xA;试试远程连接&#xA;ssh root@xxx.xx.xx.x&#xA;修改root密码 sudo passwd root&#xD;开启密码登陆 # 允许root远程连接登陆 PermitRootLogin yes # 取消密码登陆 no 密码登陆 yes PasswordAuthentication yes&#xD;关闭密码登陆，配置只能公钥连接 编辑/etc/ssh/sshd_config文件如下：&#xA;PermitRootLogin yes # 取消密码登陆 no 密码登陆 yes PasswordAuthentication no&#xD;PubkeyAuthentication yes # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2 # but this is overridden so installations will only check .ssh/authorized_keys AuthorizedKeysFile .ssh/**authorized_keys**&#xD;</description>
+    </item>
+    <item>
+      <title>ubuntu常见问题</title>
+      <link>https://r.xboox.cn/linux/ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/ubuntu/</guid>
+      <description>键盘失灵 1.安装软件后键盘鼠标失灵，需要安装xserver包 xserver-xorg-input-all 保证电脑能联网，或者通过ssh远程连接&#xA;sudo apt install xserver-xorg-input-all&#xD;</description>
+    </item>
+    <item>
+      <title>修改固定ip</title>
+      <link>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9Aip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E5%9B%BA%E5%AE%9Aip/</guid>
+      <description>一、ubuntu server 设置静态IP root@zouni:~# cd /etc/netplan root@zouni:/etc/netplan# ls 00-installer-config.yaml 00-installer-config.yaml.bak 00-installer-config.yaml.bak1 # 编辑 00-installer-config.yaml 内容如下 root@zouni:/etc/netplan# vim 00-installer-config.yaml # This is the network config written by &amp;#39;subiquity&amp;#39; network: ethernets: eno1: dhcp4: false dhcp6: false addresses: - 192.168.1.6/24 routes: - to: default via: 192.168.1.1 enp4s0: dhcp4: false version: 2 # 编辑完之后使生效 root@zouni:/etc/netplan# netplan apply&#xD;二、其他系统 给系统设置固定IP 定位到目录：&#xA;cd /etc/sysconfig/network-scripts ifcfg-em1 ifdown-eth ifdown-ppp ifup ifup-ipv6 ifup-routes init.ipv6-global ifcfg-em1.bak ifdown-ib ifdown-routes ifup-aliases ifup-isdn ifup-sit network-functions ifcfg-em2 ifdown-ippp ifdown-sit ifup-bnep ifup-plip ifup-Team network-functions-ipv6 ifcfg-lo ifdown-ipv6 ifdown-Team ifup-eth ifup-plusb ifup-TeamPort ifdown ifdown-isdn ifdown-TeamPort ifup-ib ifup-post ifup-tunnel ifdown-bnep ifdown-post ifdown-tunnel ifup-ippp ifup-ppp ifup-wireless&#xD;vi 编辑 ifcfg-em1文件， 这个文件是对应网卡的脚本内容，直接修改：增加如下几项，包括IP地址，网关等等</description>
+    </item>
+    <item>
+      <title>修改系统时区</title>
+      <link>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/</guid>
+      <description>linux 修改时区 1. 列出所有时区 timedatectl list-timezones&#xD;2. 设置时区 sudo timedatectl set-timezone Asia/Shanghai&#xD;修改系统时区 sudo rm -f /etc/localtime sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&#xD;source:&#xA;https://m.php.cn/article/488386.html</description>
+    </item>
+    <item>
+      <title>修改软件源</title>
+      <link>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
+      <description>华为源 sudo sed -i &amp;#34;s@http://.*archive.ubuntu.com@http://repo.huaweicloud.com@g&amp;#34; /etc/apt/sources.list sudo sed -i &amp;#34;s@http://.*security.ubuntu.com@http://repo.huaweicloud.com@g&amp;#34; /etc/apt/sources.list # 如果之前用的aliyun的 sudo sed -i &amp;#34;s@http://.*mirrors.aliyun.com@http://repo.huaweicloud.com@g&amp;#34; /etc/apt/sources.list sudo sed -i &amp;#34;s@http://.*mirrors.aliyun.com@http://repo.huaweicloud.com@g&amp;#34; /etc/apt/sources.list&#xD;阿里源 # 先备份原sources.list 文件 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak # sed 命令替换域名 sudo sed -i &amp;#39;s/security.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/archive.ubuntu/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo apt update sudo apt-get upgrade //更新已安装的包到最新，这个是可选的 sudo sed -i &amp;#39;s/repo.huaweicloud/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list sudo sed -i &amp;#39;s/repo.huaweicloud/mirrors.aliyun/g&amp;#39; /etc/apt/sources.list&#xD;</description>
+    </item>
+    <item>
+      <title>卸载删除软件</title>
+      <link>https://r.xboox.cn/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E5%8D%B8%E8%BD%BD%E5%88%A0%E9%99%A4%E8%BD%AF%E4%BB%B6/</guid>
+      <description>卸载软件 apt-get autoremove 删除相关联的所有包 sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc&#xD;看看还有没有 dpkg -l | grep docker&#xD;卸载一切有关联的软件 sudo apt-get autoremove docker-ce-*&#xD;删除配置和相关目录 sudo rm -rf /etc/systemd/system/docker.service.d sudo rm -rf /var/lib/docker&#xD;卸载完毕 docker --version&#xD;</description>
+    </item>
+    <item>
+      <title>定时任务</title>
+      <link>https://r.xboox.cn/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <description>定时任务 查看定时任务 crontab -l&#xD;编辑定时任务 crontab -e&#xD;每周五23点定时关机&#xA;0 23 * * 5 /usr/sbin/shutdown now&#xD;命令必须是完整路径：/usr/sbin/shutdown&#xA;查看命令路径：which</description>
+    </item>
+    <item>
+      <title>常用命令</title>
+      <link>https://r.xboox.cn/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>命令 描述 注解 ls -h 比如:20M 文件大小以给人看的格式显示 crontab 定时任务 cat filename 查看文件 tail filename -n linenum 查看文件指定多少行 reboot 普通重启 shutdown -r now 立即重启(root) shutdown -r 10 10分钟后重启 shutdown -r 20:00 8点重启 halt 立刻关机 poweroff 立刻关机 shutdown -h now 立刻关机(root) shutdown -h 10 10分钟后关机 ps 查找进程 sudo apt-get remove 删除软件 不会删除配置文件 sudo apt-get purge mysql 彻底删除 文件 命令 描述 注解 scp 上传下载文件 scp root@host:/root/log.txt /log.txt 下载文件 scp /log.txt root@host:/root/log.txt 上传文件 scp -r root@host:/root/logs /path 下载文件夹 scp -r /path root@host:/root/logs 上传文件夹 du -sh .</description>
+    </item>
+    <item>
+      <title>开机自动运行</title>
+      <link>https://r.xboox.cn/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>两种方法 1. 创建systemd服务 1.1 创建服务脚本 -&amp;gt; /etc/systemd/system/myddns.service [Unit] Description=myservice ddns # 对服务的描述 After=network.target # 指该服务需要在网络服务启动后，再启动 [Service] Type=simple # 表示该服务是一个简单的进程 WorkingDirectory=/root/myddns # 服务所在文件夹 ExecStart=/root/myddns/myddns.sh # 服务启动命令 ExecStop=killall myddns # 服务停止命令 Restart=always # 不管什么原因，都会重启 RestartSec=3　# 重启间隔时间3秒 [Install] WantedBy=multi-user.target&#xD;1.2 systemd操作命令 # systemd 服务操作命令 sudo daemon-reload # 重新加载 systemd 的配置 sudo systemctl start myddns.service # 启动 systemd 服务 sudo systemctl stop myddns.service # 停止 systemd 服务 sudo systemctl enable myddns.service # 开机自启动 sudo systemctl disable myddns.</description>
+    </item>
+    <item>
+      <title>挂载和卸载设备</title>
+      <link>https://r.xboox.cn/linux/%E6%8C%82%E8%BD%BD%E5%92%8C%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E6%8C%82%E8%BD%BD%E5%92%8C%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87/</guid>
+      <description>卸载和挂载linux设备 包括 USB设备 查看所有硬盘设备 1. lsblk&#xD;2. fdisk&#xD;挂载 1. 创建挂载设备的目录&#xD;a. mkdir /data&#xD;2. mount /dev/sda /data&#xD;卸载 1. umount /dev/sda&#xA;常见问题 挂载失败 mount: /data: wrong fs type, bad option, bad superblock on /dev/md126, missing codepage or helper program, or other error.&#xA;1. 格式化硬盘&#xD;2. mkfs -t ext4 /dev/sda&#xD;3. 然后接着挂载&#xD;</description>
+    </item>
+    <item>
+      <title>文件共享</title>
+      <link>https://r.xboox.cn/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</guid>
+      <description>在Linux中设置文件或文件夹共享，可以使用Samba服务。以下是一个基本的Samba配置示例，用于共享名为share的文件夹。 安装Samba服务： sudo apt-get update sudo apt-get install samba 创建共享文件夹并设置合适的权限： mkdir /path/to/share sudo chmod 777 /path/to/share&#xD;配置Samba共享设置。编辑配置文件/etc/samba/smb.conf： sudo nano /etc/samba/smb.conf&#xD;在smb.conf文件的末尾添加以下内容： ini&#xD;[Share]&#xD;path = /path/to/share&#xD;browseable = yes&#xD;read only = no&#xD;writable = yes&#xD;guest ok = yes&#xD;重启Samba服务： sudo systemctl restart smbd&#xD;如果有防火墙运行，允许Samba通过： sudo ufw allow samba&#xD;完成以上步骤后，你应该能够从网络中的其他计算机访问并共享/path/to/share文件夹了。记得根据实际情况调整文件夹路径和权限设置。</description>
+    </item>
+    <item>
+      <title>杀死进程</title>
+      <link>https://r.xboox.cn/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</guid>
+      <description>进程相关 # 查找进程 ps auxf |grep uwsgi # 查看当前进程 pstree -ap|grep gunicorn # 杀死 进程 kill -9 544&#xD;</description>
+    </item>
+    <item>
+      <title>查看版本</title>
+      <link>https://r.xboox.cn/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC/</guid>
+      <description>内核版本&#xA;uname -a&#xD;所有版本信息&#xA;lsb_release -a&#xD;centos 查看版本&#xA;cat /etc/redhat-release&#xD;结果&#xA;CentOS Linux release 8.1.1911 (Core)&#xD;</description>
+    </item>
+    <item>
+      <title>磁盘操作</title>
+      <link>https://r.xboox.cn/linux/%E7%A1%AC%E7%9B%98%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E7%A1%AC%E7%9B%98%E6%93%8D%E4%BD%9C/</guid>
+      <description>查看硬盘使用情况 1. 查看挂载的硬盘空间使用情况 df -h&#xA;2. 当前目录下文件硬盘使用 du -h&#xA;3. 推荐，查看所有硬盘 lsblk&#xA;blkid&#xA;4. fdisk -l 硬盘名|分区名 命令可以显示或操作磁盘分区表 fdisk -l&#xA;fdisk -l /dev/sda&#xA;查看大文件 du -h -x &amp;ndash;max-depth=1</description>
+    </item>
+    <item>
+      <title>端口使用情况</title>
+      <link>https://r.xboox.cn/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</guid>
+      <description>查看指定端口占用情况 netstat -apn|grep 8888&#xA;lsof -t -i:8080&#xA;进程ID&#xA;强制关闭端口占用的进程 kill -9 进程ID</description>
+    </item>
+    <item>
+      <title>获取外网ip</title>
+      <link>https://r.xboox.cn/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</guid>
+      <description>a. 获取当前IP，优先显示IPV6：&#xD;https://ip.netarm.com&#xD;b. 获取IPV4：&#xD;https://ipv4.netarm.com&#xD;c. 获取IPV6：&#xD;https://ipv6.netarm.com&#xD;</description>
+    </item>
+    <item>
+      <title>设置静态IP</title>
+      <link>https://r.xboox.cn/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E8%AE%BE%E7%BD%AE%E9%9D%99%E6%80%81ip/</guid>
+      <description>linux 设置静态IP 查看网卡 root@zouni:~# ifconfig eno1: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 inet 192.168.1.6 netmask 255.255.255.0 broadcast 192.168.1.255 inet6 fe80::2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x20&amp;lt;link&amp;gt; inet6 240e:305:7880:36d2:2247:47ff:fe98:9e30 prefixlen 64 scopeid 0x0&amp;lt;global&amp;gt; ether 20:47:47:98:9e:30 txqueuelen 1000 (Ethernet) RX packets 15733 bytes 3827041 (3.8 MB) RX errors 0 dropped 8440 overruns 0 frame 0 TX packets 3586 bytes 376173 (376.1 KB) TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0 device interrupt 16 enp3s0: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt; mtu 1500 ether 00:e0:51:46:0b:01 txqueuelen 1000 (Ethernet) RX packets 0 bytes 0 (0.</description>
+    </item>
+    <item>
+      <title>防火墙</title>
+      <link>https://r.xboox.cn/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/linux/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>Linux 防火墙 ufw firewalld iptables 默认：iptables 2. ubuntu : ufw ufw 查询防火墙状态 查看开放端口： sudo ufw status 允许80端口开放： sudo ufw allow 80 允许22端口开放： sudo ufw allow 22 启动防火墙： sudo ufw enable 重启防火墙使端口配置生效： sudo ufw reload ufw status # 关闭 ufw disable&#xD;3. 红帽系列 firewall systemctl status firewalld # 启动防火墙 systemctl start firewalld # 停止防火墙 systemctl stop firewalld # 永久停用防火墙 systemctl disable firewalld # 启用防火墙 systemctl enable firewalld&#xD;防火墙开放指定端口 # permanent 永久 # 开放8080端口 firewall-cmd --permanent --zone=public --add-port=8080/tcp # 关闭端口 firewall-cmd --permanent --zone=public --remove-port=8080/tcp # 查询8080端口开放情况，若返回success，则为开放成功 # --zone docker firewall-cmd --zone=public --query-port=8080/tcp # 重启防火墙 firewall-cmd --reload&#xD;其它防火墙命令 启动： systemctl start firewalld 查看状态： systemctl status firewalld 停止： systemctl disable firewalld 禁用： systemctl stop firewalld 启动服务：systemctl start firewalld.</description>
+    </item>
+  </channel>
+</rss>

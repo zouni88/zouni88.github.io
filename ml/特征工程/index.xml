@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>特征工程 on 西凉观云海</title>
+    <link>https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/</link>
+    <description>Recent content in 特征工程 on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据缩放</title>
+      <link>https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BC%A9%E6%94%BE/</guid>
+      <description>数据缩放到某个区间 归一化公式：&#xA;每一个样本减去最小值，除以 最大值-最小值 (x - min(x) )/ (max(x) - min(x))</description>
+    </item>
+    <item>
+      <title>数据预处理</title>
+      <link>https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</guid>
+      <description>数据预处理 无量纲化&#xA;数据缩放： 标准化，归一化&#xA;标准化&#xA;处理缺失值&#xA;处理编码哑变量&#xA;二值化，分箱</description>
+    </item>
+  </channel>
+</rss>

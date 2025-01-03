@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xray on 西凉观云海</title>
+    <link>https://r.xboox.cn/proxy/xray/</link>
+    <description>Recent content in xray on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://r.xboox.cn/proxy/xray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>x2ray</title>
+      <link>https://r.xboox.cn/proxy/xray/x2ray/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/proxy/xray/x2ray/</guid>
+      <description>官网 https://www.v2ray.com/&#xA;v2ray 代理教程 https://github.com/233boy/v2ray/wiki/V2Ray%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B&#xA;服务端配置 一键脚本安装 一键安装x-ui&#xA;bash &amp;lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)&#xA;x2ray 客户端 windows 客户端 下载地址 windows客户端 android 客户端 x2rayNG android App x2fly 客户端 x2fly Android App v2flyNG&#xA;静态住宅ip vps 服务商 https://account.megalayer.net/clientarea.php?action=productdetails&amp;amp;id=84036&#xA;海外代理 https://ipraft.com&#xA;不良林 https://bulianglin.com/category/fan/4/&#xA;gost官网&#xA;https://gost.run/tutorials/port-forwarding/&#xA;跨境专线&#xA;https://gorelay.net/#/userinfo&#xA;https://xtls.github.io/config/inbounds/dokodemo.html 各种v2ray教程地址 https://toutyrater.github.io/&#xA;https://guide.v2fly.org/app/transparent_proxy.html#%E8%AE%BE%E7%BD%AE%E6%AD%A5%E9%AA%A4&#xA;https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md&#xA;https://bulianglin.com/category/software/</description>
+    </item>
+    <item>
+      <title>x2ray配置</title>
+      <link>https://r.xboox.cn/proxy/xray/v2ray%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/proxy/xray/v2ray%E9%85%8D%E7%BD%AE/</guid>
+      <description>配置流量中专啊 https://allencj.com/archives/2023/22/1670/&#xA;默认配置内容 { &amp;#34;api&amp;#34;: { &amp;#34;services&amp;#34;: [ &amp;#34;HandlerService&amp;#34;, &amp;#34;LoggerService&amp;#34;, &amp;#34;StatsService&amp;#34; ], &amp;#34;tag&amp;#34;: &amp;#34;api&amp;#34; }, &amp;#34;inbounds&amp;#34;: [ { &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, &amp;#34;port&amp;#34;: 62789, &amp;#34;protocol&amp;#34;: &amp;#34;dokodemo-door&amp;#34;, &amp;#34;settings&amp;#34;: { &amp;#34;address&amp;#34;: &amp;#34;127.0.0.1&amp;#34; }, &amp;#34;tag&amp;#34;: &amp;#34;api&amp;#34; } ], &amp;#34;outbounds&amp;#34;: [ { &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;, &amp;#34;settings&amp;#34;: {} }, { &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;, &amp;#34;settings&amp;#34;: {}, &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34; } ], &amp;#34;policy&amp;#34;: { &amp;#34;system&amp;#34;: { &amp;#34;statsInboundDownlink&amp;#34;: true, &amp;#34;statsInboundUplink&amp;#34;: true } }, &amp;#34;routing&amp;#34;: { &amp;#34;rules&amp;#34;: [ { &amp;#34;inboundTag&amp;#34;: [ &amp;#34;api&amp;#34; ], &amp;#34;outboundTag&amp;#34;: &amp;#34;api&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34; }, { &amp;#34;ip&amp;#34;: [ &amp;#34;geoip:private&amp;#34; ], &amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34; }, { &amp;#34;outboundTag&amp;#34;: &amp;#34;blocked&amp;#34;, &amp;#34;protocol&amp;#34;: [ &amp;#34;bittorrent&amp;#34; ], &amp;#34;type&amp;#34;: &amp;#34;field&amp;#34; } ] }, &amp;#34;stats&amp;#34;: {} }&#xD;转发配置 { &amp;#34;api&amp;#34;: { &amp;#34;services&amp;#34;: [ &amp;#34;HandlerService&amp;#34;, &amp;#34;LoggerService&amp;#34;, &amp;#34;StatsService&amp;#34; ], &amp;#34;tag&amp;#34;: &amp;#34;api&amp;#34; }, &amp;#34;inbounds&amp;#34;: [ { &amp;#34;listen&amp;#34;: &amp;#34;127.</description>
+    </item>
+    <item>
+      <title>中转</title>
+      <link>https://r.xboox.cn/proxy/xray/%E4%B8%AD%E8%BD%AC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/proxy/xray/%E4%B8%AD%E8%BD%AC/</guid>
+      <description>中转节点&amp;ndash;目标节点 配置安装xui&#xA;配置中转节点 配置目标节点 vmess + ws</description>
+    </item>
+  </channel>
+</rss>

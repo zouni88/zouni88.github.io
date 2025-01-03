@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DockerFile on 西凉观云海</title>
+    <link>https://r.xboox.cn/docker/dockerfile/</link>
+    <description>Recent content in DockerFile on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/docker/dockerfile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alpine dockerfile</title>
+      <link>https://r.xboox.cn/docker/dockerfile/dockerfile_alpine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/dockerfile_alpine/</guid>
+      <description>&#xD;# 基础镜像 FROM alpine # 作者 # MAINTAINER small LABEL name=&amp;#34;small&amp;#34; # 修改源 RUN [&amp;#34;sed&amp;#34;,&amp;#34;-i&amp;#34;,&amp;#34;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#34;,&amp;#34;/etc/apk/repositories&amp;#34;] RUN apk update # 安装nginx RUN apk add nginx &amp;amp;&amp;amp; mkdir /run/nginx/ # 安装python3 and uwsgi RUN apk add python3 &amp;amp;&amp;amp; pip3 install --upgrade pip \ &amp;amp;&amp;amp; apk add \ libuuid \ pcre \ mailcap \ gcc \ libc-dev \ linux-headers \ pcre-dev \ &amp;amp;&amp;amp; pip3 install uwsgi # 安装python2 RUN apk add python2 EXPOSE 80 443 22 CMD [&amp;#34;nginx&amp;#34;] # 容器启动后，执行命令 ENTRYPOINT [&amp;#34;nginx&amp;#34;,&amp;#34;-g&amp;#34;,&amp;#34;daemon off;&amp;#34;]&#xD;</description>
+    </item>
+    <item>
+      <title>alpine-坑</title>
+      <link>https://r.xboox.cn/docker/dockerfile/alpine-%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/alpine-%E5%9D%91/</guid>
+      <description>安装uwsgi 报各种 致命错误 缺少c编译器 File &amp;#34;uwsgiconfig.py&amp;#34;, line 742, in __init__ raise Exception(&amp;#34;you need a C compiler to build uWSGI&amp;#34;) Exception: you need a C compiler to build uWSGI&#xD;首次安装软件，需要先更新源。&#xA;apk update apk add gcc&#xD;执行pip3 install uWSGI In file included from core/socket.c:1:0: ./uwsgi.h:165:19: fatal error: stdio.h: No such file or directory compilation terminated. In file included from core/logging.c:2:0: ./uwsgi.h:165:19: fatal error: stdio.h: No such file or directory compilation terminated. In file included from core/utils.</description>
+    </item>
+    <item>
+      <title>alpine镜像</title>
+      <link>https://r.xboox.cn/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/alpine%E9%95%9C%E5%83%8F/</guid>
+      <description>alpine 启动没有/bin/bash docker&#xA;alpine软件安装&#xA;apk add python3&#xD;修改成aliyun源&#xA;vi /etc/apk/repositories https://mirrors.aliyun.com/alpine/ or&#xA;sed 命令修改 仓库文件&#xA;sed -i &amp;#39;s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g&amp;#39; /etc/apk/repositories&#xD;阿里云镜像源地址： https://developer.aliyun.com/mirror/&#xD;</description>
+    </item>
+    <item>
+      <title>command</title>
+      <link>https://r.xboox.cn/docker/dockerfile/command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/command/</guid>
+      <description>DockerFile 分为四部分：基础镜像、维护者、镜像操作指令、容器启动时执行指令&#xA;WORKDIR 指定工作目录，类似于 cd,定位到某一个目录&#xA;WORKDIR /usr/local/nginx&#xD;RUN 构建镜像时运行指令&#xA;RUN apk add nginx &amp;amp;&amp;amp; mkdir /run/nginx/&#xD;构建指令：&#xA;docker build -f dockerfile-path .&#xD;</description>
+    </item>
+    <item>
+      <title>flask dockerfile</title>
+      <link>https://r.xboox.cn/docker/dockerfile/dockerfile_flask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/dockerfile_flask/</guid>
+      <description># 基础镜像 FROM centos # 作者 MAINTAINER small # 修改源 RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo \ &amp;amp;&amp;amp; yum makecache # 安装python2 RUN yum install -y python2 \ &amp;amp;&amp;amp; yum install -y python3 WORKDIR /root # 修改pypi源 RUN mkdir .pip \ &amp;amp;&amp;amp; touch .pip/pip.conf \ &amp;amp;&amp;amp; echo [global] &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo index-url = https://mirrors.aliyun.com/pypi/simple/ &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo [install] &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo trusted-host=mirrors.aliyun.com &amp;gt;&amp;gt;.pip/pip.conf # 安装virtualwrapper 配置python 虚拟环境 RUN pip2 install -i https://mirrors.</description>
+    </item>
+    <item>
+      <title>pip.conf文件</title>
+      <link>https://r.xboox.cn/docker/dockerfile/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/pip/</guid>
+      <description>pip.conf&#xA;[global] index-url = https://mirrors.aliyun.com/pypi/simple/ [install] trusted-host=mirrors.aliyun.com&#xD;</description>
+    </item>
+    <item>
+      <title>运行构建dockerfile</title>
+      <link>https://r.xboox.cn/docker/dockerfile/%E8%BF%90%E8%A1%8Cdockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/dockerfile/%E8%BF%90%E8%A1%8Cdockerfile/</guid>
+      <description>运行构建dockerfile -f 指定dockerfile 文件构建镜像 docker build -f D:\docker\dockerfile\Dockerfile&#xD;-t docker build -t image_name:tag .&#xD;</description>
+    </item>
+  </channel>
+</rss>

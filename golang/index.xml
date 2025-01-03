@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on 西凉观云海</title>
+    <link>https://r.xboox.cn/golang/</link>
+    <description>Recent content in golang on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://r.xboox.cn/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>alpine容器运行</title>
+      <link>https://r.xboox.cn/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/alpine%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>&#xD;mkdir /lib64 ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2&#xD;</description>
+    </item>
+    <item>
+      <title>CGO环境配置</title>
+      <link>https://r.xboox.cn/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/cgo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>CGO需要安装gcc&#xA;windows安装mingw-w64&#xA;下载&#xA;https://sourceforge.net/projects/mingw-w64/files/mingw-w64/&#xA;两种方式：&#xA;下载exe可执行文件，交给程序下载安装，网络不好很大概率会一直失败 直接下载压缩包解压，然后配置环境变量即可。(推荐) </description>
+    </item>
+    <item>
+      <title>ddns</title>
+      <link>https://r.xboox.cn/golang/ddns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/ddns/</guid>
+      <description>获取访问者ip地址 https://www.ip.cn/api/index?ip&amp;amp;type=0</description>
+    </item>
+    <item>
+      <title>goland中文乱码</title>
+      <link>https://r.xboox.cn/golang/goland%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/goland%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</guid>
+      <description>Help-&amp;gt;Edit Custom VM Options&amp;hellip;在开打文件中添加参数-Dfile.encoding=UTF-8</description>
+    </item>
+    <item>
+      <title>golang env 环境配置</title>
+      <link>https://r.xboox.cn/golang/env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/env/</guid>
+      <description>golang 配置环境 不通架构运行可能出现 不能运行的问题&#xA;-ash: ./alidns: cannot execute binary file: Exec format error&#xD;这种情况要根据当前运行环境决定修改 go env参数&#xA;GOARCH&amp;amp; GOOS&#xA;go env -w GOOS= linux # 这里GOARCH 分为 amd64 arm64 根据个人环境决定 go env -w GOARCH=amd64 go env -w GOARCh=arm64&#xD;</description>
+    </item>
+    <item>
+      <title>socket.io</title>
+      <link>https://r.xboox.cn/golang/socket.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/socket.io/</guid>
+      <description>socket.io 配置到外网 服务器后，就会出现如下问题&#xA;Error during WebSocket handshake: Unexpected response code: 400&#xD;，根据github的讨论，得到如下答案&#xA;proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection &amp;#34;upgrade&amp;#34;; proxy_set_header Host $host;&#xD;其中第一行是告诉nginx使用HTTP/1.1通信协议，这是websoket必须要使用的协议。 第二行和第三行告诉nginx，当它想要使用WebSocket时，响应http升级请求。</description>
+    </item>
+    <item>
+      <title>vscode配置</title>
+      <link>https://r.xboox.cn/golang/vscode%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/vscode%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装 1. 配置好环境变量：GOPATH GOROOT GOROOT: GO安装目录&#xA;GOPATH: 项目目录 src pkg bin目录&#xA;2. 安装go 开发工具集 ctrl + shift + P 打开命令面板，选择 GO:Install/Update Tools&#xA;调试 go run test 不打印 详情 go test -v # 正常命令应该是这样的，vscode 默认运行 不带-v 修改工作空间设置&#xA;{ &amp;#34;go.inferGopath&amp;#34;: false, &amp;#34;go.testFlags&amp;#34;: [&amp;#34;-v&amp;#34;], //增加这一行 }&#xD;再运行就正常了。</description>
+    </item>
+    <item>
+      <title>函数计算</title>
+      <link>https://r.xboox.cn/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</guid>
+      <description>函数计算需要设置时区 添加环境变量即可：&#xA;TZ = Asia/Shanghai&#xA;部署时会遇到权限受限的问题，可执行文件没有执行权限 不要上传压缩包，直接上传文件夹</description>
+    </item>
+    <item>
+      <title>常用库</title>
+      <link>https://r.xboox.cn/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
+      <description>godotenv 源码 从 .env 文件加载环境变量&#xA;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) }&#xD;gotify 官网 源码 用于发送和接收消息的简单服务器&#xA;mediamtx 源码 MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。&#xA;obs-studio 官网 源码 jellyfin 源码 Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！&#xA;包含各种终端：pc web android ios&#xA;home-assistant 源码 智能家居集成&#xA;hugo 源码 </description>
+    </item>
+    <item>
+      <title>标准包</title>
+      <link>https://r.xboox.cn/golang/%E6%A0%87%E5%87%86%E5%8C%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E6%A0%87%E5%87%86%E5%8C%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>私用仓库配置</title>
+      <link>https://r.xboox.cn/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
+      <description>私有仓库配置 将gitee.com 设置为私有仓库&#xA;首先配置https请求转换为ssh: git config --global url.&amp;#34;git@gitee.com:&amp;#34;.insteadOf &amp;#34;https://gitee.com/&amp;#34; git config --global http.extraheader &amp;#34;PRIVATE-TOKEN: B9TWLqsLdh1-513os1Pm&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://192.168.200.47:8083/&amp;#34; git config --global url.&amp;#34;git@192.168.200.47&amp;#34;.insteadOf &amp;#34;http://git.zhongzhuoxin.com:9000/&amp;#34;&#xD;配置环境变量 go env -w GOPRIVATE=gitee.com&#xA;新建的仓库名字一定要改成和仓库地址一致&#xA;新建仓库 gitee.com/zouni88/util 项目目录下 go.mod 修改module为gitee.com/zouni88/util </description>
+    </item>
+    <item>
+      <title>编译带图标可执行文件</title>
+      <link>https://r.xboox.cn/golang/%E7%BC%96%E8%AF%91%E5%B8%A6%E5%9B%BE%E6%A0%87%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E7%BC%96%E8%AF%91%E5%B8%A6%E5%9B%BE%E6%A0%87%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/</guid>
+      <description>打包exe可执行文件自定义图标 1. 提前制作好ico图标文件 favicon.ico 普通图片文件不可用&#xA;2. 生成syso文件 创建main.rc文件并编辑，文件名与应用main文件同名&#xA;IDI_ICON1 ICON &amp;ldquo;favicon.ico&amp;rdquo; 保存文件&#xA;3. 在文件所在目录执行命令生成main.syso文件 windres -o main.syso main.rc&#xA;命令运行生成文件：main.syso&#xA;4. 打包 go build&#xA;打包前要先设置环境变量：&#xA;go env -w GOOS=windows</description>
+    </item>
+  </channel>
+</rss>

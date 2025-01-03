@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vpn on 西凉观云海</title>
+    <link>https://r.xboox.cn/proxy/vpn/</link>
+    <description>Recent content in vpn on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/proxy/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装openvpn客户端</title>
+      <link>https://r.xboox.cn/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE/</guid>
+      <description>windows 客户端配置 </description>
+    </item>
+    <item>
+      <title>安装openvpn服务端</title>
+      <link>https://r.xboox.cn/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
+      <description>配置openVpn linux 服务端安装配置 一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl&#xD;二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator&#xD;三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa&#xD;查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
+    </item>
+  </channel>
+</rss>

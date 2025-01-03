@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>other on 西凉观云海</title>
+    <link>https://r.xboox.cn/other/</link>
+    <description>Recent content in other on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常用单词记录</title>
+      <link>https://r.xboox.cn/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/other/%E5%B8%B8%E7%94%A8%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BD%95/</guid>
+      <description> 英文 中文 trigger 触发 necessary 必要的 depending 依赖 logic 逻辑 acquire 获取 heavy 重；大；沉重 separate 单独的，分离的 </description>
+    </item>
+    <item>
+      <title>性能测试工具使用</title>
+      <link>https://r.xboox.cn/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/other/wrk-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
+      <description>性能测试工具使用 1.安装&#xA;git clone https://github.com/wg/wrk cd wrk make # 编译 cp wrk /usr/local/sbin # 二进制文件 放入非管理员目录，可直接运行命令&#xD;wrk http://163.com&#xA;Thread Stats Avg Stdev Max +/- Stdev Latency 32.49ms 56.14ms 230.86ms 84.38% Req/Sec 637.05 222.35 1.09k 63.00% 12710 requests in 10.03s, 6.71MB read Requests/sec: 1267.57 Transfer/sec: 685.72KB&#xD;</description>
+    </item>
+    <item>
+      <title>接口编写规范</title>
+      <link>https://r.xboox.cn/other/%E6%8E%A5%E5%8F%A3%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/other/%E6%8E%A5%E5%8F%A3%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/</guid>
+      <description>公司里接口编写规范： 返回值的规范： { &amp;#34;code&amp;#34;:200, &amp;#34;msg&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;data&amp;#34;:{ &amp;#34;name&amp;#34;:&amp;#39;xxx&amp;#39;, &amp;#34;age&amp;#34;:&amp;#39;xxx&amp;#39; } }&#xD;状态码的规范： 200：成功。 401：没有授权。 400：参数错误。 500：服务器错误。 </description>
+    </item>
+  </channel>
+</rss>

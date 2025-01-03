@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on 西凉观云海</title>
+    <link>https://r.xboox.cn/docker/redis/</link>
+    <description>Recent content in redis on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/docker/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>redis_conf</title>
+      <link>https://r.xboox.cn/docker/redis/redis_conf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/redis/redis_conf/</guid>
+      <description># Redis configuration file example. # # Note that in order to read the configuration file, Redis must be # started with the file path as first argument: # # ./redis-server /path/to/redis.conf # Note on units: when memory size is needed, it is possible to specify # it in the usual form of 1k 5GB 4M and so forth: # # 1k =&amp;gt; 1000 bytes # 1kb =&amp;gt; 1024 bytes # 1m =&amp;gt; 1000000 bytes # 1mb =&amp;gt; 1024*1024 bytes # 1g =&amp;gt; 1000000000 bytes # 1gb =&amp;gt; 1024*1024*1024 bytes # # units are case insensitive so 1GB 1Gb 1gB are all the same.</description>
+    </item>
+    <item>
+      <title>redis配置</title>
+      <link>https://r.xboox.cn/docker/redis/redis%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/redis/redis%E9%85%8D%E7%BD%AE/</guid>
+      <description>docker run -p 6379:6379 &amp;ndash;name redis -v /root/redis/redis.conf:/etc/redis/redis.conf -v /root/redis/data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes&#xA;docker run -itd &amp;ndash;name redis -p 6379:6379 -v /root/redis/redis.conf:/etc/redis/redis.conf -v /root/redis/data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes&#xA;docker run -itd &amp;ndash;name redis -p 6379:6379 -v /etc/redis/redis.conf:/etc/redis/redis.conf -v /home/data:/data -d redis redis-server /etc/redis/redis.conf &amp;ndash;appendonly yes &amp;ndash;requirepass qaz521&#xA;查看配置文件挂载 docker inspect redis| grep Mounts -A 20&#xD;创建完成设置密码 docker exec -it redis bash&#xA;redis-cli&#xA;config set requirepass 密码</description>
+    </item>
+  </channel>
+</rss>

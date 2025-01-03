@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>containerd on 西凉观云海</title>
+    <link>https://r.xboox.cn/docker/containerd/</link>
+    <description>Recent content in containerd on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/docker/containerd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. windows使用containerd</title>
+      <link>https://r.xboox.cn/docker/containerd/1.windows%E4%BD%BF%E7%94%A8containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/containerd/1.windows%E4%BD%BF%E7%94%A8containerd/</guid>
+      <description>1. 下载&amp;amp;配置环境变量 2. 生成默认配置文件 containerd config default &amp;gt; d:/path&#xD;3. 启动 containerd&#xD;4. 查看版本 ctr version&#xD;</description>
+    </item>
+    <item>
+      <title>2. containerd 安装</title>
+      <link>https://r.xboox.cn/docker/containerd/containerd%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/containerd/containerd%E5%AE%89%E8%A3%85/</guid>
+      <description>yum 安装&#xA;yum install containerd&#xA;二进制包安装&#xA;官方说明文档： https://github.com/containerd/containerd/blob/main/docs/getting-started.md</description>
+    </item>
+    <item>
+      <title>3. 操作镜像</title>
+      <link>https://r.xboox.cn/docker/containerd/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/containerd/%E6%93%8D%E4%BD%9C%E9%95%9C%E5%83%8F/</guid>
+      <description>查看镜像列表 ctr images ls ctr i ls ctr i list&#xA;拉取镜像 ctr i pull docker.io/library/nginx:alpine # 指定平台 --platform ctr i pull --platform linux/amd64 docker.io/library/nginx:alpine # 所有平台同时拉取 --all-platform ctr i pull --all-platforms docker.io/library/nginx:alpine&#xD;out&#xA;REF TYPE DIGEST SIZE PLATFORMS LABELS docker.io/library/nginx:alpine application/vnd.oci.image.index.v1+json sha256:a59278fd22a9d411121e190b8cec8aa57b306aa3332459197777583beb728f59 17.1 MiB linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x,unknown/unknown -&#xD;镜像挂在 # 挂载 ctr images mount docker.io/library/nginx:alpine /root/zouni # 取消挂载 umount /root/zouni&#xD;镜像导出 # 导出 作为分享使用 ctr images export zouni.img docker.io/library/nginx:alpine # 指定所有版本导出 ctr images export --all-platforms zouni.</description>
+    </item>
+    <item>
+      <title>4. 错误记录</title>
+      <link>https://r.xboox.cn/docker/containerd/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/containerd/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</guid>
+      <description>dial unix /run/containerd/containerd.sock: connect: permission denied&amp;quot; 正常修改权限就可以了，开发电脑用的wsl2,goland-&amp;gt; run target-&amp;gt; wsl，这种方式进行开发调试的。&#xA;解决方法： 修改wsl 默认登录用户为root </description>
+    </item>
+  </channel>
+</rss>

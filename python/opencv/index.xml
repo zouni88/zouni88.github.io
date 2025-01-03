@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opencv on 西凉观云海</title>
+    <link>https://r.xboox.cn/python/opencv/</link>
+    <description>Recent content in opencv on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/python/opencv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</guid>
+      <description>图像融合 cv2.addWeighted(src1, alpha, src2, beta, gamma, dst=None, dtype=None)&#xA;src1 : 图像 alpha : 透明系数 src2 : 图像2 beta : 透明系数 gamma : 亮度调节 import cv2 a = cv2.imread(&amp;#39;images/aaa.png&amp;#39;) b = cv2.imread(&amp;#39;images/bbb.png&amp;#39;) a = a[:b.shape[0],:b.shape[1],:] res = cv2.addWeighted(src1=a,alpha=0.3,src2=b,beta=1,gamma=0.3) cv2.imshow(&amp;#39;a&amp;#39;,a) cv2.waitKey(1000) cv2.imshow(&amp;#39;b&amp;#39;,b) cv2.waitKey(1000) cv2.imshow(&amp;#39;res&amp;#39;,res) cv2.waitKey(1000) cv2.destroyAllWindows()&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</guid>
+      <description>读取图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;)&#xD;显示图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) cv2.imshow(&amp;#39;name&amp;#39;,img) cv2.waitKey() cv2.destroyAllWindows()&#xD;图像形状 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) img.shape&#xD;图像分割，通道拆分 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) b,g,r = cv2.split(img)&#xD;图像运算 cv2.add 方法 相加 取最大值255 img_a + img_b ,直接相加结果除255 取模 import cv2 img_a = cv2.imread(&amp;#39;image_a_path&amp;#39;) img_b = cv2.imread(&amp;#39;image_b_path&amp;#39;) img_c = cv2.add(img_a,img_b) img_d = img_a + img_b&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</guid>
+      <description>图像缩放 两种方式 dsize : 元组，传入要缩放图像的宽高 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(av,dsize=(100,100)) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;fx fy 参数，分别 修改横列 缩放系数 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(img,None,fx=2,fy=2) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;翻转变换 flipCode:&#xA;&amp;gt;1 沿着y axis左右变换 =0 沿着x axis上下变换 &amp;lt;0 沿着x axis上下 翻转，再沿着y axis 左右反转 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.flip(img,flipCode=1) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</guid>
+      <description>&#xD;import cv2 imgpath = &amp;#39;d:/img.png&amp;#39; x,y,x1,y1 = 641,165,752,278 img = cv2.imread(imgpath) img.shape linet = cv2.LINE_4 img = cv2.rectangle(img, (x, y), (x1, y1), (0, 0, 255), linet,2) cv2.imshow(&amp;#39;name&amp;#39;, img) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
+    </item>
+  </channel>
+</rss>

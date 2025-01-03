@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c-c&#43;&#43; on 西凉观云海</title>
+    <link>https://r.xboox.cn/c_cxx/</link>
+    <description>Recent content in c-c&#43;&#43; on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/c_cxx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;特色</title>
+      <link>https://r.xboox.cn/c_cxx/cxx%E7%89%B9%E8%89%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/cxx%E7%89%B9%E8%89%B2/</guid>
+      <description>extern &amp;ldquo;C&amp;rdquo; 学习记录 // A.cpp //告诉编译器这里修饰的是C语言的代码， extern &amp;#34;C&amp;#34; { //在编译阶段，不会被编译成C++这样的fun_int_int符号，即使找不到函数也不会报错 void fun(int a,int b){ } }&#xD;//B.cpp #include &amp;#34;A.h&amp;#34; int main(){ //对于C++来说，因为有函数重载的机制，编译后的函数会以 函数名 + 形参 来命名， //对于C来说，没有函数重载，不会被转成fun_int_int这样的符号 fun(1,2); }&#xD;</description>
+    </item>
+    <item>
+      <title>clion编译arm64的动态库</title>
+      <link>https://r.xboox.cn/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/clion%E7%BC%96%E8%AF%91arm64%E7%9A%84%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
+      <description>配置环境 第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34; -DANDROID_PLATFORM=&amp;#34;android-21&amp;#34; -DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34; -DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DANDROID_STL=&amp;#34;c++_static&amp;#34;&#xD;</description>
+    </item>
+    <item>
+      <title>main</title>
+      <link>https://r.xboox.cn/c_cxx/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/main/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt;&#xD;int main(int argc, char const *argv[])&#xD;{&#xD;printf(&#39;123&#39;);&#xD;return 0;&#xD;}&#xD;</description>
+    </item>
+    <item>
+      <title>常见问题</title>
+      <link>https://r.xboox.cn/c_cxx/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>printf不能输出打印 setbuf(stdout,NULL);&#xD;Cannot jump from this goto statement to its label 不能在 goto 声明变量 </description>
+    </item>
+    <item>
+      <title>找不到动态库</title>
+      <link>https://r.xboox.cn/c_cxx/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/%E6%89%BE%E4%B8%8D%E5%88%B0%E5%8A%A8%E6%80%81%E5%BA%93/</guid>
+      <description>cmake 项目中添加并链接第三方动态库，始终无法加载动态链接库 error while loading shared libraries: libavutil.so.58: cannot open shared object file: No such file or directory&#xD;解决方案：&#xA;设置环境变量： LD_LIBRARAY_PATH=lib库路径&#xA;或者在 Clion 运行时增加环境变量参数设置：&#xA;run-&amp;gt; edit configurations -&amp;gt; Environment variables&#xA;LD_LIBRARY_PATH=/mnt/d/workproject/ffmpeg/ffmpeg_f/dep/FFmpeg/lib/&#xA;&amp;ldquo;LD_LIBRARY_PATH&amp;rdquo;:&amp;quot;/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&amp;quot; LD_LIBRARY_PATH=/mnt/d/workproject/ClionProjects/ffmpeg_vs_f/dep/FFmpeg/lib/&#xA;LD_LIBRARY_PATH=/tmp/tmp.JqpioE7hyU/dep/FFmpeg/lib/&#xA;严重性&#x9;代码&#x9;说明&#x9;项目&#x9;文件&#x9;行&#x9;禁止显示状态 错误&#x9;CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage</description>
+    </item>
+    <item>
+      <title>源码反码补码</title>
+      <link>https://r.xboox.cn/c_cxx/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/</guid>
+      <description>原码反码补码的概念和理解 1. 原码 原码就是符号位加上真值的绝对值, 即用第一位表示符号, 其余位表示值. 比如如果是8位二进制:&#xA;[+1]原 = 0000 0001&#xA;[-1]原 = 1000 0001&#xA;第一位是符号位. 因为第一位是符号位, 所以8位二进制数的取值范围就是:&#xA;[1111 1111 , 0111 1111]&#xA;即&#xA;[-127 , 127]&#xA;原码是人脑最容易理解和计算的表示方式.&#xA;2. 反码 反码的表示方法是:&#xA;正数的反码是其本身&#xA;负数的反码是在其原码的基础上, 符号位不变，其余各个位取反.&#xA;[+1] = [00000001]原 = [00000001]反&#xA;[-1] = [10000001]原 = [11111110]反&#xA;可见如果一个反码表示的是负数, 人脑无法直观的看出来它的数值. 通常要将其转换成原码再计算.&#xA;3. 补码 补码的表示方法是:&#xA;正数的补码就是其本身&#xA;负数的补码是在其原码的基础上, 符号位不变, 其余各位取反, 最后+1. (即在反码的基础上+1)&#xA;[+1] = [00000001]原 = [00000001]反 = [00000001]补&#xA;[-1] = [10000001]原 = [11111110]反 = [11111111]补</description>
+    </item>
+    <item>
+      <title>编译过程</title>
+      <link>https://r.xboox.cn/c_cxx/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/c_cxx/%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</guid>
+      <description>编译过程描述 //生成预处理文件 g++ -o HelloWorld.ii -E HelloWorld.cpp //生成汇编文件&#xA;g++ -o HelloWorld.s -S HelloWorld.ii&#xA;//生成二进制也就是目标文件&#xA;g++ -o HelloWorld.o -c HelloWorld.s&#xA;//生成可执行文件 g++ -o HelloWorld.exe HelloWorld.o</description>
+    </item>
+  </channel>
+</rss>

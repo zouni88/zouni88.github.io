@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.setup on 西凉观云海</title>
+    <link>https://r.xboox.cn/flutter/1.setup/</link>
+    <description>Recent content in 1.setup on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/flutter/1.setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android混合flutter-module开发</title>
+      <link>https://r.xboox.cn/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/android%E6%B7%B7%E5%90%88fluttermodule%E5%BC%80%E5%8F%91/</guid>
+      <description>新建flutter module 1. module 的 settings.gradle ： // Generated file. Do not edit. include &amp;#39;:app&amp;#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &amp;#39;android_generated&amp;#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;))&#xD;效果： 2. 引入依赖 在工程app/build.gradle 中： dependencies { implementation project(&amp;#39;:flutter&amp;#39;) }&#xD;3. 编译运行：失败 Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;. 这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1. 这里改动 替换成了下面一行 // repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) repositoriesMode.</description>
+    </item>
+    <item>
+      <title>vscode快捷键</title>
+      <link>https://r.xboox.cn/flutter/1.setup/3.vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/3.vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>常用快捷键 创建项目：ctrl+shift+P 代码提示：ctrl+I </description>
+    </item>
+    <item>
+      <title>web环境设置</title>
+      <link>https://r.xboox.cn/flutter/1.setup/web%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/web%E7%8E%AF%E5%A2%83%E8%AE%BE%E7%BD%AE/</guid>
+      <description>flutter 2.0 已经正式支持了web，不需要用下面方式单独启用web开发支持 flutter web 开发 开启web支持 (正式版默认启用)&#xA;flutter config &amp;ndash;enable-web&#xA;再次 执行环境检查&#xA;flutter doctor&#xA;一切正常之后,正常创建项目，会多出一个web文件夹&#xA;以前旧的项目可以执行以下命令：&#xA;flutter create .&#xA;运行在浏览器看下效果：&#xA;flutter run -d edge&#xA;我这里用的 microsoft edge 浏览器&#xA;打包&#xA;flutter build web&#xA;flutter build web &amp;ndash;release //生产环境打包&#xA;可以看到 build 目录下多出一个web 文件夹&#xA;flutter web 常见问题 Finished with error: Failed to bind web development server:SocketException: Failed to create server socket (OS Error: Failed to start accept), address = localhost, port = 53041</description>
+    </item>
+    <item>
+      <title>windows环境配置</title>
+      <link>https://r.xboox.cn/flutter/1.setup/windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>flutter for windows 环境配置 开启 flutter for windows flutter config --enable-windows-desktop&#xD;下载 visual studio 社区版本 安装过程如下所示： 3. 运行flutter doctor，没有问题的话，就完成了环境配置 4. 运行，打完收工</description>
+    </item>
+    <item>
+      <title>初始化</title>
+      <link>https://r.xboox.cn/flutter/1.setup/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
+      <description>flutter 初体验 1. 下载flutter sdk 2. 配置环境变量 E:\WorkRoom\android\flutter\flutter\bin 添加到path中&#xD;运行命令：&#xA;flutter doctor&#xD;这一步有可能卡在 Running pub upgrade... 解决办法： # 配置环境变量，国内镜像 PUB_HOSTED_URL=https://pub.flutter-io.cn FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn&#xD;许可证的问题，not accepted,那就让他ok，根据提示输入命令：&#xA;flutter doctor --android-licenses&#xD;一路yes到底，最后再检查一次就 ok 了 3. 配置IDE vscode 配置 ：搜索 安装flutter插件&#xA;android studio : 安装flutter插件&#xA;接着运行 flutter doctor&#xA;手动更新依赖包：&#xA;flutter packages get </description>
+    </item>
+    <item>
+      <title>环境配置常见问题</title>
+      <link>https://r.xboox.cn/flutter/1.setup/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/flutter/1.setup/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>1. Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; ===============================================&#xA;卡在 Running Gradle task &amp;lsquo;assembleDebug&amp;rsquo;&amp;hellip; 不动&#xA;解决方案：&#xA;检查 ./gradle 是否下载成功 检查 gradle 默认代理是否正常&#xA;gradle 配置文件默认在 ~/.gradle/gradle.properties 注释掉下面几行代码即可： # Sun Jul 05 10:38:23 CST 2020 # systemProp.http.proxyHost=127.0.0.1 # systemProp.http.proxyPort=50030 # systemProp.https.proxyHost=127.0.0.1 # systemProp.https.proxyPort=50030&#xD;2. flutter doctor 异常 ==================================== android sdk platforms 下载失败 检查网络代理，是否能正常访问 https://dl.google.com&#xA;3. Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;. 这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;4. 非空检查相关异常：Error: Cannot run with sound null safety, because the following dependencies flutter run &amp;ndash;no-sound-null-safety</description>
+    </item>
+  </channel>
+</rss>

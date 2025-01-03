@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>homeassistant on 西凉观云海</title>
+    <link>https://r.xboox.cn/homeassistant/</link>
+    <description>Recent content in homeassistant on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/homeassistant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>容器安装和运行</title>
+      <link>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</guid>
+      <description>容器安装和运行 docker run -d \ --name homeassistant \ --privileged \ --restart=unless-stopped \ -e TZ=MY_TIME_ZONE \ -v /PATH_TO_YOUR_CONFIG:/config \ -v /run/dbus:/run/dbus:ro \ --network=host \ ghcr.io/home-assistant/home-assistant:stable&#xD;更新镜像&#xA;# if this returns &amp;#34;Image is up to date&amp;#34; then you can stop here&#xD;docker pull ghcr.io/home-assistant/home-assistant:stable&#xD;# stop the running container&#xD;docker stop homeassistant&#xD;# remove it from Docker&amp;#39;s list of containers&#xD;docker rm homeassistant&#xD;# finally, start a new one&#xD;docker run -d \&#xD;--name homeassistant \&#xD;--restart=unless-stopped \&#xD;--privileged \&#xD;-e TZ=MY_TIME_ZONE \&#xD;-v /PATH_TO_YOUR_CONFIG:/config \&#xD;-v /run/dbus:/run/dbus:ro \&#xD;--network=host \&#xD;ghcr.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matplotlib on 西凉观云海</title>
+    <link>https://r.xboox.cn/python/matplotlib/</link>
+    <description>Recent content in matplotlib on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/python/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</guid>
+      <description>动画 from matplotlib import animation,pyplot as plt import numpy as np fig,axe = plt.subplots() x = np.arange(0,2*np.pi,0.01) line, = axe.plot(x,np.sin(x)) def animations(i): line.set_ydata(np.sin(x+i/10)) return line def init(): line.set_ydata(np.sin(x)) return line # func 动画更新函数回调 # frames : 帧数，共多少帧 播放完 # init_func : 初始化回调函数 # interval : 刷新间隔 ms 毫秒 # blit ：是否整体刷新 ani = animation.FuncAnimation(fig=fig,func=animations,frames=100,init_func=init,interval=20,blit=False) plt.show()&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</guid>
+      <description>最简单方式创建子图 import numpy as np from matplotlib import pyplot as plt np.random.seed(123456) # 随机生成1-20的随机数 x = np.random.randint(1, 20, 20) xmax = x.max() xmin = x.min() xmax, xmin # 数据缩放到0-1的 区间 xx = (x - xmin) / (xmax - xmin) # 2,1,1, 代表 画子图 2行1列第一 个位置 # 参数中间的逗号可以免掉不写，211 plt.subplot(211) plt.plot(x) plt.subplot(2,1,2) plt.plot(y) plt.show()&#xD;创建子图 from matplotlib import pyplot as plt # 第一个子图 将 整个图分成 2行1列，占据第1个位置 plt.subplot(211) plt.plot([1,2],[3,4]) # 第二个子图 将整个图分成 2行3列 放在第4个位置，也就是2行第1位 plt.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</guid>
+      <description>散点图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] plt.scatter(x, y) plt.show()&#xD;meshgrid生成点阵图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] xxx, yyy = np.meshgrid(x, y) plt.scatter(xxx, yyy) plt.show()&#xD;</description>
+    </item>
+  </channel>
+</rss>

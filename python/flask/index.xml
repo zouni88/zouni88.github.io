@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flask on 西凉观云海</title>
+    <link>https://r.xboox.cn/python/flask/</link>
+    <description>Recent content in flask on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/python/flask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/flask/form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/form/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/flask/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/flask/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/session/</guid>
+      <description>session 过期时间&#xA;def login(): session.permanent = True app.permanent_session_lifetime = timedelta(minutes=1) # 设置session到期时间&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</guid>
+      <description>pip3 安装 uwsgi遇到异常： Exception: you need a C compiler to build uWSGI&#xA;解决办法：&#xA;yum install gcc&#xD;安装完c解释器后没有 又提示没找到python文件 plugins/python/uwsgi_python.h:2:10: fatal error: Python.h: No such file or directory&#xA;解决办法：&#xA;安装python3-dev,正常这么安装 提示找不到,先搜索&#xA;yum search python3 dev&#xD;因为当前版本是python3.6, 所以最终找到python36-devel 并安装&#xA;yum install python36-devel&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>
+      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip 127.0.0.1&#x9;student.zouni.vip&#xD;2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;)&#xD;3.设置 config 配置 SERVER_NAME=主域名</description>
+    </item>
+  </channel>
+</rss>

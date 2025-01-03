@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>部署aws on 西凉观云海</title>
+    <link>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/</link>
+    <description>Recent content in 部署aws on 西凉观云海</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>s3部署静态网站配置</title>
+      <link>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/s3%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/s3%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</guid>
+      <description>亚马逊 s3 部署静态网站 1.创建存储桶 ，找到存储桶属性， 关于域名绑定，存储桶名字必须和要绑定域名一致，比如：abc.com 存储桶的名字也要abc.com才行&#xA;2. 滑到最下面，找到静态网站托管，有个状态，已禁用，点编辑 启用 3. 编辑 4. 设置权限 { &amp;#34;Version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Sid&amp;#34;: &amp;#34;PublicReadGetObject&amp;#34;, &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Principal&amp;#34;: &amp;#34;*&amp;#34;, &amp;#34;Action&amp;#34;: &amp;#34;s3:GetObject&amp;#34;, &amp;#34;Resource&amp;#34;: &amp;#34;arn:aws:s3:::bucket-Name/*&amp;#34; } ] }&#xD;bucket-name 替换为自己的bucket名字</description>
+    </item>
+  </channel>
+</rss>
