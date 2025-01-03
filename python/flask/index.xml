@@ -22,21 +22,21 @@
       <description></description>
     </item>
     <item>
-      <title></title>
+      <title>session</title>
       <link>https://r.xboox.cn/python/flask/session/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/session/</guid>
       <description>session 过期时间&#xA;def login(): session.permanent = True app.permanent_session_lifetime = timedelta(minutes=1) # 设置session到期时间&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>uwsgi</title>
       <link>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</guid>
       <description>pip3 安装 uwsgi遇到异常： Exception: you need a C compiler to build uWSGI&#xA;解决办法：&#xA;yum install gcc&#xD;安装完c解释器后没有 又提示没找到python文件 plugins/python/uwsgi_python.h:2:10: fatal error: Python.h: No such file or directory&#xA;解决办法：&#xA;安装python3-dev,正常这么安装 提示找不到,先搜索&#xA;yum search python3 dev&#xD;因为当前版本是python3.6, 所以最终找到python36-devel 并安装&#xA;yum install python36-devel&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>子域名</title>
       <link>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>

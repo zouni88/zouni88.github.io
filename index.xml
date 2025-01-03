@@ -290,13 +290,6 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/docker/compose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/docker/compose/</guid>
-      <description>docker-compose 常用命令 https://blog.csdn.net/m0_51913750/article/details/131743170</description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</guid>
@@ -318,48 +311,6 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
-      <description>创建虚拟环境，并指定安装的model&#xA;conda create -n env_name script_name F: conda create -n tensorflow tensorflow-gpu==2.1&#xD;指定要安装的model版本，conda会自动安装所有关联的包</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>查看所有创建的虚拟环境&#xA;conda info -e&#xD;or&#xD;conda env list&#xD;创建虚拟环境&#xA;conda create -n envname&#xD;激活虚拟环境&#xA;# centos 需要执行 source activate&#xA;conda activate envname&#xD;关闭虚拟环境&#xA;conda deactivate envname 删除虚拟环境&#xA;conda remove -n envname --all&#xD;重命名环境 =&amp;gt; 先clone 再重建 == 克隆or移植环境&#xA;conda create -n python_basic --clone matplotlib_basic&#xD;在命令行提示符前出现 (base) 当前激活的环境名字 关闭命令 conda config --set changeps1 false&#xD;打开提示命令 conda config --set changeps1 true&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/enviroment/pip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/enviroment/pip/</guid>
-      <description>pip 安装软件 -U : 升级到最新版本&#xA;-i : 指定下载库源&#xA;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat&#xD;pip 更新失败 pip install --upgrade pip&#xD;更新失败 解决办法： 重新下载安装&#xA;curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py&#xD;强制安装：&#xA;python get-pip.py --force-reinstall&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
-      <description>修改源的两种方式 临时修改 -i 指定源 安装指定的 model&#xA;-U : 升级到最新版本&#xA;-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat&#xD;永久修改 pip install pip -U pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/&#xD;源 name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/flask_migrate/%E5%9D%91/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/flask_migrate/%E5%9D%91/</guid>
-      <description>flask-migrate 坑 字段长度更新会提示 No changes in schema detected. 解决办法：初始化Migrate的时候增加属性compare_type为True&#xA;Migrate(app=app, db=db,render_as_batch = True,compare_type = True)&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</guid>
-      <description>初始化 初始化迁移文件&#xA;python manage.py db init&#xD;将模型映射 添加到文件中&#xA;python manage.py db migrate&#xD;最后 映射到数据库中：&#xA;python manage.py db upgrade&#xD;manage.py 添加数据 命令行 添加数据&#xA;python manage.py create_user -u yunhai -e cao_cgq@163.com -p 1234&#xD;</description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/python/flask/form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/form/</guid>
@@ -374,479 +325,10 @@
     </item>
     <item>
       <title></title>
-      <link>https://r.xboox.cn/python/flask/js/ajax%E9%87%8D%E5%AE%9A%E5%90%91%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/js/ajax%E9%87%8D%E5%AE%9A%E5%90%91%E9%97%AE%E9%A2%98/</guid>
-      <description>ajax 收到服务器端返回请求302,服务端给定重定向地址&#xA;服务端返回&#xA;{&amp;#39;code&amp;#39;: 302, &amp;#39;data&amp;#39;: &amp;#39;/cms/&amp;#39;}&#xD;前端处理&#xA;$(function () { var url = window.location.pathname $.ajax({ url: url+&amp;#39;logout&amp;#39;, type: &amp;#39;get&amp;#39;, dataType:&amp;#39;json&amp;#39; success: function (data,status) { // var datas = JSON.parse(data) if(data.code === 302){ location.href = data.data; } alert(&amp;#39;重定向&amp;#39;) }, error: function (data) { console.log(data.toString()) } }) }&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/session/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/session/</guid>
-      <description>session 过期时间&#xA;def login(): session.permanent = True app.permanent_session_lifetime = timedelta(minutes=1) # 设置session到期时间&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</guid>
-      <description>pip3 安装 uwsgi遇到异常： Exception: you need a C compiler to build uWSGI&#xA;解决办法：&#xA;yum install gcc&#xD;安装完c解释器后没有 又提示没找到python文件 plugins/python/uwsgi_python.h:2:10: fatal error: Python.h: No such file or directory&#xA;解决办法：&#xA;安装python3-dev,正常这么安装 提示找不到,先搜索&#xA;yum search python3 dev&#xD;因为当前版本是python3.6, 所以最终找到python36-devel 并安装&#xA;yum install python36-devel&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>
-      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip 127.0.0.1&#x9;student.zouni.vip&#xD;2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;)&#xD;3.设置 config 配置 SERVER_NAME=主域名</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</guid>
-      <description>蓝图自定义模板文件夹template_folder注意点：&#xA;如果app/templates中有index.html&#xA;并且app/cms/templates也有index.html文件&#xA;渲染模板会优先查找app/templates目录下。&#xA;蓝图如果要正常使用，创建规则必须是app/cms/templates/cms/index.html，渲染render_template(&#39;cms/index.html&#39;) 完整例子：&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, url_prefix=&amp;#39;/cms&amp;#39;, template_folder=&amp;#39;templates&amp;#39;) @bp.route(&amp;#39;/cms/index&amp;#39;) def index(): return render_template(&amp;#39;cms/index.html&amp;#39;）&#xD;flask模板查找规则是优先项目根目录``</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</guid>
-      <description>docker run -itd &amp;ndash;name=nginx -p 80:80 -d -v /usr/local/small/nginx/nginx.conf:/etc/nginx/nginx.conf:ro -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/:/root/web/ -d nginx</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</guid>
-      <description>supervisor是进程守护服务 安装supervisor有以下操作&#xA;supervisor必须用python2&#xA;pip2 install supervisor&#xD;创建supervisor.conf 配置文件&#xA;# supervisor的程序名字 [program:项目名字] # supervisor执行的命令 command=uwsgi --ini uwsgi.ini # 项目的目录 directory = /项目路径 # 开始的时候等待多少秒 startsecs=0 # 停止的时候等待多少秒 stopwaitsecs=0 # 自动开始 autostart=true # 程序挂了后自动重启 autorestart=true # 输出的log文件 stdout_logfile=/var/log/supervisord.log # 输出的错误文件 stderr_logfile=/var/log/supervisord.err [supervisord] # log的级别 loglevel=debug [inet_http_server] # supervisor的服务器 port = :9001 # 用户名和密码 username = admin password = 123 # 使用supervisorctl的配置 [supervisorctl] # 使用supervisorctl登录的地址和端口号 serverurl = http://127.0.0.1:9001 # 登录supervisorctl的用户名和密码 username = admin password = 123 [rpcinterface:supervisor] supervisor.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</guid>
-      <description>编译配套 ssl的 uwsgi 安装编译需要的环境 yum install openssl yum install openssl-devel&#xD;安装 greenlet pip3 install greenlet&#xD;找到 greenlet 位置 /root/.virtualenvs/flask/include/site/python3.6&#xD;安装 CFLAGS=&amp;#34;-I/root/.virtualenvs/flask/include/site/python3.6&amp;#34; UWSGI_PROFILE=&amp;#34;asyncio&amp;#34; pip install uwsgi --no-use-wheel&#xD;or&#xA;CFLAGS=&amp;#34;-I/usr/include/openssl&amp;#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir&#xD;CFLAGS=&amp;quot;-I$/usr/bin/python3.6&amp;quot; UWSGI_PROFILE=&amp;ldquo;asyncio&amp;rdquo; pip3 install uwsgi &amp;ndash;no-use-wheel&#xA;CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;CFLAGS=&amp;quot;-I/usr/include/openssl&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;sudo CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &amp;ndash;no-cache-dir</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</guid>
-      <description>安装虚拟环境 安装虚拟环境&#xA;pip2 install virtualenvwrapper # **查找安装路径** which virtualenvwrapper.sh&#xD;编辑.bashrc&#xA;vim ~/.bashrc # 增加以下环境变量 export WORKON_HOME=$HOME/.virtualenvs source /usr/local/bin/virtualenvwrapper.sh&#xD;立即生效&#xA;source .bashrc&#xD;查找python3路径&#xA;which python3&#xD;创建虚拟环境&#xA;mkvirtualenv --python=/usr/bin/python3 name-env workon name-env&#xD;切换/激活 虚拟环境&#xA;workon name-evn cd ~/.virtualenvs/name-env/bin/&#xD;退出虚拟环境&#xA;deactivate name-env&#xD;删除虚拟环境&#xA;rmvirtualenv env-name&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
-      <description>mysql 配置 首先查看centos是否已经安装了mysql源 yum list installed mysql* 如果有就删除 yum remove mysql-community-*&#xD;安装mysql源 https://dev.mysql.com/downloads/repo/yum/&#xD;wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm&#xD;安装mysql yum -y install mysql57-community-release-el7-10.noarch.rpm&#xD;查看是否已经安装了数据库源 yum repolist all | grep mysql&#xD;查看数据库源 /etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1&#xD;安装数据库服务 yum install mysql-server&#xD;启动mysql systemctl start mysqld.service&#xD;查看状态 systemctl status mysqld.service&#xD;查看初始密码 grep &amp;#34;password&amp;#34; /var/log/mysqld.log&#xD;修改密码 mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;;&#xD;注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功 开启mysql的远程访问 两种方式 方式1 grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</guid>
-      <description>安装虚拟环境 安装虚拟环境&#xA;pip2 install virtualenvwrapper # **查找安装路径** which virtualenvwrapper.sh&#xD;编辑.bashrc&#xA;vim ~/.bashrc # 增加以下环境变量 export WORKON_HOME=$HOME/.virtualenvs source /usr/local/bin/virtualenvwrapper.sh&#xD;立即生效&#xA;source .bashrc&#xD;查找python3路径&#xA;which python3&#xD;创建虚拟环境&#xA;mkvirtualenv --python=/usr/bin/python3 name-env workon name-env&#xD;切换/激活 虚拟环境&#xA;workon name-evn cd ~/.virtualenvs/name-env/bin/&#xD;退出虚拟环境&#xA;deactivate name-env&#xD;安装git用来传代码 安装git&#xA;yum install git&#xD;# 生成公钥 ssh-keygen -t rsa -C “email” # 查看公钥 cat ~/.ssh/id_rsa.pub #同步代码 git clone Uwsgi pip3 install uwsgi&#xD;在项目中创建uwsgi.ini配置文件&#xA;[uwsgi] # 必须全部为绝对路径 # 项目的路径 chdir = /root/flask_f/ # Django的wsgi文件 wsgi-file = /root/flask_f/app.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
-      <description>IPython是一个增强的shell工具, %cd —更改当前工作目录&#xA;%edit —打开编辑器并在关闭编辑器后执行键入的代码&#xA;%env —显示当前环境变量&#xA;%pip install [pkgs] —在不离开交互式shell的情况下安装软件包&#xA;%time和%timeit—定时执行Python代码</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/jupyter/%E8%8E%B7%E5%8F%96token/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/jupyter/%E8%8E%B7%E5%8F%96token/</guid>
-      <description>查看当前运行的jupyter notebook token&#xA;jupyter notebook list&#xD;http://0.0.0.0:8888/?token=3c1c5cc60766ae6c4aea6234268d73b869fb34072b051cef&#xA;http://127.0.0.1:8888/?token=3c1c5cc60766ae6c4aea6234268d73b869fb34072b051cef</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</guid>
-      <description>动画 from matplotlib import animation,pyplot as plt import numpy as np fig,axe = plt.subplots() x = np.arange(0,2*np.pi,0.01) line, = axe.plot(x,np.sin(x)) def animations(i): line.set_ydata(np.sin(x+i/10)) return line def init(): line.set_ydata(np.sin(x)) return line # func 动画更新函数回调 # frames : 帧数，共多少帧 播放完 # init_func : 初始化回调函数 # interval : 刷新间隔 ms 毫秒 # blit ：是否整体刷新 ani = animation.FuncAnimation(fig=fig,func=animations,frames=100,init_func=init,interval=20,blit=False) plt.show()&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</guid>
-      <description>最简单方式创建子图 import numpy as np from matplotlib import pyplot as plt np.random.seed(123456) # 随机生成1-20的随机数 x = np.random.randint(1, 20, 20) xmax = x.max() xmin = x.min() xmax, xmin # 数据缩放到0-1的 区间 xx = (x - xmin) / (xmax - xmin) # 2,1,1, 代表 画子图 2行1列第一 个位置 # 参数中间的逗号可以免掉不写，211 plt.subplot(211) plt.plot(x) plt.subplot(2,1,2) plt.plot(y) plt.show()&#xD;创建子图 from matplotlib import pyplot as plt # 第一个子图 将 整个图分成 2行1列，占据第1个位置 plt.subplot(211) plt.plot([1,2],[3,4]) # 第二个子图 将整个图分成 2行3列 放在第4个位置，也就是2行第1位 plt.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</guid>
-      <description>散点图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] plt.scatter(x, y) plt.show()&#xD;meshgrid生成点阵图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] xxx, yyy = np.meshgrid(x, y) plt.scatter(xxx, yyy) plt.show()&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/numpy/meshgrid%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/numpy/meshgrid%E7%94%A8%E6%B3%95/</guid>
-      <description>&#xD;import numpy as np x = [1,2] y = [2,3] xx,yy = np.meshgrid(x,y) # 生成对应的网格坐标点&#xD;Out:&#xA;# 对应输出坐标点：(1，2),(1,3),(2,2,),(2,3) [[1 2] [1 2]] [[2 2] [3 3]]&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/numpy/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/numpy/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</guid>
-      <description>查看数组有多少类别&#xA;import numpy as np array = [1,2,3,2,1,2,1] np.unique(array) ------------------------- array([1, 2, 3])&#xD;# x np.sum(x)&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</guid>
-      <description>图像融合 cv2.addWeighted(src1, alpha, src2, beta, gamma, dst=None, dtype=None)&#xA;src1 : 图像 alpha : 透明系数 src2 : 图像2 beta : 透明系数 gamma : 亮度调节 import cv2 a = cv2.imread(&amp;#39;images/aaa.png&amp;#39;) b = cv2.imread(&amp;#39;images/bbb.png&amp;#39;) a = a[:b.shape[0],:b.shape[1],:] res = cv2.addWeighted(src1=a,alpha=0.3,src2=b,beta=1,gamma=0.3) cv2.imshow(&amp;#39;a&amp;#39;,a) cv2.waitKey(1000) cv2.imshow(&amp;#39;b&amp;#39;,b) cv2.waitKey(1000) cv2.imshow(&amp;#39;res&amp;#39;,res) cv2.waitKey(1000) cv2.destroyAllWindows()&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</guid>
-      <description>读取图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;)&#xD;显示图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) cv2.imshow(&amp;#39;name&amp;#39;,img) cv2.waitKey() cv2.destroyAllWindows()&#xD;图像形状 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) img.shape&#xD;图像分割，通道拆分 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) b,g,r = cv2.split(img)&#xD;图像运算 cv2.add 方法 相加 取最大值255 img_a + img_b ,直接相加结果除255 取模 import cv2 img_a = cv2.imread(&amp;#39;image_a_path&amp;#39;) img_b = cv2.imread(&amp;#39;image_b_path&amp;#39;) img_c = cv2.add(img_a,img_b) img_d = img_a + img_b&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</guid>
-      <description>图像缩放 两种方式 dsize : 元组，传入要缩放图像的宽高 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(av,dsize=(100,100)) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;fx fy 参数，分别 修改横列 缩放系数 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(img,None,fx=2,fy=2) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;翻转变换 flipCode:&#xA;&amp;gt;1 沿着y axis左右变换 =0 沿着x axis上下变换 &amp;lt;0 沿着x axis上下 翻转，再沿着y axis 左右反转 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.flip(img,flipCode=1) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</guid>
-      <description>&#xD;import cv2 imgpath = &amp;#39;d:/img.png&amp;#39; x,y,x1,y1 = 641,165,752,278 img = cv2.imread(imgpath) img.shape linet = cv2.LINE_4 img = cv2.rectangle(img, (x, y), (x1, y1), (0, 0, 255), linet,2) cv2.imshow(&amp;#39;name&amp;#39;, img) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/pycharm/matplot%E5%9B%BE%E5%83%8F%E7%8B%AC%E7%AB%8B%E7%AA%97%E5%8F%A3%E6%98%BE%E7%A4%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/pycharm/matplot%E5%9B%BE%E5%83%8F%E7%8B%AC%E7%AB%8B%E7%AA%97%E5%8F%A3%E6%98%BE%E7%A4%BA/</guid>
-      <description>pycharm默认会显示 图像窗口在pycharm 上， 单独显示需要去掉以下设置</description>
-    </item>
-    <item>
-      <title></title>
       <link>https://r.xboox.cn/python/pycharm/pycharm%E6%BF%80%E6%B4%BB%E7%A0%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/pycharm/pycharm%E6%BF%80%E6%B4%BB%E7%A0%81/</guid>
       <description>XCTXZDU09E-eyJsaWNlbnNlSWQiOiJYQ1RYWkRVMDlFIiwibGljZW5zZWVOYW1lIjoi5bGx5Lic55CG5bel5aSn5a2mIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IkZvciBlZHVjYXRpb25hbCB1c2Ugb25seSIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNDIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU0YiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiR08iLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IkNMIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkMiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSU1YiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMS0wMi0xOCIsImV4dGVuZGVkIjpmYWxzZX0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6ZmFsc2V9LHsiY29kZSI6IkRCIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOmZhbHNlfSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMS0wMi0xOCIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQREIiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFdTIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBHTyIsInBhaWRVcFRvIjoiMjAyMS0wMi0xOCIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQUFMiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUFBDIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOnRydWV9LHsiY29kZSI6IlBSQiIsInBhaWRVcFRvIjoiMjAyMS0wMi0xOCIsImV4dGVuZGVkIjp0cnVlfSx7ImNvZGUiOiJQU1ciLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFAiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiUlMiLCJwYWlkVXBUbyI6IjIwMjEtMDItMTgiLCJleHRlbmRlZCI6dHJ1ZX0seyJjb2RlIjoiRFBBIiwicGFpZFVwVG8iOiIyMDIxLTAyLTE4IiwiZXh0ZW5kZWQiOnRydWV9XSwibWV0YWRhdGEiOiIwMTIwMjAwMzI2TFBBQTAwNTAwOCIsImhhc2giOiIxNjc5MTc3Mi8wOi0xNDczMTA4OTgxIiwiZ3JhY2VQZXJpb2REYXlzIjo3LCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-FNMSclTw4g1JqWPPguaWKx52Mcp2N7DZUMhnWlUOTsNsiK/QdB2pwxX+FvNjEhKdCkAsO111gLa1Q1XXvXRIkMA8BFgYrlxZli9WSyqfbx0CBm35jw8TozH089e4S9iB5c82z6EMPOc+wxdmm1TxSqKOqP+qVmZVbt76vVhQoISb4Fx7EHPi06Po4+r8e40s+chXVGkGZihVcbxwjjSKe0p3ARj4BsXw5v9bznyxw9AU/2vLoyr+xyS49FzSFERnn+EZirf/93bcbzdFGFdNs2secIoi+q2JflgSs+8O6vLFaYx03PCs6W+405J9UziaT8866tgtbRhn/0nLigRq/A==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</guid>
-      <description>windows 平台 环境配置 首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包 pip install pyqt5 pip install pyqt5-tools&#xD;pycharm 配置pyqt 可拖拽控件工具 打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：&#xA;D:\Anaconda3\envs\python_basic\Scripts\designer.exe&#xA;Working directory 这个路径是工作路径，所以一般就填入$FileDir$&#xA;编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：&#xA;Program: python.exe 路径 Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py Working directory: $FileDir$&#xD;第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了&#xA;最后一步，转换成py文件 end</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/pycharm/%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/pycharm/%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</guid>
-      <description>##% -&amp;gt; 设置开启科学模式之后，就可以分段执行代码</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/pycharm/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%8A%A5%E9%94%99/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/pycharm/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%8A%A5%E9%94%99/</guid>
-      <description>pycharm使用相对路径，要修改当前解释器的工作路径到当前项目路径&#xA;修改完之后重启解释器，就可以了</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/pycharm/%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/pycharm/%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid>
-      <description>pycharm 设置代理 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/python%E6%89%93%E5%8C%85exe/pyinstaller/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/python%E6%89%93%E5%8C%85exe/pyinstaller/</guid>
-      <description>举个例子先 pyinstaller -F xxx.py&#xD;参数说明 -F 打包单个文件 -W 去掉控制台窗口，就那个黑框 cmdshell -i 图标</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>windows -b 绑定ip地址 python -m http.server -b 192.168.1.145 8888&#xD;Mac 系统 python -m SimpleHTTPServer 8888&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</guid>
-      <description>call函数使用方法 __call__ 函数一般用于实例对象的回调,至少看起来实例对象的调用方式和函数一样 call 函数一个普通的函数，一般实现父类的方法之后，会在父类的__call__函数中回调&#xA;class Base():&#xD;def call(self):&#xD;print(&#39;我是base&#39;)&#xD;def __call__(self, *args, **kwargs):&#xD;self.call()&#xD;class A(Base):&#xD;def __init__(self, name):&#xD;self.name = name&#xD;def call(self):&#xD;print(self.name)&#xD;实例化：&#xA;a = A(&#39;small&#39;)&#xD;a()&#xD;输出：&#xA;small 子类不实现call，则会输出：&#xA;我是base&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</guid>
-      <description>pyton对象转字符串 import json json.dumps(object,default=lambda obj:obj.__dict__,sort_keys = False,indent = 4,ensure_ascii = False) json.dumps() # 对象转json # lambda 是python类对象的方法 dict 保存的是对象的字典转成的字符串&#xD;json字符串转对象 # class必须试先init方法 classStus: list:list def__init__(self,d): self.__dict__=d jsons = {&amp;#34;list&amp;#34;: [{&amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;cao&amp;#34;, &amp;#34;age&amp;#34;: 10, &amp;#34;profile&amp;#34;: &amp;#34;曹的自我介绍&amp;#34;},{&amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;wang&amp;#34;, &amp;#34;age&amp;#34;: 20, &amp;#34;profile&amp;#34;: &amp;#34;王的自我介绍&amp;#34;}]} jsons = json.dumps(jsons) 将python字典转成json串 json.loads(jsons,object_hooks = class)&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</guid>
-      <description>获取map第一个元素的方法&#xA;map = {&amp;#39;a&amp;#39;: 1, &amp;#39;b&amp;#39;: 2} keys = map.keys() # keys 是 dict_list类型 转成list keys = list(keys) # 利用第一个key来获取value item1 = map[keys[0]] print(item1)&#xD;打印结果：&#xA;1&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</guid>
-      <description>open 函数 open ： 如果文件 不存在，则创建&#xA;open(filename,mode=&amp;#39;&amp;#39;) ## 常用mode w 以写方式打开， a 以追加模式打开 (从 EOF 开始, 必要时创建新文件) r+ 以读写模式打开 w+ 以读写模式打开 (参见 w ) a+ 以读写模式打开 (参见 a ) rb 以二进制读模式打开 wb 以二进制写模式打开 (参见 w ) ab 以二进制追加模式打开 (参见 a ) rb+ 以二进制读写模式打开 (参见 r+ ) wb+ 以二进制读写模式打开 (参见 w+ ) ab+ 以二进制读写模式打开 (参见 a+ )&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</guid>
-      <description>with用法和原理：&#xA;class Sample: def __enter__(self): print(&amp;#34;In __enter__()&amp;#34;) return &amp;#34;Foo&amp;#34; def __exit__(self, type, value, trace): print(&amp;#34;In __exit__()&amp;#34;) def get_sample(): return Sample() with get_sample() as sample: print (&amp;#34;sample:%s&amp;#34; % sample)&#xD;运行代码，输出如下&#xA;In __enter__() sample: Foo In __exit__()&#xD;先执行__enter__方法，最后执行__exit__方法退出</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</guid>
-      <description>getsizeof x: 对象 return : 对象的字节数 sys.getsizeof(x)</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</guid>
-      <description>u unicode编码&#xA;r 不转义字符</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
-      <description>&#xD;a = 0 try: 2 / a except Exception as e: print(&amp;#39;a---&amp;#39;, e)&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</guid>
-      <description>&#xD;a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0&#xD;[Out]:&#xA;Traceback (most recent call last): File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code exec(code_obj, self.user_global_ns, self.user_ns) File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt; assert a&amp;gt;0 AssertionError&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</guid>
-      <description>python 小图片合成大图片 这段代码是前两年搞的，有很长时间没动了，正好是在学习python的时候拿来练手的。&#xA;先说一下前因后果为什么要做这个，起初的想法是一个朋友给的，他手机存了很多女儿的照片，有一天他告诉我：他希望有个工具能把这些照片合成一个图片墙，在手机看毕竟不方便，希望能有一些小创意，为以后孩子大了留个回忆；可巧不巧正好快赶上七夕了，就想着给媳妇一个惊喜，所以就赶紧把相册里的给媳妇以前拍的照片收集了一下，切图工具把一些照片简单处理了一下；&#xA;基于以上种种，哈哈，就搞了这么个玩意儿！ 但是代码写的比较烂，懒得贴代码了，链接放在这里：有兴趣的可以看看 主要代码放在ConcatImg/concat_img/concat.py这个文件 https://github.com/SmallCao/ConcatImg&#xA;最终效果 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
-      <description>用户名：pi 密码：raspberry</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</guid>
-      <description>docker 脚本安装 sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh sudo sh docker_install.sh –mirror Aliyun&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>打开配置 sudo raspi-config&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
-      <description>出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。 设置root用户密码 sudo passwd root&#xD;启用root用户 sudo passwd --unlock root&#xD;设置ssh允许登录 sudo sed -i &amp;#34;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;#34; /etc/ssh/sshd_config&#xD;重启ssh服务 sudo systemctl restart ssh&#xD;为root用户应用于当前用户相同的bash配置 sudo cp ~/.bashrc /root/.bashrc&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
-      <description>下载镜像 将镜像写入sd卡 ，下载写入程序&#xA;https://www.raspberrypi.org/downloads/&#xD;修改配置 写入sd卡后，不要拔出，直接在sdcard中修改配置：&#xA;开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件 hdmi_safe=1 config_hdmi_boost=4 hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=82 参数 说明 hdmi_safe=1 安全启动HDMI config_hdmi_boost=4 开启热插拔 hdmi_group=1 CEA电视显示器 hdmi_group=2 DMT电脑显示器 hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率 hdmi_mode=4 640x480 60Hz hdmi_mode=9 800x600 60Hz hdmi_mode=16 1024x768 60Hz hdmi_mode=82 1080p 60Hz 连接树莓派 树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3. 设置无线wifi 新建wpa_supplicant.conf文件&#xA;country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&amp;#34;wifiname&amp;#34; psk=&amp;#34;password&amp;#34; priority=1 }&#xD;说明：&#xA;ssid: wifi名字 psk: wifi 密码 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/readme/</guid>
-      <description>学习笔记 笔记中主要记录个人的编程生涯的一些学习笔记；</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</guid>
-      <description>@JsonProperty(&amp;quot;game_name&amp;quot;): 给字段起别名； @JsonInclude(JsonInclude.Include.NON_NULL): 字段如果空值，json中不返回&#xA;data class Game(val id:Int, @JsonProperty(&amp;#34;wowo&amp;#34;) @JsonInclude(JsonInclude.Include.NON_NULL) val name: String?){&#xD;[ { &amp;#34;id&amp;#34;: 1, &amp;#34;wowo&amp;#34;: &amp;#34;csgo&amp;#34; }, { &amp;#34;id&amp;#34;: 2 } ]&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/springboot/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/springboot/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</guid>
-      <description>常用注解：&#xA;@Controller&#xA;标注控制器，如果要包装json数据，需要 配合@ResponseBody&#xA;@RestController&#xA;标注控制器，返回 json 数据&#xA;@RequestMapping&#xA;路由映射&#xA;@SpringBootApplication&#xA;应用住程序入口标注&#xA;@ComponentScan&#xA;扫描指定包，给定一个范围，不指定默认扫描全部包</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/springboot/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/springboot/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>启动类位置： 一般放在根目录下&#xA;Failed to configure a DataSource: &amp;lsquo;url&amp;rsquo; attribute is not specified and no em&#xA;缺少配置信息</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/css3/float%E5%B1%9E%E6%80%A7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/css3/float%E5%B1%9E%E6%80%A7/</guid>
-      <description>float： 漂浮在页面上层，也就是Z轴 漂浮元素不占据原有位置； 漂浮起来后会先找依赖，根节点或一同漂浮的元素</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</guid>
-      <description>数据库连接失败&#xA;Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client at Handshake.Sequence._packetToError (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14) at Handshake.ErrorPacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18) at Protocol._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:291:23) at Parser._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:433:10) at Parser.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:43:10) at Protocol.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:38:16) at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:88:28) at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:526:10) at Socket.emit (events.js:315:20) at addChunk (_stream_readable.js:302:12) -------------------- at Protocol._enqueue (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:144:48) at Protocol.handshake (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:51:23) at Connection.connect (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:116:18) at Object.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\catch\game\test.js:10:12) at Module._compile (internal/modules/cjs/loader.js:1200:30) at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10) at Module.load (internal/modules/cjs/loader.js:1049:32) at Function.Module._load (internal/modules/cjs/loader.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/nodejs/npm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/nodejs/npm/</guid>
-      <description>查看版本 npm -v&#xA;更新 npm install -g npm&#xA;指定版本更新 npm -g install npm@6.8.0&#xA;清理 npm cache clean &amp;ndash;force&#xA;查看当前使用的源 npm config get registry&#xA;重置为官方源 npm config set registry https://registry.npmjs.org/q&#xA;修改国内源 # 阿里源升级 http://npm.taobao.org =&amp;gt; http://npmmirror.com http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com&#xD;1. 临时修改源 npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改 npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版 npm install -g cnpm &amp;ndash;registry=https://registry.npmmirror.com</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</guid>
-      <description>node -V&#xA;npm install gitbook-cli -g&#xA;gitbook -V</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</guid>
-      <description>官网 https://nodejs.org/en/download/</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</guid>
-      <description>vue 和jinjia2模板冲突： 修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;]&#xD;修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[ app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39;&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/cmd%E6%89%93%E4%B8%8D%E5%BC%80%E4%BA%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/cmd%E6%89%93%E4%B8%8D%E5%BC%80%E4%BA%86/</guid>
-      <description>win+R 执行 cmd命令 命令行窗口闪退 在此之前安装了anaconda ，卸载之后，就出现问题了 解决办法：&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor 这个路径下写了一个 AutoRun 项，AutoRun 的值类型是字符串，这个字符串是每次启动 CMD.exe 时都会自动运行的指令，卸载了 Anaconda 之后这个指令就不能正确运行了，所以每次启动 CMD.exe 都会发生错误。解决办法就是用 Registry Editor 把 AutoRun 这一项中的值删除。&#xA;打开注册表： win+R regedit 打开注册表 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/mingw/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/mingw/</guid>
-      <description>安装mingw-w64 官网&#xA;https://www.mingw-w64.org/downloads/#sources 下载&#xA;https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/ </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</guid>
-      <description>vscode 不能直接复制粘贴文件，可以拖拽 vscode 分为两个版本：user版本和System版本，user版本应该是不能拖拽的，system版本可以拖拽，官网下载system版本&#xA;选择 Other downloads 选择System Installer 版本下载 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/windows-terminal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/windows-terminal/</guid>
-      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片， &amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;, &amp;#34;backgroundImageOpacity&amp;#34;: 0.3, &amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果： 重新打开终端，ok</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/wsl-ubuntu%E5%BC%80%E5%90%AFssh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/wsl-ubuntu%E5%BC%80%E5%90%AFssh/</guid>
-      <description>clion配置toolschains:&#xA;mingw64 wsl - ubuntu 打开终端 进入subsystem,安装ssh small@small:~$ sudo apt-get install ssh [sudo] password for small: Reading package lists... Done Building dependency tree Reading state information... Done openssh-server is already the newest version (1:8.2p1-4ubuntu0.2). 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.&#xD;编辑ssh配置文件： small@small:/etc/ssh$ sudo vi sshd_config # 解开以下注释 Port 2222 AddressFamily any ListenAddress 0.0.0.0 ListenAddress :: # 还有这里 # To disable tunneled clear text passwords, change to no here!</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/wsl-%E5%BC%80%E5%90%AFsystemctl%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/wsl-%E5%BC%80%E5%90%AFsystemctl%E5%91%BD%E4%BB%A4/</guid>
-      <description>WSL 默认是不开启systemctl命令的,开启方法： 安装daemonize&#xA;sudo apt-get install daemonize&#xA;执行以下命令：&#xA;sudo daemonize /usr/bin/unshare &amp;ndash;fork &amp;ndash;pid &amp;ndash;mount-proc /lib/systemd/systemd &amp;ndash;system-unit=basic.target&#xA;exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/wsl-%E6%97%A0%E7%BD%91%E7%BB%9C%E4%BF%AE%E5%A4%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/wsl-%E6%97%A0%E7%BD%91%E7%BB%9C%E4%BF%AE%E5%A4%8D/</guid>
-      <description>wsl linux 连不上网 解决办法：管理员权限打开命令行工具 wsl --shutdown netsh winsock reset netsh int ip reset all netsh winhttp reset proxy ipconfig /flushdns&#xD;重启电脑，重试</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/wsl%E5%8D%87%E7%BA%A7wsl2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/wsl%E5%8D%87%E7%BA%A7wsl2/</guid>
-      <description>检查当前运行的wsl版本 wsl -l -v&#xD;下载windows wsl2 linux内核&#xA;wsl --set-version &amp;lt;distro name&amp;gt; 2，将 &amp;lt;distro name&amp;gt; 替换为要更新的 Linux 发行版的名称。&#xA;例如，wsl --set-version Ubuntu-20.04 2 会将 Ubuntu 20.04 发行版设置为使用 WSL 2</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/wsl%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E4%BF%AE%E6%94%B9root/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/wsl%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E4%BF%AE%E6%94%B9root/</guid>
-      <description>开发环境修改wsl 默认登录用户为root 1. 现在用的是ubuntu，找到安装目录 C:\Users\用户名\AppData\Local\Microsoft\WindowsApps\ubuntu版本.exe config --default-user root&#xD;2. 执行命令 ubuntu2004.exe config --default-user root&#xD;3. 重新进入wsl,就是root用户了 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/%E5%AE%89%E8%A3%85choco/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/%E5%AE%89%E8%A3%85choco/</guid>
-      <description>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;lsquo;https://chocolatey.org/install.ps1&#39;))</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>powershell 查看环境变量 语法：$env:环境变量名称&#xA;# $env 后面紧跟要查看的环境变量名称 PS C:\Users\cao_c&amp;gt; $env:GOPATH D:\workproject\go&#xD;设置环境变量&#xA;$env:name=value&#xD;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
-      <description>系统安装过程中常见问题 汇总 1. windows只能安装到GPT磁盘如何解决 进入选择语言界面操作：shift+F10 ，进入命令行操作；&#xA;输入命令：&#xA;diskpart list disk （列出所有磁盘） select disk 0 （选中要安装的磁盘）这里是零 clean （注意：这一步是格式化磁盘了） convert gpt 转换完之后也可以直接退出，重新进入系统引导安装流程了 list partition create partition efi size=1000 (单位是M) create partition msr size=1280 create partition primary size=102400 （根据需要设定分区大小） exit 退出命令行 重新进入安装流程，选择设定好的分区安装系统就ok了</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
-      <description>无法生成D:config.msi下的常规子目录的列表，拒绝访问。怎么解决 无法生成D:config.msi下常规子文件夹的列表拒绝访问错误。&#xA;修改 打开注册表 ：win+R + regedit&#xA;HKEY_CURRENT_USER/Software/Microsoft/Windows/CurrentVersion/Explorer/User Shell Folders/下Personal&#xA;shell中输入python等 关键字会跳转到应用商店 去掉WindowsApps 在环境变量中</description>
     </item>
     <item>
       <title>1. bind-chroot配置</title>
@@ -1178,6 +660,13 @@
       <description>安装 stable-diffusion https://github.com/AUTOMATIC1111/stable-diffusion-webui&#xA;源码down下来之后&#xA;安装创绘软件 https://note.youdao.com/ynoteshare/index.html?id=ba9ead402507588e5b6307d8b5b7b3fd&amp;amp;type=note&amp;amp;_time=1710747620935&#xA;模型下载 https://www.liblib.art/modelinfo/4d6c6e3ee9934e9f8d921b46be56ed91&#xA;https://civitai.com/</description>
     </item>
     <item>
+      <title>ajax重定向问题</title>
+      <link>https://r.xboox.cn/python/flask/js/ajax%E9%87%8D%E5%AE%9A%E5%90%91%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/js/ajax%E9%87%8D%E5%AE%9A%E5%90%91%E9%97%AE%E9%A2%98/</guid>
+      <description>ajax 收到服务器端返回请求302,服务端给定重定向地址&#xA;服务端返回&#xA;{&amp;#39;code&amp;#39;: 302, &amp;#39;data&amp;#39;: &amp;#39;/cms/&amp;#39;}&#xD;前端处理&#xA;$(function () { var url = window.location.pathname $.ajax({ url: url+&amp;#39;logout&amp;#39;, type: &amp;#39;get&amp;#39;, dataType:&amp;#39;json&amp;#39; success: function (data,status) { // var datas = JSON.parse(data) if(data.code === 302){ location.href = data.data; } alert(&amp;#39;重定向&amp;#39;) }, error: function (data) { console.log(data.toString()) } }) }&#xD;</description>
+    </item>
+    <item>
       <title>alpine dockerfile</title>
       <link>https://r.xboox.cn/docker/dockerfile/dockerfile_alpine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1213,6 +702,13 @@
       <description>新建flutter module 1. module 的 settings.gradle ： // Generated file. Do not edit. include &amp;#39;:app&amp;#39; //复制下面内容到主项目的 settings.gradle 中 rootProject.name = &amp;#39;android_generated&amp;#39; setBinding(new Binding([gradle: this])) //这里模块名称修改成自己的，参考下图 evaluate(new File(settingsDir, &amp;#39;include_flutter.groovy&amp;#39;))&#xD;效果： 2. 引入依赖 在工程app/build.gradle 中： dependencies { implementation project(&amp;#39;:flutter&amp;#39;) }&#xD;3. 编译运行：失败 Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin class &amp;lsquo;FlutterPlugin&amp;rsquo;. 这是一个非常不明所以的问题：android 集成flutter module时，按照官网说明完毕必会出现&#xA;病根：参照下面settings.gradle文件&#xA;pluginManagement { repositories { gradlePluginPortal() google() mavenCentral() } } dependencyResolutionManagement { // 1. 这里改动 替换成了下面一行 // repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) repositoriesMode.</description>
     </item>
     <item>
+      <title>animation动画</title>
+      <link>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/animation%E5%8A%A8%E7%94%BB/</guid>
+      <description>动画 from matplotlib import animation,pyplot as plt import numpy as np fig,axe = plt.subplots() x = np.arange(0,2*np.pi,0.01) line, = axe.plot(x,np.sin(x)) def animations(i): line.set_ydata(np.sin(x+i/10)) return line def init(): line.set_ydata(np.sin(x)) return line # func 动画更新函数回调 # frames : 帧数，共多少帧 播放完 # init_func : 初始化回调函数 # interval : 刷新间隔 ms 毫秒 # blit ：是否整体刷新 ani = animation.FuncAnimation(fig=fig,func=animations,frames=100,init_func=init,interval=20,blit=False) plt.show()&#xD;</description>
+    </item>
+    <item>
       <title>async和await使用</title>
       <link>https://r.xboox.cn/flutter/2.dart/async%E5%92%8Cawait/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1239,6 +735,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/c_cxx/cxx%E7%89%B9%E8%89%B2/</guid>
       <description>extern &amp;ldquo;C&amp;rdquo; 学习记录 // A.cpp //告诉编译器这里修饰的是C语言的代码， extern &amp;#34;C&amp;#34; { //在编译阶段，不会被编译成C++这样的fun_int_int符号，即使找不到函数也不会报错 void fun(int a,int b){ } }&#xD;//B.cpp #include &amp;#34;A.h&amp;#34; int main(){ //对于C++来说，因为有函数重载的机制，编译后的函数会以 函数名 + 形参 来命名， //对于C来说，没有函数重载，不会被转成fun_int_int这样的符号 fun(1,2); }&#xD;</description>
+    </item>
+    <item>
+      <title>call函数</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</guid>
+      <description>call函数使用方法 __call__ 函数一般用于实例对象的回调,至少看起来实例对象的调用方式和函数一样 call 函数一个普通的函数，一般实现父类的方法之后，会在父类的__call__函数中回调&#xA;class Base():&#xD;def call(self):&#xD;print(&#39;我是base&#39;)&#xD;def __call__(self, *args, **kwargs):&#xD;self.call()&#xD;class A(Base):&#xD;def __init__(self, name):&#xD;self.name = name&#xD;def call(self):&#xD;print(self.name)&#xD;实例化：&#xA;a = A(&#39;small&#39;)&#xD;a()&#xD;输出：&#xA;small 子类不实现call，则会输出：&#xA;我是base&#xD;</description>
     </item>
     <item>
       <title>centos安装tensorflow</title>
@@ -1269,6 +772,13 @@
       <description>配置环境 第一次打开Clion,首先配置Toolchains,这里使用了Mingw&#xA;配置Cmake options,增加以下参数：&#xA;-DCMAKE_SYSTEM_NAME=Android -DANDROID_NDK=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670&amp;#34; -DANDROID_TOOLCHAIN_NAME=aarch64-linux-android-clang3.5 -DCMAKE_TOOLCHAIN_FILE=&amp;#34;E:\WorkRoom\android\sdk_root\ndk\22.1.7171670\build\cmake\android.toolchain.cmake&amp;#34; -DANDROID_PLATFORM=&amp;#34;android-21&amp;#34; -DANDROID_TOOLCHAIN=&amp;#34;clang&amp;#34; -DCMAKE_C_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DCMAKE_CXX_FLAGS=&amp;#34;-fpic -fexceptions -frtti&amp;#34; -DANDROID_STL=&amp;#34;c++_static&amp;#34;&#xD;</description>
     </item>
     <item>
+      <title>cmd 打不开的问题</title>
+      <link>https://r.xboox.cn/windows/cmd%E6%89%93%E4%B8%8D%E5%BC%80%E4%BA%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/cmd%E6%89%93%E4%B8%8D%E5%BC%80%E4%BA%86/</guid>
+      <description>win+R 执行 cmd命令 命令行窗口闪退 在此之前安装了anaconda ，卸载之后，就出现问题了 解决办法：&#xA;HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor 这个路径下写了一个 AutoRun 项，AutoRun 的值类型是字符串，这个字符串是每次启动 CMD.exe 时都会自动运行的指令，卸载了 Anaconda 之后这个指令就不能正确运行了，所以每次启动 CMD.exe 都会发生错误。解决办法就是用 Registry Editor 把 AutoRun 这一项中的值删除。&#xA;打开注册表： win+R regedit 打开注册表 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor</description>
+    </item>
+    <item>
       <title>command</title>
       <link>https://r.xboox.cn/docker/dockerfile/command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1276,11 +786,25 @@
       <description>DockerFile 分为四部分：基础镜像、维护者、镜像操作指令、容器启动时执行指令&#xA;WORKDIR 指定工作目录，类似于 cd,定位到某一个目录&#xA;WORKDIR /usr/local/nginx&#xD;RUN 构建镜像时运行指令&#xA;RUN apk add nginx &amp;amp;&amp;amp; mkdir /run/nginx/&#xD;构建指令：&#xA;docker build -f dockerfile-path .&#xD;</description>
     </item>
     <item>
+      <title>compose</title>
+      <link>https://r.xboox.cn/docker/compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/compose/</guid>
+      <description>docker-compose 常用命令 https://blog.csdn.net/m0_51913750/article/details/131743170</description>
+    </item>
+    <item>
       <title>ddns</title>
       <link>https://r.xboox.cn/golang/ddns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/golang/ddns/</guid>
       <description>获取访问者ip地址 https://www.ip.cn/api/index?ip&amp;amp;type=0</description>
+    </item>
+    <item>
+      <title>designer</title>
+      <link>https://r.xboox.cn/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/pycharm/pyqt%E9%85%8D%E7%BD%AE/designer/</guid>
+      <description>windows 平台 环境配置 首先安装pyqt5 pip install sip //这个是pyqt开发商提供的支持包 pip install pyqt5 pip install pyqt5-tools&#xD;pycharm 配置pyqt 可拖拽控件工具 打开pycharm 找到Tools/External_Tools 新增一个 找到desiginer.exe位置,我的是在anaconda3安装的，就在我的虚拟环境目录下面找到：&#xA;D:\Anaconda3\envs\python_basic\Scripts\designer.exe&#xA;Working directory 这个路径是工作路径，所以一般就填入$FileDir$&#xA;编辑完UI后，还需要转换成py文件才行，所以需要配置pyui转换 需要配置下参数：&#xA;Program: python.exe 路径 Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py Working directory: $FileDir$&#xD;第一次使用,先新建一个ui文件先 妥妥拽拽一些控件华丽界面就完成了&#xA;最后一步，转换成py文件 end</description>
     </item>
     <item>
       <title>docker minio</title>
@@ -1325,6 +849,13 @@
       <description>受限于网络环境，需要配置docker环境代理 windows电脑作为代理服务器，随便找个代理软件打开，设置好端口 http和https代理 Fiddler 设置docker代理, 编辑docker 配置文件，/etc/docker/daemon.json&#xA;[root@t30 ~]# cat /etc/docker/daemon.json { &amp;#34;proxies&amp;#34;:{ &amp;#34;http-proxy&amp;#34;:&amp;#34;http://192.168.3.8:5688&amp;#34;, &amp;#34;https-proxy&amp;#34;:&amp;#34;http://192.168.3.8:5688&amp;#34; } }&#xD;重启docker&#xA;systemctl restart docker</description>
     </item>
     <item>
+      <title>docker部署</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</guid>
+      <description>docker run -itd &amp;ndash;name=nginx -p 80:80 -d -v /usr/local/small/nginx/nginx.conf:/etc/nginx/nginx.conf:ro -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/:/root/web/ -d nginx</description>
+    </item>
+    <item>
       <title>drawimage</title>
       <link>https://r.xboox.cn/flutter/drawimage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1358,6 +889,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/docker/dockerfile/dockerfile_flask/</guid>
       <description># 基础镜像 FROM centos # 作者 MAINTAINER small # 修改源 RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo \ &amp;amp;&amp;amp; yum makecache # 安装python2 RUN yum install -y python2 \ &amp;amp;&amp;amp; yum install -y python3 WORKDIR /root # 修改pypi源 RUN mkdir .pip \ &amp;amp;&amp;amp; touch .pip/pip.conf \ &amp;amp;&amp;amp; echo [global] &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo index-url = https://mirrors.aliyun.com/pypi/simple/ &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo [install] &amp;gt;&amp;gt; .pip/pip.conf \ &amp;amp;&amp;amp; echo trusted-host=mirrors.aliyun.com &amp;gt;&amp;gt;.pip/pip.conf # 安装virtualwrapper 配置python 虚拟环境 RUN pip2 install -i https://mirrors.</description>
+    </item>
+    <item>
+      <title>float属性</title>
+      <link>https://r.xboox.cn/web/css3/float%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/css3/float%E5%B1%9E%E6%80%A7/</guid>
+      <description>float： 漂浮在页面上层，也就是Z轴 漂浮元素不占据原有位置； 漂浮起来后会先找依赖，根节点或一同漂浮的元素</description>
     </item>
     <item>
       <title>foxmail打不开问题</title>
@@ -1465,6 +1003,13 @@
       <description>安装 yum install postgresql-server 配置 alter user postgres with password &amp;#39;qaz521..&amp;#39;&#xD;修改端口和开放远程访问 端口修改在配置文件 /var/lib/pgsql/data/postgresql.conf&#xA;修改远程访问&#xA;pg_hba.conf&#xD;修改 1.切换到 postgres 用户：&#xA;sudo -i -u postgres&#xA;2.进入 PostgreSQL Shell：&#xA;psql&#xA;3.设置 postgres 用户的密码：&#xA;ALTER USER postgres PASSWORD &amp;rsquo;new_password&#39;;&#xA;4.退出 PostgreSQL Shell 和 postgres 用户的 shell：&#xA;\q&#xA;5.使用新密码登录：&#xA;psql -U postgres -W&#xA;输入新设置的密码以登录。如果这些步骤成功完成，你将能够以 postgres 用户身份管理你的 PostgreSQL 数据库。</description>
     </item>
     <item>
+      <title>Ipython 魔法命令</title>
+      <link>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
+      <description>IPython是一个增强的shell工具, %cd —更改当前工作目录&#xA;%edit —打开编辑器并在关闭编辑器后执行键入的代码&#xA;%env —显示当前环境变量&#xA;%pip install [pkgs] —在不离开交互式shell的情况下安装软件包&#xA;%time和%timeit—定时执行Python代码</description>
+    </item>
+    <item>
       <title>ip类型查询</title>
       <link>https://r.xboox.cn/proxy/ip%E7%B1%BB%E5%9E%8B%E6%9F%A5%E8%AF%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1484,6 +1029,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/android/kotlin/jetpack/</guid>
       <description>android jetpack框架组件&#xA;databinding; 数据绑定库&#xA;livedata: 数据观察类，&#xA;Room: 数据库&#xA;Viewmodel: 绑定activity或者fragment生命周期，</description>
+    </item>
+    <item>
+      <title>json转换</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</guid>
+      <description>pyton对象转字符串 import json json.dumps(object,default=lambda obj:obj.__dict__,sort_keys = False,indent = 4,ensure_ascii = False) json.dumps() # 对象转json # lambda 是python类对象的方法 dict 保存的是对象的字典转成的字符串&#xD;json字符串转对象 # class必须试先init方法 classStus: list:list def__init__(self,d): self.__dict__=d jsons = {&amp;#34;list&amp;#34;: [{&amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;cao&amp;#34;, &amp;#34;age&amp;#34;: 10, &amp;#34;profile&amp;#34;: &amp;#34;曹的自我介绍&amp;#34;},{&amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;wang&amp;#34;, &amp;#34;age&amp;#34;: 20, &amp;#34;profile&amp;#34;: &amp;#34;王的自我介绍&amp;#34;}]} jsons = json.dumps(jsons) 将python字典转成json串 json.loads(jsons,object_hooks = class)&#xD;</description>
     </item>
     <item>
       <title>jupyter</title>
@@ -1521,11 +1073,46 @@
       <description>#include &amp;lt;stdio.h&amp;gt;&#xD;int main(int argc, char const *argv[])&#xD;{&#xD;printf(&#39;123&#39;);&#xD;return 0;&#xD;}&#xD;</description>
     </item>
     <item>
+      <title>map</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</guid>
+      <description>获取map第一个元素的方法&#xA;map = {&amp;#39;a&amp;#39;: 1, &amp;#39;b&amp;#39;: 2} keys = map.keys() # keys 是 dict_list类型 转成list keys = list(keys) # 利用第一个key来获取value item1 = map[keys[0]] print(item1)&#xD;打印结果：&#xA;1&#xD;</description>
+    </item>
+    <item>
+      <title>matplot图像独立窗口显示</title>
+      <link>https://r.xboox.cn/python/pycharm/matplot%E5%9B%BE%E5%83%8F%E7%8B%AC%E7%AB%8B%E7%AA%97%E5%8F%A3%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/pycharm/matplot%E5%9B%BE%E5%83%8F%E7%8B%AC%E7%AB%8B%E7%AA%97%E5%8F%A3%E6%98%BE%E7%A4%BA/</guid>
+      <description>pycharm默认会显示 图像窗口在pycharm 上， 单独显示需要去掉以下设置</description>
+    </item>
+    <item>
+      <title>meshgrid用法</title>
+      <link>https://r.xboox.cn/python/numpy/meshgrid%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/numpy/meshgrid%E7%94%A8%E6%B3%95/</guid>
+      <description>&#xD;import numpy as np x = [1,2] y = [2,3] xx,yy = np.meshgrid(x,y) # 生成对应的网格坐标点&#xD;Out:&#xA;# 对应输出坐标点：(1，2),(1,3),(2,2,),(2,3) [[1 2] [1 2]] [[2 2] [3 3]]&#xD;</description>
+    </item>
+    <item>
+      <title>mingw</title>
+      <link>https://r.xboox.cn/windows/mingw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/mingw/</guid>
+      <description>安装mingw-w64 官网&#xA;https://www.mingw-w64.org/downloads/#sources 下载&#xA;https://sourceforge.net/p/mingw-w64/mingw-w64/ci/master/tree/ </description>
+    </item>
+    <item>
       <title>MSE_MAE</title>
       <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</guid>
       <description>均方误差 平均绝对误差 </description>
+    </item>
+    <item>
+      <title>mysql 连接失败</title>
+      <link>https://r.xboox.cn/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/nodejs/mysql%E8%BF%9E%E6%8E%A5%E5%A4%B1%E8%B4%A5/</guid>
+      <description>数据库连接失败&#xA;Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client at Handshake.Sequence._packetToError (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14) at Handshake.ErrorPacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\sequences\Handshake.js:123:18) at Protocol._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:291:23) at Parser._parsePacket (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:433:10) at Parser.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Parser.js:43:10) at Protocol.write (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:38:16) at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:88:28) at Socket.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:526:10) at Socket.emit (events.js:315:20) at addChunk (_stream_readable.js:302:12) -------------------- at Protocol._enqueue (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:144:48) at Protocol.handshake (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\protocol\Protocol.js:51:23) at Connection.connect (D:\WorkProject\DeepLearning\python_basic\node_modules\mysql\lib\Connection.js:116:18) at Object.&amp;lt;anonymous&amp;gt; (D:\WorkProject\DeepLearning\python_basic\catch\game\test.js:10:12) at Module._compile (internal/modules/cjs/loader.js:1200:30) at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10) at Module.load (internal/modules/cjs/loader.js:1049:32) at Function.Module._load (internal/modules/cjs/loader.</description>
     </item>
     <item>
       <title>mysqlconfig</title>
@@ -1542,11 +1129,32 @@
       <description>群晖nas 使用 git server 安装git-server，并配置git存储库目录 可以在/volume1 路径下创建共享文件夹 gits&#xA;创建git本地账户在nas上 控制面板-&amp;gt; 用户群组 -&amp;gt; 新增 gits 用户&#xA;进入新创建的 gits 用户目录，新增 .ssh 文件夹, 将要同步代码库的电脑端 公钥 配置到gits 用户下 .ssh 文件夹下新增文件 key 编辑key文件，增加用户 id_rsa.pub 公钥 进入gits 存储库目录创建项目仓库，并设置 读写权限给gits用户 mkdir repo.git chown -R gits:users repo.git&#xD;参考链接：https://blog.csdn.net/xiaxl/article/details/129165776</description>
     </item>
     <item>
+      <title>npm</title>
+      <link>https://r.xboox.cn/web/nodejs/npm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/nodejs/npm/</guid>
+      <description>查看版本 npm -v&#xA;更新 npm install -g npm&#xA;指定版本更新 npm -g install npm@6.8.0&#xA;清理 npm cache clean &amp;ndash;force&#xA;查看当前使用的源 npm config get registry&#xA;重置为官方源 npm config set registry https://registry.npmjs.org/q&#xA;修改国内源 # 阿里源升级 http://npm.taobao.org =&amp;gt; http://npmmirror.com http://registry.npm.taobao.org =&amp;gt; http://registry.npmmirror.com&#xD;1. 临时修改源 npm &amp;ndash;registry http://registry.npmmirror.com install express&#xA;2. 永久修改 npm config set registry http://registry.npmmirror.com&#xA;使用国内镜像，可以使用 cnpm 命令行,npm的定制版 npm install -g cnpm &amp;ndash;registry=https://registry.npmmirror.com</description>
+    </item>
+    <item>
+      <title>open</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</guid>
+      <description>open 函数 open ： 如果文件 不存在，则创建&#xA;open(filename,mode=&amp;#39;&amp;#39;) ## 常用mode w 以写方式打开， a 以追加模式打开 (从 EOF 开始, 必要时创建新文件) r+ 以读写模式打开 w+ 以读写模式打开 (参见 w ) a+ 以读写模式打开 (参见 a ) rb 以二进制读模式打开 wb 以二进制写模式打开 (参见 w ) ab 以二进制追加模式打开 (参见 a ) rb+ 以二进制读写模式打开 (参见 r+ ) wb+ 以二进制读写模式打开 (参见 w+ ) ab+ 以二进制读写模式打开 (参见 a+ )&#xD;</description>
+    </item>
+    <item>
       <title>OSX采集视频推流</title>
       <link>https://r.xboox.cn/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/ffmpeg/osx%E9%87%87%E9%9B%86%E8%A7%86%E9%A2%91%E6%8E%A8%E6%B5%81/</guid>
       <description>视频推流 ffmpeg -f avfoundation -framerate 30 -i &amp;#34;0:0&amp;#34; -rtsp_transport tcp -f rtsp rtsp://192.168.3.44:8554/stream&#xD;rtsp 推流参数说明&#xA;-i &amp;ldquo;0:0&amp;rdquo; 指明采集设备 第1个视频设备和音频设备 -i &amp;ldquo;FaceTime HD Camera&amp;rdquo; 指定 摄像头设备 设备列表枚举 ffmpeg -f avfoundation -list_devices true -i &amp;quot;&amp;quot; framerate 30 采集视频30帧 </description>
+    </item>
+    <item>
+      <title>pip</title>
+      <link>https://r.xboox.cn/python/enviroment/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/enviroment/pip/</guid>
+      <description>pip 安装软件 -U : 升级到最新版本&#xA;-i : 指定下载库源&#xA;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat&#xD;pip 更新失败 pip install --upgrade pip&#xD;更新失败 解决办法： 重新下载安装&#xA;curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py&#xD;强制安装：&#xA;python get-pip.py --force-reinstall&#xD;</description>
     </item>
     <item>
       <title>pip.conf文件</title>
@@ -1563,11 +1171,25 @@
       <description>1. 定义proto文件 //声明protobuf版本 syntax = &amp;#34;proto3&amp;#34;;&#xD;自动生成pb的时候，会提示要有go_package&#xA;option go_package=&amp;#39;.;grpc&amp;#39;;&#xD;.: 表示生成pb文件在哪个位置 ;grpc: 表示生成的pb文件所属包名 package grpc; service Greeter{ rpc SayHello (HelloRequest) returns(HelloReply){} } message HelloRequest{ string name = 1; } message HelloReply{ string message = 1; }&#xD;2. 生成pb文件 //go:generate protoc -I . --go_out=plugins=grpc:./ ./helloworld.proto&#xD;</description>
     </item>
     <item>
+      <title>py installer</title>
+      <link>https://r.xboox.cn/python/python%E6%89%93%E5%8C%85exe/pyinstaller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/python%E6%89%93%E5%8C%85exe/pyinstaller/</guid>
+      <description>举个例子先 pyinstaller -F xxx.py&#xD;参数说明 -F 打包单个文件 -W 去掉控制台窗口，就那个黑框 cmdshell -i 图标</description>
+    </item>
+    <item>
       <title>pycharm使用docker</title>
       <link>https://r.xboox.cn/docker/pycharm%E4%BD%BF%E7%94%A8docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/docker/pycharm%E4%BD%BF%E7%94%A8docker/</guid>
       <description>docker打开设置&#xA;Expose daemon on tcp://localhost:2375 without TLS&#xA;设置连接docker 显示Connection successfull 表示连接成功了&#xA;接下来配置python 解释器 如果已经创建了容器，就会自动加载</description>
+    </item>
+    <item>
+      <title>pypi修改源</title>
+      <link>https://r.xboox.cn/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/enviroment/pypi%E4%BF%AE%E6%94%B9%E6%BA%90/</guid>
+      <description>修改源的两种方式 临时修改 -i 指定源 安装指定的 model&#xA;-U : 升级到最新版本&#xA;-i : 指定下载库源 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -U funcat&#xD;永久修改 pip install pip -U pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/&#xD;源 name source 清华 https://pypi.tuna.tsinghua.edu.cn/simple 阿里 https://mirrors.aliyun.com/pypi/simple/ </description>
     </item>
     <item>
       <title>readme</title>
@@ -1619,6 +1241,13 @@
       <description>scp 上传文件失败 subsystem request failed on channel 0 C:\Windows\System32\OpenSSH\scp.exe: Connection closed&#xA;解决：&#xA;scp -p -O -P 5987 .\alidns root@192.168.3.2:/root/&#xA;-O 强制不依赖sftp协议，使用旧版协议传输</description>
     </item>
     <item>
+      <title>session</title>
+      <link>https://r.xboox.cn/python/flask/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/session/</guid>
+      <description>session 过期时间&#xA;def login(): session.permanent = True app.permanent_session_lifetime = timedelta(minutes=1) # 设置session到期时间&#xD;</description>
+    </item>
+    <item>
       <title>socket.io</title>
       <link>https://r.xboox.cn/golang/socket.io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1645,6 +1274,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/git/submodule/</guid>
       <description>拉取主仓库 同步主项目加上 --recurse-submodules 递归拉取子项目&#xA;git clone git@github.com:smallcgq/xbook.git --recurse-submodules&#xD;添加其他仓库到当前仓库 git submodule add https://github.com/alex-shpak/hugo-book themes/book&#xD;git clone https://github.com/alex-shpak/hugo-book --recursive&#xD;添加完成项目根目录下会多出一个 .gitmodules 文件 同步其他仓库更新 //一步到位，不用挨个查找，直接遍历一遍&#xD;git submodule foreach git pull&#xD;删除submodule git submodule deinit themes/book&#xD;</description>
+    </item>
+    <item>
+      <title>supervisor</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</guid>
+      <description>supervisor是进程守护服务 安装supervisor有以下操作&#xA;supervisor必须用python2&#xA;pip2 install supervisor&#xD;创建supervisor.conf 配置文件&#xA;# supervisor的程序名字 [program:项目名字] # supervisor执行的命令 command=uwsgi --ini uwsgi.ini # 项目的目录 directory = /项目路径 # 开始的时候等待多少秒 startsecs=0 # 停止的时候等待多少秒 stopwaitsecs=0 # 自动开始 autostart=true # 程序挂了后自动重启 autorestart=true # 输出的log文件 stdout_logfile=/var/log/supervisord.log # 输出的错误文件 stderr_logfile=/var/log/supervisord.err [supervisord] # log的级别 loglevel=debug [inet_http_server] # supervisor的服务器 port = :9001 # 用户名和密码 username = admin password = 123 # 使用supervisorctl的配置 [supervisorctl] # 使用supervisorctl登录的地址和端口号 serverurl = http://127.0.0.1:9001 # 登录supervisorctl的用户名和密码 username = admin password = 123 [rpcinterface:supervisor] supervisor.</description>
     </item>
     <item>
       <title>tensorboard</title>
@@ -1675,11 +1311,39 @@
       <description>flutter webview 访问url Future&amp;lt;void&amp;gt; launcherURL() async { // Uri uri = Uri(scheme: &amp;#39;http&amp;#39;,host: &amp;#39;www.baidu.com&amp;#39;); Uri url = Uri.parse(&amp;#39;https://www.baidu.com&amp;#39;); if (!await launchUrl( url, mode: LaunchMode.inAppWebView, webViewConfiguration: const WebViewConfiguration(enableJavaScript: true), )) { throw &amp;#39;Could not launch $url&amp;#39;; } }&#xD;</description>
     </item>
     <item>
+      <title>uwsgi</title>
+      <link>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/uwsgi%E5%9D%91/</guid>
+      <description>pip3 安装 uwsgi遇到异常： Exception: you need a C compiler to build uWSGI&#xA;解决办法：&#xA;yum install gcc&#xD;安装完c解释器后没有 又提示没找到python文件 plugins/python/uwsgi_python.h:2:10: fatal error: Python.h: No such file or directory&#xA;解决办法：&#xA;安装python3-dev,正常这么安装 提示找不到,先搜索&#xA;yum search python3 dev&#xD;因为当前版本是python3.6, 所以最终找到python36-devel 并安装&#xA;yum install python36-devel&#xD;</description>
+    </item>
+    <item>
+      <title>uwsgi遇到的坑</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</guid>
+      <description>编译配套 ssl的 uwsgi 安装编译需要的环境 yum install openssl yum install openssl-devel&#xD;安装 greenlet pip3 install greenlet&#xD;找到 greenlet 位置 /root/.virtualenvs/flask/include/site/python3.6&#xD;安装 CFLAGS=&amp;#34;-I/root/.virtualenvs/flask/include/site/python3.6&amp;#34; UWSGI_PROFILE=&amp;#34;asyncio&amp;#34; pip install uwsgi --no-use-wheel&#xD;or&#xA;CFLAGS=&amp;#34;-I/usr/include/openssl&amp;#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir&#xD;CFLAGS=&amp;quot;-I$/usr/bin/python3.6&amp;quot; UWSGI_PROFILE=&amp;ldquo;asyncio&amp;rdquo; pip3 install uwsgi &amp;ndash;no-use-wheel&#xA;CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;CFLAGS=&amp;quot;-I/usr/include/openssl&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;sudo CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &amp;ndash;no-cache-dir</description>
+    </item>
+    <item>
       <title>U盘制作ubuntu启动盘</title>
       <link>https://r.xboox.cn/linux/os%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/u%E7%9B%98%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/os%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/u%E7%9B%98%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98/</guid>
       <description>U盘制作ubuntu启动盘 打开下载好的系统镜像 启动 -&amp;gt; 写入硬盘映像 写入方式选择USB-HDD+或者USB-HDD均可（一般用HDD+）【隐藏启动分区最好选择无，省的以后格式化麻烦】【刻录校验可要可不要】&#xA;确定 从U盘启动进入引导&#xA;最后一步写入 </description>
+    </item>
+    <item>
+      <title>virtualenvwrapper</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</guid>
+      <description>安装虚拟环境 安装虚拟环境&#xA;pip2 install virtualenvwrapper # **查找安装路径** which virtualenvwrapper.sh&#xD;编辑.bashrc&#xA;vim ~/.bashrc # 增加以下环境变量 export WORKON_HOME=$HOME/.virtualenvs source /usr/local/bin/virtualenvwrapper.sh&#xD;立即生效&#xA;source .bashrc&#xD;查找python3路径&#xA;which python3&#xD;创建虚拟环境&#xA;mkvirtualenv --python=/usr/bin/python3 name-env workon name-env&#xD;切换/激活 虚拟环境&#xA;workon name-evn cd ~/.virtualenvs/name-env/bin/&#xD;退出虚拟环境&#xA;deactivate name-env&#xD;删除虚拟环境&#xA;rmvirtualenv env-name&#xD;</description>
+    </item>
+    <item>
+      <title>vscode 复制粘贴文件</title>
+      <link>https://r.xboox.cn/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/vscode%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E6%96%87%E4%BB%B6/</guid>
+      <description>vscode 不能直接复制粘贴文件，可以拖拽 vscode 分为两个版本：user版本和System版本，user版本应该是不能拖拽的，system版本可以拖拽，官网下载system版本&#xA;选择 Other downloads 选择System Installer 版本下载 </description>
     </item>
     <item>
       <title>vscode快捷键</title>
@@ -1710,6 +1374,13 @@
       <description>flutter 2.0 已经正式支持了web，不需要用下面方式单独启用web开发支持 flutter web 开发 开启web支持 (正式版默认启用)&#xA;flutter config &amp;ndash;enable-web&#xA;再次 执行环境检查&#xA;flutter doctor&#xA;一切正常之后,正常创建项目，会多出一个web文件夹&#xA;以前旧的项目可以执行以下命令：&#xA;flutter create .&#xA;运行在浏览器看下效果：&#xA;flutter run -d edge&#xA;我这里用的 microsoft edge 浏览器&#xA;打包&#xA;flutter build web&#xA;flutter build web &amp;ndash;release //生产环境打包&#xA;可以看到 build 目录下多出一个web 文件夹&#xA;flutter web 常见问题 Finished with error: Failed to bind web development server:SocketException: Failed to create server socket (OS Error: Failed to start accept), address = localhost, port = 53041</description>
     </item>
     <item>
+      <title>windows terminal</title>
+      <link>https://r.xboox.cn/windows/windows-terminal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/windows-terminal/</guid>
+      <description>windows新终端 可以自定义主题&#xA;打开设置&#xA;在这里选择一个喜欢的 主题&#xA;将选择好的主题配置信息，放在下图schemes集合里&#xA;修改上图list增加colorScheme 名字对应添加的schemes中的name&#xA;不够炫酷？修改背景图片， &amp;#34;backgroundImage&amp;#34;: &amp;#34;E:\\bg.png&amp;#34;, &amp;#34;backgroundImageOpacity&amp;#34;: 0.3, &amp;#34;backgroundImageStretchMode&amp;#34;:&amp;#34;none&amp;#34;, # 有四个选项 uniformToFill | none | fill | uniform 注意图片路径的反斜杠-转义或者用正斜杠：&amp;rsquo;/&amp;rsquo; 否则会设置失败&#xA;最终效果： 重新打开终端，ok</description>
+    </item>
+    <item>
       <title>windows环境配置</title>
       <link>https://r.xboox.cn/flutter/1.setup/windows%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1717,11 +1388,53 @@
       <description>flutter for windows 环境配置 开启 flutter for windows flutter config --enable-windows-desktop&#xD;下载 visual studio 社区版本 安装过程如下所示： 3. 运行flutter doctor，没有问题的话，就完成了环境配置 4. 运行，打完收工</description>
     </item>
     <item>
+      <title>with</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</guid>
+      <description>with用法和原理：&#xA;class Sample: def __enter__(self): print(&amp;#34;In __enter__()&amp;#34;) return &amp;#34;Foo&amp;#34; def __exit__(self, type, value, trace): print(&amp;#34;In __exit__()&amp;#34;) def get_sample(): return Sample() with get_sample() as sample: print (&amp;#34;sample:%s&amp;#34; % sample)&#xD;运行代码，输出如下&#xA;In __enter__() sample: Foo In __exit__()&#xD;先执行__enter__方法，最后执行__exit__方法退出</description>
+    </item>
+    <item>
       <title>workmanager</title>
       <link>https://r.xboox.cn/android/jetpack%E5%AD%A6%E4%B9%A0/workmanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/android/jetpack%E5%AD%A6%E4%B9%A0/workmanager/</guid>
       <description>#workmanager 轻量级后台任务管理&#xA;worker 任务体 class DatabaseWork(context: Context, workerParams: WorkerParameters) : Worker(context,workerParams) { companion object{ } override fun doWork(): Result { Log.e(&amp;#34;cgq&amp;#34;,&amp;#34;start&amp;#34;) val data = Data.Builder().putString(&amp;#34;cgq&amp;#34;,&amp;#34;woker-data&amp;#34;).build() setProgressAsync(data) return Result.success() } }&#xD;workerRequest 执行任务 WorkerManager enqueue 添加任务 val workRequest: WorkRequest = OneTimeWorkRequestBuilder&amp;lt;DatabaseWork&amp;gt;().build() //状态回调，添加一个任务观察者 WorkManager.getInstance(requireActivity()).getWorkInfoByIdLiveData(workRequest.id).observe(requireActivity()){ when (it.state) { WorkInfo.State.RUNNING -&amp;gt; Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;running======&amp;#34;) WorkInfo.State.CANCELLED -&amp;gt; Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;cancelled======&amp;#34;) WorkInfo.State.SUCCEEDED -&amp;gt;Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;success======&amp;#34;) else -&amp;gt; Log.e(&amp;#34;cgq&amp;#34;, &amp;#34;都不对&amp;#34;) } } WorkManager.getInstance(requireContext()).enqueue(workRequest)&#xD;</description>
+    </item>
+    <item>
+      <title>wsl-ubuntu开启ssh</title>
+      <link>https://r.xboox.cn/windows/wsl-ubuntu%E5%BC%80%E5%90%AFssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/wsl-ubuntu%E5%BC%80%E5%90%AFssh/</guid>
+      <description>clion配置toolschains:&#xA;mingw64 wsl - ubuntu 打开终端 进入subsystem,安装ssh small@small:~$ sudo apt-get install ssh [sudo] password for small: Reading package lists... Done Building dependency tree Reading state information... Done openssh-server is already the newest version (1:8.2p1-4ubuntu0.2). 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.&#xD;编辑ssh配置文件： small@small:/etc/ssh$ sudo vi sshd_config # 解开以下注释 Port 2222 AddressFamily any ListenAddress 0.0.0.0 ListenAddress :: # 还有这里 # To disable tunneled clear text passwords, change to no here!</description>
+    </item>
+    <item>
+      <title>wsl-开启systemctl 命令</title>
+      <link>https://r.xboox.cn/windows/wsl-%E5%BC%80%E5%90%AFsystemctl%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/wsl-%E5%BC%80%E5%90%AFsystemctl%E5%91%BD%E4%BB%A4/</guid>
+      <description>WSL 默认是不开启systemctl命令的,开启方法： 安装daemonize&#xA;sudo apt-get install daemonize&#xA;执行以下命令：&#xA;sudo daemonize /usr/bin/unshare &amp;ndash;fork &amp;ndash;pid &amp;ndash;mount-proc /lib/systemd/systemd &amp;ndash;system-unit=basic.target&#xA;exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME</description>
+    </item>
+    <item>
+      <title>wsl-无网络修复</title>
+      <link>https://r.xboox.cn/windows/wsl-%E6%97%A0%E7%BD%91%E7%BB%9C%E4%BF%AE%E5%A4%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/wsl-%E6%97%A0%E7%BD%91%E7%BB%9C%E4%BF%AE%E5%A4%8D/</guid>
+      <description>wsl linux 连不上网 解决办法：管理员权限打开命令行工具 wsl --shutdown netsh winsock reset netsh int ip reset all netsh winhttp reset proxy ipconfig /flushdns&#xD;重启电脑，重试</description>
+    </item>
+    <item>
+      <title>wsl升级wsl2</title>
+      <link>https://r.xboox.cn/windows/wsl%E5%8D%87%E7%BA%A7wsl2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/wsl%E5%8D%87%E7%BA%A7wsl2/</guid>
+      <description>检查当前运行的wsl版本 wsl -l -v&#xD;下载windows wsl2 linux内核&#xA;wsl --set-version &amp;lt;distro name&amp;gt; 2，将 &amp;lt;distro name&amp;gt; 替换为要更新的 Linux 发行版的名称。&#xA;例如，wsl --set-version Ubuntu-20.04 2 会将 Ubuntu 20.04 发行版设置为使用 WSL 2</description>
+    </item>
+    <item>
+      <title>wsl默认用户修改root</title>
+      <link>https://r.xboox.cn/windows/wsl%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E4%BF%AE%E6%94%B9root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/wsl%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7%E4%BF%AE%E6%94%B9root/</guid>
+      <description>开发环境修改wsl 默认登录用户为root 1. 现在用的是ubuntu，找到安装目录 C:\Users\用户名\AppData\Local\Microsoft\WindowsApps\ubuntu版本.exe config --default-user root&#xD;2. 执行命令 ubuntu2004.exe config --default-user root&#xD;3. 重新进入wsl,就是root用户了 </description>
     </item>
     <item>
       <title>x2ray配置</title>
@@ -1773,6 +1486,13 @@
       <description>1. 交叉编译 ffmpeg -&amp;gt; aarch64 1.1参数说明： --cross-prefix 指定交叉编译工具链路径 --arch 指定cpu指令集架构 --target-os 目标系统 linux --cc c 编译器 默认：cc 这里指定clang google官方已经在ndk去掉了gcc --enable-cross-compile 开启交叉编译 --disable-static 关闭静态编译 --enable-shared 开启shared表示编译动态链接库 --disable-ffmpeg 不开启ffmpeg 模块 --disable-ffplay 不开启ffplay 播放器模块 --disable-ffprobe 不开启ffprobe 音视频分析模块&#xD;1.2设置环境变量 NDK版本：android-ndk-r22b&#xA;export NDK_ROOT=/mnt/e/WorkRoom/ubuntu/android-ndk-r22b/toolchains/llvm/prebuilt/linux-x86_64 export SYSROOT=$NDK_ROOT/sysroot&#xD;1.3 执行 ./configure 需要注意：新版本ndk工具链取消了gcc编译器，默认编译器是clang,配置项目里面需要指定c/c++ 编译器&#xA;&amp;ndash;cc=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang &amp;ndash;cxx=$NDK_ROOT/bin/armv7a-linux-androideabi21-clang++&#xA;完整的编译参数如下：&#xA;small@small:~$ ./configure \ --prefix=/mnt/e/WorkRoom/ffmpeg/ffarm \ --arch=aarch64 \ --cpu=armv8 \ --target-os=android \ --sysroot=$SYSROOT \ --cross-prefix=$NDK_ROOT/bin/aarch64-linux-android- \ --extra-cflags=&amp;#34;-I$SYSROOT/usr/include -fPIC -DANDROID -mfpu=neon -mfloat-abi=softfp &amp;#34; \ --extra-ldflags=&amp;#34;-L$SYSROOT/usr/lib&amp;#34; \ --cc=$NDK_ROOT/bin/aarch64-linux-android21-clang \ --nm=$NDK_ROOT/bin/aarch64-linux-android-nm \ --cxx=$NDK_ROOT/bin/aarch64-linux-android21-clang++ \ --enable-runtime-cpudetect \ --enable-neon \ --enable-shared \ --enable-asm \ --disable-static \ --enable-cross-compile \ --enable-small \ --enable-jni \ --enable-mediacodec \ --enable-gpl \ --enable-decoder=h264_mediacodec \ --disable-doc \ --disable-debug \ --disable-ffmpeg \ --disable-ffplay \ --disable-ffprobe \ --disable-postproc \ --disable-avdevice \ --disable-symver \ --disable-stripping&#xD;# --enable-hwaccel=h264_mediacodec \&#xD;# --enable-asm \&#xD;设置环境变量 export NDK_ROOT=/mnt/e/WorkRoom/android/ndk/android-ndk-r26b/toolchains/llvm/prebuilt/linux-x86_64</description>
     </item>
     <item>
+      <title>使用笔记</title>
+      <link>https://r.xboox.cn/python/pycharm/%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/pycharm/%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>##% -&amp;gt; 设置开启科学模式之后，就可以分段执行代码</description>
+    </item>
+    <item>
       <title>信息熵—交叉熵</title>
       <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1822,6 +1542,13 @@
       <description>跨域请求在网上找了很多文章都是下面这种做法：&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { method := c.Request.Method fmt.Println(&amp;#34;啥玩意儿的&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Origin&amp;#34;, &amp;#34;*&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type,AccessToken,X-CSRF-Token, Authorization, Token&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Methods&amp;#34;, &amp;#34;POST, GET, OPTIONS&amp;#34;) c.Header(&amp;#34;Access-Control-Expose-Headers&amp;#34;, &amp;#34;Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type&amp;#34;) c.Header(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) if method == &amp;#34;OPTIONS&amp;#34; { c.AbortWithStatus(http.StatusNoContent) } c.Next() } }&#xD;但是并不好使用，所以又找到下面这种方法，总算是搞明白了啥意思了！&#xA;func cors() gin.HandlerFunc { return func(c *gin.Context) { origin := c.Request.Header.Get(&amp;#34;origin&amp;#34;) if len(origin) == 0 { origin = c.Request.Header.Get(&amp;#34;Origin&amp;#34;) } c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Origin&amp;#34;, origin) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Credentials&amp;#34;, &amp;#34;true&amp;#34;) c.Writer.Header().Set(&amp;#34;Access-Control-Allow-Headers&amp;#34;, &amp;#34;Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With&amp;#34;) c.</description>
     </item>
     <item>
+      <title>内存使用情况</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+      <description>getsizeof x: 对象 return : 对象的字节数 sys.getsizeof(x)</description>
+    </item>
+    <item>
       <title>函数计算</title>
       <link>https://r.xboox.cn/golang/%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1836,6 +1563,20 @@
       <description>下载镜像 # 官方提供的mysql镜像 docker pull mysql&#xD;创建容器 docker run -itd --name=mysql_wxc -p 3306:3306 -v E:\mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql&#xD;-p 指定3306端口映射宿主机 -v 数据库文件映射到宿主机 -e 指定参数 ‘MYSQL_ROOT_PASSWORD’ 设置数据库密码 进入容器 docker exec -it mysql_wxc bash&#xD;</description>
     </item>
     <item>
+      <title>创建文件服务器</title>
+      <link>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>windows -b 绑定ip地址 python -m http.server -b 192.168.1.145 8888&#xD;Mac 系统 python -m SimpleHTTPServer 8888&#xD;</description>
+    </item>
+    <item>
+      <title>创建虚拟环境</title>
+      <link>https://r.xboox.cn/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/enviroment/anaconda/%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>创建虚拟环境，并指定安装的model&#xA;conda create -n env_name script_name F: conda create -n tensorflow tensorflow-gpu==2.1&#xD;指定要安装的model版本，conda会自动安装所有关联的包</description>
+    </item>
+    <item>
       <title>创建项目</title>
       <link>https://r.xboox.cn/golang/2.beego/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1848,6 +1589,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/flutter/1.setup/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
       <description>flutter 初体验 1. 下载flutter sdk 2. 配置环境变量 E:\WorkRoom\android\flutter\flutter\bin 添加到path中&#xD;运行命令：&#xA;flutter doctor&#xD;这一步有可能卡在 Running pub upgrade... 解决办法： # 配置环境变量，国内镜像 PUB_HOSTED_URL=https://pub.flutter-io.cn FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn&#xD;许可证的问题，not accepted,那就让他ok，根据提示输入命令：&#xA;flutter doctor --android-licenses&#xD;一路yes到底，最后再检查一次就 ok 了 3. 配置IDE vscode 配置 ：搜索 安装flutter插件&#xA;android studio : 安装flutter插件&#xA;接着运行 flutter doctor&#xA;手动更新依赖包：&#xA;flutter packages get </description>
+    </item>
+    <item>
+      <title>初始化</title>
+      <link>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
+      <description>用户名：pi 密码：raspberry</description>
     </item>
     <item>
       <title>区间</title>
@@ -1913,6 +1661,41 @@
       <description>vps 主机 https://ipraft.com/server/purchase&#xA;跨境代理 https://www.ipfoxy.net/cn&#xA;xray小白教程 https://xtls.github.io/document/level-0/ch08-xray-clients.html#_8-1-xray-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E7%AE%80%E8%BF%B0</description>
     </item>
     <item>
+      <title>和jinjia2 模板冲突</title>
+      <link>https://r.xboox.cn/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/vue/%E5%92%8Cjinjia2%E6%A8%A1%E6%9D%BF%E5%86%B2%E7%AA%81/</guid>
+      <description>vue 和jinjia2模板冲突： 修改vue模板： delimiters: [&amp;#39;{[&amp;#39;, &amp;#39;]}&amp;#39;]&#xD;修改jinjia2模板： app.jinja_env.variable_start_string = &amp;#39;[[ app.jinja_env.variable_end_string = &amp;#39;]]&amp;#39;&#xD;</description>
+    </item>
+    <item>
+      <title>图像合并</title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%90%88%E5%B9%B6/</guid>
+      <description>图像融合 cv2.addWeighted(src1, alpha, src2, beta, gamma, dst=None, dtype=None)&#xA;src1 : 图像 alpha : 透明系数 src2 : 图像2 beta : 透明系数 gamma : 亮度调节 import cv2 a = cv2.imread(&amp;#39;images/aaa.png&amp;#39;) b = cv2.imread(&amp;#39;images/bbb.png&amp;#39;) a = a[:b.shape[0],:b.shape[1],:] res = cv2.addWeighted(src1=a,alpha=0.3,src2=b,beta=1,gamma=0.3) cv2.imshow(&amp;#39;a&amp;#39;,a) cv2.waitKey(1000) cv2.imshow(&amp;#39;b&amp;#39;,b) cv2.waitKey(1000) cv2.imshow(&amp;#39;res&amp;#39;,res) cv2.waitKey(1000) cv2.destroyAllWindows()&#xD;</description>
+    </item>
+    <item>
+      <title>图像基础操作</title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</guid>
+      <description>读取图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;)&#xD;显示图片 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) cv2.imshow(&amp;#39;name&amp;#39;,img) cv2.waitKey() cv2.destroyAllWindows()&#xD;图像形状 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) img.shape&#xD;图像分割，通道拆分 import cv2 img = cv2.imread(&amp;#39;image_path&amp;#39;) b,g,r = cv2.split(img)&#xD;图像运算 cv2.add 方法 相加 取最大值255 img_a + img_b ,直接相加结果除255 取模 import cv2 img_a = cv2.imread(&amp;#39;image_a_path&amp;#39;) img_b = cv2.imread(&amp;#39;image_b_path&amp;#39;) img_c = cv2.add(img_a,img_b) img_d = img_a + img_b&#xD;</description>
+    </item>
+    <item>
+      <title>图像缩放变换</title>
+      <link>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E5%9B%BE%E5%83%8F%E7%BC%A9%E6%94%BE%E5%8F%98%E6%8D%A2/</guid>
+      <description>图像缩放 两种方式 dsize : 元组，传入要缩放图像的宽高 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(av,dsize=(100,100)) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;fx fy 参数，分别 修改横列 缩放系数 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.resize(img,None,fx=2,fy=2) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;翻转变换 flipCode:&#xA;&amp;gt;1 沿着y axis左右变换 =0 沿着x axis上下变换 &amp;lt;0 沿着x axis上下 翻转，再沿着y axis 左右反转 import cv2 img = cv2.imread(&amp;#39;img_path&amp;#39;) img1 = cv2.flip(img,flipCode=1) cv2.imshow(&amp;#39;img&amp;#39;,img) cv2.imshow(&amp;#39;img1&amp;#39;,img1) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
+    </item>
+    <item>
+      <title>坑</title>
+      <link>https://r.xboox.cn/python/flask/flask_migrate/%E5%9D%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/flask_migrate/%E5%9D%91/</guid>
+      <description>flask-migrate 坑 字段长度更新会提示 No changes in schema detected. 解决办法：初始化Migrate的时候增加属性compare_type为True&#xA;Migrate(app=app, db=db,render_as_batch = True,compare_type = True)&#xD;</description>
+    </item>
+    <item>
       <title>基础解析</title>
       <link>https://r.xboox.cn/python/bs4/%E5%9F%BA%E7%A1%80%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1941,11 +1724,60 @@
       <description>go 关键字 就定义了一个协程</description>
     </item>
     <item>
+      <title>子图</title>
+      <link>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/%E5%AD%90%E5%9B%BE/</guid>
+      <description>最简单方式创建子图 import numpy as np from matplotlib import pyplot as plt np.random.seed(123456) # 随机生成1-20的随机数 x = np.random.randint(1, 20, 20) xmax = x.max() xmin = x.min() xmax, xmin # 数据缩放到0-1的 区间 xx = (x - xmin) / (xmax - xmin) # 2,1,1, 代表 画子图 2行1列第一 个位置 # 参数中间的逗号可以免掉不写，211 plt.subplot(211) plt.plot(x) plt.subplot(2,1,2) plt.plot(y) plt.show()&#xD;创建子图 from matplotlib import pyplot as plt # 第一个子图 将 整个图分成 2行1列，占据第1个位置 plt.subplot(211) plt.plot([1,2],[3,4]) # 第二个子图 将整个图分成 2行3列 放在第4个位置，也就是2行第1位 plt.</description>
+    </item>
+    <item>
+      <title>子域名</title>
+      <link>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E5%AD%90%E5%9F%9F%E5%90%8D/</guid>
+      <description>1.本地测试需要修改hosts文件：C:\Windows\System32\drivers\etc\hosts目录&#xA;127.0.0.1&#x9;zouni.vip 127.0.0.1&#x9;student.zouni.vip&#xD;2.代码中设置： 修改蓝图 subdomain 为指定的子域名&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, subdomain=&amp;#39;cms&amp;#39;)&#xD;3.设置 config 配置 SERVER_NAME=主域名</description>
+    </item>
+    <item>
+      <title>字段解释</title>
+      <link>https://r.xboox.cn/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/springboot/%E5%AD%97%E6%AE%B5%E6%B3%A8%E8%A7%A3/</guid>
+      <description>@JsonProperty(&amp;quot;game_name&amp;quot;): 给字段起别名； @JsonInclude(JsonInclude.Include.NON_NULL): 字段如果空值，json中不返回&#xA;data class Game(val id:Int, @JsonProperty(&amp;#34;wowo&amp;#34;) @JsonInclude(JsonInclude.Include.NON_NULL) val name: String?){&#xD;[ { &amp;#34;id&amp;#34;: 1, &amp;#34;wowo&amp;#34;: &amp;#34;csgo&amp;#34; }, { &amp;#34;id&amp;#34;: 2 } ]&#xD;</description>
+    </item>
+    <item>
+      <title>字符串前缀解释</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</guid>
+      <description>u unicode编码&#xA;r 不转义字符</description>
+    </item>
+    <item>
+      <title>安装choco</title>
+      <link>https://r.xboox.cn/windows/%E5%AE%89%E8%A3%85choco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/%E5%AE%89%E8%A3%85choco/</guid>
+      <description>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;lsquo;https://chocolatey.org/install.ps1&#39;))</description>
+    </item>
+    <item>
       <title>安装cockpit 系统管理服务</title>
       <link>https://r.xboox.cn/linux/euleros/cockpit%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/euleros/cockpit%E5%AE%89%E8%A3%85/</guid>
       <description>安装cockpit 系统管理服务 # 安装cockpit yum install cockpit # 启动cockpit服务 systemctl start cockpit # 开机启动 systemctl enable cockpit.socket # 设置防火墙 firewall-cmd --zone=public --add-port=9090/tcp --permanent # 重启防火墙 firewall-cmd --reload&#xD;用系统用户账户登陆 </description>
+    </item>
+    <item>
+      <title>安装docker</title>
+      <link>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</guid>
+      <description>docker 脚本安装 sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh sudo sh docker_install.sh –mirror Aliyun&#xD;</description>
+    </item>
+    <item>
+      <title>安装gitbook</title>
+      <link>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85gitbook/</guid>
+      <description>node -V&#xA;npm install gitbook-cli -g&#xA;gitbook -V</description>
     </item>
     <item>
       <title>安装openvpn客户端</title>
@@ -1960,6 +1792,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/proxy/vpn/%E5%AE%89%E8%A3%85openvpn%E6%9C%8D%E5%8A%A1%E7%AB%AFlinux/</guid>
       <description>配置openVpn linux 服务端安装配置 一. openvpn安装&#xA;sudo apt-get -y install openvpn libssl-dev openssl&#xD;二. 查看安装产生的文件&#xA;root@zouni:~# dpkg -L openvpn | more /. /etc /etc/default /etc/default/openvpn /etc/init.d /etc/init.d/openvpn /etc/network /etc/network/if-down.d /etc/network/if-down.d/openvpn /etc/network/if-up.d /etc/network/if-up.d/openvpn /etc/openvpn /etc/openvpn/client /etc/openvpn/server /etc/openvpn/update-resolv-conf /lib /lib/systemd /lib/systemd/system /lib/systemd/system/openvpn-client@.service /lib/systemd/system/openvpn-server@.service /lib/systemd/system/openvpn.service /lib/systemd/system/openvpn@.service /lib/systemd/system-generators /lib/systemd/system-generators/openvpn-generator&#xD;三. 接下来安装easy-rsa 制作证书&#xA;root@zouni:~# apt-get -y install easy-rsa&#xD;查看 easy-rsa 的安装文件&#xA;dpkg -L easy-rsa |more&#xD;dpkg --list easy-rsa&#xD;四. 制作证书&#xA;将easy-rsa目录下文件复制到 /etc/easy-rsa 目录 cd /etc/openvpn mkdir easy-rsa cd easy-rsa/ cp -r /usr/share/easy-rsa/* .</description>
+    </item>
+    <item>
+      <title>安装环境</title>
+      <link>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/web/nodejs/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83/</guid>
+      <description>官网 https://nodejs.org/en/download/</description>
     </item>
     <item>
       <title>定时任务</title>
@@ -2018,6 +1857,13 @@
       <description>tensorlfow math.log() 是以自然常数e为底 转化为以2为底：&#xA;根据对数换底公式：&#xA;∵&#xA;∴ loge(4)/loge(2) = log2(4) = 2&#xD;代码实例：&#xA;import tensorflow as tf x = tf.math.log(4.)/tf.math.log(2.)&#xD;Out:&#xA;&amp;lt;tf.Tensor: shape=(), dtype=float32, numpy=2.0&amp;gt;&#xD;效果等同于 numpy log2(4)&#xA;import numpy as np np.log2(4)&#xD;Out:&#xA;2.0&#xD;</description>
     </item>
     <item>
+      <title>小图片合成大图片</title>
+      <link>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</guid>
+      <description>python 小图片合成大图片 这段代码是前两年搞的，有很长时间没动了，正好是在学习python的时候拿来练手的。&#xA;先说一下前因后果为什么要做这个，起初的想法是一个朋友给的，他手机存了很多女儿的照片，有一天他告诉我：他希望有个工具能把这些照片合成一个图片墙，在手机看毕竟不方便，希望能有一些小创意，为以后孩子大了留个回忆；可巧不巧正好快赶上七夕了，就想着给媳妇一个惊喜，所以就赶紧把相册里的给媳妇以前拍的照片收集了一下，切图工具把一些照片简单处理了一下；&#xA;基于以上种种，哈哈，就搞了这么个玩意儿！ 但是代码写的比较烂，懒得贴代码了，链接放在这里：有兴趣的可以看看 主要代码放在ConcatImg/concat_img/concat.py这个文件 https://github.com/SmallCao/ConcatImg&#xA;最终效果 </description>
+    </item>
+    <item>
       <title>常用sql</title>
       <link>https://r.xboox.cn/database/sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2060,6 +1906,27 @@
       <description>启动 nginx&#xD;查看帮助 nginx -h 查看版本 nginx -v&#xD;查看配置参数 nginx -V&#xD;指定参数 nginx -s&#xD;测试配置参数是否正确 nginx -t -C filename&#xD;测试配置是否正确 nginx -t 重载，每次修改配置信息都需要重载nginx nginx -s reload&#xD;停止运行 nginx -s stop&#xD;</description>
     </item>
     <item>
+      <title>常用命令</title>
+      <link>https://r.xboox.cn/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/enviroment/anaconda/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>查看所有创建的虚拟环境&#xA;conda info -e&#xD;or&#xD;conda env list&#xD;创建虚拟环境&#xA;conda create -n envname&#xD;激活虚拟环境&#xA;# centos 需要执行 source activate&#xA;conda activate envname&#xD;关闭虚拟环境&#xA;conda deactivate envname 删除虚拟环境&#xA;conda remove -n envname --all&#xD;重命名环境 =&amp;gt; 先clone 再重建 == 克隆or移植环境&#xA;conda create -n python_basic --clone matplotlib_basic&#xD;在命令行提示符前出现 (base) 当前激活的环境名字 关闭命令 conda config --set changeps1 false&#xD;打开提示命令 conda config --set changeps1 true&#xD;</description>
+    </item>
+    <item>
+      <title>常用命令</title>
+      <link>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>打开配置 sudo raspi-config&#xD;</description>
+    </item>
+    <item>
+      <title>常用命令</title>
+      <link>https://r.xboox.cn/windows/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>powershell 查看环境变量 语法：$env:环境变量名称&#xA;# $env 后面紧跟要查看的环境变量名称 PS C:\Users\cao_c&amp;gt; $env:GOPATH D:\workproject\go&#xD;设置环境变量&#xA;$env:name=value&#xD;</description>
+    </item>
+    <item>
       <title>常用库</title>
       <link>https://r.xboox.cn/flutter/%E5%B8%B8%E7%94%A8%E5%BA%93/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2072,6 +1939,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/golang/%E5%B8%B8%E7%94%A8%E5%BA%93/</guid>
       <description>godotenv 源码 从 .env 文件加载环境变量&#xA;常用库 环境变量从文件导入，默认文件名 .env; 文件放在项目根目录下，编译运行默认加载.env文件&#xA;func TestEnv(t *testing.T) { err := godotenv.Load() if err != nil { log.Println(err.Error()) return } log.Println(&amp;#34;====&amp;#34;, os.Getenv(&amp;#34;a&amp;#34;)) }&#xD;gotify 官网 源码 用于发送和接收消息的简单服务器&#xA;mediamtx 源码 MediaMTX 是一款即用型、零依赖性的实时媒体服务器和媒体代理，允许发布、读取、代理、录制和播放视频和音频流。它被设想为一个 “媒体路由器”，将媒体流从一端路由到另一端。&#xA;obs-studio 官网 源码 jellyfin 源码 Jellyfin 是一个免费软件媒体系统，可让您控制管理和流式传输您的媒体。它是专有 Emby 和 Plex 的替代方案，通过多个应用程序将媒体从专用服务器提供给最终用户设备。Jellyfin 源自 Emby 的 3.5.2 版本，并移植到 .NET Core 框架以实现完整的跨平台支持。没有附加条件，没有高级许可证或功能，也没有隐藏的议程：只是一个想要构建更好的东西并共同努力实现它的团队。我们欢迎任何有兴趣加入我们的探索者！&#xA;包含各种终端：pc web android ios&#xA;home-assistant 源码 智能家居集成&#xA;hugo 源码 </description>
+    </item>
+    <item>
+      <title>常用注解</title>
+      <link>https://r.xboox.cn/springboot/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/springboot/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</guid>
+      <description>常用注解：&#xA;@Controller&#xA;标注控制器，如果要包装json数据，需要 配合@ResponseBody&#xA;@RestController&#xA;标注控制器，返回 json 数据&#xA;@RequestMapping&#xA;路由映射&#xA;@SpringBootApplication&#xA;应用住程序入口标注&#xA;@ComponentScan&#xA;扫描指定包，给定一个范围，不指定默认扫描全部包</description>
     </item>
     <item>
       <title>常用激活函数</title>
@@ -2102,6 +1976,13 @@
       <description>ssh root@ip ssh登录时提示「permission denied please try again」 sudo vi /etc/ssh/sshd_config&#xA;编辑&#xA;PermitRootLogin yes 保存，重启ssh服务 service sshd restart</description>
     </item>
     <item>
+      <title>常见问题</title>
+      <link>https://r.xboox.cn/springboot/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/springboot/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>启动类位置： 一般放在根目录下&#xA;Failed to configure a DataSource: &amp;lsquo;url&amp;rsquo; attribute is not specified and no em&#xA;缺少配置信息</description>
+    </item>
+    <item>
       <title>平方和公式</title>
       <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2109,11 +1990,25 @@
       <description>平方和公式 求连续的自然数的平方和</description>
     </item>
     <item>
+      <title>开启默认root用户</title>
+      <link>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
+      <description>出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。 设置root用户密码 sudo passwd root&#xD;启用root用户 sudo passwd --unlock root&#xD;设置ssh允许登录 sudo sed -i &amp;#34;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;#34; /etc/ssh/sshd_config&#xD;重启ssh服务 sudo systemctl restart ssh&#xD;为root用户应用于当前用户相同的bash配置 sudo cp ~/.bashrc /root/.bashrc&#xD;</description>
+    </item>
+    <item>
       <title>开机自动运行</title>
       <link>https://r.xboox.cn/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/%E5%BC%80%E6%9C%BA%E8%87%AA%E5%8A%A8%E8%BF%90%E8%A1%8C/</guid>
       <description>两种方法 1. 创建systemd服务 1.1 创建服务脚本 -&amp;gt; /etc/systemd/system/myddns.service [Unit] Description=myservice ddns # 对服务的描述 After=network.target # 指该服务需要在网络服务启动后，再启动 [Service] Type=simple # 表示该服务是一个简单的进程 WorkingDirectory=/root/myddns # 服务所在文件夹 ExecStart=/root/myddns/myddns.sh # 服务启动命令 ExecStop=killall myddns # 服务停止命令 Restart=always # 不管什么原因，都会重启 RestartSec=3　# 重启间隔时间3秒 [Install] WantedBy=multi-user.target&#xD;1.2 systemd操作命令 # systemd 服务操作命令 sudo daemon-reload # 重新加载 systemd 的配置 sudo systemctl start myddns.service # 启动 systemd 服务 sudo systemctl stop myddns.service # 停止 systemd 服务 sudo systemctl enable myddns.service # 开机自启动 sudo systemctl disable myddns.</description>
+    </item>
+    <item>
+      <title>异常处理</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>&#xD;a = 0 try: 2 / a except Exception as e: print(&amp;#39;a---&amp;#39;, e)&#xD;</description>
     </item>
     <item>
       <title>张量向量</title>
@@ -2207,11 +2102,32 @@
       <description>搭建本地仓库 搜索 官方仓库 docker search registry&#xD;下载仓库 docker pull registry&#xD;创建容器 docker run -d -p 5000:5000 --restart=always --privileged=true --name=registry-small -v d:/docker/registry:/var/lib/registry registry&#xD;修改镜像，准备推送 到仓库容器 docker tag image_id registry_name:port/images_name&#xD;修改hosts 增加 域名 127.0.0.1 registry_name&#xD;推送镜像到私有仓库 docker push registry_name:port/images_name&#xD;查看镜像是否推送成功 windows 浏览器 可以直接打开&#xA;http://127.0.0.1:5000/v2/_catalog&#xA;查看版本号&#xA;http://127.0.0.1:5000/v2/alpine/tags/list&#xA;linux 查看同样的方法 用命令查看&#xA;curl -X GET http://127.0.0.1:5000/v2/_catalog&#xD;</description>
     </item>
     <item>
+      <title>散点图</title>
+      <link>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/matplotlib/%E6%95%A3%E7%82%B9%E5%9B%BE/</guid>
+      <description>散点图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] plt.scatter(x, y) plt.show()&#xD;meshgrid生成点阵图&#xA;from matplotlib import pyplot as plt x = [1, 2, 3] y = [3, 4, 5] xxx, yyy = np.meshgrid(x, y) plt.scatter(xxx, yyy) plt.show()&#xD;</description>
+    </item>
+    <item>
       <title>数学概念</title>
       <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</guid>
       <description>信息论 统计代数 微积分 方差 均方误差 MSE 3. 傅里叶变换 4. 逆矩阵 5. 贝叶斯 概率 6. 线性代数 7. 概率论 8. 信息论 9. 微积分 10. 方差，标准差 正态分布 熵，交叉熵 贝叶斯，朴素贝叶斯概率 极大似然估计 最小二乘法 拉格朗日乘子法 微积分 矩阵：逆矩阵，单位矩阵，矩阵乘法 =》 向量模，向量内积（点积） 对数定理&#xA;傅里叶变换 </description>
+    </item>
+    <item>
+      <title>数据库迁移</title>
+      <link>https://r.xboox.cn/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/flask_migrate/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB/</guid>
+      <description>初始化 初始化迁移文件&#xA;python manage.py db init&#xD;将模型映射 添加到文件中&#xA;python manage.py db migrate&#xD;最后 映射到数据库中：&#xA;python manage.py db upgrade&#xD;manage.py 添加数据 命令行 添加数据&#xA;python manage.py create_user -u yunhai -e cao_cgq@163.com -p 1234&#xD;</description>
+    </item>
+    <item>
+      <title>数据库配置</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
+      <description>mysql 配置 首先查看centos是否已经安装了mysql源 yum list installed mysql* 如果有就删除 yum remove mysql-community-*&#xD;安装mysql源 https://dev.mysql.com/downloads/repo/yum/&#xD;wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm&#xD;安装mysql yum -y install mysql57-community-release-el7-10.noarch.rpm&#xD;查看是否已经安装了数据库源 yum repolist all | grep mysql&#xD;查看数据库源 /etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1&#xD;安装数据库服务 yum install mysql-server&#xD;启动mysql systemctl start mysqld.service&#xD;查看状态 systemctl status mysqld.service&#xD;查看初始密码 grep &amp;#34;password&amp;#34; /var/log/mysqld.log&#xD;修改密码 mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;;&#xD;注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功 开启mysql的远程访问 两种方式 方式1 grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.</description>
     </item>
     <item>
       <title>数据缩放</title>
@@ -2235,11 +2151,25 @@
       <description>数据预处理 无量纲化&#xA;数据缩放： 标准化，归一化&#xA;标准化&#xA;处理缺失值&#xA;处理编码哑变量&#xA;二值化，分箱</description>
     </item>
     <item>
+      <title>数组操作</title>
+      <link>https://r.xboox.cn/python/numpy/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/numpy/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</guid>
+      <description>查看数组有多少类别&#xA;import numpy as np array = [1,2,3,2,1,2,1] np.unique(array) ------------------------- array([1, 2, 3])&#xD;# x np.sum(x)&#xD;</description>
+    </item>
+    <item>
       <title>文件共享</title>
       <link>https://r.xboox.cn/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB/</guid>
       <description>在Linux中设置文件或文件夹共享，可以使用Samba服务。以下是一个基本的Samba配置示例，用于共享名为share的文件夹。 安装Samba服务： sudo apt-get update sudo apt-get install samba 创建共享文件夹并设置合适的权限： mkdir /path/to/share sudo chmod 777 /path/to/share&#xD;配置Samba共享设置。编辑配置文件/etc/samba/smb.conf： sudo nano /etc/samba/smb.conf&#xD;在smb.conf文件的末尾添加以下内容： ini&#xD;[Share]&#xD;path = /path/to/share&#xD;browseable = yes&#xD;read only = no&#xD;writable = yes&#xD;guest ok = yes&#xD;重启Samba服务： sudo systemctl restart smbd&#xD;如果有防火墙运行，允许Samba通过： sudo ufw allow samba&#xD;完成以上步骤后，你应该能够从网络中的其他计算机访问并共享/path/to/share文件夹了。记得根据实际情况调整文件夹路径和权限设置。</description>
+    </item>
+    <item>
+      <title>断言</title>
+      <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</guid>
+      <description>&#xD;a = -1 # 断言 a&amp;gt;0才正常执行，否则抛 异常 assert a&amp;gt;0&#xD;[Out]:&#xA;Traceback (most recent call last): File &amp;#34;D:\Anaconda3\envs\tensorflow\lib\site-packages\IPython\core\interactiveshell.py&amp;#34;, line 3331, in run_code exec(code_obj, self.user_global_ns, self.user_ns) File &amp;#34;&amp;lt;ipython-input-45-013be11a8622&amp;gt;&amp;#34;, line 3, in &amp;lt;module&amp;gt; assert a&amp;gt;0 AssertionError&#xD;</description>
     </item>
     <item>
       <title>方差和偏差</title>
@@ -2354,6 +2284,13 @@
       <description></description>
     </item>
     <item>
+      <title>模板创建注意要点</title>
+      <link>https://r.xboox.cn/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF%E5%88%9B%E5%BB%BA%E6%B3%A8%E6%84%8F/</guid>
+      <description>蓝图自定义模板文件夹template_folder注意点：&#xA;如果app/templates中有index.html&#xA;并且app/cms/templates也有index.html文件&#xA;渲染模板会优先查找app/templates目录下。&#xA;蓝图如果要正常使用，创建规则必须是app/cms/templates/cms/index.html，渲染render_template(&#39;cms/index.html&#39;) 完整例子：&#xA;bp = Blueprint(&amp;#39;cms&amp;#39;, __name__, url_prefix=&amp;#39;/cms&amp;#39;, template_folder=&amp;#39;templates&amp;#39;) @bp.route(&amp;#39;/cms/index&amp;#39;) def index(): return render_template(&amp;#39;cms/index.html&amp;#39;）&#xD;flask模板查找规则是优先项目根目录``</description>
+    </item>
+    <item>
       <title>注解</title>
       <link>https://r.xboox.cn/android/kotlin/%E6%B3%A8%E8%A7%A3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2396,6 +2333,20 @@
       <description>1. android studio 生成jar包 task makeJar(type: Copy) { delete &amp;#39;build/libs/mylibrary.jar&amp;#39; //删除已经存在的jar包 from(&amp;#39;build/intermediates/compile_library_classes_jar/ debug/&amp;#39;) //从该目录下加载要打包的文件,这里实际上是编译后的classes.jar文件的目录 into(&amp;#39;build/libs/&amp;#39;)//jar包的保存目录 include(&amp;#39;classes.jar&amp;#39;)//设置过滤，只打包classes文件 rename(&amp;#39;classes.jar&amp;#39;, &amp;#39;dynamic_temp.jar&amp;#39;)//重命名，mylibrary.jar 根据自己的需求设置 } makeJar.dependsOn(build)&#xD;1. 找到android sdk ，以下路径配置到环境变量，目的是为了使用 dx 命令 D:\WorkRome\android\Sdk\build-tools\30.0.3&#xA;2. 一键生成 jar &amp;ndash;output 最终输出jar包 temp.jar 目标jar&#xA;dx --dex --output=object.jar temp.jar </description>
     </item>
     <item>
+      <title>画矩形</title>
+      <link>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/opencv/%E7%94%BB%E7%9F%A9%E5%BD%A2/</guid>
+      <description>&#xD;import cv2 imgpath = &amp;#39;d:/img.png&amp;#39; x,y,x1,y1 = 641,165,752,278 img = cv2.imread(imgpath) img.shape linet = cv2.LINE_4 img = cv2.rectangle(img, (x, y), (x1, y1), (0, 0, 255), linet,2) cv2.imshow(&amp;#39;name&amp;#39;, img) cv2.waitKey() cv2.destroyAllWindows()&#xD;</description>
+    </item>
+    <item>
+      <title>相对路径报错</title>
+      <link>https://r.xboox.cn/python/pycharm/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/pycharm/%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E6%8A%A5%E9%94%99/</guid>
+      <description>pycharm使用相对路径，要修改当前解释器的工作路径到当前项目路径&#xA;修改完之后重启解释器，就可以了</description>
+    </item>
+    <item>
       <title>磁盘操作</title>
       <link>https://r.xboox.cn/linux/%E7%A1%AC%E7%9B%98%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2422,6 +2373,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/android/%E7%AD%BE%E5%90%8D/</guid>
       <description>获取APP签名信息 public static String getSingInfo(Context context) { try { PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNATURES); Signature[] signs = packageInfo.signatures; Signature sign = signs[0]; byte[] signByteArray = sign.toByteArray(); return md5(signByteArray); } catch (Exception e) { e.printStackTrace(); } return null; } public static String md5(byte[] data){ if(data == null || data.length == 0){ return null; } StringBuffer hexString = new StringBuffer(); try { MessageDigest md = MessageDigest.getInstance(&amp;#34;MD5&amp;#34;); md.update(data); byte[] hash = md.digest(); for (int i = 0; i &amp;lt; hash.</description>
+    </item>
+    <item>
+      <title>系统安装</title>
+      <link>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
+      <description>系统安装过程中常见问题 汇总 1. windows只能安装到GPT磁盘如何解决 进入选择语言界面操作：shift+F10 ，进入命令行操作；&#xA;输入命令：&#xA;diskpart list disk （列出所有磁盘） select disk 0 （选中要安装的磁盘）这里是零 clean （注意：这一步是格式化磁盘了） convert gpt 转换完之后也可以直接退出，重新进入系统引导安装流程了 list partition create partition efi size=1000 (单位是M) create partition msr size=1280 create partition primary size=102400 （根据需要设定分区大小） exit 退出命令行 重新进入安装流程，选择设定好的分区安装系统就ok了</description>
+    </item>
+    <item>
+      <title>系统问题记录</title>
+      <link>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/windows/%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
+      <description>无法生成D:config.msi下的常规子目录的列表，拒绝访问。怎么解决 无法生成D:config.msi下常规子文件夹的列表拒绝访问错误。&#xA;修改 打开注册表 ：win+R + regedit&#xA;HKEY_CURRENT_USER/Software/Microsoft/Windows/CurrentVersion/Explorer/User Shell Folders/下Personal&#xA;shell中输入python等 关键字会跳转到应用商店 去掉WindowsApps 在环境变量中</description>
     </item>
     <item>
       <title>约束布局TextView自动换行问题</title>
@@ -2487,6 +2452,13 @@
       <description>自然常数e (1+1/n)^n ≈ 2.718&#xA;伯努利研究发现： </description>
     </item>
     <item>
+      <title>获取token</title>
+      <link>https://r.xboox.cn/python/jupyter/%E8%8E%B7%E5%8F%96token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/jupyter/%E8%8E%B7%E5%8F%96token/</guid>
+      <description>查看当前运行的jupyter notebook token&#xA;jupyter notebook list&#xD;http://0.0.0.0:8888/?token=3c1c5cc60766ae6c4aea6234268d73b869fb34072b051cef&#xA;http://127.0.0.1:8888/?token=3c1c5cc60766ae6c4aea6234268d73b869fb34072b051cef</description>
+    </item>
+    <item>
       <title>获取外网ip</title>
       <link>https://r.xboox.cn/linux/%E6%9F%A5%E8%AF%A2%E5%A4%96%E7%BD%91ip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2513,6 +2485,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/mail/%E7%9B%B8%E5%85%B3%E9%87%8D%E8%A6%81%E8%AE%BE%E7%BD%AE/</guid>
       <description>如何判断25端口出口是否开放？ 连接对方服务器，测试请求25端口&#xA;telnet smtp.qq.com 25&#xD;output:&#xA;[root@154 conf.d]# telnet smtp.qq.com 25 Trying 43.129.255.54... Connected to smtp.qq.com. Escape character is &amp;#39;^]&amp;#39;. 220 newxmesmtplogicsvrszb16-1.qq.com XMail Esmtp QQ Mail Server.&#xD;https://open.work.weixin.qq.com/help/wap/detail?docid=19817</description>
+    </item>
+    <item>
+      <title>设置代理</title>
+      <link>https://r.xboox.cn/python/pycharm/%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/pycharm/%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</guid>
+      <description>pycharm 设置代理 </description>
     </item>
     <item>
       <title>设置静态IP</title>
@@ -2590,6 +2569,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/golang/2.beego/%E9%83%A8%E7%BD%B2/</guid>
       <description>部署 编译打包 windows平台打包linux可执行文件&#xA;package main import ( &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; ) //filepath: 要编译的文件的路径 func build(filepath string){ _ = os.Setenv(&amp;#34;CGO_ENABLED&amp;#34;, &amp;#34;0&amp;#34;) _ = os.Setenv(&amp;#34;GOARCH&amp;#34;, &amp;#34;amd64&amp;#34;) _ = os.Setenv(&amp;#34;GOOS&amp;#34;, &amp;#34;linux&amp;#34;) arg := []string{&amp;#34;build&amp;#34;, filepath} if err := exec.Command(&amp;#34;go&amp;#34;, arg...).Run(); err!=nil { fmt.Println(&amp;#34;编译失败:&amp;#34;, err) } else{ fmt.Println(&amp;#34;编译成功&amp;#34;) } } func main() { build(`D:\WorkProject\go\src\beego_first\main.go`) }&#xD;go 编译之后是二进制文件，beego:打包需要自行copy &amp;gt; (views,static,conf) 几个文件夹到部署应用目录下</description>
+    </item>
+    <item>
+      <title>部署流程</title>
+      <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</guid>
+      <description>安装虚拟环境 安装虚拟环境&#xA;pip2 install virtualenvwrapper # **查找安装路径** which virtualenvwrapper.sh&#xD;编辑.bashrc&#xA;vim ~/.bashrc # 增加以下环境变量 export WORKON_HOME=$HOME/.virtualenvs source /usr/local/bin/virtualenvwrapper.sh&#xD;立即生效&#xA;source .bashrc&#xD;查找python3路径&#xA;which python3&#xD;创建虚拟环境&#xA;mkvirtualenv --python=/usr/bin/python3 name-env workon name-env&#xD;切换/激活 虚拟环境&#xA;workon name-evn cd ~/.virtualenvs/name-env/bin/&#xD;退出虚拟环境&#xA;deactivate name-env&#xD;安装git用来传代码 安装git&#xA;yum install git&#xD;# 生成公钥 ssh-keygen -t rsa -C “email” # 查看公钥 cat ~/.ssh/id_rsa.pub #同步代码 git clone Uwsgi pip3 install uwsgi&#xD;在项目中创建uwsgi.ini配置文件&#xA;[uwsgi] # 必须全部为绝对路径 # 项目的路径 chdir = /root/flask_f/ # Django的wsgi文件 wsgi-file = /root/flask_f/app.</description>
+    </item>
+    <item>
+      <title>配置安装</title>
+      <link>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>
+      <description>下载镜像 将镜像写入sd卡 ，下载写入程序&#xA;https://www.raspberrypi.org/downloads/&#xD;修改配置 写入sd卡后，不要拔出，直接在sdcard中修改配置：&#xA;开启ssh 在根目录下直接新建ssh文件夹，就成功了 开启HDMI显示输出 修改config.txt文件 hdmi_safe=1 config_hdmi_boost=4 hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=82 参数 说明 hdmi_safe=1 安全启动HDMI config_hdmi_boost=4 开启热插拔 hdmi_group=1 CEA电视显示器 hdmi_group=2 DMT电脑显示器 hdmi_ignore_edid=0xa5000080 忽略自动探测的分辨率 hdmi_mode=4 640x480 60Hz hdmi_mode=9 800x600 60Hz hdmi_mode=16 1024x768 60Hz hdmi_mode=82 1080p 60Hz 连接树莓派 树莓派启动后，红灯亮表示 接通电源；绿灯表示正在读写sd卡 3. 设置无线wifi 新建wpa_supplicant.conf文件&#xA;country=CN ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1 network={ ssid=&amp;#34;wifiname&amp;#34; psk=&amp;#34;password&amp;#34; priority=1 }&#xD;说明：&#xA;ssid: wifi名字 psk: wifi 密码 </description>
     </item>
     <item>
       <title>配置异常</title>

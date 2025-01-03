@@ -8,35 +8,35 @@
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>初始化</title>
       <link>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/raspberrypi/%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
       <description>用户名：pi 密码：raspberry</description>
     </item>
     <item>
-      <title></title>
+      <title>安装docker</title>
       <link>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/raspberrypi/%E5%AE%89%E8%A3%85docker/</guid>
       <description>docker 脚本安装 sudo curl https://get.docker.com/ &amp;gt; ./docker_install.sh sudo sh docker_install.sh –mirror Aliyun&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>常用命令</title>
       <link>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/raspberrypi/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>打开配置 sudo raspi-config&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>开启默认root用户</title>
       <link>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/raspberrypi/%E5%BC%80%E5%90%AF%E9%BB%98%E8%AE%A4root/</guid>
       <description>出于安全考虑，树莓派的Raspbian系统默认为启用root用户。如需使用，可以自行开启。 设置root用户密码 sudo passwd root&#xD;启用root用户 sudo passwd --unlock root&#xD;设置ssh允许登录 sudo sed -i &amp;#34;s/^#PermitRootLogin.*/PermitRootLogin yes/g&amp;#34; /etc/ssh/sshd_config&#xD;重启ssh服务 sudo systemctl restart ssh&#xD;为root用户应用于当前用户相同的bash配置 sudo cp ~/.bashrc /root/.bashrc&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>配置安装</title>
       <link>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/raspberrypi/%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid>

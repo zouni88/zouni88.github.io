@@ -8,42 +8,42 @@
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>docker部署</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/docker%E9%83%A8%E7%BD%B2/</guid>
       <description>docker run -itd &amp;ndash;name=nginx -p 80:80 -d -v /usr/local/small/nginx/nginx.conf:/etc/nginx/nginx.conf:ro -v /usr/local/small/nginx/conf.d:/etc/nginx/conf.d -v /usr/local/small/web/:/root/web/ -d nginx</description>
     </item>
     <item>
-      <title></title>
+      <title>supervisor</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/supervisor/</guid>
       <description>supervisor是进程守护服务 安装supervisor有以下操作&#xA;supervisor必须用python2&#xA;pip2 install supervisor&#xD;创建supervisor.conf 配置文件&#xA;# supervisor的程序名字 [program:项目名字] # supervisor执行的命令 command=uwsgi --ini uwsgi.ini # 项目的目录 directory = /项目路径 # 开始的时候等待多少秒 startsecs=0 # 停止的时候等待多少秒 stopwaitsecs=0 # 自动开始 autostart=true # 程序挂了后自动重启 autorestart=true # 输出的log文件 stdout_logfile=/var/log/supervisord.log # 输出的错误文件 stderr_logfile=/var/log/supervisord.err [supervisord] # log的级别 loglevel=debug [inet_http_server] # supervisor的服务器 port = :9001 # 用户名和密码 username = admin password = 123 # 使用supervisorctl的配置 [supervisorctl] # 使用supervisorctl登录的地址和端口号 serverurl = http://127.0.0.1:9001 # 登录supervisorctl的用户名和密码 username = admin password = 123 [rpcinterface:supervisor] supervisor.</description>
     </item>
     <item>
-      <title></title>
+      <title>uwsgi遇到的坑</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/uwsgi%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</guid>
       <description>编译配套 ssl的 uwsgi 安装编译需要的环境 yum install openssl yum install openssl-devel&#xD;安装 greenlet pip3 install greenlet&#xD;找到 greenlet 位置 /root/.virtualenvs/flask/include/site/python3.6&#xD;安装 CFLAGS=&amp;#34;-I/root/.virtualenvs/flask/include/site/python3.6&amp;#34; UWSGI_PROFILE=&amp;#34;asyncio&amp;#34; pip install uwsgi --no-use-wheel&#xD;or&#xA;CFLAGS=&amp;#34;-I/usr/include/openssl&amp;#34; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir&#xD;CFLAGS=&amp;quot;-I$/usr/bin/python3.6&amp;quot; UWSGI_PROFILE=&amp;ldquo;asyncio&amp;rdquo; pip3 install uwsgi &amp;ndash;no-use-wheel&#xA;CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;CFLAGS=&amp;quot;-I/usr/include/openssl&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I &amp;ndash;no-cache-dir&#xA;sudo CFLAGS=&amp;quot;-I/usr/local/opt/openssl/include&amp;quot; LDFLAGS=&amp;quot;-L/usr/local/opt/openssl/lib&amp;quot; UWSGI_PROFILE_OVERRIDE=ssl=true pip3 install uwsgi -I &amp;ndash;no-cache-dir</description>
     </item>
     <item>
-      <title></title>
+      <title>virtualenvwrapper</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/virtualenvwrapper/</guid>
       <description>安装虚拟环境 安装虚拟环境&#xA;pip2 install virtualenvwrapper # **查找安装路径** which virtualenvwrapper.sh&#xD;编辑.bashrc&#xA;vim ~/.bashrc # 增加以下环境变量 export WORKON_HOME=$HOME/.virtualenvs source /usr/local/bin/virtualenvwrapper.sh&#xD;立即生效&#xA;source .bashrc&#xD;查找python3路径&#xA;which python3&#xD;创建虚拟环境&#xA;mkvirtualenv --python=/usr/bin/python3 name-env workon name-env&#xD;切换/激活 虚拟环境&#xA;workon name-evn cd ~/.virtualenvs/name-env/bin/&#xD;退出虚拟环境&#xA;deactivate name-env&#xD;删除虚拟环境&#xA;rmvirtualenv env-name&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>数据库配置</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/</guid>
       <description>mysql 配置 首先查看centos是否已经安装了mysql源 yum list installed mysql* 如果有就删除 yum remove mysql-community-*&#xD;安装mysql源 https://dev.mysql.com/downloads/repo/yum/&#xD;wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm&#xD;安装mysql yum -y install mysql57-community-release-el7-10.noarch.rpm&#xD;查看是否已经安装了数据库源 yum repolist all | grep mysql&#xD;查看数据库源 /etc/yum.repos.d/mysql-community.repo 修改源可用 mysql80 enable = 1&#xD;安装数据库服务 yum install mysql-server&#xD;启动mysql systemctl start mysqld.service&#xD;查看状态 systemctl status mysqld.service&#xD;查看初始密码 grep &amp;#34;password&amp;#34; /var/log/mysqld.log&#xD;修改密码 mysql&amp;gt; ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new password&amp;#39;;&#xD;注意:密码设置必须要大小写字母数字和特殊符号（,/&amp;rsquo;;:等）,不然不能配置成功 开启mysql的远程访问 两种方式 方式1 grant all privileges on *.* to &amp;#39;root&amp;#39;@&amp;#39;192.</description>
     </item>
     <item>
-      <title></title>
+      <title>部署流程</title>
       <link>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/flask/%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/</guid>

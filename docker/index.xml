@@ -8,13 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://r.xboox.cn/docker/compose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/docker/compose/</guid>
-      <description>docker-compose 常用命令 https://blog.csdn.net/m0_51913750/article/details/131743170</description>
-    </item>
-    <item>
       <title>1. docker安装</title>
       <link>https://r.xboox.cn/docker/1.docker%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/docker/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>启动失败 查看日志&#xA;docker logs -f -t --tail 20 nginx&#xD;操作无权限 aa-remove-unknown&#xA;修改容器端口映射 编辑容器配置文件 /var/lib/docker/containers/{containersid}/hostconfig.json root@zouni:/var/lib/docker/containers/572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28# ls 572a9b8574dcc5077c7c4ec139e4e044e80696f78d1e658d0e735e183944cd28-json.log hostconfig.json mounts checkpoints hostname resolv.conf config.v2.json hosts resolv.conf.hash&#xD;！！先关掉docker,然后修改其中绑定的端口,重启docker就可以了&#xA;,&amp;ldquo;PortBindings&amp;rdquo;:{&amp;ldquo;5432/tcp&amp;rdquo;:[{&amp;ldquo;HostIp&amp;rdquo;:&amp;quot;&amp;quot;,&amp;ldquo;HostPort&amp;rdquo;:&amp;ldquo;8099&amp;rdquo;}]}&#xA;端口映射，本地可以访问，远程不能访问！！！ 检查防火墙 #查看防火墙状态，运行中 root@zouni:/# firewall-cmd --state running #查看放开的端口，开放这几个端口，8088为放开 root@zouni:/# firewall-cmd --list-all You&amp;#39;re performing an operation over default zone (&amp;#39;public&amp;#39;), but your connections/interfaces are in zone &amp;#39;docker&amp;#39; (see --get-active-zones) You most likely need to use --zone=docker option. public target: default icmp-block-inversion: no interfaces: sources: services: dhcpv6-client ssh ports: 8088/tcp 8099/tcp 5432/tcp 443/tcp # 开放的端口列表 protocols: forward: yes masquerade: no forward-ports: source-ports: icmp-blocks: rich rules:&#xD;检查ip转发 root@zouni:/# sysctl net.</description>
+    </item>
+    <item>
+      <title>compose</title>
+      <link>https://r.xboox.cn/docker/compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/docker/compose/</guid>
+      <description>docker-compose 常用命令 https://blog.csdn.net/m0_51913750/article/details/131743170</description>
     </item>
     <item>
       <title>docker vs containerd</title>

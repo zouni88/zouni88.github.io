@@ -8,63 +8,63 @@
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>call函数</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/call/</guid>
       <description>call函数使用方法 __call__ 函数一般用于实例对象的回调,至少看起来实例对象的调用方式和函数一样 call 函数一个普通的函数，一般实现父类的方法之后，会在父类的__call__函数中回调&#xA;class Base():&#xD;def call(self):&#xD;print(&#39;我是base&#39;)&#xD;def __call__(self, *args, **kwargs):&#xD;self.call()&#xD;class A(Base):&#xD;def __init__(self, name):&#xD;self.name = name&#xD;def call(self):&#xD;print(self.name)&#xD;实例化：&#xA;a = A(&#39;small&#39;)&#xD;a()&#xD;输出：&#xA;small 子类不实现call，则会输出：&#xA;我是base&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>json转换</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/json%E8%BD%AC%E6%8D%A2/</guid>
       <description>pyton对象转字符串 import json json.dumps(object,default=lambda obj:obj.__dict__,sort_keys = False,indent = 4,ensure_ascii = False) json.dumps() # 对象转json # lambda 是python类对象的方法 dict 保存的是对象的字典转成的字符串&#xD;json字符串转对象 # class必须试先init方法 classStus: list:list def__init__(self,d): self.__dict__=d jsons = {&amp;#34;list&amp;#34;: [{&amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;cao&amp;#34;, &amp;#34;age&amp;#34;: 10, &amp;#34;profile&amp;#34;: &amp;#34;曹的自我介绍&amp;#34;},{&amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;wang&amp;#34;, &amp;#34;age&amp;#34;: 20, &amp;#34;profile&amp;#34;: &amp;#34;王的自我介绍&amp;#34;}]} jsons = json.dumps(jsons) 将python字典转成json串 json.loads(jsons,object_hooks = class)&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>map</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/map/</guid>
       <description>获取map第一个元素的方法&#xA;map = {&amp;#39;a&amp;#39;: 1, &amp;#39;b&amp;#39;: 2} keys = map.keys() # keys 是 dict_list类型 转成list keys = list(keys) # 利用第一个key来获取value item1 = map[keys[0]] print(item1)&#xD;打印结果：&#xA;1&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>open</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/open/</guid>
       <description>open 函数 open ： 如果文件 不存在，则创建&#xA;open(filename,mode=&amp;#39;&amp;#39;) ## 常用mode w 以写方式打开， a 以追加模式打开 (从 EOF 开始, 必要时创建新文件) r+ 以读写模式打开 w+ 以读写模式打开 (参见 w ) a+ 以读写模式打开 (参见 a ) rb 以二进制读模式打开 wb 以二进制写模式打开 (参见 w ) ab 以二进制追加模式打开 (参见 a ) rb+ 以二进制读写模式打开 (参见 r+ ) wb+ 以二进制读写模式打开 (参见 w+ ) ab+ 以二进制读写模式打开 (参见 a+ )&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>with</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/with/</guid>
       <description>with用法和原理：&#xA;class Sample: def __enter__(self): print(&amp;#34;In __enter__()&amp;#34;) return &amp;#34;Foo&amp;#34; def __exit__(self, type, value, trace): print(&amp;#34;In __exit__()&amp;#34;) def get_sample(): return Sample() with get_sample() as sample: print (&amp;#34;sample:%s&amp;#34; % sample)&#xD;运行代码，输出如下&#xA;In __enter__() sample: Foo In __exit__()&#xD;先执行__enter__方法，最后执行__exit__方法退出</description>
     </item>
     <item>
-      <title></title>
+      <title>内存使用情况</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</guid>
       <description>getsizeof x: 对象 return : 对象的字节数 sys.getsizeof(x)</description>
     </item>
     <item>
-      <title></title>
+      <title>字符串前缀解释</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80%E8%A7%A3%E9%87%8A/</guid>
       <description>u unicode编码&#xA;r 不转义字符</description>
     </item>
     <item>
-      <title></title>
+      <title>异常处理</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
       <description>&#xD;a = 0 try: 2 / a except Exception as e: print(&amp;#39;a---&amp;#39;, e)&#xD;</description>
     </item>
     <item>
-      <title></title>
+      <title>断言</title>
       <link>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/%E6%96%AD%E8%A8%80/</guid>
