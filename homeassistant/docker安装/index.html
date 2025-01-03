@@ -35,7 +35,7 @@
 
     <title>
         
-            容器安装和运行 |
+            docker安装 |
             西凉观云海
         
     </title>
@@ -108,7 +108,7 @@
 
     <div class="header_middle">
         
-            容器安装和运行 -
+            docker安装 -
             西凉观云海
         
     </div>
@@ -2805,9 +2805,9 @@
         
             
                 <li class="file">
-                    <a href="https://r.xboox.cn/database/postgresql/installconfig/" title="./database/postgresql/installconfig/">
+                    <a href="https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/" title="./database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/">
                         
-                            install&amp;config
+                            
                         
                     </a>
                 </li>
@@ -2815,9 +2815,9 @@
         
             
                 <li class="file">
-                    <a href="https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/" title="./database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/">
+                    <a href="https://r.xboox.cn/database/postgresql/installconfig/" title="./database/postgresql/installconfig/">
                         
-                            容器运行
+                            install&amp;config
                         
                     </a>
                 </li>
@@ -3933,7 +3933,7 @@
                 <li class="file">
                     <a href="https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/" title="./homeassistant/docker%E5%AE%89%E8%A3%85/">
                         
-                            容器安装和运行
+                            docker安装
                         
                     </a>
                 </li>
@@ -6196,7 +6196,7 @@
 
         <div class="title">
             <h1 class="title-header">
-                容器安装和运行
+                docker安装
             </h1>
 
             <div class="author-date-readtime">
@@ -6288,7 +6288,7 @@
 
     
         
-            容器安装和运行
+            docker安装
         
 
     
@@ -6383,6 +6383,16 @@ docker run -d \
   ghcr.io/home-assistant/home-assistant:stable</code></pre>
     
 </div>
+<p>docker run -d <br>
+&ndash;name homeassistant <br>
+&ndash;privileged <br>
+&ndash;restart=unless-stopped <br>
+-e TZ=MY_TIME_ZONE <br>
+-v /root/homeassistant/config:/config <br>
+-v /run/dbus:/run/dbus:ro <br>
+&ndash;network=host <br>
+c1eff36acdd7</p>
+<p>ghcr.io/home-assistant/home-assistant:stable</p>
 
             
         </div>
@@ -6431,7 +6441,7 @@ docker run -d \
                 <li>
                     
                         Word Count:
-                        90
+                        106
                     
                 </li>
             

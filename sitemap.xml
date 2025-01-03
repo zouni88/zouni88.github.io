@@ -315,6 +315,8 @@
     <loc>https://r.xboox.cn/author/zouni88/</loc>
     <lastmod>2024-04-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</loc>
+  </url><url>
     <loc>https://r.xboox.cn/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</loc>
   </url><url>
     <loc>https://r.xboox.cn/golang/%E9%83%A8%E7%BD%B2aws/redis/</loc>
@@ -472,6 +474,8 @@
     <loc>https://r.xboox.cn/linux/mail/docker-mailserver/</loc>
   </url><url>
     <loc>https://r.xboox.cn/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</loc>
+  </url><url>
+    <loc>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</loc>
   </url><url>
     <loc>https://r.xboox.cn/docker/docker%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/</loc>
   </url><url>
@@ -758,10 +762,6 @@
     <loc>https://r.xboox.cn/docker/%E5%AE%B9%E5%99%A8%E4%BA%92%E8%81%94/</loc>
   </url><url>
     <loc>https://r.xboox.cn/golang/chromedp/%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</loc>
-  </url><url>
-    <loc>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</loc>
   </url><url>
     <loc>https://r.xboox.cn/golang/7.rabbitmq/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</loc>
   </url><url>

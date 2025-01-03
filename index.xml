@@ -290,6 +290,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>容器运行 postgres&#xA;docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;facepark&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres&#xD;docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;Qaz521!</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://r.xboox.cn/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/embedded/51/%E5%AE%89%E8%A3%85%E5%92%8C%E5%88%9B%E5%BB%BA/</guid>
@@ -833,6 +840,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</guid>
       <description>consul 实例1 docker run -itd --name=consule1 -p 8500:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul1 consul agent -server -bootstrap-expect=2 -ui -node=consul1 -client=&#39;0.0.0.0&#39; -data-dir /consul/data -config-dir /consul/config -datacenter=consul_dc&#xD;参数说明：&#xA;docker run -itd --name=consul -p 8500:8500 consul agent -server -bootstrap -ui -client 0.0.0.0&#xD;-server : 以服务端方式启动 -bootstrap : 指定自己为leader ,而不需要选举 -ui : 启动一个内置管理web界面 -client : 指定客户端可以访问的IP. 设置为0.0.0.0 则任意访问，否则默认本机可以访问&#xA;实例1 ip : 172.17.0.2&#xA;consul 实例2 docker run -itd --name=consule1 -p 8200:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul2 consul agent -server -bootstrap-expect=2 -ui -node=consul2 -client=&#39;0.</description>
+    </item>
+    <item>
+      <title>docker安装</title>
+      <link>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</guid>
+      <description>容器安装和运行 docker run -d \ --name homeassistant \ --privileged \ --restart=unless-stopped \ -e TZ=MY_TIME_ZONE \ -v /PATH_TO_YOUR_CONFIG:/config \ -v /run/dbus:/run/dbus:ro \ --network=host \ ghcr.io/home-assistant/home-assistant:stable&#xD;更新镜像&#xA;# if this returns &amp;#34;Image is up to date&amp;#34; then you can stop here&#xD;docker pull ghcr.io/home-assistant/home-assistant:stable&#xD;# stop the running container&#xD;docker stop homeassistant&#xD;# remove it from Docker&amp;#39;s list of containers&#xD;docker rm homeassistant&#xD;# finally, start a new one&#xD;docker run -d \&#xD;--name homeassistant \&#xD;--restart=unless-stopped \&#xD;--privileged \&#xD;-e TZ=MY_TIME_ZONE \&#xD;-v /PATH_TO_YOUR_CONFIG:/config \&#xD;-v /run/dbus:/run/dbus:ro \&#xD;--network=host \&#xD;ghcr.</description>
     </item>
     <item>
       <title>docker文件挂载</title>
@@ -1827,20 +1841,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/golang/chromedp/%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85/</guid>
       <description>安装docker 镜像 下载docker image : docker pull chromedp/headless-shell&#xA;运行docker : docker run -d -p 9222:9222 &amp;ndash;rm &amp;ndash;name headless-shell chromedp/headless-shell</description>
-    </item>
-    <item>
-      <title>容器安装和运行</title>
-      <link>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/homeassistant/docker%E5%AE%89%E8%A3%85/</guid>
-      <description>容器安装和运行 docker run -d \ --name homeassistant \ --privileged \ --restart=unless-stopped \ -e TZ=MY_TIME_ZONE \ -v /PATH_TO_YOUR_CONFIG:/config \ -v /run/dbus:/run/dbus:ro \ --network=host \ ghcr.io/home-assistant/home-assistant:stable&#xD;更新镜像&#xA;# if this returns &amp;#34;Image is up to date&amp;#34; then you can stop here&#xD;docker pull ghcr.io/home-assistant/home-assistant:stable&#xD;# stop the running container&#xD;docker stop homeassistant&#xD;# remove it from Docker&amp;#39;s list of containers&#xD;docker rm homeassistant&#xD;# finally, start a new one&#xD;docker run -d \&#xD;--name homeassistant \&#xD;--restart=unless-stopped \&#xD;--privileged \&#xD;-e TZ=MY_TIME_ZONE \&#xD;-v /PATH_TO_YOUR_CONFIG:/config \&#xD;-v /run/dbus:/run/dbus:ro \&#xD;--network=host \&#xD;ghcr.</description>
-    </item>
-    <item>
-      <title>容器运行</title>
-      <link>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://r.xboox.cn/database/postgresql/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
-      <description>容器运行 postgres&#xA;docker run -itd --name=pg -p 5678:5432 -v /home/zouni/postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 --restart always POSTGRES_USER=&amp;#39;postgres&amp;#39; postgres docker run -itd --name pg --restart always -e POSTGRES_USER=&amp;#39;postgres&amp;#39; -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres:/var/lib/postgresql -p 5432:5432 postgres docker run -itd --name mpg --restart always -e TZ=PRC -e POSTGRES_USER=&amp;#39;root&amp;#39; -e POSTGRES_PASSWORD=&amp;#39;123456&amp;#39; -e POSTGRES_DB=&amp;#39;facepark&amp;#39; -e ALLOW_IP_RANGE=0.0.0.0/0 -v /home/zouni/postgres/data:/var/lib/postgresql/data -p 5432:5432 postgres&#xD;docker run -itd &amp;ndash;name mpg &amp;ndash;restart always -e TZ=PRC -e POSTGRES_USER=&amp;lsquo;root&amp;rsquo; -e POSTGRES_PASSWORD=&amp;lsquo;Qaz521!</description>
     </item>
     <item>
       <title>容器运行</title>
