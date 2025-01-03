@@ -26,7 +26,7 @@
       <link>https://r.xboox.cn/linux/mail/3.dovecot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/linux/mail/3.dovecot/</guid>
-      <description>配置dovecot [root@mail ~]# vi /etc/dovecot/dovecot.conf&#xA;26行: 如果不使用IPv6，请修改为* listen = *&#xA;[root@mail ~]# vi /etc/dovecot/conf.d/10-auth.conf&#xA;9行: 取消注释并修改 disable_plaintext_auth = no 97行: 添加 auth_mechanisms = plain login [root@mail ~] vi /etc/dovecot/conf.d/10-mail.conf 30行: 取消注释并添加 mail_location = maildir:~/Maildir [root@mail ~] vi /etc/dovecot/conf.d/10-master.conf 88-90行: 取消注释并添加 Postfix smtp验证 unix_listener /var/spool/postfix/private/auth { mode = 0666 user = postfix group = postfix } [root@mail ~] /etc/rc.d/init.d/dovecot start Starting Dovecot Imap: [ OK ] [root@mail ~] chkconfig dovecot on 检查端口占用 sudo netstat -anp|egrep &amp;#39;:25|:110|:143&amp;#39;&#xD;</description>
+      <description>配置dovecot [root@mail ~]# vi /etc/dovecot/dovecot.conf # 26行: 如果不使用IPv6，请修改为* listen = * [root@mail ~]# vi /etc/dovecot/conf.d/10-auth.conf # 9行: 取消注释并修改 disable_plaintext_auth = no # 97行: 添加 auth_mechanisms = plain login [root@mail ~] # vi /etc/dovecot/conf.d/10-mail.conf # 30行: 取消注释并添加 mail_location = maildir:~/Maildir [root@mail ~] # vi /etc/dovecot/conf.d/10-master.conf # 88-90行: 取消注释并添加 # Postfix smtp验证 unix_listener /var/spool/postfix/private/auth { mode = 0666 user = postfix group = postfix } [root@mail ~] # /etc/rc.d/init.d/dovecot start Starting Dovecot Imap: [ OK ] [root@mail ~] # chkconfig dovecot on 检查端口占用 sudo netstat -anp|egrep &amp;#39;:25|:110|:143&amp;#39;&#xD;</description>
     </item>
     <item>
       <title>docker-mailserver</title>
