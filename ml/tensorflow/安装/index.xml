@@ -4,7 +4,7 @@
     <title>tensorflow安装 on 西凉观云海</title>
     <link>https://r.xboox.cn/ml/tensorflow/%E5%AE%89%E8%A3%85/</link>
     <description>Recent content in tensorflow安装 on 西凉观云海</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/ml/tensorflow/%E5%AE%89%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/ml/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/ml/tensorflow/%E5%AE%89%E8%A3%85/centos%E5%AE%89%E8%A3%85tensorflow/</guid>
-      <description>官网地址&#xA;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=CentOS&amp;amp;target_version=8&amp;amp;target_type=runfilelocal&#xA;wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run sudo sh cuda_10.2.89_440.33.01_linux.run&#xD;</description>
+      <description>&lt;p&gt;官网地址&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=CentOS&amp;amp;target_version=8&amp;amp;target_type=runfilelocal&#34;&gt;https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;target_distro=CentOS&amp;amp;target_version=8&amp;amp;target_type=runfilelocal&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Shell&#34; data-lang=&#34;Shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo sh cuda_10.2.89_440.33.01_linux.run&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

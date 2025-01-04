@@ -4,7 +4,7 @@
     <title>python on 西凉观云海</title>
     <link>https://r.xboox.cn/python/</link>
     <description>Recent content in python on 西凉观云海</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,21 +12,21 @@
       <link>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/ipython%E9%AD%94%E6%B3%95%E5%91%BD%E4%BB%A4/</guid>
-      <description>IPython是一个增强的shell工具, %cd —更改当前工作目录&#xA;%edit —打开编辑器并在关闭编辑器后执行键入的代码&#xA;%env —显示当前环境变量&#xA;%pip install [pkgs] —在不离开交互式shell的情况下安装软件包&#xA;%time和%timeit—定时执行Python代码</description>
+      <description>&lt;h3 id=&#34;ipython是一个增强的shell工具&#34;&gt;IPython是一个增强的shell工具,&lt;/h3&gt;&#xA;&lt;p&gt;%cd —更改当前工作目录&lt;br&gt;&#xA;%edit —打开编辑器并在关闭编辑器后执行键入的代码&lt;br&gt;&#xA;%env —显示当前环境变量&lt;br&gt;&#xA;%pip install [pkgs] —在不离开交互式shell的情况下安装软件包&lt;br&gt;&#xA;%time和%timeit—定时执行Python代码&lt;/p&gt;</description>
     </item>
     <item>
       <title>创建文件服务器</title>
       <link>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>windows -b 绑定ip地址 python -m http.server -b 192.168.1.145 8888&#xD;Mac 系统 python -m SimpleHTTPServer 8888&#xD;</description>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;windows&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;-b%20%e7%bb%91%e5%ae%9aip%e5%9c%b0%e5%9d%80%0d%0a%20python%20-m%20http.server%20-b%20192.168.1.145%208888&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-b 绑定ip地址&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; python -m http.server -b 192.168.1.145 &lt;span style=&#34;color:#ae81ff&#34;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;mac-系统&#34;&gt;Mac 系统&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;python%20-m%20SimpleHTTPServer%208888&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python -m SimpleHTTPServer &lt;span style=&#34;color:#ae81ff&#34;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>小图片合成大图片</title>
       <link>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/python/%E5%B0%8F%E5%9B%BE%E7%89%87%E5%90%88%E6%88%90%E5%A4%A7%E5%9B%BE%E7%89%87/</guid>
-      <description>python 小图片合成大图片 这段代码是前两年搞的，有很长时间没动了，正好是在学习python的时候拿来练手的。&#xA;先说一下前因后果为什么要做这个，起初的想法是一个朋友给的，他手机存了很多女儿的照片，有一天他告诉我：他希望有个工具能把这些照片合成一个图片墙，在手机看毕竟不方便，希望能有一些小创意，为以后孩子大了留个回忆；可巧不巧正好快赶上七夕了，就想着给媳妇一个惊喜，所以就赶紧把相册里的给媳妇以前拍的照片收集了一下，切图工具把一些照片简单处理了一下；&#xA;基于以上种种，哈哈，就搞了这么个玩意儿！ 但是代码写的比较烂，懒得贴代码了，链接放在这里：有兴趣的可以看看 主要代码放在ConcatImg/concat_img/concat.py这个文件 https://github.com/SmallCao/ConcatImg&#xA;最终效果 </description>
+      <description>&lt;h3 id=&#34;python-小图片合成大图片&#34;&gt;python 小图片合成大图片&lt;/h3&gt;&#xA;&lt;p&gt;这段代码是前两年搞的，有很长时间没动了，正好是在学习python的时候拿来练手的。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;先说一下前因后果为什么要做这个，起初的想法是一个朋友给的，他手机存了很多女儿的照片，有一天他告诉我：他希望有个工具能把这些照片合成一个图片墙，在手机看毕竟不方便，希望能有一些小创意，为以后孩子大了留个回忆；可巧不巧正好快赶上七夕了，就想着给媳妇一个惊喜，所以就赶紧把相册里的给媳妇以前拍的照片收集了一下，切图工具把一些照片简单处理了一下；&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;基于以上种种，哈哈，就搞了这么个玩意儿！&#xA;但是代码写的比较烂，懒得贴代码了，链接放在这里：有兴趣的可以看看&#xA;主要代码放在&lt;code&gt;ConcatImg/concat_img/concat.py&lt;/code&gt;这个文件&#xA;&lt;a href=&#34;https://github.com/SmallCao/ConcatImg&#34;&gt;https://github.com/SmallCao/ConcatImg&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;最终效果&#xA;&lt;img src=&#34;https://r.xboox.cn/res/python/aaa.jpg&#34; alt=&#34;原图&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://r.xboox.cn/res/python/bbb.png&#34; alt=&#34;局部细节&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://r.xboox.cn/res/python/ccc.png&#34; alt=&#34;效果图&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

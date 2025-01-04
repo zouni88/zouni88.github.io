@@ -4,7 +4,7 @@
     <title>minio on 西凉观云海</title>
     <link>https://r.xboox.cn/docker/minio/</link>
     <description>Recent content in minio on 西凉观云海</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://r.xboox.cn/docker/minio/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>https://r.xboox.cn/docker/minio/run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r.xboox.cn/docker/minio/run/</guid>
-      <description>&#xD;docker run -itd -p 9000:9000 -p 9001:9001 --name minio --restart=always -e &amp;#34;MINIO_ROOT_USER=zouni88&amp;#34; -e &amp;#34;MINIO_ROOT_PASSWORD=qaz521..&amp;#34; -v /mnt/data:/usr/local/minio/data -v /mnt/config:/usr/local/minio/config minio/minio server --console-address &amp;#34;:9001&amp;#34; --address &amp;#34;:9000&amp;#34; /data&#xD;docker run -p 9000:9000 -p 9001:9001 minio/minio server /data --console-address &amp;#34;:9001&amp;#34;&#xD;</description>
+      <description>&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;pre&gt;&lt;code&gt;docker run -itd  -p 9000:9000  -p 9001:9001 --name minio --restart=always  -e &amp;#34;MINIO_ROOT_USER=zouni88&amp;#34;  -e &amp;#34;MINIO_ROOT_PASSWORD=qaz521..&amp;#34;  -v /mnt/data:/usr/local/minio/data -v /mnt/config:/usr/local/minio/config minio/minio server --console-address &amp;#34;:9001&amp;#34; --address &amp;#34;:9000&amp;#34; /data&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;pre&gt;&lt;code&gt; docker run -p 9000:9000 -p 9001:9001 minio/minio server /data --console-address &amp;#34;:9001&amp;#34;&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
