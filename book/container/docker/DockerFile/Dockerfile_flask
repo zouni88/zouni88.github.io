@@ -1,0 +1,48 @@
+# 基础镜像
+FROM centos
+
+# 作者
+MAINTAINER small
+
+# 修改源
+RUN curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo \
+    && yum makecache
+
+# 安装python2
+RUN yum install -y python2 \
+	&& yum install -y python3
+
+WORKDIR /root
+# 修改pypi源
+RUN mkdir .pip \
+    && touch .pip/pip.conf \
+    && echo [global] >> .pip/pip.conf \
+	&& echo index-url = https://mirrors.aliyun.com/pypi/simple/ >> .pip/pip.conf \
+	&& echo [install] >> .pip/pip.conf \
+	&& echo trusted-host=mirrors.aliyun.com >>.pip/pip.conf
+
+# 安装virtualwrapper 配置python 虚拟环境
+RUN pip2 install -i https://mirrors.aliyun.com/pypi/simple/ virtualenvwrapper \
+	&& yum install -y which
+
+# 配置环境变量
+RUN echo export WORKON_HOME=$HOME/.virtualenvs >> /root/.bashrc \
+	&& echo source /usr/bin/virtualenvwrapper.sh >> /root/.bashrc \
+   && source /root/.bashrc
+
+# 创建虚拟环境
+#RUN mkvirtualenv --python=/usr/bin/python3 flask
+
+# 安装uwsgi
+RUN yum install gcc \
+	&& yum install -y python36-devel \
+	&& pip3 install -y uwsgi \
+	&& pip2 install -y supervisor \
+	&& yum install -y nginx
+
+EXPOSE 80 443 22
+
+#CMD ["nginx"]
+
+# 容器启动后，执行命令
+#ENTRYPOINT ["nginx","-g","daemon off;"]
