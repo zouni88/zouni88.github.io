@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.go-kit on 西凉观云海</title>
+    <link>https://r.xboox.cn/golang/4.go-kit/</link>
+    <description>Recent content in 4.go-kit on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/golang/4.go-kit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go-kit 代码生成工具</title>
+      <link>https://r.xboox.cn/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/4.go-kit/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;go-kit 代码生成工具&#xA;&lt;a href=&#34;https://github.com/metaverse/truss&#34;&gt;https://github.com/metaverse/truss&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>调用流程</title>
+      <link>https://r.xboox.cn/golang/4.go-kit/%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/4.go-kit/%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;transport : 协议传输层&lt;/li&gt;&#xA;&lt;li&gt;service : 业务层&lt;/li&gt;&#xA;&lt;li&gt;endpoint : 中间结点&lt;br&gt;&#xA;newServer 调用流程：transport dec &amp;ndash;&amp;gt;  endpoint &amp;ndash;&amp;gt; service &amp;ndash;&amp;gt; transport enc&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

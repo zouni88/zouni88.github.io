@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>目标检测 on 西凉观云海</title>
+    <link>https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
+    <description>Recent content in 目标检测 on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yolov3</title>
+      <link>https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/yolov3/</guid>
+      <description>&lt;h3 id=&#34;准备数据集&#34;&gt;准备数据集&lt;/h3&gt;&#xA;&lt;p&gt;labelImg 数据标注工具&#xA;&lt;img src=&#34;https://r.xboox.cn/res/object_detected/labelImg.png&#34; alt=&#34;labelImg&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;模型结构-如下图&#34;&gt;模型结构 如下图：&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/object_detected/yolov3.png&#34; alt=&#34;yolov3&#34;&gt;&#xA;网络输入 416x416 经过一系列卷积层之后分成了三个分支，最终得到三个输出：[13,13,c],[26,26,c],[52,52,c] &lt;strong&gt;c是通道数&lt;/strong&gt;&lt;br&gt;&#xA;feature map 越大，感受野越小，适合预测小目标，&lt;br&gt;&#xA;[13,13] feature map适合预测大目标&lt;/p&gt;&#xA;&lt;h3 id=&#34;数据-target转换&#34;&gt;数据 target转换&lt;/h3&gt;&#xA;&lt;p&gt;同等变换，[512,512,3] =&amp;gt; [13,13,5]&lt;br&gt;&#xA;因为网络输出是 [13,13,255] [26,26,255] [52,52,255]&#xA;这里的255是：3*(5+80)  每一个网格预测3个bbox,每个box有(x,y,w,h,iou,classes)&#xA;所以要将y_true也进行转换 [13,13,3,6] =&amp;gt;[13,13,3,(x,y,w,h,iou,class)]&#xA;意思是 512x512的图片上的真是框 映射到13x13的 feature map上，缩放32倍&lt;br&gt;&#xA;每个图片上 最多有 gtbox_max个框，每个box 有5个值[x,y,w,h,confidence]&lt;br&gt;&#xA;因为网络输出是中心点坐标，所以x,y得转换成中心点坐标&#xA;图片转换成网络输入大小&#xA;x = [h,w,3] =&amp;gt; [416,416,3]&#xA;label转换成网络输出  yolov3有9个anchors  网络输出有三个分支：&#xA;[boxes,(x,y,x1,y1,class)] =&amp;gt;[13,13,3,(x,y,w,h,confidence,class))] # x,y是中心点坐标&#xA;[boxes,5] =&amp;gt;[26,26,3,6]&#xA;[boxes,5] =&amp;gt;[52,52,3,6]&#xA;y&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>数据集</title>
+      <link>https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/%E6%95%B0%E6%8D%AE%E9%9B%86/</guid>
+      <description>&lt;h3 id=&#34;标注数据集&#34;&gt;标注数据集&lt;/h3&gt;&#xA;&lt;p&gt;labelImg.exe 工具标注&lt;/p&gt;&#xA;&lt;h3 id=&#34;制作数据集&#34;&gt;制作数据集&lt;/h3&gt;&#xA;&lt;p&gt;训练集&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;python tools/voc2012.py &amp;ndash;data_dir &amp;lsquo;D:/DeepLearning/datasets\VOCtrainval_11-May-2012\VOCdevkit\VOC2012&amp;rsquo; &amp;ndash;split train &amp;ndash;output_file ./data/voc2012_train.tfrecord&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;测试集&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;python tools/voc2012.py &amp;ndash;data_dir &amp;lsquo;./data/voc2012_raw/VOCdevkit/VOC2012&amp;rsquo; &amp;ndash;split val &amp;ndash;output_file ./data/voc2012_val.tfrecord&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

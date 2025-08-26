@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>8.consul on 西凉观云海</title>
+    <link>https://r.xboox.cn/golang/8.consul/</link>
+    <description>Recent content in 8.consul on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/golang/8.consul/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker创建</title>
+      <link>https://r.xboox.cn/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/8.consul/%E5%88%9B%E5%BB%BAdocker/</guid>
+      <description>&lt;h3 id=&#34;consul-实例1&#34;&gt;consul 实例1&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;docker run -itd --name=consule1 -p 8500:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul1 consul agent -server -bootstrap-expect=2  -ui -node=consul1 -client=&#39;0.0.0.0&#39; -data-dir /consul/data -config-dir /consul/config -datacenter=consul_dc&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;参数说明：&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -itd --name&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;consul -p 8500:8500 consul agent -server -bootstrap -ui  -client 0.0.0.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;&lt;code&gt;-server&lt;/code&gt; : 以服务端方式启动&#xA;&lt;code&gt;-bootstrap&lt;/code&gt; : 指定自己为leader ,而不需要选举&#xA;&lt;code&gt;-ui&lt;/code&gt; : 启动一个内置管理web界面&#xA;&lt;code&gt;-client&lt;/code&gt; : 指定客户端可以访问的IP. 设置为0.0.0.0 则任意访问，否则默认本机可以访问&lt;/p&gt;&#xA;&lt;p&gt;实例1 ip : 172.17.0.2&lt;/p&gt;&#xA;&lt;h3 id=&#34;consul-实例2&#34;&gt;consul 实例2&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;docker run -itd --name=consule1 -p 8200:8500 --restart=always -e consul_bind_interface=&#39;eth0&#39; --privileged=true --name=consul2 consul agent -server -bootstrap-expect=2  -ui -node=consul2 -client=&#39;0.0.0.0&#39; -data-dir /consul/data -config-dir /consul/config -datacenter=consul_dc -join=172.17.0.2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

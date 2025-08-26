@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>高数 on 西凉观云海</title>
+    <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 高数 on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MSE_MAE</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/mse_mae/</guid>
+      <description>&lt;h3 id=&#34;均方误差&#34;&gt;均方误差&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/math_mse.png&#34; alt=&#34;MSE&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;平均绝对误差&#34;&gt;平均绝对误差&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/math_mae.png&#34; alt=&#34;MAE&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>信息熵—交叉熵</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E4%BF%A1%E6%81%AF%E7%86%B5_%E4%BA%A4%E5%8F%89%E7%86%B5/</guid>
+      <description>&lt;p&gt;事件的信息量随着事件发生概率的变大而 递减，信息不为负&lt;br&gt;&#xA;两个不相关事件同时发生所产生的信息： h(x,y) = h(x) + h(y)&lt;br&gt;&#xA;两个事件的概率满足： p(x,y) = p(x) * p(y).&lt;/p&gt;&#xA;&lt;p&gt;对数形式的 真数相乘=&amp;gt;对数相加&lt;/p&gt;&#xA;&lt;p&gt;信息：&#xA;𝐡(𝐱) = −𝒍𝒐𝒈𝟐𝒑(𝒙)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/entropy_1.png&#34; alt=&#34;信息熵&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;熵：&#xA;𝐇(𝐱) = −𝒔𝒖𝒎(𝒑(𝒙)𝒍𝒐𝒈𝟐𝒑(𝒙))&lt;/p&gt;&#xA;&lt;p&gt;𝐟(𝐱) = −𝒍𝒐𝒈𝟐𝒙  函数图像&#xA;&lt;img src=&#34;https://r.xboox.cn/res/math/entropy_2.png&#34; alt=&#34;-log2x&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;交叉熵&#34;&gt;交叉熵&lt;/h3&gt;&#xA;&lt;p&gt;交叉熵： 两个事件的分布相似情况， H(p,q) = H(p) + KL(p,q)&lt;br&gt;&#xA;KL散度用来衡量真实分布和预测分布的差异情况&lt;br&gt;&#xA;假设 两个事件的概率分布相同则有：&lt;br&gt;&#xA;∵ p=q,则 KL(p,q)=0&lt;br&gt;&#xA;∴ H(p,q) = H(p)&lt;/p&gt;&#xA;&lt;p&gt;根据 以上推导可知：&lt;br&gt;&#xA;假设 p = [0,1,0]&lt;br&gt;&#xA;H(p) = -log2(p) = 0 # P事件的信息为0 惊喜度最低&lt;br&gt;&#xA;H(p,q) = 0 + KL(p,q) = KL(p,q)&lt;br&gt;&#xA;所以H(p,q) = -plog(q) = -1log(q) # 其实就是计算KL最小值 KL(p,q) = 0, p=q&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>平方和公式</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%B9%B3%E6%96%B9%E5%92%8C%E5%85%AC%E5%BC%8F/</guid>
+      <description>&lt;h4 id=&#34;平方和公式&#34;&gt;平方和公式&lt;/h4&gt;&#xA;&lt;p&gt;求连续的自然数的平方和&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/math_1.png&#34; alt=&#34;math1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>微积分</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/336322284/answer/918067537?clicktime=1579274262&#34;&gt;https://www.zhihu.com/question/336322284/answer/918067537?clicktime=1579274262&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;我们假设0到1之间被平均分成了n份，那么每一份的宽度就是1/n。而矩形的高度就是函数的纵坐标的值，纵坐标可以通过y=x²很容易算出来。于是，我们就知道，第1个矩形的高度为（1/n）²，第2个为（2/n）²，第3个为（3/n）²……&lt;/p&gt;&#xA;&lt;p&gt;微分积分互逆&#xA;积分是求原函数&#xA;微分是对原函数求导&lt;/p&gt;&#xA;&lt;p&gt;反向微分 =&amp;gt; 原函数 =&amp;gt; 积分&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>微积分必需数学概念</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%BF%85%E9%9C%80%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
+      <description>&lt;p&gt;平方和公式&lt;/p&gt;&#xA;&lt;p&gt;三角函数：正切&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>数学概念</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%A4%A7%E7%BA%B2/</guid>
+      <description>&lt;h3 id=&#34;信息论&#34;&gt;信息论&lt;/h3&gt;&#xA;&lt;h3 id=&#34;统计代数&#34;&gt;统计代数&lt;/h3&gt;&#xA;&lt;h3 id=&#34;微积分&#34;&gt;微积分&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;方差&lt;/li&gt;&#xA;&lt;li&gt;均方误差&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;em&gt;MSE&lt;/em&gt;&#xA;3. 傅里叶变换&#xA;4. 逆矩阵&#xA;5. 贝叶斯 概率&#xA;6. 线性代数&#xA;7. 概率论&#xA;8. 信息论&#xA;9. 微积分&#xA;10.&#xA;方差，标准差&#xA;正态分布&#xA;熵，交叉熵&#xA;贝叶斯，朴素贝叶斯概率&#xA;极大似然估计&#xA;最小二乘法&#xA;拉格朗日乘子法&#xA;微积分&#xA;矩阵：逆矩阵，单位矩阵，矩阵乘法 =》 向量模，向量内积（点积）&#xA;对数定理&lt;/p&gt;&#xA;&lt;h3 id=&#34;傅里叶变换&#34;&gt;傅里叶变换&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>方差和偏差</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%96%B9%E5%B7%AE%E5%92%8C%E5%81%8F%E5%B7%AE/</guid>
+      <description>&lt;p&gt;&lt;code&gt;方差&lt;/code&gt;：方差就是 衡量数据的离散程度&lt;/p&gt;&#xA;&lt;p&gt;每个样本和（所有样本的平均数 的差 的平方 的和除以 样本数&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/math_variance.png&#34; alt=&#34;方差公式&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;低方差&lt;/code&gt;：数据看起来比较密集，离散程度 比较低&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;高方差&lt;/code&gt;：数据看起来比较离散&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;低偏差&lt;/code&gt;：数据看起来距离&lt;code&gt;靶心&lt;/code&gt;比较近&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;高偏差&lt;/code&gt;：数据距离则偏离&lt;code&gt;靶心&lt;/code&gt; 较远&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/math/bias_variance.png&#34; alt=&#34;方差和偏差&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>无量纲化 量纲</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E9%87%8F%E7%BA%B2_%E6%97%A0%E9%87%8F%E7%BA%B2%E5%8C%96/</guid>
+      <description>&lt;h3 id=&#34;量纲&#34;&gt;量纲&lt;/h3&gt;&#xA;&lt;p&gt;量纲就好像是 度量单位一样，不同的单位的数据是没办法比较的，所以要统一，这就叫 去量纲化 or 无量纲化&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;百科解释&lt;/strong&gt; : 时间的长短（秒、分、时）、质量的大小（g、Kg）、速度的快慢（Km/h、m/s）等，都是量纲，它们反映特定物理量或物理现象的度量，在物理学或者计算上通常以物理量的单位来表示。&lt;/p&gt;&#xA;&lt;p&gt;量纲是&lt;code&gt;物理量&lt;/code&gt;的度量，是物理量的测量数据的表示。用来表示量纲的单位必须反映特定物理现象或物理量，如温度、位移、速度、质量等。仅代表特定数目的单位，称为“无量纲单位”。例如“打”代表12；“罗”代表12打或144。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>机器学习中的数学</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E6%A6%82%E5%BF%B5/</guid>
+      <description>&lt;p&gt;机器学习&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;数据特征处理&#xA;&lt;ol&gt;&#xA;&lt;li&gt;数据无量纲化：数据缩放 数据标准化&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;概率论：条件概率，联合概率，贝叶斯，朴素贝叶斯&lt;/li&gt;&#xA;&lt;li&gt;信息论：信息熵，交叉熵，条件熵&lt;/li&gt;&#xA;&lt;li&gt;线性回归&lt;/li&gt;&#xA;&lt;li&gt;矩阵&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;了解全连接神经网络要先了解一些基本数学概念&lt;/p&gt;&#xA;&lt;p&gt;数据无量纲化&#xA;数据缩放 数据标准化&lt;/p&gt;&#xA;&lt;p&gt;什么是线性函数&#xA;线性回归和线性回归解决什么问题&lt;/p&gt;&#xA;&lt;p&gt;函数求导&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;微积分，微分积分互逆性，导数运算法则，&lt;/li&gt;&#xA;&lt;li&gt;定积分，不定积分&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;矩阵乘法和矩阵逆&lt;/p&gt;&#xA;&lt;p&gt;方差和标准差和偏差&lt;/p&gt;&#xA;&lt;p&gt;对数概念&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>极大似然估计</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1/</guid>
+      <description>&lt;p&gt;极大似然估计&lt;/p&gt;&#xA;&lt;p&gt;抛硬币，已知硬币是正方两面，抛出硬币为&lt;code&gt;花&lt;/code&gt;的概率&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自然常数e</title>
+      <link>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/ml/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E8%87%AA%E7%84%B6%E5%B8%B8%E6%95%B0e/</guid>
+      <description>&lt;h3 id=&#34;自然常数e&#34;&gt;自然常数e&lt;/h3&gt;&#xA;&lt;p&gt;(1+1/n)^n ≈ 2.718&lt;br&gt;&#xA;伯努利研究发现：&#xA;&lt;img src=&#34;https://r.xboox.cn/res/math/e1.png&#34; alt=&#34;e_l&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

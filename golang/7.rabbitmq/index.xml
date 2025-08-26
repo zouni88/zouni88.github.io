@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7.rabbitmq on 西凉观云海</title>
+    <link>https://r.xboox.cn/golang/7.rabbitmq/</link>
+    <description>Recent content in 7.rabbitmq on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/golang/7.rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>容器运行</title>
+      <link>https://r.xboox.cn/golang/7.rabbitmq/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/golang/7.rabbitmq/%E5%AE%B9%E5%99%A8%E8%BF%90%E8%A1%8C/</guid>
+      <description>&lt;h3 id=&#34;创建运行容器&#34;&gt;创建运行容器&lt;/h3&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -itd --name small-mq -e RABBITMQ_DEFAULT_USER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;admin -e RABBITMQ_DEFAULT_PASS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;admin -p 5672:5672 -p 15672:15672 rabbitmq&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;我是分割线&#34;&gt;我是分割线&lt;/h2&gt;&#xA;&lt;p&gt;docker run -dit &amp;ndash;name Myrabbitmq -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin -p 15672:15672 -p 5672:5672 rabbitmq:managemen&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

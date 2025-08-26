@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stm32 on 西凉观云海</title>
+    <link>https://r.xboox.cn/embedded/stm32/</link>
+    <description>Recent content in stm32 on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/embedded/stm32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>clion环境配置</title>
+      <link>https://r.xboox.cn/embedded/stm32/clion%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/embedded/stm32/clion%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;clion-stm32-开发环境搭建&#34;&gt;clion+ stm32 开发环境搭建&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.jetbrains.com/help/clion/2021.2/embedded-development.html&#34;&gt;参考jetbrains官方指导&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;准备&#34;&gt;准备&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-clion&#34;&gt;1. clion&lt;/h2&gt;&#xA;&lt;h2 id=&#34;2-gcc-arm-none-eabi&#34;&gt;2. gcc-arm-none-eabi&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads&#34;&gt;下载 gcc-arm-none-eabi-10.3-2021.10-win32.exe&lt;/a&gt;&#xA;一键安装：最后一步勾选（path添加到环境变量，否则编译程序找不到编译器）&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-mingw-get-setupexe&#34;&gt;3. mingw-get-setup.exe&lt;/h2&gt;&#xA;&lt;p&gt;安装之后，配置clion Toolchains 环境就可以了&lt;/p&gt;&#xA;&lt;h2 id=&#34;4-stm32cubemx-winzip&#34;&gt;4. stm32cubemx-win.zip&lt;/h2&gt;&#xA;&lt;p&gt;这一步没什么特殊 一键安装&lt;/p&gt;&#xA;&lt;h2 id=&#34;5-openocd&#34;&gt;5. OpenOCD&lt;/h2&gt;&#xA;&lt;h3 id=&#34;51-openocd-配置&#34;&gt;5.1 openOCD 配置&lt;/h3&gt;&#xA;&lt;p&gt;配置ST-link烧写器配置文件&#xA;stm32f103_stlink.cfg&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;source%20[find%20interface/stlink.cfg]%0d%0atransport%20select%20hla_swd%0d%0asource%20[find%20target/stm32f1x.cfg]%0d%0aadapter%20speed%202000%20%20//%20adapter_khz%202000&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;pre&gt;&lt;code&gt;source [find interface/stlink.cfg]&#xD;&#xA;transport select hla_swd&#xD;&#xA;source [find target/stm32f1x.cfg]&#xD;&#xA;adapter speed 2000  // adapter_khz 2000&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;保存到openOCD脚本目录下： &lt;br&gt;&#xA;D:\WorkRoom\embedded\stm32\OpenOCD-20210729-0.11.0\share\openocd\scripts\board&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

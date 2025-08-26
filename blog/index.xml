@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on 西凉观云海</title>
+    <link>https://r.xboox.cn/blog/</link>
+    <description>Recent content in blog on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5. first-gitbook配置</title>
+      <link>https://r.xboox.cn/blog/gitbook%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 26 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/blog/gitbook%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;p&gt;asdf&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1. hugo环境配置</title>
+      <link>https://r.xboox.cn/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/blog/1.hugo%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;初始化&#34;&gt;初始化&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;下载hugo已发布版本&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;配置环境变量：&lt;br&gt;&#xA;2.1. 创建 &lt;code&gt;bin&lt;/code&gt; 文件夹，将&lt;code&gt;hugo.exe&lt;/code&gt; 放在&lt;code&gt;bin&lt;/code&gt;文件夹下；&lt;br&gt;&#xA;2.2. 配置换进变量：将&lt;code&gt;hugo/bin/&lt;/code&gt;目录添加到 &lt;code&gt;path&lt;/code&gt; 中；&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;创建站点：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;hugo new site path/project_name&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;运行站点：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;cd path/project_name  //定位到当前站点目录&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;hugo server //运行服务&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;部署：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;hugo   //hugo 命令构建站点&#xA;build完后的站点文件夹下 &lt;code&gt;public&lt;/code&gt; 目录&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;设置主题&#34;&gt;设置主题&lt;/h1&gt;&#xA;&lt;p&gt;主题选择：https://themes.gohugo.io/tags/dark/&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;cd themes&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;git clone &lt;a href=&#34;mailto:git@github.com&#34;&gt;git@github.com&lt;/a&gt;:setsevireon/photophobia.git&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;git submodule add &lt;a href=&#34;https://github.com/alex-shpak/hugo-book&#34;&gt;https://github.com/alex-shpak/hugo-book&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;themes/book&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;启动本地调试&#34;&gt;启动本地调试&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;hugo server &amp;ndash;theme=photophobia &amp;ndash;buildDrafts &amp;ndash;watch&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>2. hugo换皮肤</title>
+      <link>https://r.xboox.cn/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/blog/2.hugo%E6%8D%A2%E7%9A%AE%E8%82%A4/</guid>
+      <description>&lt;h3 id=&#34;hugo皮肤网站-找到自己喜欢的皮肤&#34;&gt;hugo皮肤网站 找到自己喜欢的皮肤&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/tags/dark/&#34;&gt;皮肤官网&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;目前在用的&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/zouni88/amethyst&#34;&gt;https://github.com/zouni88/amethyst&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;导入到项目目录 &lt;code&gt;themes&lt;/code&gt; 文件夹中&lt;/p&gt;&#xA;&lt;p&gt;修改 &lt;code&gt;hugo.yaml&lt;/code&gt; 配置文件 ，完成自定义项改造&lt;/p&gt;&#xA;&lt;p&gt;之前用过&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/idealvin/hugo-book&#34;&gt;https://github.com/idealvin/hugo-book&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3. GitHub博客搭建</title>
+      <link>https://r.xboox.cn/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/blog/3.github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>&lt;h3 id=&#34;搭建个人博客站点可以把平时学习或工作中的一些笔记或知识点积累的东西分享到-分享几种实现博客搭建的方式&#34;&gt;搭建个人博客站点，可以把平时学习或工作中的一些笔记或知识点积累的东西分享到 ，分享几种实现博客搭建的方式&lt;/h3&gt;&#xA;&lt;h3 id=&#34;1-github-pages-静态网页托管服务&#34;&gt;1. github pages 静态网页托管服务&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;这里有官方说明&lt;/a&gt;  分分钟搭建起来&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;首先根据前面我写的 hugo 教程，先创建自己的网站内容先。&lt;/li&gt;&#xA;&lt;li&gt;创建仓库，仓库名称 &lt;em&gt;注意&lt;/em&gt;： &lt;code&gt;github 账户名&lt;/code&gt;+&lt;code&gt;github.io&lt;/code&gt; 比如：&lt;a href=&#34;zouni88.github.io&#34;&gt;zouni88.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;内容提交&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 仓库 down 到本地&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git@github.com:Yourname/Yourname.github.io.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 切换分支到master，默认应该是main&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout -b master&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 查看分支&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    * master&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 添加 index.html文件,并编辑&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;touch index.html&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 提交&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push --set-upstream origin master&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;大功告成，浏览器打开： &lt;code&gt;Yourname.github.io&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-gitee-pages-静态网页托管服务&#34;&gt;2. gitee pages 静态网页托管服务&lt;/h3&gt;&#xA;&lt;p&gt;使用方法和&lt;code&gt;github pages&lt;/code&gt; 类似, &lt;a href=&#34;https://gitee.com/help/articles/4136#article-header0&#34;&gt;官方帮助文档&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-gitbook买个域名先&#34;&gt;3. gitbook,买个域名先&lt;/h3&gt;&#xA;&lt;p&gt;这个就是要根据自己的网络情况了，不是每次都能顺利打开。&lt;/p&gt;&#xA;&lt;h3 id=&#34;4-如果有能力就自己搭建服务或购买云服务&#34;&gt;4. 如果有能力就自己搭建服务或购买云服务&lt;/h3&gt;&#xA;&lt;h3 id=&#34;github创建项目&#34;&gt;github创建项目&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;创建仓库，项目名字要用&lt;code&gt;username.github.io&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;git clone &lt;a href=&#34;https://github.com/username/username.github.io&#34;&gt;https://github.com/username/username.github.io&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4. markdown到处HTML</title>
+      <link>https://r.xboox.cn/blog/4.markdown%E5%AF%BC%E5%87%BAhtml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/blog/4.markdown%E5%AF%BC%E5%87%BAhtml/</guid>
+      <description>&lt;h3 id=&#34;vscode-编辑markdown文件如何导出-未-html文件并最终保存为pdf文件&#34;&gt;vscode 编辑markdown文件如何导出 未 &lt;code&gt;html&lt;/code&gt;文件，并最终保存为&lt;code&gt;pdf&lt;/code&gt;文件&lt;/h3&gt;&#xA;&lt;p&gt;vscode 下载插件：&lt;code&gt;Markdown All in One&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/blog/vscode2.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://r.xboox.cn/res/blog/vscode1.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

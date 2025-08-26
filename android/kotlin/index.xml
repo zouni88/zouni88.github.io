@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin on 西凉观云海</title>
+    <link>https://r.xboox.cn/android/kotlin/</link>
+    <description>Recent content in kotlin on 西凉观云海</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://r.xboox.cn/android/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jetpack</title>
+      <link>https://r.xboox.cn/android/kotlin/jetpack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/android/kotlin/jetpack/</guid>
+      <description>&lt;p&gt;&lt;code&gt;android jetpack&lt;/code&gt;框架组件&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;databinding&lt;/code&gt;; 数据绑定库&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;livedata&lt;/code&gt;: 数据观察类，&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;Room&lt;/code&gt;: 数据库&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;Viewmodel&lt;/code&gt;: 绑定activity或者fragment生命周期，&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>注解</title>
+      <link>https://r.xboox.cn/android/kotlin/%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/android/kotlin/%E6%B3%A8%E8%A7%A3/</guid>
+      <description>&lt;h3 id=&#34;注解&#34;&gt;注解&lt;/h3&gt;&#xA;&lt;p&gt;注解就是一种特殊的注释/解释，分两种情况:&lt;br&gt;&#xA;1.在代码编写阶段，编译器会看到的，并且明白是什么意思；&lt;br&gt;&#xA;2. 在运行阶段，反射机制，动态代理等应用。&lt;/p&gt;&#xA;&lt;h3 id=&#34;元注解&#34;&gt;元注解&lt;/h3&gt;&#xA;&lt;p&gt;给注解加一个注释/ 注解上的注解；比如某个注解的作用域通过元注解告诉编译器，还有注解的生命周期等。&lt;br&gt;&#xA;@Target&lt;br&gt;&#xA;ElementType.TYPE：允许被修饰的注解作用在类、接口和枚举上&lt;br&gt;&#xA;ElementType.FIELD：允许作用在属性字段上&lt;br&gt;&#xA;ElementType.METHOD：允许作用在方法上&lt;br&gt;&#xA;ElementType.PARAMETER：允许作用在方法参数上&lt;br&gt;&#xA;ElementType.CONSTRUCTOR：允许作用在构造器上&lt;br&gt;&#xA;ElementType.LOCAL_VARIABLE：允许作用在本地局部变量上&lt;br&gt;&#xA;ElementType.ANNOTATION_TYPE：允许作用在注解上&lt;br&gt;&#xA;ElementType.PACKAGE：允许作用在包上&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>约束布局TextView自动换行问题</title>
+      <link>https://r.xboox.cn/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r.xboox.cn/android/kotlin/%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80textview%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;1.修改textview的约束条件&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app:layout_constraintStart_toEndOf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@+id/textView3&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;改为&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app:layout_constraintLeft_toRightOf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@+id/textView3&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;注意 其他的start end也都改为left right &lt;/p&gt;&#xA;&lt;p&gt;2.其他属性搭配：&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;codeblock&#34;&gt;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;copy-button-box&#34;&gt;&#xD;&#xA;            &lt;button class=&#34;copy-button&#34; state=&#34;copy&#34; data=&#34;#ZgotmplZ&#34;&gt;&#xD;&#xA;                &lt;i class=&#34;bi bi-copy&#34;&gt;&lt;/i&gt;&#xD;&#xA;            &lt;/button&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;android:layout_height&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;搭配：app:layout_constrainedWidth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;android:layout_height&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;搭配：app:layout_constrainedHeight&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;（不写默认即false）&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
